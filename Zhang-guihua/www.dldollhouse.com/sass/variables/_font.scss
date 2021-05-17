@@ -1,0 +1,68 @@
+@import "variables";
+
+// ===== font =====
+$font-sans: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !default;
+$font-serif: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif !default;
+$font-mono: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace !default;
+
+$font-family-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$font-family-series: map_merge(
+                (
+                        "sans": $font-sans,
+                        "serif": $font-serif,
+                        "mono": $font-mono,
+                ),
+                $font-family-series
+);
+
+$font-size-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$font-size-series: map_merge(
+                (
+                        "12": ($pixel-1 * 12),
+                        "14": ($pixel-1 * 14),
+                        "16": ($pixel-1 * 16),
+                        "18": ($pixel-1 * 18),
+                        "20": ($pixel-1 * 20),
+                        "22": ($pixel-1 * 22),
+                        "24": ($pixel-1 * 24),
+                        "26": ($pixel-1 * 26),
+                        "28": ($pixel-1 * 28),
+                        "30": ($pixel-1 * 30),
+                        "32": ($pixel-1 * 32),
+                        "34": ($pixel-1 * 34),
+                        "36": ($pixel-1 * 36),
+                        "38": ($pixel-1 * 38),
+                        "40": ($pixel-1 * 40),
+                        "42": ($pixel-1 * 42),
+                        "44": ($pixel-1 * 44),
+                        "46": ($pixel-1 * 46),
+                        "48": ($pixel-1 * 48),
+                        "50": ($pixel-1 * 50),
+                        "52": ($pixel-1 * 52),
+                        "54": ($pixel-1 * 54),
+                        "56": ($pixel-1 * 56),
+                        "58": ($pixel-1 * 58),
+                        "60": ($pixel-1 * 60),
+                ),
+                $font-size-series
+);
+
+$weight-hairline: 100 !default;
+$font-weight-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$font-weight-series: map_merge(
+                (
+                        "hairline": $weight-hairline,
+                        "thin": ($weight-hairline + 100),
+                        "light": ($weight-hairline + 200),
+                        "normal": ($weight-hairline + 300),
+                        "medium": ($weight-hairline + 400),
+                        "semibold": ($weight-hairline + 500),
+                        "bold": ($weight-hairline + 600),
+                        "extrabold": ($weight-hairline + 700),
+                        "black": ($weight-hairline + 800),
+                ),
+                $font-weight-series
+);

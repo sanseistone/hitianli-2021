@@ -1,0 +1,46 @@
+/* theme-default s */
+
+/* theme-default e */
+
+/* responsive-pc s */
+
+@media (max-width: 1199px) {
+    /*Extra large devices (large desktops, 992px and 1200px)*/
+}
+
+@media (max-width: 991px) {
+    /*Large devices (desktops, 768px and 992px)*/
+}
+
+@media (max-width: 767px) {
+    /*Medium devices (tablets, 576px and 768px)*/
+}
+
+@media (max-width: 575px) {
+    /*Small devices (landscape phones, max-width 576px)*/
+}
+
+/* responsive-pc e */
+
+/* responsive-mobile s */
+
+/*Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default*/
+
+@media (min-width: 576px) {
+    /*Small devices (landscape phones, 576px and up)*/
+}
+
+@media (min-width: 768px) {
+    /*Medium devices (tablets, 768px and up)*/
+}
+
+@media (min-width: 992px) {
+    /*Large devices (desktops, 992px and up)*/
+}
+
+@media (min-width: 1200px) {
+    /*Extra large devices (large desktops, 1200px and up)*/
+}
+
+/* responsive-mobile e */

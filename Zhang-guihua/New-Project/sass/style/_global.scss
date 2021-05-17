@@ -1,0 +1,112 @@
+//global
+@charset "utf-8";
+
+//body
+body {
+  color: #464646;
+}
+
+.header-bar {
+  background: $red-8;
+}
+
+//header
+header {
+  background-image: linear-gradient(#e0d6ca 2.5rem, transparent 0);
+  border-bottom: 10px solid $red-8;
+
+  & nav {
+    & .row {
+      & div[class*="col-"]:nth-of-type(1) {}
+
+      & div[class*="col-"]:nth-of-type(2) {}
+
+      & div[class*="col-"]:nth-of-type(3) {}
+
+      & div[class*="col-"]:nth-of-type(4) {
+        & .search-box {
+          border: 2px solid $color-e;
+          margin: 0 auto;
+
+          > input[type="search"] {
+            width: calc(100% - 38px);
+            border: none;
+            outline: none;
+
+            &:focus {
+              box-shadow: none;
+            }
+          }
+
+          > button {
+            width: 38px;
+            height: 38px;
+            background: transparent;
+            border: none;
+
+            > [class*="fa"] {
+              color: $color-e;
+            }
+          }
+        }
+      }
+
+      & div[class*="col-"]:nth-of-type(5) {}
+
+      & div[class*="col-"]:nth-of-type(6) {}
+    }
+  }
+}
+
+//nav
+.nav-main {
+  padding: .5rem 0;
+  border-top: 1px solid $color-d;
+  border-bottom: 1px solid $color-d;
+  background: $color-f;
+
+  & .navbar-nav {
+    & .nav-item {
+      &.active {
+        & .nav-link {
+          color: $red-8;
+        }
+      }
+
+      & .nav-link {
+        padding: .5rem 1rem;
+
+        &:focus, &:hover {
+          color: $red-8;
+        }
+      }
+    }
+  }
+}
+
+//breadcrumb
+.breadcrumb {
+}
+
+//footer
+footer {
+}
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+  header {
+    background-image: none;
+  }
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+}

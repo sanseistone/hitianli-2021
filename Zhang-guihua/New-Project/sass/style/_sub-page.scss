@@ -1,0 +1,123 @@
+//sub-page
+main {
+  & .category-left {
+    & .aside-box {
+      & .category-nav {
+        & ul {
+          list-style: none;
+          padding-left: 1rem;
+
+          > li {
+            > a {
+              display: block;
+              padding: .35rem 0;
+              color: #464646;
+              font-weight: 400;
+
+              &:focus, &:hover {
+                color: $red-8;
+              }
+            }
+
+            > span {
+              color: $red-8;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+
+      & .accordion dt {
+        position: relative;
+        border-bottom: solid 1px $color-e;
+        padding: 10px 5px;
+        cursor: pointer;
+        color: #464646;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 42%;
+          right: 14px;
+          transform: translateX(-50%);
+          display: block;
+          width: 10px;
+          height: 10px;
+          border-right: 2px solid $red-8;
+          vertical-align: top;
+          margin: -2px 0 0 0;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: 10px;
+          transform: translateX(-50%);
+          display: block;
+          width: 10px;
+          height: 10px;
+          border-top: 2px solid $red-8;
+          vertical-align: top;
+          margin: -2px 0 0 0;
+        }
+
+        &.open {
+          //border-bottom: solid 1px #feced3;
+
+          &::before {
+            display: none;
+          }
+        }
+      }
+
+      & .accordion dd {
+        > ul {
+          list-style: none;
+          padding-left: 1rem;
+
+          > li {
+            border-bottom: solid 1px $color-d;
+
+            &:last-child {
+              border-bottom: none;
+            }
+
+            > a {
+              display: block;
+              position: relative;
+              background-color: $color-f;
+              padding: 10px 5px;
+              transition: background-color .3s;
+              color: #464646;
+              font-size: .875rem;
+              text-decoration: none;
+
+              &:hover, &:focus {
+                background: $color-e;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & .category-right {}
+}
+
+@media (max-width: 1199px) {
+  /*Extra large devices (large desktops, 992px and 1200px)*/
+}
+
+@media (max-width: 991px) {
+  /*Large devices (desktops, 768px and 992px)*/
+}
+
+@media (max-width: 767px) {
+  /*Medium devices (tablets, 576px and 768px)*/
+}
+
+@media (max-width: 575px) {
+  /*Small devices (landscape phones, max-width 576px)*/
+}

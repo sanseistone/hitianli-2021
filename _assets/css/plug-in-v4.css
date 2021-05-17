@@ -1,0 +1,16 @@
+/*说明:在正式上线的文件中,根据需求删除或注塑多余的引入*/
+
+/* ========== import s ========== */
+
+@import url("../plug-in/normalize.css/normalize.css");
+@import url("../bootstrap/css/bootstrap.min.css");
+@import url("../fonts/fontawesome-pro/css/all.css");
+@import url("../plug-in/lightbox2/dist/css/lightbox.min.css");
+@import url("../plug-in/owlcarousel/assets/owl.carousel.min.css");
+@import url("../plug-in/owlcarousel/assets/owl.theme.default.min.css");
+@import url("../plug-in/slick/slick/slick.css");
+@import url("../plug-in/slick/slick/slick-theme.css");
+
+@import url("../plug-in/sliderpro/dist/css/slider-pro.min.css");
+
+/*========== import e ==========*/

@@ -1,0 +1,25 @@
+@import "variables";
+
+// ===== space =====
+$space-size-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$space-size-series: map_merge(
+                (
+                        "0": (($pixel-1 * 0) / 1),
+                        "1": (($pixel-1 * 1) / 2),
+                        "2": (($pixel-1 * 2) / 2),
+                        "5": (($pixel-1 * 5) / 2),
+                        "10": (($pixel-1 * 10) / 2),
+                        "15": (($pixel-1 * 15) / 2),
+                        "20": (($pixel-1 * 20) / 2),
+                        "25": (($pixel-1 * 25) / 2),
+                        "30": (($pixel-1 * 30) / 2),
+                        "35": (($pixel-1 * 35) / 2),
+                        "40": (($pixel-1 * 40) / 2),
+                        "45": (($pixel-1 * 45) / 2),
+                        "50": (($pixel-1 * 50) / 2),
+                        "55": (($pixel-1 * 55) / 2),
+                        "60": (($pixel-1 * 60) / 2),
+                ),
+                $space-size-series
+);

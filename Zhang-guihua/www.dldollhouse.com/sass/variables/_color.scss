@@ -1,0 +1,1569 @@
+//color
+//这里是所有关于颜色的变量集合，以及maps函数集合
+
+//series
+
+//$color-0: black !default;
+//$color-1: #111 !default;
+//$color-2: #222 !default;
+//$color-3: #333 !default;
+//$color-4: #444 !default;
+//$color-5: #555 !default;
+//$color-6: #666 !default;
+//$color-7: #777 !default;
+//$color-8: #888 !default;
+//$color-9: #999 !default;
+//$color-a: #aaa !default;
+//$color-b: #bbb !default;
+//$color-c: #ccc !default;
+//$color-d: #ddd !default;
+//$color-e: #eee !default;
+//$color-f: white !default;
+
+$color-0: black !default;
+$color-1: lighten($color-0, 6.7%) !default;
+$color-2: lighten($color-0, 13.3%) !default;
+$color-3: lighten($color-0, 20%) !default;
+$color-4: lighten($color-0, 26.7%) !default;
+$color-5: lighten($color-0, 33.3%) !default;
+$color-6: lighten($color-0, 40%) !default;
+$color-7: lighten($color-0, 46.7%) !default;
+$color-8: lighten($color-0, 53.3%) !default;
+$color-9: lighten($color-0, 60%) !default;
+$color-a: lighten($color-0, 66.7%) !default;
+$color-b: lighten($color-0, 73.3%) !default;
+$color-c: lighten($color-0, 80%) !default;
+$color-d: lighten($color-0, 86.7%) !default;
+$color-e: lighten($color-0, 93.3%) !default;
+$color-f: lighten($color-0, 100%) !default;
+
+$series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$series: map-merge(
+                (
+                        "color0": $color-0,
+                        "color1": $color-1,
+                        "color2": $color-2,
+                        "color3": $color-3,
+                        "color4": $color-4,
+                        "color5": $color-5,
+                        "color6": $color-6,
+                        "color7": $color-7,
+                        "color8": $color-8,
+                        "color9": $color-9,
+                        "colora": $color-a,
+                        "colorb": $color-b,
+                        "colorc": $color-c,
+                        "colord": $color-d,
+                        "colore": $color-e,
+                        "colorf": $color-f,
+                ),
+                $series
+);
+
+//red
+$red: red;
+$red-0: #ffebee !default;
+$red-1: #ffcdd2 !default;
+$red-2: #ef9a9a !default;
+$red-3: #e57373 !default;
+$red-4: #ef5350 !default;
+$red-5: #f44336 !default;
+$red-6: #e53935 !default;
+$red-7: #d32f2f !default;
+$red-8: #c62828 !default;
+$red-9: #b71c1c !default;
+$red-a: #ff8a80 !default;
+$red-b: #ff5252 !default;
+$red-c: #ff1744 !default;
+$red-d: #d50000 !default;
+
+$red-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$red-series: map_merge(
+                (
+                        "red": $red,
+                        "red0": $red-0,
+                        "red1": $red-1,
+                        "red2": $red-2,
+                        "red3": $red-3,
+                        "red4": $red-4,
+                        "red5": $red-5,
+                        "red6": $red-6,
+                        "red7": $red-7,
+                        "red8": $red-8,
+                        "red9": $red-9,
+                        "reda": $red-a,
+                        "redb": $red-b,
+                        "redc": $red-c,
+                        "redd": $red-d,
+                ),
+                $red-series
+);
+
+//pink
+$pink: pink;
+$pink-0: #fce4ec !default;
+$pink-1: #f8bbd0 !default;
+$pink-2: #f48fb1 !default;
+$pink-3: #f06292 !default;
+$pink-4: #ec407a !default;
+$pink-5: #e91e63 !default;
+$pink-6: #d81b60 !default;
+$pink-7: #c2185b !default;
+$pink-8: #ad1457 !default;
+$pink-9: #880e4f !default;
+$pink-a: #ff80ab !default;
+$pink-b: #ff4081 !default;
+$pink-c: #f50057 !default;
+$pink-d: #c51162 !default;
+
+$pink-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$pink-series: map_merge(
+                (
+                        "pink": $pink,
+                        "pink0": $pink-0,
+                        "pink1": $pink-1,
+                        "pink2": $pink-2,
+                        "pink3": $pink-3,
+                        "pink4": $pink-4,
+                        "pink5": $pink-5,
+                        "pink6": $pink-6,
+                        "pink7": $pink-7,
+                        "pink8": $pink-8,
+                        "pink9": $pink-9,
+                        "pinka": $pink-a,
+                        "pinkb": $pink-b,
+                        "pinkc": $pink-c,
+                        "pinkd": $pink-d,
+                ),
+                $pink-series
+);
+
+//purple
+$purple: purple;
+$purple-0: #f3e5f5 !default;
+$purple-1: #e1bee7 !default;
+$purple-2: #ce93d8 !default;
+$purple-3: #ba68c8 !default;
+$purple-4: #ab47bc !default;
+$purple-5: #9c27b0 !default;
+$purple-6: #8e24aa !default;
+$purple-7: #7b1fa2 !default;
+$purple-8: #6a1b9a !default;
+$purple-9: #4a148c !default;
+$purple-a: #ea80fc !default;
+$purple-b: #e040fb !default;
+$purple-c: #d500f9 !default;
+$purple-d: #a0f !default;
+
+$purple-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$purple-series: map_merge(
+                (
+                        "purple": $purple,
+                        "purple0": $purple-0,
+                        "purple1": $purple-1,
+                        "purple2": $purple-2,
+                        "purple3": $purple-3,
+                        "purple4": $purple-4,
+                        "purple5": $purple-5,
+                        "purple6": $purple-6,
+                        "purple7": $purple-7,
+                        "purple8": $purple-8,
+                        "purple9": $purple-9,
+                        "purplea": $purple-a,
+                        "purpleb": $purple-b,
+                        "purplec": $purple-c,
+                        "purpled": $purple-d,
+                ),
+                $purple-series
+);
+
+//deep-purple
+$deep-purple: darkmagenta;
+$deep-purple-0: #ede7f6 !default;
+$deep-purple-1: #d1c4e9 !default;
+$deep-purple-2: #b39ddb !default;
+$deep-purple-3: #9575cd !default;
+$deep-purple-4: #7e57c2 !default;
+$deep-purple-5: #673ab7 !default;
+$deep-purple-6: #5e35b1 !default;
+$deep-purple-7: #512da8 !default;
+$deep-purple-8: #4527a0 !default;
+$deep-purple-9: #311b92 !default;
+$deep-purple-a: #b388ff !default;
+$deep-purple-b: #7c4dff !default;
+$deep-purple-c: #651fff !default;
+$deep-purple-d: #6200ea !default;
+
+$deep-purple-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$deep-purple-series: map_merge(
+                (
+                        "d_purple": $deep-purple,
+                        "d_purple0": $deep-purple-0,
+                        "d_purple1": $deep-purple-1,
+                        "d_purple2": $deep-purple-2,
+                        "d_purple3": $deep-purple-3,
+                        "d_purple4": $deep-purple-4,
+                        "d_purple5": $deep-purple-5,
+                        "d_purple6": $deep-purple-6,
+                        "d_purple7": $deep-purple-7,
+                        "d_purple8": $deep-purple-8,
+                        "d_purple9": $deep-purple-9,
+                        "d_purplea": $deep-purple-a,
+                        "d_purpleb": $deep-purple-b,
+                        "d_purplec": $deep-purple-c,
+                        "d_purpled": $deep-purple-d,
+                ),
+                $deep-purple-series
+);
+
+//indigo
+$indigo: indigo;
+$indigo-0: #e8eaf6 !default;
+$indigo-1: #c5cae9 !default;
+$indigo-2: #9fa8da !default;
+$indigo-3: #7986cb !default;
+$indigo-4: #5c6bc0 !default;
+$indigo-5: #3f51b5 !default;
+$indigo-6: #3949ab !default;
+$indigo-7: #303f9f !default;
+$indigo-8: #283593 !default;
+$indigo-9: #1a237e !default;
+$indigo-a: #8c9eff !default;
+$indigo-b: #536dfe !default;
+$indigo-c: #3d5afe !default;
+$indigo-d: #304ffe !default;
+
+$indigo-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$indigo-series: map_merge(
+                (
+                        "indigo": $indigo,
+                        "indigo0": $indigo-0,
+                        "indigo1": $indigo-1,
+                        "indigo2": $indigo-2,
+                        "indigo3": $indigo-3,
+                        "indigo4": $indigo-4,
+                        "indigo5": $indigo-5,
+                        "indigo6": $indigo-6,
+                        "indigo7": $indigo-7,
+                        "indigo8": $indigo-8,
+                        "indigo9": $indigo-9,
+                        "indigoa": $indigo-a,
+                        "indigob": $indigo-b,
+                        "indigoc": $indigo-c,
+                        "indigod": $indigo-d,
+                ),
+                $indigo-series
+);
+
+//blue
+$blue: blue;
+$blue-0: #e3f2fd !default;
+$blue-1: #bbdefb !default;
+$blue-2: #90caf9 !default;
+$blue-3: #64b5f6 !default;
+$blue-4: #42a5f5 !default;
+$blue-5: #2196f3 !default;
+$blue-6: #1e88e5 !default;
+$blue-7: #1976d2 !default;
+$blue-8: #1565c0 !default;
+$blue-9: #0d47a1 !default;
+$blue-a: #82b1ff !default;
+$blue-b: #448aff !default;
+$blue-c: #2979ff !default;
+$blue-d: #2962ff !default;
+
+$blue-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$blue-series: map_merge(
+                (
+                        "blue": $blue,
+                        "blue0": $blue-0,
+                        "blue1": $blue-1,
+                        "blue2": $blue-2,
+                        "blue3": $blue-3,
+                        "blue4": $blue-4,
+                        "blue5": $blue-5,
+                        "blue6": $blue-6,
+                        "blue7": $blue-7,
+                        "blue8": $blue-8,
+                        "blue9": $blue-9,
+                        "bluea": $blue-a,
+                        "blueb": $blue-b,
+                        "bluec": $blue-c,
+                        "blued": $blue-d,
+                ),
+                $blue-series
+);
+
+//light-blue
+$light-blue: lightblue;
+$light-blue-0: #e1f5fe !default;
+$light-blue-1: #b3e5fc !default;
+$light-blue-2: #81d4fa !default;
+$light-blue-3: #4fc3f7 !default;
+$light-blue-4: #29b6f6 !default;
+$light-blue-5: #03a9f4 !default;
+$light-blue-6: #039be5 !default;
+$light-blue-7: #0288d1 !default;
+$light-blue-8: #0277bd !default;
+$light-blue-9: #01579b !default;
+$light-blue-a: #80d8ff !default;
+$light-blue-b: #40c4ff !default;
+$light-blue-c: #00b0ff !default;
+$light-blue-d: #0091ea !default;
+
+$light-blue-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$light-blue-series: map_merge(
+                (
+                        "l_blue": $light-blue,
+                        "l_blue0": $light-blue-0,
+                        "l_blue1": $light-blue-1,
+                        "l_blue2": $light-blue-2,
+                        "l_blue3": $light-blue-3,
+                        "l_blue4": $light-blue-4,
+                        "l_blue5": $light-blue-5,
+                        "l_blue6": $light-blue-6,
+                        "l_blue7": $light-blue-7,
+                        "l_blue8": $light-blue-8,
+                        "l_blue9": $light-blue-9,
+                        "l_bluea": $light-blue-a,
+                        "l_blueb": $light-blue-b,
+                        "l_bluec": $light-blue-c,
+                        "l_blued": $light-blue-d,
+                ),
+                $light-blue-series
+);
+
+//cyan
+$cyan: cyan;
+$cyan-0: #e0f7fa !default;
+$cyan-1: #b2ebf2 !default;
+$cyan-2: #80deea !default;
+$cyan-3: #4dd0e1 !default;
+$cyan-4: #26c6da !default;
+$cyan-5: #00bcd4 !default;
+$cyan-6: #00acc1 !default;
+$cyan-7: #0097a7 !default;
+$cyan-8: #00838f !default;
+$cyan-9: #006064 !default;
+$cyan-a: #84ffff !default;
+$cyan-b: #18ffff !default;
+$cyan-c: #00e5ff !default;
+$cyan-d: #00b8d4 !default;
+
+$cyan-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$cyan-series: map_merge(
+                (
+                        "cyan": $cyan,
+                        "cyan0": $cyan-0,
+                        "cyan1": $cyan-1,
+                        "cyan2": $cyan-2,
+                        "cyan3": $cyan-3,
+                        "cyan4": $cyan-4,
+                        "cyan5": $cyan-5,
+                        "cyan6": $cyan-6,
+                        "cyan7": $cyan-7,
+                        "cyan8": $cyan-8,
+                        "cyan9": $cyan-9,
+                        "cyana": $cyan-a,
+                        "cyanb": $cyan-b,
+                        "cyanc": $cyan-c,
+                        "cyand": $cyan-d,
+                ),
+                $cyan-series
+);
+
+//teal
+$teal: teal;
+$teal-0: #e0f2f1 !default;
+$teal-1: #b2dfdb !default;
+$teal-2: #80cbc4 !default;
+$teal-3: #4db6ac !default;
+$teal-4: #26a69a !default;
+$teal-5: #009688 !default;
+$teal-6: #00897b !default;
+$teal-7: #00796b !default;
+$teal-8: #00695c !default;
+$teal-9: #004d40 !default;
+$teal-a: #a7ffeb !default;
+$teal-b: #64ffda !default;
+$teal-c: #1de9b6 !default;
+$teal-d: #00bfa5 !default;
+
+$teal-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$teal-series: map_merge(
+                (
+                        "teal": $teal,
+                        "teal0": $teal-0,
+                        "teal1": $teal-1,
+                        "teal2": $teal-2,
+                        "teal3": $teal-3,
+                        "teal4": $teal-4,
+                        "teal5": $teal-5,
+                        "teal6": $teal-6,
+                        "teal7": $teal-7,
+                        "teal8": $teal-8,
+                        "teal9": $teal-9,
+                        "teala": $teal-a,
+                        "tealb": $teal-b,
+                        "tealc": $teal-c,
+                        "teald": $teal-d,
+                ),
+                $teal-series
+);
+
+//green
+$green: green;
+$green-0: #e8f5e9 !default;
+$green-1: #c8e6c9 !default;
+$green-2: #a5d6a7 !default;
+$green-3: #81c784 !default;
+$green-4: #66bb6a !default;
+$green-5: #4caf50 !default;
+$green-6: #43a047 !default;
+$green-7: #388e3c !default;
+$green-8: #2e7d32 !default;
+$green-9: #1b5e20 !default;
+$green-a: #b9f6ca !default;
+$green-b: #69f0ae !default;
+$green-c: #00e676 !default;
+$green-d: #00c853 !default;
+
+$green-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$green-series: map_merge(
+                (
+                        "green": $green,
+                        "green0": $green-0,
+                        "green1": $green-1,
+                        "green2": $green-2,
+                        "green3": $green-3,
+                        "green4": $green-4,
+                        "green5": $green-5,
+                        "green6": $green-6,
+                        "green7": $green-7,
+                        "green8": $green-8,
+                        "green9": $green-9,
+                        "greena": $green-a,
+                        "greenb": $green-b,
+                        "greenc": $green-c,
+                        "greend": $green-d,
+                ),
+                $green-series
+);
+
+//light-green
+$light-green: lightgreen;
+$light-green-0: #f1f8e9 !default;
+$light-green-1: #dcedc8 !default;
+$light-green-2: #c5e1a5 !default;
+$light-green-3: #aed581 !default;
+$light-green-4: #9ccc65 !default;
+$light-green-5: #8bc34a !default;
+$light-green-6: #7cb342 !default;
+$light-green-7: #689f38 !default;
+$light-green-8: #558b2f !default;
+$light-green-9: #33691e !default;
+$light-green-a: #ccff90 !default;
+$light-green-b: #b2ff59 !default;
+$light-green-c: #76ff03 !default;
+$light-green-d: #64dd17 !default;
+
+$light-green-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$light-green-series: map_merge(
+                (
+                        "l_green": $light-green,
+                        "l_green0": $light-green-0,
+                        "l_green1": $light-green-1,
+                        "l_green2": $light-green-2,
+                        "l_green3": $light-green-3,
+                        "l_green4": $light-green-4,
+                        "l_green5": $light-green-5,
+                        "l_green6": $light-green-6,
+                        "l_green7": $light-green-7,
+                        "l_green8": $light-green-8,
+                        "l_green9": $light-green-9,
+                        "l_greena": $light-green-a,
+                        "l_greenb": $light-green-b,
+                        "l_greenc": $light-green-c,
+                        "l_greend": $light-green-d,
+                ),
+                $light-green-series
+);
+
+//lime
+$lime: lime;
+$lime-0: #f9fbe7 !default;
+$lime-1: #f0f4c3 !default;
+$lime-2: #e6ee9c !default;
+$lime-3: #d4e056 !default;
+$lime-4: #d4e157 !default;
+$lime-5: #cddc39 !default;
+$lime-6: #c0ca33 !default;
+$lime-7: #afb42b !default;
+$lime-8: #9e9d24 !default;
+$lime-9: #827717 !default;
+$lime-a: #f4ff81 !default;
+$lime-b: #eeff41 !default;
+$lime-c: #c6ff00 !default;
+$lime-d: #aeea00 !default;
+
+$lime-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$lime-series: map_merge(
+                (
+                        "lime": $lime,
+                        "lime0": $lime-0,
+                        "lime1": $lime-1,
+                        "lime2": $lime-2,
+                        "lime3": $lime-3,
+                        "lime4": $lime-4,
+                        "lime5": $lime-5,
+                        "lime6": $lime-6,
+                        "lime7": $lime-7,
+                        "lime8": $lime-8,
+                        "lime9": $lime-9,
+                        "limea": $lime-a,
+                        "limeb": $lime-b,
+                        "limec": $lime-c,
+                        "limed": $lime-d,
+                ),
+                $lime-series
+);
+
+//yellow
+$yellow: yellow;
+$yellow-0: #fffde7 !default;
+$yellow-1: #fff9c4 !default;
+$yellow-2: #fff59d !default;
+$yellow-3: #fff176 !default;
+$yellow-4: #ffee58 !default;
+$yellow-5: #ffeb3b !default;
+$yellow-6: #fdd835 !default;
+$yellow-7: #fbc02d !default;
+$yellow-8: #f9a825 !default;
+$yellow-9: #f57f17 !default;
+$yellow-a: #ffff8d !default;
+$yellow-b: #ff0 !default;
+$yellow-c: #ffea00 !default;
+$yellow-d: #ffd600 !default;
+
+$yellow-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$yellow-series: map_merge(
+                (
+                        "yellow": $yellow,
+                        "yellow0": $yellow-0,
+                        "yellow1": $yellow-1,
+                        "yellow2": $yellow-2,
+                        "yellow3": $yellow-3,
+                        "yellow4": $yellow-4,
+                        "yellow5": $yellow-5,
+                        "yellow6": $yellow-6,
+                        "yellow7": $yellow-7,
+                        "yellow8": $yellow-8,
+                        "yellow9": $yellow-9,
+                        "yellowa": $yellow-a,
+                        "yellowb": $yellow-b,
+                        "yellowc": $yellow-c,
+                        "yellowd": $yellow-d,
+                ),
+                $yellow-series
+);
+
+//amber
+$amber: #ffd740;
+$amber-0: #fff8e1 !default;
+$amber-1: #ffecb3 !default;
+$amber-2: #ffe082 !default;
+$amber-3: #ffd54f !default;
+$amber-4: #ffca28 !default;
+$amber-5: #ffc107 !default;
+$amber-6: #ffb300 !default;
+$amber-7: #ffa000 !default;
+$amber-8: #ff8f00 !default;
+$amber-9: #ff6f00 !default;
+$amber-a: #ffe57f !default;
+$amber-b: #ffd740 !default;
+$amber-c: #ffc400 !default;
+$amber-d: #ffab00 !default;
+
+$amber-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$amber-series: map_merge(
+                (
+                        "amber": $amber,
+                        "amber0": $amber-0,
+                        "amber1": $amber-1,
+                        "amber2": $amber-2,
+                        "amber3": $amber-3,
+                        "amber4": $amber-4,
+                        "amber5": $amber-5,
+                        "amber6": $amber-6,
+                        "amber7": $amber-7,
+                        "amber8": $amber-8,
+                        "amber9": $amber-9,
+                        "ambera": $amber-a,
+                        "amberb": $amber-b,
+                        "amberc": $amber-c,
+                        "amberd": $amber-d,
+                ),
+                $amber-series
+);
+
+//orange
+$orange: orange;
+$orange-0: #fff3e0 !default;
+$orange-1: #ffe0b2 !default;
+$orange-2: #ffcc80 !default;
+$orange-3: #ffb74d !default;
+$orange-4: #ffa726 !default;
+$orange-5: #ff9800 !default;
+$orange-6: #fb8c00 !default;
+$orange-7: #f57c00 !default;
+$orange-8: #ef6c00 !default;
+$orange-9: #e65100 !default;
+$orange-a: #ffd180 !default;
+$orange-b: #ffab40 !default;
+$orange-c: #ff9100 !default;
+$orange-d: #ff6d00 !default;
+
+$orange-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$orange-series: map_merge(
+                (
+                        "orange": $orange,
+                        "orange0": $orange-0,
+                        "orange1": $orange-1,
+                        "orange2": $orange-2,
+                        "orange3": $orange-3,
+                        "orange4": $orange-4,
+                        "orange5": $orange-5,
+                        "orange6": $orange-6,
+                        "orange7": $orange-7,
+                        "orange8": $orange-8,
+                        "orange9": $orange-9,
+                        "orangea": $orange-a,
+                        "orangeb": $orange-b,
+                        "orangec": $orange-c,
+                        "oranged": $orange-d,
+                ),
+                $orange-series
+);
+
+//deep-orange
+$deep-orange: darkorange;
+$deep-orange-0: #fbe9e7 !default;
+$deep-orange-1: #ffccbc !default;
+$deep-orange-2: #ffab91 !default;
+$deep-orange-3: #ff8a65 !default;
+$deep-orange-4: #ff7043 !default;
+$deep-orange-5: #ff5722 !default;
+$deep-orange-6: #f4511e !default;
+$deep-orange-7: #e64a19 !default;
+$deep-orange-8: #d84315 !default;
+$deep-orange-9: #bf360c !default;
+$deep-orange-a: #ff9e80 !default;
+$deep-orange-b: #ff6e40 !default;
+$deep-orange-c: #ff3d00 !default;
+$deep-orange-d: #dd2c00 !default;
+
+$deep-orange-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$deep-orange-series: map_merge(
+                (
+                        "d_orange": $deep-orange,
+                        "d_orange0": $deep-orange-0,
+                        "d_orange1": $deep-orange-1,
+                        "d_orange2": $deep-orange-2,
+                        "d_orange3": $deep-orange-3,
+                        "d_orange4": $deep-orange-4,
+                        "d_orange5": $deep-orange-5,
+                        "d_orange6": $deep-orange-6,
+                        "d_orange7": $deep-orange-7,
+                        "d_orange8": $deep-orange-8,
+                        "d_orange9": $deep-orange-9,
+                        "d_orangea": $deep-orange-a,
+                        "d_orangeb": $deep-orange-b,
+                        "d_orangec": $deep-orange-c,
+                        "d_oranged": $deep-orange-d,
+                ),
+                $deep-orange-series
+);
+
+//brown
+$brown: brown;
+$brown-0: #efebe9 !default;
+$brown-1: #d7ccc8 !default;
+$brown-2: #bcaaa4 !default;
+$brown-3: #a1887f !default;
+$brown-4: #8d6e63 !default;
+$brown-5: #795548 !default;
+$brown-6: #6d4c41 !default;
+$brown-7: #5d4037 !default;
+$brown-8: #4e342e !default;
+$brown-9: #3e2723 !default;
+
+$brown-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$brown-series: map_merge(
+                (
+                        "brown": $brown,
+                        "brown0": $brown-0,
+                        "brown1": $brown-1,
+                        "brown2": $brown-2,
+                        "brown3": $brown-3,
+                        "brown4": $brown-4,
+                        "brown5": $brown-5,
+                        "brown6": $brown-6,
+                        "brown7": $brown-7,
+                        "brown8": $brown-8,
+                        "brown9": $brown-9,
+                ),
+                $brown-series
+);
+
+//grey
+$grey: grey;
+$grey-0: #fafafa !default;
+$grey-1: #f5f5f5 !default;
+$grey-2: #eee !default;
+$grey-3: #e0e0e0 !default;
+$grey-4: #bdbdbd !default;
+$grey-5: #9e9e9e !default;
+$grey-6: #757575 !default;
+$grey-7: #616161 !default;
+$grey-8: #424242 !default;
+$grey-9: #212121 !default;
+
+$grey-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$grey-series: map_merge(
+                (
+                        "grey": $grey,
+                        "grey0": $grey-0,
+                        "grey1": $grey-1,
+                        "grey2": $grey-2,
+                        "grey3": $grey-3,
+                        "grey4": $grey-4,
+                        "grey5": $grey-5,
+                        "grey6": $grey-6,
+                        "grey7": $grey-7,
+                        "grey8": $grey-8,
+                        "grey9": $grey-9,
+                ),
+                $grey-series
+);
+
+//blue-grey
+$blue-grey: lightsteelblue;
+$blue-grey-0: #eceff1 !default;
+$blue-grey-1: #cfd8dc !default;
+$blue-grey-2: #b0bec5 !default;
+$blue-grey-3: #90a4ae !default;
+$blue-grey-4: #78909c !default;
+$blue-grey-5: #607d8b !default;
+$blue-grey-6: #546e7a !default;
+$blue-grey-7: #455a64 !default;
+$blue-grey-8: #37474f !default;
+$blue-grey-9: #263238 !default;
+
+$blue-grey-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$blue-grey-series: map_merge(
+                (
+                        "blue_grey": $blue-grey,
+                        "blue_grey0": $blue-grey-0,
+                        "blue_grey1": $blue-grey-1,
+                        "blue_grey2": $blue-grey-2,
+                        "blue_grey3": $blue-grey-3,
+                        "blue_grey4": $blue-grey-4,
+                        "blue_grey5": $blue-grey-5,
+                        "blue_grey6": $blue-grey-6,
+                        "blue_grey7": $blue-grey-7,
+                        "blue_grey8": $blue-grey-8,
+                        "blue_grey9": $blue-grey-9,
+                ),
+                $blue-grey-series
+);
+
+//red
+$red-normal: #ff5252 !default;
+$red-hover: #ff1744 !default;
+$red-focus: #ff1744 !default;
+$red-border: #ff5252 !default;
+$red-bg: #ff1744 !default;
+
+$red-extend: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$red-extend: map_merge(
+                (
+                        "normal": $red-normal,
+                        "hover": $red-hover,
+                        "focus": $red-focus,
+                        "border": $red-border,
+                        "bg": $red-bg,
+                ),
+                $red-extend
+);
+
+//pink
+$pink-normal: #ff4081 !default;
+$pink-hover: #f50057 !default;
+$pink-focus: #f50057 !default;
+$pink-border: #ff4081 !default;
+$pink-bg: #f50057 !default;
+
+$pink-extend: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$pink-extend: map_merge(
+                (
+                        "normal": $pink-normal,
+                        "hover": $pink-hover,
+                        "focus": $pink-focus,
+                        "border": $pink-border,
+                        "bg": $pink-bg,
+                ),
+                $pink-extend
+);
+
+//purple
+$purple-normal: #e040fb !default;
+$purple-hover: #d500f9 !default;
+$purple-focus: #d500f9 !default;
+$purple-border: #e040fb !default;
+$purple-bg: #d500f9 !default;
+
+$purple-extend: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$purple-extend: map_merge(
+                (
+                        "normal": $purple-normal,
+                        "hover": $purple-hover,
+                        "focus": $purple-focus,
+                        "border": $purple-border,
+                        "bg": $purple-bg,
+                ),
+                $purple-extend
+);
+
+//deep-purple
+$deep-purple-normal: #7c4dff !default;
+$deep-purple-hover: #651fff !default;
+$deep-purple-focus: #651fff !default;
+$deep-purple-border: #7c4dff !default;
+$deep-purple-bg: #651fff !default;
+
+$deep-purple-extend: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$deep-purple-extend: map_merge(
+                (
+                        "normal": $deep-purple-normal,
+                        "hover": $deep-purple-hover,
+                        "focus": $deep-purple-focus,
+                        "border": $deep-purple-border,
+                        "bg": $deep-purple-bg,
+                ),
+                $deep-purple-extend
+);
+
+//indigo
+$indigo-normal: #536dfe !default;
+$indigo-hover: #3d5afe !default;
+$indigo-focus: #3d5afe !default;
+$indigo-border: #536dfe !default;
+$indigo-bg: #3d5afe !default;
+
+$indigo-extend: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$indigo-extend: map_merge(
+                (
+                        "normal": $indigo-normal,
+                        "hover": $indigo-hover,
+                        "focus": $indigo-focus,
+                        "border": $indigo-border,
+                        "bg": $indigo-bg,
+                ),
+                $indigo-extend
+);
+
+//blue
+$blue-normal: #448aff !default;
+$blue-hover: #2979ff !default;
+$blue-focus: #2979ff !default;
+$blue-border: #448aff !default;
+$blue-bg: #2979ff !default;
+
+$blue-extend: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$blue-extend: map_merge(
+                (
+                        "normal": $blue-normal,
+                        "hover": $blue-hover,
+                        "focus": $blue-focus,
+                        "border": $blue-border,
+                        "bg": $blue-bg,
+                ),
+                $blue-extend
+);
+
+//light-blue
+$light-blue-normal: #40c4ff !default;
+$light-blue-hover: #00b0ff !default;
+$light-blue-focus: #00b0ff !default;
+$light-blue-border: #40c4ff !default;
+$light-blue-bg: #00b0ff !default;
+
+$light-blue-extend: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$light-blue-extend: map_merge(
+                (
+                        "normal": $light-blue-normal,
+                        "hover": $light-blue-hover,
+                        "focus": $light-blue-focus,
+                        "border": $light-blue-border,
+                        "bg": $light-blue-bg,
+                ),
+                $light-blue-extend
+);
+
+//cyan
+$cyan-normal: #18ffff !default;
+$cyan-hover: #00e5ff !default;
+$cyan-focus: #00e5ff !default;
+$cyan-border: #18ffff !default;
+$cyan-bg: #00e5ff !default;
+
+$cyan-extend: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$cyan-extend: map_merge(
+                (
+                        "normal": $cyan-normal,
+                        "hover": $cyan-hover,
+                        "focus": $cyan-focus,
+                        "border": $cyan-border,
+                        "bg": $cyan-bg,
+                ),
+                $cyan-extend
+);
+
+//teal
+$teal-normal: #008080 !default;
+$teal-hover: #00695c !default;
+$teal-focus: #00695c !default;
+$teal-border: #008080 !default;
+$teal-bg: #00695c !default;
+
+$teal-extend: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$teal-extend: map_merge(
+                (
+                        "normal": $teal-normal,
+                        "hover": $teal-hover,
+                        "focus": $teal-focus,
+                        "border": $teal-border,
+                        "bg": $teal-bg,
+                ),
+                $teal-extend
+);
+
+//green
+$green-normal: #008000 !default;
+$green-hover: #2e7d32 !default;
+$green-focus: #2e7d32 !default;
+$green-border: #008000 !default;
+$green-bg: #2e7d32 !default;
+
+$green-extend: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$green-extend: map_merge(
+                (
+                        "normal": $green-normal,
+                        "hover": $green-hover,
+                        "focus": $green-focus,
+                        "border": $green-border,
+                        "bg": $green-bg,
+                ),
+                $green-extend
+);
+
+//light-green
+$light-green-normal: #b2ff59 !default;
+$light-green-hover: #76ff03 !default;
+$light-green-focus: #76ff03 !default;
+$light-green-border: #b2ff59 !default;
+$light-green-bg: #76ff03 !default;
+
+$light-green-extend: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$light-green-extend: map_merge(
+                (
+                        "normal": $light-green-normal,
+                        "hover": $light-green-hover,
+                        "focus": $light-green-focus,
+                        "border": $light-green-border,
+                        "bg": $light-green-bg,
+                ),
+                $light-green-extend
+);
+
+//lime
+$lime-normal: #0f0 !default;
+$lime-hover: #aeea00 !default;
+$lime-focus: #aeea00 !default;
+$lime-border: #0f0 !default;
+$lime-bg: #aeea00 !default;
+
+$lime-extend: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$lime-extend: map_merge(
+                (
+                        "normal": $lime-normal,
+                        "hover": $lime-hover,
+                        "focus": $lime-focus,
+                        "border": $lime-border,
+                        "bg": $lime-bg,
+                ),
+                $lime-extend
+);
+
+//yellow
+$yellow-normal: #ff0 !default;
+$yellow-hover: #ffea00 !default;
+$yellow-focus: #ffea00 !default;
+$yellow-border: #ff0 !default;
+$yellow-bg: #ffea00 !default;
+
+$yellow-extend: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$yellow-extend: map_merge(
+                (
+                        "normal": $yellow-normal,
+                        "hover": $yellow-hover,
+                        "focus": $yellow-focus,
+                        "border": $yellow-border,
+                        "bg": $yellow-bg,
+                ),
+                $yellow-extend
+);
+
+//amber
+$amber-normal: #ffd740 !default;
+$amber-hover: #ffc400 !default;
+$amber-focus: #ffc400 !default;
+$amber-border: #ffd740 !default;
+$amber-bg: #ffc400 !default;
+
+$amber-extend: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$amber-extend: map_merge(
+                (
+                        "normal": $amber-normal,
+                        "hover": $amber-hover,
+                        "focus": $amber-focus,
+                        "border": $amber-border,
+                        "bg": $amber-bg,
+                ),
+                $amber-extend
+);
+
+//orange
+$orange-normal: #ffab40 !default;
+$orange-hover: #ff9100 !default;
+$orange-focus: #ff9100 !default;
+$orange-border: #ffab40 !default;
+$orange-bg: #ff9100 !default;
+
+$orange-extend: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$orange-extend: map_merge(
+                (
+                        "normal": $orange-normal,
+                        "hover": $orange-hover,
+                        "focus": $orange-focus,
+                        "border": $orange-border,
+                        "bg": $orange-bg,
+                ),
+                $orange-extend
+);
+
+//deep-orange
+$deep-orange-normal: #ff6e40 !default;
+$deep-orange-hover: #ff3d00 !default;
+$deep-orange-focus: #ff3d00 !default;
+$deep-orange-border: #ff6e40 !default;
+$deep-orange-bg: #ff3d00 !default;
+
+$deep-orange-extend: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$deep-orange-extend: map_merge(
+                (
+                        "normal": $deep-orange-normal,
+                        "hover": $deep-orange-hover,
+                        "focus": $deep-orange-focus,
+                        "border": $deep-orange-border,
+                        "bg": $deep-orange-bg,
+                ),
+                $deep-orange-extend
+);
+
+//brown
+$brown-normal: #6d4c41 !default;
+$brown-hover: #5d4037 !default;
+$brown-focus: #5d4037 !default;
+$brown-border: #6d4c41 !default;
+$brown-bg: #5d4037 !default;
+
+$brown-extend: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$brown-extend: map_merge(
+                (
+                        "normal": $brown-normal,
+                        "hover": $brown-hover,
+                        "focus": $brown-focus,
+                        "border": $brown-border,
+                        "bg": $brown-bg,
+                ),
+                $brown-extend
+);
+
+//grey
+$grey-normal: #808080 !default;
+$grey-hover: #616161 !default;
+$grey-focus: #616161 !default;
+$grey-border: #808080 !default;
+$grey-bg: #616161 !default;
+
+$grey-extend: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$grey-extend: map_merge(
+                (
+                        "normal": $grey-normal,
+                        "hover": $grey-hover,
+                        "focus": $grey-focus,
+                        "border": $grey-border,
+                        "bg": $grey-bg,
+                ),
+                $grey-extend
+);
+
+//blue-grey
+$blue-grey-normal: #607d8b !default;
+$blue-grey-hover: #546e7a !default;
+$blue-grey-focus: #546e7a !default;
+$blue-grey-border: #607d8b !default;
+$blue-grey-bg: #546e7a !default;
+
+$blue-grey-extend: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$blue-grey-extend: map_merge(
+                (
+                        "normal": $blue-grey-normal,
+                        "hover": $blue-grey-hover,
+                        "focus": $blue-grey-focus,
+                        "border": $blue-grey-border,
+                        "bg": $blue-grey-bg,
+                ),
+                $blue-grey-extend
+);
+
+//namespace-color
+$namespace-color-red: $red-hover !default;
+$namespace-color-pink: $pink-hover !default;
+$namespace-color-purple: $purple-hover !default;
+$namespace-color-deep-purple: $deep-purple-hover !default;
+$namespace-color-indigo: $indigo-hover !default;
+$namespace-color-blue: $blue-hover !default;
+$namespace-color-light-blue: $light-blue-hover !default;
+$namespace-color-cyan: $cyan-hover !default;
+$namespace-color-teal: $teal-hover !default;
+$namespace-color-green: $green-hover !default;
+$namespace-color-light-green: $light-green-hover !default;
+$namespace-color-lime: $lime-hover !default;
+$namespace-color-yellow: $yellow-hover !default;
+$namespace-color-amber: $amber-hover !default;
+$namespace-color-orange: $orange-hover !default;
+$namespace-color-deep-orange: $deep-orange-hover !default;
+$namespace-color-brown: $brown-hover !default;
+$namespace-color-grey: $grey-hover !default;
+$namespace-color-blue-grey: $blue-grey-hover !default;
+
+$namespace-color: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$namespace-color: map_merge(
+                (
+                        "red": $namespace-color-red,
+                        "pink": $namespace-color-pink,
+                        "purple": $namespace-color-purple,
+                        "d_purple": $namespace-color-deep-purple,
+                        "indigo": $namespace-color-indigo,
+                        "blue": $namespace-color-blue,
+                        "l_blue": $namespace-color-light-blue,
+                        "cyan": $namespace-color-cyan,
+                        "teal": $namespace-color-teal,
+                        "green": $namespace-color-green,
+                        "l_green": $namespace-color-light-green,
+                        "lime": $namespace-color-lime,
+                        "yellow": $namespace-color-yellow,
+                        "amber": $namespace-color-amber,
+                        "orange": $namespace-color-orange,
+                        "d_orange": $namespace-color-deep-orange,
+                        "brown": $namespace-color-brown,
+                        "grey": $namespace-color-grey,
+                        "blue_grey": $namespace-color-blue-grey,
+                ),
+                $namespace-color
+);
+
+//default-color
+$default-aliceblue: #f0f8ff;
+$default-antiquewhite: #faebd7;
+$default-aqua: #0ff;
+$default-aquamarine: #7fffd4;
+$default-azure: #f0ffff;
+$default-beige: #f5f5dc;
+$default-bisque: #ffe4c4;
+$default-black: #000;
+$default-blanchedalmond: #ffebcd;
+$default-blue: #00f;
+$default-blueviolet: #8a2be2;
+$default-brown: #a52a2a;
+$default-burlywood: #deb887;
+$default-cadetblue: #5f9ea0;
+$default-chartreuse: #7fff00;
+$default-chocolate: #d2691e;
+$default-coral: #ff7f50;
+$default-cornflowerblue: #6495ed;
+$default-cornsilk: #fff8dc;
+$default-crimson: #dc143c;
+$default-cyan: #0ff;
+$default-darkblue: #00008b;
+$default-darkcyan: #008b8b;
+$default-darkgoldenrod: #b8860b;
+$default-darkgray: #a9a9a9;
+$default-darkgrey: #a9a9a9;
+$default-darkgreen: #006400;
+$default-darkkhaki: #bdb76b;
+$default-darkmagenta: #8b008b;
+$default-darkolivegreen: #556b2f;
+$default-darkorange: #ff8c00;
+$default-darkorchid: #9932cc;
+$default-darkred: #8b0000;
+$default-darksalmon: #e9967a;
+$default-darkseagreen: #8fbc8f;
+$default-darkslateblue: #483d8b;
+$default-darkslategray: #2f4f4f;
+$default-darkslategrey: #2f4f4f;
+$default-darkturquoise: #00ced1;
+$default-darkviolet: #9400d3;
+$default-deeppink: #ff1493;
+$default-deepskyblue: #00bfff;
+$default-dimgray: #696969;
+$default-dimgrey: #696969;
+$default-dodgerblue: #1e90ff;
+$default-firebrick: #b22222;
+$default-floralwhite: #fffaf0;
+$default-forestgreen: #228b22;
+$default-fuchsia: #f0f;
+$default-gainsboro: #dcdcdc;
+$default-ghostwhite: #f8f8ff;
+$default-gold: #ffd700;
+$default-goldenrod: #daa520;
+$default-gray: #808080;
+$default-grey: #808080;
+$default-green: #008000;
+$default-greenyellow: #adff2f;
+$default-honeydew: #f0fff0;
+$default-hotpink: #ff69b4;
+$default-indianred: #cd5c5c;
+$default-indigo: #4b0082;
+$default-ivory: #fffff0;
+$default-khaki: #f0e68c;
+$default-lavender: #e6e6fa;
+$default-lavenderblush: #fff0f5;
+$default-lawngreen: #7cfc00;
+$default-lemonchiffon: #fffacd;
+$default-lightblue: #add8e6;
+$default-lightcoral: #f08080;
+$default-lightcyan: #e0ffff;
+$default-lightgoldenrodyellow: #fafad2;
+$default-lightgray: #d3d3d3;
+$default-lightgrey: #d3d3d3;
+$default-lightpink: #ffb6c1;
+$default-lightsalmon: #ffa07a;
+$default-lightseagreen: #20b2aa;
+$default-lightskyblue: #87cefa;
+$default-lightslategray: #789;
+$default-lightslategrey: #789;
+$default-lightsteelblue: #b0c4de;
+$default-lightyellow: #ffffe0;
+$default-lime: #0f0;
+$default-limegreen: #32cd32;
+$default-linen: #faf0e6;
+$default-magenta: #f0f;
+$default-maroon: #800000;
+$default-mediumaquamarine: #66cdaa;
+$default-mediumblue: #0000cd;
+$default-mediumorchid: #ba55d3;
+$default-mediumpurple: #9370db;
+$default-mediumseagreen: #3cb371;
+$default-mediumslateblue: #7b68ee;
+$default-mediumspringgreen: #00fa9a;
+$default-mediumturquoise: #48d1cc;
+$default-mediumvioletred: #c71585;
+$default-midnightblue: #191970;
+$default-mintcream: #f5fffa;
+$default-mistyrose: #ffe4e1;
+$default-moccasin: #ffe4b5;
+$default-navajowhite: #ffdead;
+$default-navy: #000080;
+$default-oldlace: #fdf5e6;
+$default-olive: #808000;
+$default-olivedrab: #6b8e23;
+$default-orange: #ffa500;
+$default-orangered: #ff4500;
+$default-orchid: #da70d6;
+$default-palegoldenrod: #eee8aa;
+$default-palegreen: #98fb98;
+$default-paleturquoise: #afeeee;
+$default-palevioletred: #db7093;
+$default-papayawhip: #ffefd5;
+$default-peachpuff: #ffdab9;
+$default-peru: #cd853f;
+$default-pink: #ffc0cb;
+$default-plum: #dda0dd;
+$default-powderblue: #b0e0e6;
+$default-purple: #800080;
+$default-red: #f00;
+$default-rosybrown: #bc8f8f;
+$default-royalblue: #4169e1;
+$default-saddlebrown: #8b4513;
+$default-salmon: #fa8072;
+$default-sandybrown: #f4a460;
+$default-seagreen: #2e8b57;
+$default-seashell: #fff5ee;
+$default-sienna: #a0522d;
+$default-silver: #c0c0c0;
+$default-skyblue: #87ceeb;
+$default-slateblue: #6a5acd;
+$default-slategray: #708090;
+$default-slategrey: #708090;
+$default-snow: #fffafa;
+$default-springgreen: #00ff7f;
+$default-steelblue: #4682b4;
+$default-tan: #d2b48c;
+$default-teal: #008080;
+$default-thistle: #d8bfd8;
+$default-tomato: #ff6347;
+$default-turquoise: #40e0d0;
+$default-violet: #ee82ee;
+$default-wheat: #f5deb3;
+$default-white: #fff;
+$default-whitesmoke: #f5f5f5;
+$default-yellow: #ff0;
+$default-yellowgreen: #9acd32;
+
+$default-color: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$default-color: map_merge(
+                (
+                        "default_aliceblue": $default-aliceblue,
+                        "default_antiquewhite": $default-antiquewhite,
+                        "default_aqua": $default-aqua,
+                        "default_aquamarine": $default-aquamarine,
+                        "default_azure": $default-azure,
+                        "default_beige": $default-beige,
+                        "default_bisque": $default-bisque,
+                        "default_black": $default-black,
+                        "default_blanchedalmond": $default-blanchedalmond,
+                        "default_blue": $default-blue,
+                        "default_blueviolet": $default-blueviolet,
+                        "default_brown": $default-brown,
+                        "default_burlywood": $default-burlywood,
+                        "default_cadetblue": $default-cadetblue,
+                        "default_chartreuse": $default-chartreuse,
+                        "default_chocolate": $default-chocolate,
+                        "default_coral": $default-coral,
+                        "default_cornflowerblue": $default-cornflowerblue,
+                        "default_cornsilk": $default-cornsilk,
+                        "default_crimson": $default-crimson,
+                        "default_cyan": $default-cyan,
+                        "default_darkblue": $default-darkblue,
+                        "default_darkcyan": $default-darkcyan,
+                        "default_darkgoldenrod": $default-darkgoldenrod,
+                        "default_darkgray": $default-darkgray,
+                        "default_darkgrey": $default-darkgrey,
+                        "default_darkgreen": $default-darkgreen,
+                        "default_darkkhaki": $default-darkkhaki,
+                        "default_darkmagenta": $default-darkmagenta,
+                        "default_darkolivegreen": $default-darkolivegreen,
+                        "default_darkorange": $default-darkorange,
+                        "default_darkorchid": $default-darkorchid,
+                        "default_darkred": $default-darkred,
+                        "default_darksalmon": $default-darksalmon,
+                        "default_darkseagreen": $default-darkseagreen,
+                        "default_darkslateblue": $default-darkslateblue,
+                        "default_darkslategray": $default-darkslategray,
+                        "default_darkslategrey": $default-darkslategrey,
+                        "default_darkturquoise": $default-darkturquoise,
+                        "default_darkviolet": $default-darkviolet,
+                        "default_deeppink": $default-deeppink,
+                        "default_deepskyblue": $default-deepskyblue,
+                        "default_dimgray": $default-dimgray,
+                        "default_dimgrey": $default-dimgrey,
+                        "default_dodgerblue": $default-dodgerblue,
+                        "default_firebrick": $default-firebrick,
+                        "default_floralwhite": $default-floralwhite,
+                        "default_forestgreen": $default-forestgreen,
+                        "default_fuchsia": $default-fuchsia,
+                        "default_gainsboro": $default-gainsboro,
+                        "default_ghostwhite": $default-ghostwhite,
+                        "default_gold": $default-gold,
+                        "default_goldenrod": $default-goldenrod,
+                        "default_gray": $default-gray,
+                        "default_grey": $default-grey,
+                        "default_green": $default-green,
+                        "default_greenyellow": $default-greenyellow,
+                        "default_honeydew": $default-honeydew,
+                        "default_hotpink": $default-hotpink,
+                        "default_indianred": $default-indianred,
+                        "default_indigo": $default-indigo,
+                        "default_ivory": $default-ivory,
+                        "default_khaki": $default-khaki,
+                        "default_lavender": $default-lavender,
+                        "default_lavenderblush": $default-lavenderblush,
+                        "default_lawngreen": $default-lawngreen,
+                        "default_lemonchiffon": $default-lemonchiffon,
+                        "default_lightblue": $default-lightblue,
+                        "default_lightcoral": $default-lightcoral,
+                        "default_lightcyan": $default-lightcyan,
+                        "default_lightgoldenrodyellow": $default-lightgoldenrodyellow,
+                        "default_lightgray": $default-lightgray,
+                        "default_lightgrey": $default-lightgrey,
+                        "default_lightpink": $default-lightpink,
+                        "default_lightsalmon": $default-lightsalmon,
+                        "default_lightseagreen": $default-lightseagreen,
+                        "default_lightskyblue": $default-lightskyblue,
+                        "default_lightslategray": $default-lightslategray,
+                        "default_lightslategrey": $default-lightslategrey,
+                        "default_lightsteelblue": $default-lightsteelblue,
+                        "default_lightyellow": $default-lightyellow,
+                        "default_lime": $default-lime,
+                        "default_limegreen": $default-limegreen,
+                        "default_linen": $default-linen,
+                        "default_magenta": $default-magenta,
+                        "default_maroon": $default-maroon,
+                        "default_mediumaquamarine": $default-mediumaquamarine,
+                        "default_mediumblue": $default-mediumblue,
+                        "default_mediumorchid": $default-mediumorchid,
+                        "default_mediumpurple": $default-mediumpurple,
+                        "default_mediumseagreen": $default-mediumseagreen,
+                        "default_mediumslateblue": $default-mediumslateblue,
+                        "default_mediumspringgreen": $default-mediumspringgreen,
+                        "default_mediumturquoise": $default-mediumturquoise,
+                        "default_mediumvioletred": $default-mediumvioletred,
+                        "default_midnightblue": $default-midnightblue,
+                        "default_mintcream": $default-mintcream,
+                        "default_mistyrose": $default-mistyrose,
+                        "default_moccasin": $default-moccasin,
+                        "default_navajowhite": $default-navajowhite,
+                        "default_navy": $default-navy,
+                        "default_oldlace": $default-oldlace,
+                        "default_olive": $default-olive,
+                        "default_olivedrab": $default-olivedrab,
+                        "default_orange": $default-orange,
+                        "default_orangered": $default-orangered,
+                        "default_orchid": $default-orchid,
+                        "default_palegoldenrod": $default-palegoldenrod,
+                        "default_palegreen": $default-palegreen,
+                        "default_paleturquoise": $default-paleturquoise,
+                        "default_palevioletred": $default-palevioletred,
+                        "default_papayawhip": $default-papayawhip,
+                        "default_peachpuff": $default-peachpuff,
+                        "default_peru": $default-peru,
+                        "default_pink": $default-pink,
+                        "default_plum": $default-plum,
+                        "default_powderblue": $default-powderblue,
+                        "default_purple": $default-purple,
+                        "default_red": $default-red,
+                        "default_rosybrown": $default-rosybrown,
+                        "default_royalblue": $default-royalblue,
+                        "default_saddlebrown": $default-saddlebrown,
+                        "default_salmon": $default-salmon,
+                        "default_sandybrown": $default-sandybrown,
+                        "default_seagreen": $default-seagreen,
+                        "default_seashell": $default-seashell,
+                        "default_sienna": $default-sienna,
+                        "default_silver": $default-silver,
+                        "default_skyblue": $default-skyblue,
+                        "default_slateblue": $default-slateblue,
+                        "default_slategray": $default-slategray,
+                        "default_slategrey": $default-slategrey,
+                        "default_snow": $default-snow,
+                        "default_springgreen": $default-springgreen,
+                        "default_steelblue": $default-steelblue,
+                        "default_tan": $default-tan,
+                        "default_teal": $default-teal,
+                        "default_thistle": $default-thistle,
+                        "default_tomato": $default-tomato,
+                        "default_turquoise": $default-turquoise,
+                        "default_violet": $default-violet,
+                        "default_wheat": $default-wheat,
+                        "default_white": $default-white,
+                        "default_whitesmoke": $default-whitesmoke,
+                        "default_yellow": $default-yellow,
+                        "default_yellowgreen": $default-yellowgreen,
+                ),
+                $default-color
+);
+
+//default-color
+$color-user: #1e88e5 !default;
+$color-default: $color-user !default;
+$color-link: $color-3 !default;
+$color-hover: $color-user !default;
+$color-focus: $color-user !default;
+
+//social
+$envelope: green !default;
+$facebook: #3a5898 !default;
+$twitter: #50aaee !default;
+$google-plus: #d93e2d !default;
+$youtube: #e62117 !default;
+$pinterest: #d42127 !default;
+$linkedin: #027ba5 !default;
+$vimeo: #4c75a3 !default;
+$instagram: #d10869 !default;
+$vk: #4872a3 !default;
+$rss: #fd9f13 !default;
+$wordpress: #00a0d2 !default;
+
+$social-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$social-series: map_merge(
+                (
+                        "envelope": $envelope,
+                        "facebook": $facebook,
+                        "twitter": $twitter,
+                        "google-plus": $google-plus,
+                        "youtube": $youtube,
+                        "pinterest": $pinterest,
+                        "linkedin": $linkedin,
+                        "vimeo": $vimeo,
+                        "instagram": $instagram,
+                        "vk": $vk,
+                        "rss": $rss,
+                        "wp": $wordpress,
+                ),
+                $social-series
+);

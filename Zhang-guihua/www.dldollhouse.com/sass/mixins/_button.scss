@@ -1,0 +1,32 @@
+//这里是混合宏预设集合
+
+//button
+@mixin button-xs {
+  padding: .15rem .375rem;
+  font-size: .75rem;
+  line-height: 1.5;
+}
+
+@mixin button-sm {
+  padding: .25rem .5rem;
+  font-size: .875rem;
+  line-height: 1.5;
+}
+
+@mixin button-default {
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@mixin button-lg {
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+@mixin button-xl {
+  padding: .75rem 1.5rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}

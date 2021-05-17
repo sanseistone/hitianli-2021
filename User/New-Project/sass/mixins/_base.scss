@@ -1,0 +1,91 @@
+//这里是混合宏预设集合
+
+//nav-tabs
+@mixin nav-tabs-variant(
+  $color,
+  $border,
+  $background,
+  $hover-color: darken($color, 10%),
+  $hover-border: lighten($border, 10%),
+  $hover-background: darken($background, 7.5%),
+  $active-color: darken($color, 12.5%),
+  $active-border: lighten($border, 12.5%),
+  $active-background: darken($background, 10%)) {
+  //color: color-yiq($color);
+  border-bottom: 1px solid $color;
+
+  & > li > a:focus, & > li > a:hover, & > li > a.active, & > li > a.active:focus, & > li > a.active:hover {
+    color: color-yiq($color);
+    border: 1px solid $hover-border;
+    background-color: $hover-background;
+  }
+}
+
+//pagination
+@mixin pagination-variant(
+  $color,
+  $border,
+  $background,
+  $hover-color: darken($color, 10%),
+  $hover-border: lighten($border, 10%),
+  $hover-background: darken($background, 7.5%),
+  $active-color: darken($color, 12.5%),
+  $active-border: lighten($border, 12.5%),
+  $active-background: darken($background, 10%)) {
+  > li > a, > li > span {
+    color: $color;
+    border: 1px solid $border;
+
+    &:focus, &:hover {
+      color: color-yiq($color);
+      border-color: $hover-border;
+      background-color: $hover-background;
+    }
+  }
+
+  > .active {
+    > a, > a:focus, > a:hover, > span, > span:focus, > span:hover {
+      color: color-yiq($color);
+      border-color: $hover-border;
+      background-color: $hover-background;
+    }
+  }
+}
+
+//more-link
+@mixin more-link-variant(
+  $color,
+  $border,
+  $hover-color: darken($color, 7.5%),
+  $hover-border: darken($border, 10%),
+  $active-color: darken($color, 10%),
+  $active-border: darken($border, 12.5%)) {
+  color: $color;
+  border-color: $border;
+
+  &:focus,
+  &:hover {
+    color: $hover-color;
+    border-color: $hover-border;
+  }
+}
+
+//owl-carousel
+@mixin owl-variant(
+  $border,
+  $background,
+  $hover-border: lighten($border, 10%),
+  $hover-background: darken($background, 7.5%),
+  $active-border: lighten($border, 12.5%),
+  $active-background: darken($background, 10%)) {
+  & .owl-nav [class*=owl-]:hover {
+    border: 1px solid $hover-border;
+    background: $hover-background;
+  }
+
+  & .owl-dots .owl-dot {
+    &.active span, &:hover span {
+      background: $hover-background;
+    }
+  }
+}

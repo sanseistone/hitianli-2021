@@ -1,0 +1,35 @@
+@import "variables";
+
+// ===== average =====
+$width-one: calc(100% / 1) !default;
+$width-two: calc(100% / 2) !default;
+$width-three: calc(100% / 3) !default;
+$width-four: calc(100% / 4) !default;
+$width-five: calc(100% / 5) !default;
+$width-six: calc(100% / 6) !default;
+$width-seven: calc(100% / 7) !default;
+$width-eight: calc(100% / 8) !default;
+$width-nine: calc(100% / 9) !default;
+$width-ten: calc(100% / 10) !default;
+$width-eleven: calc(100% / 11) !default;
+$width-twelve: calc(100% / 12) !default;
+
+$width-column-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$width-column-series: map_merge(
+                (
+                        "one": $width-one,
+                        "two": $width-two,
+                        "three": $width-three,
+                        "four": $width-four,
+                        "five": $width-five,
+                        "six": $width-six,
+                        "seven": $width-seven,
+                        "eight": $width-eight,
+                        "nine": $width-nine,
+                        "ten": $width-ten,
+                        "eleven": $width-eleven,
+                        "twelve": $width-twelve,
+                ),
+                $width-column-series
+);

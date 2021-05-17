@@ -1,0 +1,16 @@
+//这里是混合宏预设集合
+
+//line-height
+@mixin line-height-number-variant($line-height) {
+  &, &-all, & > *, &-all * {
+    line-height: $line-height;
+  }
+}
+
+@mixin line-height-pixel-variant($line-height) {
+  line-height: $line-height;
+}
+
+@mixin line-height-rem-variant($line-height) {
+  line-height: $line-height;
+}
