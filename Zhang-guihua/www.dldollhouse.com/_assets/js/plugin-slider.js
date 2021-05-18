@@ -9,19 +9,10 @@ $(document).ready(function () {
 
     $(".slider-list-02").slick({
         dots: true,
-        arrows: true,
+        arrows: false,
         infinite: true,
         slidesToShow: 5,
         slidesToScroll: 1
-    });
-
-    $(".slide-detail").slick({
-        dots: true,
-        arrows: true,
-        speed: 300,
-        customPaging: function (slider, i) {
-            return '<button class="thumbnail">' + $(slider.$slides[i]).find('img').prop('outerHTML') + '';
-        }
     });
 
     $('.slider-main').slick({
