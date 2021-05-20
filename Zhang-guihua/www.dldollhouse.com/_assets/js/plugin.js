@@ -1,4 +1,10 @@
 $(document).ready(function () {
+    $('.nav-main li.dropdown').mouseover(function () {
+        $(this).children(".dropdown-menu").addClass('show');
+    }).mouseout(function () {
+        $(this).children(".dropdown-menu").removeClass('show');
+    });
+
     $(document).on('touchstart', '.navbar-toggler', function (event) {
         $('.navbar-box').fadeIn(0).find('.navbar').addClass('active');
     });
