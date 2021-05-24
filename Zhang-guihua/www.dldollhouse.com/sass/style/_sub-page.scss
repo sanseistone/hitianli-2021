@@ -104,6 +104,71 @@ main {
   }
 
   & .category-right {}
+
+  & .faq-list {
+    & .accordion dt {
+      position: relative;
+      border-top: solid 1px $color-d;;
+      padding: 1rem 0;
+      cursor: pointer;
+      color: #464646;
+      font-size: 1.25rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 42%;
+        right: 14px;
+        transform: translateX(-50%);
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-right: 2px solid $red-8;
+        vertical-align: top;
+        margin: -2px 0 0 0;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateX(-50%);
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid $red-8;
+        vertical-align: top;
+        margin: -2px 0 0 0;
+      }
+
+      &:focus, &:hover {
+        color: $red-8;
+      }
+
+      &.open {
+        color: $red-8;
+        //border-bottom: solid 1px #feced3;
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    & .accordion dd {
+      padding: 1rem 0 3rem 0;
+      //font-size: 1.15rem;
+
+      & .content {
+        margin-bottom: 1rem;
+      }
+
+      & ul {
+        padding-left: 15px;
+      }
+    }
+  }
 }
 
 @media (max-width: 1199px) {
