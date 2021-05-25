@@ -1,0 +1,33 @@
+//这里是混合宏预设集合
+
+//width
+@mixin width-flex-grid-variant($width) {
+  flex: 0 0 $width;
+  max-width: $width;
+}
+
+@mixin width-flex-offset-variant($margin-left) {
+  //$num: $margin-left / 12;
+  //margin-left: if($num == 0, 0, percentage($num));
+  margin-left: $margin-left;
+}
+
+@mixin width-grid-variant($width) {
+  width: $width;
+}
+
+@mixin width-offset-variant($margin-left) {
+  margin-left: $margin-left;
+}
+
+@mixin width-push-variant($left) {
+  left: $left;
+}
+
+@mixin width-pull-variant($right) {
+  right: $right;
+}
+
+@mixin width-pixel-variant($width) {
+  width: $width;
+}

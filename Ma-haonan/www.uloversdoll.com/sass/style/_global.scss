@@ -1,0 +1,200 @@
+//global
+@charset "utf-8";
+
+//body
+body {
+}
+
+.container {}
+
+.header-bar {
+  background: #333;
+  padding: .5rem 0;
+  color: #fff;
+  font-size: .875rem;
+
+  & a {
+    display: inline-block;
+    color: #fff;
+  }
+
+  & .title {
+    & a {
+      font-weight: bold;
+    }
+  }
+
+  & .tips {
+    text-align: center;
+  }
+
+  & .connect {
+    text-align: right;
+    color: #fff;
+
+    & a {
+      color: #fff;
+    }
+  }
+
+  & [class*="fa"] {
+    margin-right: 5px;
+    color: #fff;
+  }
+}
+
+header {
+  background: rgb(113,113,113);
+
+  .navbar.nav-main {
+    width: 100%;
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 0;
+    justify-content: space-between;
+
+    padding: 0;
+    //background: $color-f;
+
+    .navbar-toggler {
+      color: $red-4;
+      font-size: 1.25rem;
+      background-color: transparent;
+    }
+
+    & .navbar-collapse {
+      justify-content: end;
+      flex-grow: 0;
+    }
+
+    & .navbar-nav {
+      display: flex;
+      justify-content: space-between;
+
+      & .nav-item {
+        text-align: center;
+
+        & .nav-link {
+          cursor: pointer;
+          color: #fff;
+          line-height: 80px;
+          padding: 0 1.5rem;
+
+          &:focus,&:hover {
+            color: $red-6;
+          }
+        }
+
+        &.active {
+          & .nav-link {
+            color: $red-6;
+          }
+        }
+      }
+
+      & .dropdown-menu {
+        margin-top: -1px;
+        padding: 25px 15px;
+
+        & .dropdown-item {
+          display: inline-block;
+          color: $color-6;
+          padding: .15rem 0;
+          background: transparent;
+
+          &:focus, &:hover {
+            color: $red;
+          }
+        }
+      }
+
+      & .dropdown-large {
+        position: static;
+
+        & .dropdown-large-menu {
+          width: 100%;
+          padding: 25px 50px;
+
+          & ul {
+            > li {
+              &.list-header {
+                margin-bottom: .5rem;
+              }
+
+              > a {
+                display: inline-block;
+                color: $color-6;
+                padding: .15rem 0;
+
+                &:focus, &:hover {
+                  color: $red;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & .logo {
+    color: #fff;
+
+    & .navbar-brand {
+      color: #fff;
+    }
+  }
+
+  & .search-box {
+    background: #fff;
+    border-radius: 2rem;
+    overflow: hidden;
+
+    & .form-control {
+      border: none;
+      border-radius: 2rem;
+      box-shadow: none;
+      outline-offset: 0;
+      padding: 0 1.5rem;
+
+      &:focus, &:hover {
+        outline: 0;
+      }
+    }
+
+    & .btn {
+      border-radius: 2rem;
+    }
+  }
+}
+
+.container-carousel {
+  min-height: 450px;
+}
+
+.flash-sale {
+  background: rgb(175,180,183);
+  padding-bottom: 5rem;
+}
+
+.breadcrumb {
+}
+
+footer {
+}
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+}

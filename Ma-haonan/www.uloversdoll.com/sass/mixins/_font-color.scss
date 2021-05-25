@@ -1,0 +1,9 @@
+//这里是混合宏预设集合
+
+//font-color
+@mixin font-variant(
+  $color,
+  $hover-color: darken($color, 7.5%),
+  $active-color: darken($color, 12.5%)) {
+  color: $color;
+}

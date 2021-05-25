@@ -1,0 +1,16 @@
+//这里是混合宏预设集合
+
+//form
+@mixin form-variant(
+  $color,
+  $hover-color: darken($color, 10%),
+  $active-color: darken($color, 12.5%)) {
+  &:not(:hover):not(.hover) {
+    border-color: $color;
+  }
+
+  &.hover:focus,
+  &.hover:hover {
+    border-color: $hover-color;
+  }
+}
