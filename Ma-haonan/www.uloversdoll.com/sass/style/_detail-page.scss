@@ -1,6 +1,6 @@
 //detail-page
 
-.slide-list {
+.slider-main {
   .slick-prev {
     left: 25px;
     z-index: 1;
@@ -12,9 +12,9 @@
   }
 
   .slick-dots {
+    display: none !important;
     position: relative;
     top: 10px;
-    display: block;
     width: calc(100% + 10px);
     float: left;
     margin-left: -5px;
@@ -22,7 +22,7 @@
 
     & li {
       width: 20%;
-      height: 100px;
+      height: 130px;
       margin: 0;
       padding: 0 5px;
       float: left;
@@ -60,47 +60,113 @@
   }
 }
 
-.product-detail {
-  & .product-option {
-    & .form-check {
-      & .form-check-label {
-        & img {
-          max-height: 60px;
-        }
-      }
-    }
+.slider-thumbs {
+  .slick-prev,
+  .slick-next {
+    top: 100%;
+    //margin-top: 15px;
+    z-index: 1;
+    width: 100%;
+    background: $color-c;
   }
 
-  & .quantity {
-    display: flex;
+  .slick-prev::before,
+  .slick-next::before {
+    color: $color-f;
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 100;
+  }
 
-    & .btn {
-      border-radius: 0;
-    }
+  .slick-prev::before {
+    content: "\f106";
+  }
 
-    & .form-control {
-      border-radius: 0;
-      box-shadow: none;
+  .slick-next::before {
+    content: "\f107";
+  }
+
+  .slick-prev:hover::before,
+  .slick-next:hover::before {
+    color: $red-6;
+  }
+
+  .slick-prev {
+    top: -20px;
+    left: 0;
+  }
+
+  .slick-next {
+    right: 0;
+    z-index: 1;
+    margin-top: 15px;
+  }
+
+  & .slick-list {
+    overflow: hidden;
+    margin-top: 30px;
+
+    & img {
+      opacity: .8;
     }
   }
 }
 
-.product-reviews {
+.product-option {
+  & .form-check-label {
+    //padding-left: 1rem;
 
-  & .write-review {
-    & .rating {
-      display: flex;
+    & .form-check-input {
+      display: none;
+    }
 
-      & label {
-        & + label {
-          margin-left: 1rem;
+    & .pic-box {
+      position: relative;
+      display: block;
+      padding: 5px;
+      border: 1px solid $color-c;
+      border-radius: 5px;
+      overflow: hidden;
+
+      &::after {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 15px;
+        height: 15px;
+        color: $color-f;
+        text-align: center;
+        font-size: 10px;
+        line-height: 15px;
+        background: $red;
+      }
+    }
+
+    &:focus, &:hover {
+      & .pic-box {
+        padding: 5px;
+        border: 1px solid $red-8;
+
+        &::after {
+          content: "\f00c";
+          font-family: 'Font Awesome 5 Pro';
+          font-weight: 300;
         }
       }
     }
 
-    & .button-box {
-      display: flex;
-      justify-content: space-between;
+    & .form-check-input:checked ~ .pic-box {
+      padding: 5px;
+      border: 1px solid $red-8;
+
+      &::after {
+        content: "\f00c";
+        font-family: 'Font Awesome 5 Pro';
+        font-weight: 300;
+      }
+    }
+
+    & .form-check-input {
+      margin-left: -1rem;
     }
   }
 }
@@ -111,8 +177,9 @@
 
 @media (max-width: 991px) {
   /*Large devices (desktops, 768px and 992px)*/
-  .slide-list {
+  .slider-main {
     .slick-dots {
+      display: block !important;
       margin-bottom: 30px;
 
       & li {
@@ -143,57 +210,6 @@
 
 @media (max-width: 767px) {
   /*Medium devices (tablets, 576px and 768px)*/
-  .product-detail {
-    & .product-option {
-      & .form-check {
-        & .form-check-label {
-          & img {
-            max-height: 60px;
-          }
-        }
-      }
-    }
-
-    & .quantity {
-      display: block;
-    }
-  }
-
-  .product-reviews {
-
-    & .write-review {
-      & .rating {
-        display: block;
-
-        & label {
-          display: block;
-
-          & + label {
-            margin-left: 0;
-          }
-        }
-      }
-
-      & .button-box {
-        display: block;
-        justify-content: inherit;
-      }
-    }
-  }
-
-  .form-user-box {
-    & .rating {
-      display: block;
-
-      & label {
-        display: block;
-
-        & + label {
-          margin-left: 0;
-        }
-      }
-    }
-  }
 }
 
 @media (max-width: 575px) {

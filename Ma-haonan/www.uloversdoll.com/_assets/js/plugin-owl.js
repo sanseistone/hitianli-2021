@@ -29,6 +29,36 @@ $(document).ready(function () {
             }
         }
     });
+    $('.owl-three').owlCarousel({
+        loop: true,
+        margin: 30,
+        navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
+        autoplay: false,
+        autoplayTimeout: 50000,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 2,
+                nav: true,
+                dots: false
+            },
+            575: {
+                items: 2,
+                nav: true,
+                dots: false
+            },
+            991: {
+                items: 3,
+                nav: true,
+                dots: false
+            },
+            1199: {
+                items: 3,
+                nav: true,
+                dots: false
+            }
+        }
+    });
     $('.owl-four').owlCarousel({
         loop: true,
         margin: 30,
@@ -91,31 +121,25 @@ $(document).ready(function () {
     });
     $('.owl-six').owlCarousel({
         loop: true,
-        margin: 50,
+        margin: 20,
+        nav: true,
+        dots: false,
         navText: ['<i class="fal fa-angle-left"></i>', '<i class="fal fa-angle-right"></i>'],
         autoplay: true,
         autoplayTimeout: 50000,
         responsiveClass: true,
         responsive: {
             0: {
-                items: 2,
-                nav: false,
-                dots: true
+                items: 2
             },
             575: {
-                items: 3,
-                nav: false,
-                dots: true
+                items: 3
             },
             991: {
-                items: 4,
-                nav: false,
-                dots: true
+                items: 4
             },
             1199: {
-                items: 6,
-                nav: false,
-                dots: true
+                items: 6
             }
         }
     });

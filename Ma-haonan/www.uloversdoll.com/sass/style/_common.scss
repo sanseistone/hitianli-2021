@@ -14,7 +14,7 @@
 }
 
 a {
-  color: $color-3;
+  color: $color-0;
   transition: all .3s ease;
 
   &:hover {
@@ -30,14 +30,6 @@ a {
   }
 }
 
-.font-r105 {
-  font-size: 1.05rem;
-}
-
-.font-r115 {
-  font-size: 1.15rem;
-}
-
 #scrollUp {
   background-image: image-url('top.png');
   bottom: 20px;
@@ -51,7 +43,77 @@ a {
   max-width: 96%;
 }
 
+.headline {
+  margin-bottom: 3rem;
+
+  > * {
+    margin-bottom: 0;
+    line-height: 1.2;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+}
+
+.sub-headline {
+  position: relative;
+  border-bottom: 2px solid #111;
+  margin-bottom: 2rem;
+  text-align: center;
+
+  > * {
+    display: inline-block;
+    border-bottom: 2px solid $red-6;
+    margin-bottom: -2px;
+    padding: 0 3rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+}
+
+.product-box {
+  display: block;
+
+  & .pic-box {
+    position: relative;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  & .title {
+    display: -webkit-box;
+    width: 100%;
+    height: calc(1.25rem * 1 * 1);
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    color: #000;
+    line-height: 1;
+    font-size: 1.25rem;
+  }
+
+  & .price {
+    > del {
+      margin-right: .5rem;
+      color: #333;
+    }
+
+    > span {
+      color: #333;
+      font-size: 1.25rem;
+    }
+  }
+}
+
 .owl-carousel {
+  & .pic-box {
+    & .pc {}
+
+    & .mobile {
+      display: none;
+    }
+  }
+
   &.arrow-center {
     position: relative;
 
@@ -63,14 +125,60 @@ a {
 
       & .owl-prev {
         position: absolute;
-        left: -20px;
+        left: -5px;
       }
 
       & .owl-next {
         position: absolute;
-        right: -20px;
+        right: -5px;
       }
     }
+  }
+
+  &.arrow-center .owl-nav {
+    opacity: .3;
+    transition: all .5s ease-in-out;
+  }
+
+  &:hover {
+    &.arrow-center .owl-nav {
+      opacity: 1;
+    }
+  }
+}
+
+.wave-t {
+  position: relative;
+  margin-top: 100px;
+  //padding-top: 100px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    height: 5rem;
+    background: image-url('bg-wave.png') repeat-x top center;
+    background-size: 200% 100%;
+    transform: rotate(180deg);
+  }
+}
+
+.wave-b {
+  position: relative;
+  margin-bottom: 100px;
+  //padding-bottom: 100px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 5rem;
+    background: image-url('bg-wave.png') repeat-x top center;
+    background-size: 200% 100%;
   }
 }
 
@@ -81,6 +189,36 @@ a {
     width: 100%;
     max-width: 100%;
   }
+
+  .headline {
+    margin-bottom: 3rem;
+
+    > * {
+      line-height: 1;
+      font-size: 2rem;
+    }
+  }
+
+  .product-box {
+    & .title {
+      height: calc(1.15rem * 1 * 1.5);
+      line-height: 1.5;
+      font-size: 1.15rem;
+    }
+
+    & .price {
+      > del {
+        margin-right: .5rem;
+        color: #333;
+        font-size: .875rem;
+      }
+
+      > span {
+        color: #333;
+        font-size: 1rem;
+      }
+    }
+  }
 }
 
 @media (max-width: 991px) {
@@ -88,6 +226,14 @@ a {
   .container {
     width: 100%;
     max-width: 100%;
+  }
+
+  .headline {
+    margin-bottom: 2.5rem;
+
+    > * {
+      font-size: 1.75rem;
+    }
   }
 }
 
@@ -97,32 +243,67 @@ a {
     width: 100%;
     max-width: 100%;
   }
+
+  .headline {
+    margin-bottom: 2rem;
+
+    > * {
+      line-height: 1;
+      font-size: 1.5rem;
+    }
+  }
+
+  .owl-carousel {
+    & .pic-box {
+      & .pc {
+        display: none;
+      }
+
+      & .mobile {
+        display: block;
+      }
+    }
+
+    &.arrow-center {
+      & .owl-nav {
+        & .owl-prev {
+          left: 0;
+        }
+
+        & .owl-next {
+          right: 0;
+        }
+      }
+    }
+  }
+
+  .wave-t {
+    margin-top: 60px;
+
+    &:before {
+      background-size: 300% 60%;
+    }
+  }
+
+  .wave-b {
+    margin-bottom: 60px;
+
+    &:after {
+      background-size: 300% 60%;
+    }
+  }
 }
 
 @media (max-width: 575px) {
   //Small devices (landscape phones, max-width 576px)
+  .headline {
+    > * {
+      font-size: 1.25rem;
+    }
+  }
+
   .container {
     width: 100%;
     max-width: 100%;
   }
-}
-
-//responsive-mobile
-//Extra small devices (portrait phones, less than 576px)
-//No media query for `xs` since this is the default
-
-@media (min-width: 576px) {
-  //Small devices (landscape phones, 576px and up)
-}
-
-@media (min-width: 768px) {
-  //Medium devices (tablets, 768px and up)
-}
-
-@media (min-width: 992px) {
-  //Large devices (desktops, 992px and up)
-}
-
-@media (min-width: 1200px) {
-  //Extra large devices (large desktops, 1200px and up)
 }
