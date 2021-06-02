@@ -1,0 +1,6 @@
+//这里是混合宏预设集合
+
+//border
+@mixin border-width-variant($width) {
+  border-width: $width;
+}

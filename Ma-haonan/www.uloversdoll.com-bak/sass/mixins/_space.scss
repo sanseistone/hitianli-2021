@@ -1,0 +1,14 @@
+//这里是混合宏预设集合
+
+//space
+@mixin space-size-variant($margin-left, $margin-right,$padding-left,$padding-right) {
+  &, &-all {
+    margin-left: -$margin-left;
+    margin-right: -$margin-right;
+  }
+
+  & > *, &-all * {
+    padding-left: $padding-left;
+    padding-right: $padding-right;
+  }
+}

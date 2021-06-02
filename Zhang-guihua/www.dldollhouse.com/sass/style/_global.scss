@@ -26,6 +26,7 @@ header {
 
         > input[type="search"] {
           width: calc(100% - 38px);
+          border-radius: 0;
           border: none;
           outline: none;
 
@@ -38,6 +39,7 @@ header {
           width: 38px;
           height: 38px;
           background: transparent;
+          border-radius: 0;
           border: none;
 
           > [class*="fa"] {
@@ -73,88 +75,74 @@ header {
   z-index: 1000;
   background: $color-f;
   border-bottom: 10px solid $red-8;
-}
 
-.navbar.nav-main {
-  width: 100%;
-  display: flex;
-  flex-basis: auto;
-  flex-grow: 0;
-  justify-content: space-between;
-
-  //border-top: 1px solid $color-c;
-  //border-bottom: 1px solid $color-c;
-  padding: 0;
-  background: $color-f;
-
-  & .navbar-toggler {
-    color: $red;
-    font-size: 1.25rem;
-    background-color: transparent;
-  }
-
-  & .navbar-collapse {
-    justify-content: end;
-    flex-grow: 0;
-  }
-
-  & .navbar-nav {
+  & .navbar.nav-main {
+    width: 100%;
     display: flex;
+    flex-basis: auto;
+    flex-grow: 0;
     justify-content: space-between;
-    //width: 100%;
+    padding: 0;
+    background: $color-f;
 
-    & .nav-item {
+    & .navbar-nav {
+      display: flex;
+      justify-content: space-between;
       //width: 100%;
-      text-align: center;
 
-      & .nav-link {
-        color: $color-3;
-        line-height: 4rem;
-        padding: 0 1.5rem;
+      & .nav-item {
+        //width: 100%;
+        text-align: center;
 
-        &:focus, &:hover {
-          color: $red-8;
+        & .nav-link {
+          color: $color-3;
+          line-height: 4rem;
+          padding: 0 1.5rem;
+
+          &:focus, &:hover {
+            color: $red-8;
+          }
         }
-      }
-    }
 
-    & .dropdown-menu {
-      margin-top: -1px;
-      padding: 25px 15px;
+        & .dropdown-menu {
+          margin-top: -1px;
+          padding: 25px 15px;
 
-      & .dropdown-item {
-        display: inline-block;
-        color: $color-6;
-        padding: .15rem 0;
-        background: transparent;
+          & .dropdown-item {
+            display: inline-block;
+            color: $color-6;
+            padding: .15rem 0;
+            background: transparent;
 
-        &:focus, &:hover {
-          color: $red;
-        }
-      }
-    }
-
-    & .dropdown-large {
-      position: static;
-
-      & .dropdown-large-menu {
-        width: 100%;
-        padding: 25px 50px;
-
-        & ul {
-          > li {
-            &.list-header {
-              margin-bottom: .5rem;
-              color: #666;
+            &:focus, &:hover {
+              color: $red;
             }
+          }
+        }
+      }
 
-            > a {
-              display: inline-block;
-              color: $color-6;
-              padding: .15rem 0;
+      & .dropdown-large {
+        position: static;
 
-              &:focus, &:hover {
-                color: $red;
+        & .dropdown-large-menu {
+          width: 100%;
+          padding: 25px 50px;
+
+          & ul {
+            > li {
+              &.list-header {
+                margin-bottom: .5rem;
+                color: #666;
+              }
+
+              > a {
+                display: inline-block;
+                color: $color-6;
+                padding: .15rem 0;
+
+                &:focus, &:hover {
+                  color: $red;
+                }
               }
             }
           }
@@ -186,17 +174,8 @@ footer {
     background-image: none;
 
     & .mobile-box {
-
       border-bottom: 10px solid $red-8;
     }
-  }
-
-  .navbar-box {
-    position: relative;
-    top: inherit;
-    z-index: inherit;
-    background: $color-f;
-    border-bottom: none;
   }
 
   .navbar-box {
@@ -210,7 +189,7 @@ footer {
     z-index: 9999999;
     background: rgba($color-0, 0.4);
 
-    & .navbar {
+    & .navbar.nav-main {
       position: absolute;
       top: 0;
       right: 0;
@@ -244,11 +223,11 @@ footer {
           padding: 0 !important;
           font-weight: bold;
         }
-      }
 
-      & .dropdown-menu {
-        padding: 0 !important;
-        border: none;
+        & .dropdown-menu {
+          padding: 0 !important;
+          border: none;
+        }
       }
     }
   }

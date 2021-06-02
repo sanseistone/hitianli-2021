@@ -1,0 +1,46 @@
+//sub-page
+.page-headline {
+  background: image-url('elements_header_background.png'), linear-gradient(to right, rgba(71, 114, 217, 1), rgba(0, 220, 175, 1));
+  background-size: 300px 300px, auto;
+
+  padding: 1rem 0;
+  text-align: center;
+
+  & .title {
+    color: #fff;
+    font-size: 1.75rem;
+  }
+}
+
+.link-box {
+  border: 1px solid #333;
+  margin-bottom: 2rem;
+  padding: 1rem;
+
+  & .title-box {
+    margin-bottom: 1rem;
+  }
+
+  & .content {
+    & a {
+      display: inline-block;
+      color: #666;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  /*Extra large devices (large desktops, 992px and 1200px)*/
+}
+
+@media (max-width: 991px) {
+  /*Large devices (desktops, 768px and 992px)*/
+}
+
+@media (max-width: 767px) {
+  /*Medium devices (tablets, 576px and 768px)*/
+}
+
+@media (max-width: 575px) {
+  /*Small devices (landscape phones, max-width 576px)*/
+}
