@@ -65,7 +65,7 @@
         <nav class="navbar navbar-expand-lg nav-main justify-center">
             <div class="logo-box" style="display: none;">
                 <a href="#" class="logo inline-block">
-                    <img src="https://www.uloversdoll.com/assets/img/logo.png" alt="">
+                    <img src="https://www.uloversdoll.com/assets/img/logo.png" alt="" style="max-height: 48px;">
                 </a>
             </div>
             <ul class="navbar-nav">
@@ -1414,12 +1414,12 @@
                     $(".navbar.nav-main").removeClass("justify-center");
                     $(".navbar.nav-main").addClass("justify-between");
                     $("header .row > div:nth-of-type(3)").css("display", "none");
-                    $(".navbar-box .logo-box").css("display", "block").fadeIn(5000);
+                    $(".navbar-box .logo-box").fadeIn(500);
                 } else {
                     $(".navbar.nav-main").removeClass("justify-between");
                     $(".navbar.nav-main").addClass("justify-center");
                     $("header .row > div:nth-of-type(3)").css("display", "block");
-                    $(".navbar-box .logo-box").css("display", "none").fadeOut(5000);
+                    $(".navbar-box .logo-box").fadeOut(50);
                 }
             });
         }
