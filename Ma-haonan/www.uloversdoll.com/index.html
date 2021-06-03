@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="../../_assets/css/base.css">
     <link rel="stylesheet" href="_assets/css/style.css">
 </head>
-
 <body>
+
 <div class="header-bar hide-md">
     <div class="container">
         <div class="row">
@@ -1405,36 +1405,6 @@
 <script src="../../_assets/plug-in/downCount/jquery.downCount.js"></script>
 <script src="_assets/js/plugin.js"></script>
 <script src="_assets/js/plugin-owl.js"></script>
-
-<script>
-    $(document).ready(function () {
-        if (screen.width > 992) {
-            $(window).on('scroll', function () {
-                if ($(window).scrollTop() >= 220) {
-                    $(".navbar.nav-main").removeClass("justify-center");
-                    $(".navbar.nav-main").addClass("justify-between");
-                    $("header .row > div:nth-of-type(3)").css("display", "none");
-                    $(".navbar-box .logo-box").fadeIn(500);
-                } else {
-                    $(".navbar.nav-main").removeClass("justify-between");
-                    $(".navbar.nav-main").addClass("justify-center");
-                    $("header .row > div:nth-of-type(3)").css("display", "block");
-                    $(".navbar-box .logo-box").fadeOut(50);
-                }
-            });
-        }
-
-        if (screen.width <= 992) {
-            $(window).on('scroll', function () {
-                if ($(window).scrollTop() >= 220) {
-                    $("header .row > div:nth-of-type(4)").css("display", "none");
-                } else {
-                    $("header .row > div:nth-of-type(4)").css("display", "block");
-                }
-            });
-        }
-    });
-</script>
 <script>
     $('.countdown-box').downCount({
         date: '12/12/2030 00:00:00',

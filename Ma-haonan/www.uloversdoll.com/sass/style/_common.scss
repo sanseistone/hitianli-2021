@@ -68,6 +68,14 @@ a {
     font-size: 2.5rem;
     font-weight: bold;
   }
+
+  &.left {
+    text-align: left;
+
+    > * {
+      padding: 0 1rem;
+    }
+  }
 }
 
 .product-box {
