@@ -1080,6 +1080,10 @@ footer:before {
 @media (max-width: 575px) {
   /*Small devices (landscape phones, max-width 576px)*/
 }
+.container-product-detail {
+  max-width: 90%;
+}
+
 .slider-main .slick-prev {
   left: 25px;
   z-index: 1;
