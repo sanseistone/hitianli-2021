@@ -1,7 +1,7 @@
 //sub-page
 .page-headline {
-  background: image-url('elements_header_background.png'), linear-gradient(to right, rgba(71, 114, 217, 1), rgba(0, 220, 175, 1));
-  background-size: 300px 300px, auto;
+  background: linear-gradient(to right, rgba(71, 114, 217, 1), rgba(0, 220, 175, 1));
+  //background-size: 300px 300px, auto;
 
   padding: 1rem 0;
   text-align: center;
@@ -29,12 +29,155 @@
   }
 }
 
+.countdown-product {
+  & .box {
+    display: block;
+    border: 1px solid $red-5;
+    padding: 1rem;
+
+    & .pic-box {
+      display: block;
+      border-radius: 15px;
+      margin-bottom: .5rem;
+      overflow: hidden;
+    }
+
+    & .content {
+      & .countdown-box {
+        white-space: nowrap;
+        background: $red-5;
+        border-radius: 30px;
+        margin-bottom: 1rem;
+        padding: .5rem;
+        text-align: center;
+        color: #fff;
+        font-size: 1.75rem;
+        font-weight: bold;
+      }
+
+      & .title {}
+
+      & .price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        > span:first-child {
+          display: inline-block;
+          color: $red-8;
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+
+        > del {
+          display: inline-block;
+        }
+
+        > span:last-child {
+          display: inline-block;
+          background: $red-5;
+          padding: .5rem .25rem;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1199px) {
   /*Extra large devices (large desktops, 992px and 1200px)*/
+  .countdown-product {
+    & .box {
+      display: block;
+      border: 1px solid $red-5;
+      padding: .5rem;
+
+      & .pic-box {
+        display: block;
+        border-radius: 15px;
+        margin-bottom: .5rem;
+        overflow: hidden;
+      }
+
+      & .content {
+        & .countdown-box {
+          white-space: nowrap;
+          background: $red-5;
+          border-radius: 30px;
+          margin-bottom: 1rem;
+          padding: .5rem;
+          text-align: center;
+          color: #fff;
+          font-size: 1rem;
+          font-weight: bold;
+        }
+
+        & .price {
+          > span:first-child {
+            font-size: 1.25rem;
+          }
+
+          > del {
+            font-size: .75rem;
+          }
+
+          > span:last-child {
+            padding: .35rem .25rem;
+            font-size: .75rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 991px) {
   /*Large devices (desktops, 768px and 992px)*/
+  .countdown-product {
+    & .box {
+      display: flex;
+      align-items: center;
+
+      & .pic-box {
+        margin-bottom: 0;
+        max-width: 40%;
+      }
+
+      & .content {
+        width: calc(100% - 40% - 15px);
+        margin-left: 15px;
+
+        & .countdown-box {
+          white-space: nowrap;
+          background: $red-5;
+          border-radius: 30px;
+          margin-bottom: 1rem;
+          padding: .5rem;
+          text-align: center;
+          color: #fff;
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+
+        & .price {
+          justify-content: start;
+
+          > span:first-child {
+            font-size: 2.25rem;
+          }
+
+          > del {
+            font-size: 1rem;
+          }
+
+          > span:last-child {
+            padding: .35rem .25rem;
+            font-size: 1.25rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -43,4 +186,49 @@
 
 @media (max-width: 575px) {
   /*Small devices (landscape phones, max-width 576px)*/
+  .countdown-product {
+    & .box {
+      display: block;
+      align-items: center;
+
+      & .pic-box {
+        margin-bottom: .5rem;
+        max-width: 100%;
+      }
+
+      & .content {
+        width: 100%;
+        margin-left: 0;
+
+        & .countdown-box {
+          white-space: nowrap;
+          background: $red-5;
+          border-radius: 30px;
+          margin-bottom: 1rem;
+          padding: .5rem;
+          text-align: center;
+          color: #fff;
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+
+        & .price {
+          justify-content: start;
+
+          > span:first-child {
+            font-size: 2.25rem;
+          }
+
+          > del {
+            font-size: 1rem;
+          }
+
+          > span:last-child {
+            padding: .35rem .25rem;
+            font-size: 1.25rem;
+          }
+        }
+      }
+    }
+  }
 }

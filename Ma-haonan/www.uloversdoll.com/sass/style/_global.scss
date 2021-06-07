@@ -47,132 +47,145 @@ body {
 }
 
 header {
-  background: $color-1;
-  padding: .5rem 0;
-
-  & .row {
-    & div[class*="col-"]:nth-of-type(4) {
-      & .search-box {
-        //border: inset 2px solid $color-e;
-        margin: 0 auto;
-
-        > input[type="search"] {
-          width: calc(100% - 45px);
-          height: 45px;
-          border-radius: 0;
-          border: none;
-          outline: none;
-
-          &:focus {
-            box-shadow: none;
-          }
-        }
-
-        > button {
-          width: 45px;
-          height: 45px;
-          background: $pink-5;
-          border-radius: 0;
-          border: none;
-
-          > [class*="fa"] {
-            color: $color-f;
-          }
-        }
-      }
-    }
-  }
-
-  & .navbar-toggler {
-    color: $red-8;
-    font-size: 1.25rem;
-    background-color: transparent;
-  }
-}
-
-.navbar-box {
   position: sticky;
   top: 0;
   z-index: 1000;
-  //background: $pink-5;
-  background: $color-1;
-  //border-bottom: 10px solid $red-8;
-  padding: .5rem 0;
-
-  & .container {
-    width: 1460px;
-  }
+  background: #222;
+  padding: .75rem 0;
 
   & .navbar.nav-main {
     width: 100%;
     display: flex;
     flex-basis: auto;
     flex-grow: 0;
-    //justify-content: center;
+    justify-content: space-between;
     padding: 0;
 
-    & .navbar-nav {
+    & .logo-box {
       display: flex;
-      justify-content: space-between;
+      align-content: center;
+      //justify-content: space-between;
 
-      & .nav-item {
-        //width: 100%;
-        text-align: center;
-
-        & .nav-link {
-          padding: 0 1.5rem;
-          color: $color-f;
-          font-weight: bold;
-          line-height: 3rem;
-
-          &:focus, &:hover {
-            color: $color-f;
-          }
-        }
+      & .navbar-toggler {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        color: $red-4;
+        font-size: 1.5rem;
       }
 
-      & .dropdown-menu {
-        margin-top: -1px;
-        padding: 25px 15px;
+      & .logo {
+        color: #fff;
 
-        & .dropdown-item {
-          display: inline-block;
-          color: $color-6;
-          padding: .15rem 0;
-          background: transparent;
-
-          &:focus, &:hover {
-            color: $red;
-          }
+        & .navbar-brand {
+          color: #fff;
         }
       }
+    }
 
-      & .dropdown-large {
-        position: static;
+    & .navbar-box {
+      & .navbar-inner {
+        & .search-box {
+          display: none;
+        }
 
-        & .dropdown-large-menu {
-          width: 100%;
-          padding: 25px 50px;
+        & .navbar-nav {
+          display: flex;
+          justify-content: space-between;
 
-          & ul {
-            > li {
-              &.list-header {
-                margin-bottom: .5rem;
-                color: #666;
+          & .nav-item {
+            text-align: center;
+
+            & .nav-link {
+              cursor: pointer;
+              color: #fff;
+              line-height: 60px;
+              padding: 0 1.25rem;
+
+              &:focus, &:hover {
+                color: $red-6;
               }
+            }
 
-              > a {
-                display: inline-block;
-                color: $color-6;
-                padding: .15rem 0;
+            &.active {
+              & .nav-link {
+                color: $red-6;
+              }
+            }
+          }
 
-                &:focus, &:hover {
-                  color: $red;
+          & .dropdown-menu {
+            margin-top: -1px;
+            padding: 25px 15px;
+
+            & .dropdown-item {
+              display: inline-block;
+              color: $color-6;
+              padding: .15rem 0;
+              background: transparent;
+
+              &:focus, &:hover {
+                color: $red;
+              }
+            }
+          }
+
+          & .dropdown-large {
+            position: static;
+
+            & .dropdown-large-menu {
+              width: 100%;
+              padding: 25px 50px;
+
+              & ul {
+                > li {
+                  &.list-header {
+                    margin-bottom: .5rem;
+                  }
+
+                  > a {
+                    display: inline-block;
+                    color: $color-6;
+                    padding: .15rem 0;
+
+                    &:focus, &:hover {
+                      color: $red;
+                    }
+                  }
                 }
               }
             }
           }
         }
+      }
+    }
+
+    & .search-box {
+      display: flex;
+      align-items: center;
+
+      height: 3rem;
+      background: #fff;
+      border-radius: 2rem;
+      overflow: hidden;
+
+      & .form-control {
+        height: 3rem;
+        border: none;
+        border-radius: 2rem;
+        box-shadow: none;
+        outline-offset: 0;
+        padding: 0 1.5rem;
+
+        &:focus, &:hover {
+          outline: 0;
+        }
+      }
+
+      & .btn {
+        min-width: 4rem;
+        height: 3rem;
+        border-radius: 2rem;
       }
     }
   }
@@ -204,114 +217,218 @@ footer {
 
 @media (max-width: 1199px) {
   //Extra large devices (large desktops, 992px and 1200px)
+  header {
+    & .navbar.nav-main {
+      & .navbar-box {
+        & .navbar-inner {
+          & .navbar-nav {
+            & .nav-item {
+              & .nav-link {
+                color: #333;
+              }
+            }
+          }
+        }
+      }
+
+      & .search-box {
+        height: 2.5rem;
+        margin-left: 1rem;
+
+        & .form-control {
+          height: 2.5rem;
+        }
+
+        & .btn {
+          min-width: 3rem;
+          height: 2.5rem;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 991px) {
   //Large devices (desktops, 768px and 992px)
   header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: $color-f;
-    background-image: none;
-
-    & .row {
-      & div[class*="col-"]:nth-of-type(4) {
-        & .search-box {
-          border: 2px solid $color-e;
-          margin: 0 auto;
-
-          > input[type="search"] {
-            width: calc(100% - 45px);
-            height: 45px;
-            border-radius: 0;
-            border: none;
-            outline: none;
-
-            &:focus {
-              box-shadow: none;
-            }
-          }
-
-          > button {
-            width: 45px;
-            height: 45px;
-            background: transparent;
-            border-radius: 0;
-            border: none;
-
-            > [class*="fa"] {
-              color: $color-3;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .navbar-box {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: none;
-    //cursor: pointer;
-    z-index: 9999999;
-    background: rgba($color-0, 0.4);
-
-    & .container {
-      width: 100%;
-    }
-
     & .navbar.nav-main {
-      position: absolute;
-      top: 0;
-      right: 0;
-      display: block;
-      height: 100%;
-      width: 80%;
-      text-align: left;
-      overflow-y: auto;
-      padding: 1rem;
-      -ms-transform: translateX(100%);
-      -webkit-transform: translateX(100%);
-      transform: translateX(100%);
-      background: $color-f;
-      -webkit-transition: all 0.1s ease-out;
-      -moz-transition: all 0.1s ease-out;
-      -o-transition: all 0.1s ease-out;
-      transition: all 0.1s ease-out;
-
-      &.active {
-        box-shadow: rgba($color-0, 0.1) 0 0 200px 0;
-        -ms-transform: translateX(0);
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
+      & .logo-box {
+        width: 100%;
       }
 
-      & .navbar-nav {
-        & .nav-item {
-          text-align: left;
+      & .logo-box {
+        display: flex;
+        align-content: center;
+        //justify-content: space-between;
 
-          & .nav-link {
-            line-height: 2.5rem;
-            padding: 0;
-            color: $color-1;
+        & .navbar-toggler {
+          background-color: transparent;
+          border: none;
+          padding: 0;
+          color: $red-4;
+          font-size: 1.5rem;
+        }
 
-            &:focus,
-            &:hover {
-              color: $color-3;
-            }
-          }
+        & .logo {
+          color: #fff;
 
-          & .dropdown-menu {
-            padding: 0 !important;
-            border: none;
+          & .navbar-brand {
+            color: #fff;
           }
         }
       }
+
+      & .navbar-box {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: none;
+        //cursor: pointer;
+        z-index: 9999999;
+        background: rgba($color-0, 0.4);
+        height: 100vh;
+
+        & .navbar-inner {
+          position: absolute;
+          top: 0;
+          right: 0;
+          display: block;
+          height: 100%;
+          width: 80%;
+          text-align: left;
+          overflow-y: auto;
+          padding: 1rem;
+          -ms-transform: translateX(100%);
+          -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+          background: $color-f;
+          -webkit-transition: all 0.1s ease-out;
+          -moz-transition: all 0.1s ease-out;
+          -o-transition: all 0.1s ease-out;
+          transition: all 0.1s ease-out;
+
+          &.active {
+            box-shadow: rgba($color-0, 0.1) 0 0 200px 0;
+            -ms-transform: translateX(0);
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+          }
+
+          & .search-box {
+            display: flex;
+            align-items: center;
+            height: 2.5rem;
+            background: #fff;
+            border-radius: 2rem;
+            border: 1px solid $red-6;
+            margin-bottom: 1rem;
+            overflow: hidden;
+
+            & .form-control {
+              height: 3rem;
+              border: none;
+              border-radius: 2rem;
+              box-shadow: none;
+              outline-offset: 0;
+              padding: 0 1.5rem;
+
+              &:focus, &:hover {
+                outline: 0;
+              }
+            }
+
+            & .btn {
+              min-width: 4rem;
+              height: 3rem;
+              border-radius: 2rem;
+            }
+          }
+
+          & .navbar-nav {
+            & .nav-item {
+              text-align: left;
+
+              & .nav-link {
+                cursor: pointer;
+                color: #333;
+                line-height: 2;
+                //padding: 0 1.25rem;
+                padding: 0;
+
+                &:focus, &:hover {
+                  color: $red-6;
+                }
+              }
+
+              &.active {
+                & .nav-link {
+                  color: $red-6;
+                }
+              }
+            }
+
+            & .dropdown-menu {
+              margin-top: -1px;
+              padding: 10px 0;
+              border: none;
+
+              & .dropdown-item {
+                display: inline-block;
+                color: $color-6;
+                padding: .15rem 0;
+                background: transparent;
+
+                &:focus, &:hover {
+                  color: $red;
+                }
+              }
+            }
+
+            & .dropdown-large {
+              position: static;
+
+              & .dropdown-large-menu {
+                width: 100%;
+                padding: 10px 0;
+
+                & ul {
+                  margin-bottom: 0;
+
+                  > li {
+                    &.list-header {
+                      margin-bottom: .5rem;
+                    }
+
+                    > a {
+                      display: inline-block;
+                      color: $color-6;
+                      padding: .15rem 0;
+
+                      &:focus, &:hover {
+                        color: $red;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      & .search-box {
+        width: 100%;
+        //height: 2rem;
+        border: none;
+        margin-top: 1rem;
+        margin-left: 0;
+
+        & .form-control {}
+      }
     }
+
   }
 }
 

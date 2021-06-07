@@ -207,6 +207,12 @@ a {
     }
   }
 
+  .sub-headline {
+    > * {
+      font-size: 2rem;
+    }
+  }
+
   .product-box {
     & .title {
       height: calc(1.15rem * 1 * 1.5);
@@ -222,7 +228,7 @@ a {
       }
 
       > span {
-        color: #333;
+        //color: #333;
         font-size: 1rem;
       }
     }
@@ -243,6 +249,12 @@ a {
       font-size: 1.75rem;
     }
   }
+
+  .sub-headline {
+    > * {
+      font-size: 1.75rem;
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -257,6 +269,12 @@ a {
 
     > * {
       line-height: 1;
+      font-size: 1.5rem;
+    }
+  }
+
+  .sub-headline {
+    > * {
       font-size: 1.5rem;
     }
   }
@@ -310,8 +328,33 @@ a {
     }
   }
 
+  .sub-headline {
+    > * {
+      font-size: 1.25rem;
+    }
+  }
+
   .container {
     width: 100%;
     max-width: 100%;
+  }
+
+  .owl-carousel {
+    &.arrow-center {
+      & .owl-nav {
+        top: 30%;
+      }
+    }
+
+    &.arrow-center .owl-nav {
+      opacity: .3;
+      transition: all .5s ease-in-out;
+    }
+
+    &:hover {
+      &.arrow-center .owl-nav {
+        opacity: 1;
+      }
+    }
   }
 }

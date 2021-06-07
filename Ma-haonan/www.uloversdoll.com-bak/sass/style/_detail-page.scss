@@ -1,4 +1,8 @@
 //detail-page
+.container-product-detail {
+  //width: 1600px;
+  max-width: 90%;
+}
 
 .slider-main {
   .slick-prev {
@@ -122,7 +126,7 @@
     & .pic-box {
       position: relative;
       display: block;
-      padding: 5px;
+      padding: 2px;
       border: 1px solid $color-c;
       border-radius: 5px;
       overflow: hidden;
@@ -143,7 +147,7 @@
 
     &:focus, &:hover {
       & .pic-box {
-        padding: 5px;
+        padding: 2px;
         border: 1px solid $red-8;
 
         &::after {
@@ -155,7 +159,7 @@
     }
 
     & .form-check-input:checked ~ .pic-box {
-      padding: 5px;
+      padding: 2px;
       border: 1px solid $red-8;
 
       &::after {
