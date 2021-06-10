@@ -97,6 +97,7 @@ header {
             text-align: center;
 
             & .nav-link {
+              position: relative;
               cursor: pointer;
               color: #fff;
               line-height: 60px;
@@ -104,6 +105,61 @@ header {
 
               &:focus, &:hover {
                 color: $red-6;
+              }
+
+              & .corner {
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                border-radius: .35rem .35rem .35rem 0;
+                padding: 2px 5px;
+                color: #fff;
+                line-height: 1.2;
+                font-size: .75rem;
+
+                &:after {
+                  content: "";
+                  position: absolute;
+                  left: 0;
+                  bottom: -3px;
+                  width: 0;
+                  height: 0;
+                  border-right-color: transparent !important;
+                  border-bottom-color: transparent !important;
+                }
+
+                &.red {
+                  background: $red-6;
+
+                  &:after {
+                    border: 3px solid $red-6;
+                  }
+                }
+
+                &.pink {
+                  background: $pink-6;
+
+                  &:after {
+                    border: 3px solid $pink-6;
+                  }
+                }
+
+                &.green {
+                  background: $green-6;
+
+                  &:after {
+                    border: 3px solid $green-6;
+                  }
+                }
+
+                &.blue {
+                  background: $blue-6;
+
+                  &:after {
+                    border: 3px solid $blue-6;
+                  }
+                }
               }
             }
 
@@ -419,6 +475,8 @@ footer {
       }
 
       & .search-box {
+        display: none;
+
         width: 100%;
         //height: 2rem;
         border: none;
@@ -428,7 +486,6 @@ footer {
         & .form-control {}
       }
     }
-
   }
 }
 

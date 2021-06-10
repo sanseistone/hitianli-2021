@@ -79,7 +79,72 @@ a {
 }
 
 .product-box {
+  position: relative;
   display: block;
+
+  & .tag-box {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    text-align: right;
+
+    & img {
+      width: auto;
+      height: 100%;
+    }
+
+    & .ranking-hot {
+      position: relative;
+      background: $pink-4;
+      padding: 3px;
+      width: 40px;
+      height: 30px;
+      color: #fff;
+      text-align: center;
+      line-height: 25px;
+      font-size: .75rem;
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 0;
+        height: 0;
+        border-top: 5px solid $pink-4;
+        border-right: 10px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 10px solid $pink-4;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -10px;
+        width: 0;
+        height: 0;
+        border-top: 5px solid $pink-4;
+        border-right: 10px solid $pink-4;
+        border-bottom: 5px solid transparent;
+        border-left: 10px solid transparent;
+      }
+    }
+
+    & .ranking-new {
+      position: relative;
+      background: $green-4;
+      border-radius: 15px 0;
+      padding: 3px;
+      width: 40px;
+      height: 35px;
+      color: #fff;
+      text-align: center;
+      line-height: 30px;
+      font-size: .75rem;
+    }
+  }
 
   & .pic-box {
     position: relative;

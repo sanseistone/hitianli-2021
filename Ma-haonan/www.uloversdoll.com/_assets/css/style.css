@@ -70,7 +70,66 @@ a:focus {
 }
 
 .product-box {
+  position: relative;
   display: block;
+}
+.product-box .tag-box {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  text-align: right;
+}
+.product-box .tag-box img {
+  width: auto;
+  height: 100%;
+}
+.product-box .tag-box .ranking-hot {
+  position: relative;
+  background: #ec407a;
+  padding: 3px;
+  width: 40px;
+  height: 30px;
+  color: #fff;
+  text-align: center;
+  line-height: 25px;
+  font-size: .75rem;
+}
+.product-box .tag-box .ranking-hot:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 0;
+  height: 0;
+  border-top: 5px solid #ec407a;
+  border-right: 10px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 10px solid #ec407a;
+}
+.product-box .tag-box .ranking-hot:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  width: 0;
+  height: 0;
+  border-top: 5px solid #ec407a;
+  border-right: 10px solid #ec407a;
+  border-bottom: 5px solid transparent;
+  border-left: 10px solid transparent;
+}
+.product-box .tag-box .ranking-new {
+  position: relative;
+  background: #66bb6a;
+  border-radius: 15px 0;
+  padding: 3px;
+  width: 40px;
+  height: 35px;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  font-size: .75rem;
 }
 .product-box .pic-box {
   position: relative;
@@ -690,6 +749,7 @@ header .navbar.nav-main .navbar-box .navbar-inner .navbar-nav .nav-item {
   text-align: center;
 }
 header .navbar.nav-main .navbar-box .navbar-inner .navbar-nav .nav-item .nav-link {
+  position: relative;
   cursor: pointer;
   color: #fff;
   line-height: 60px;
@@ -697,6 +757,51 @@ header .navbar.nav-main .navbar-box .navbar-inner .navbar-nav .nav-item .nav-lin
 }
 header .navbar.nav-main .navbar-box .navbar-inner .navbar-nav .nav-item .nav-link:focus, header .navbar.nav-main .navbar-box .navbar-inner .navbar-nav .nav-item .nav-link:hover {
   color: #e53935;
+}
+header .navbar.nav-main .navbar-box .navbar-inner .navbar-nav .nav-item .nav-link .corner {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: .35rem .35rem .35rem 0;
+  padding: 2px 5px;
+  color: #fff;
+  line-height: 1.2;
+  font-size: .75rem;
+}
+header .navbar.nav-main .navbar-box .navbar-inner .navbar-nav .nav-item .nav-link .corner:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 0;
+  border-right-color: transparent !important;
+  border-bottom-color: transparent !important;
+}
+header .navbar.nav-main .navbar-box .navbar-inner .navbar-nav .nav-item .nav-link .corner.red {
+  background: #e53935;
+}
+header .navbar.nav-main .navbar-box .navbar-inner .navbar-nav .nav-item .nav-link .corner.red:after {
+  border: 3px solid #e53935;
+}
+header .navbar.nav-main .navbar-box .navbar-inner .navbar-nav .nav-item .nav-link .corner.pink {
+  background: #d81b60;
+}
+header .navbar.nav-main .navbar-box .navbar-inner .navbar-nav .nav-item .nav-link .corner.pink:after {
+  border: 3px solid #d81b60;
+}
+header .navbar.nav-main .navbar-box .navbar-inner .navbar-nav .nav-item .nav-link .corner.green {
+  background: #43a047;
+}
+header .navbar.nav-main .navbar-box .navbar-inner .navbar-nav .nav-item .nav-link .corner.green:after {
+  border: 3px solid #43a047;
+}
+header .navbar.nav-main .navbar-box .navbar-inner .navbar-nav .nav-item .nav-link .corner.blue {
+  background: #1e88e5;
+}
+header .navbar.nav-main .navbar-box .navbar-inner .navbar-nav .nav-item .nav-link .corner.blue:after {
+  border: 3px solid #1e88e5;
 }
 header .navbar.nav-main .navbar-box .navbar-inner .navbar-nav .nav-item.active .nav-link {
   color: #e53935;
@@ -927,6 +1032,7 @@ footer:before {
     color: red;
   }
   header .navbar.nav-main .search-box {
+    display: none;
     width: 100%;
     border: none;
     margin-top: 1rem;
@@ -1472,6 +1578,9 @@ footer:before {
 
 @media (max-width: 1199px) {
   /*Extra large devices (large desktops, 992px and 1200px)*/
+  .container-product-detail {
+    max-width: 100%;
+  }
 }
 @media (max-width: 991px) {
   /*Large devices (desktops, 768px and 992px)*/

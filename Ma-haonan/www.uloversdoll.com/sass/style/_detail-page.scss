@@ -177,6 +177,9 @@
 
 @media (max-width: 1199px) {
   /*Extra large devices (large desktops, 992px and 1200px)*/
+  .container-product-detail {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 991px) {

@@ -10,48 +10,30 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Web Template Demo Index">
     <meta name="keywords" content="keywords">
     <meta name="author" content="mr.koujun@gmail.com">
-    <!--<link rel="icon" href="favicon.ico">-->
     <link rel="icon" href="_assets/img/favicon.png">
-
-    <!-- include style -->
     <link rel="stylesheet" href="../../_assets/css/plug-in-v4.css">
-
-    <!-- users style -->
     <link rel="stylesheet" href="../../_assets/css/common.css">
     <link rel="stylesheet" href="../../_assets/css/base.css">
-
-    <!-- custom style -->
     <link rel="stylesheet" href="_assets/css/style.css">
-
 </head>
-
 <body>
-<!--header-bar s-->
 <div class="header-bar">
     <div class="container">
     </div>
 </div>
-<!--header-bar e-->
-
-<!--header s-->
 <header>
     <div class="container">
     </div>
 </header>
-<!--header e-->
-
-<!--nav s-->
 <nav class="navbar navbar-expand-lg nav-main mb-3">
     <div class="container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main"
                 aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbar-main">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
@@ -73,9 +55,6 @@
         </div>
     </div>
 </nav>
-<!--nav e-->
-
-<!--carousel s-->
 <div class="container mb-3">
     <div id="carousel-main" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -104,9 +83,6 @@
         </a>
     </div>
 </div>
-<!--carousel e-->
-
-<!--box s-->
 <div class="container">
     <ul class="nav nav-tabs red" role="tablist">
         <li class="nav-item">
@@ -128,23 +104,42 @@
         <div class="tab-pane fade" id="tab-03" role="tabpanel">REVIEWS</div>
     </div>
 </div>
-<!--box e-->
-
-<!--footer s-->
 <footer class="font-colorf py-4 bg-color3">
     <div class="container">
     </div>
 </footer>
-<!--footer e-->
 
-<!-- include js -->
+<div class="modal" id="are-you-ready" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="px-5 py-3 text-c">
+                    <div class="title-box">
+                        <p class="logo mb-3">
+                            <!--<span class="inline-block font-red6 font-r200 font-r125-sm">Romantic Life</span>-->
+                            <img class="img-full" src="http://placehold.it/260x80" alt="" style="max-width: 260px;"/>
+                        </p>
+                        <p class="title font-r200 font-r150-sm bold">Adults only (18+)</p>
+                    </div>
+                    <hr>
+                    <div class="content mb-5">
+                        <p class="bold">Nur für Erwachsene</p>
+                        <p>Diese Website enthält nicht jugendfreie Inhalte und ist nur für Personen ab 18 Jahren geeignet. Denn wir sind uns unserer Verantwortung bewusst und legen großen Wert auf den Jugendschutz! Bitte bestätigen Sie, dass Sie das gesetzliche Alter erreicht haben!</p>
+                    </div>
+                    <div class="btn-box">
+                        <button type="button" class="btn btn-lg btn-green5" data-dismiss="modal">Yes</button>
+                        <button type="button" class="btn btn-lg btn-red5">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <script src="../../_assets/js/jQuery-v3.4.1.min.js"></script>
 <script src="../../_assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="../../_assets/plug-in/jquery.scrollUp/jquery.scrollUp.js"></script>
-
-<!--custom.js-->
-
-<!--一键回到页面顶部-->
 <script>
     $(function () {
         $.scrollUp({
@@ -154,6 +149,12 @@
     });
 </script>
 
-</body>
+<script>
+    if (!window.sessionStorage.getItem('storge')) {
+        $('#are-you-ready').modal('show');
+        window.sessionStorage.setItem('storge', 'true')
+    }
+</script>
 
+</body>
 </html>

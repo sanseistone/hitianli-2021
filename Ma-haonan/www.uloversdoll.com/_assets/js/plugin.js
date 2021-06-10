@@ -5,19 +5,19 @@ $(document).ready(function () {
     //     $(this).children(".dropdown-menu").removeClass('show');
     // });
 
-    $(document).ready(function () {
-        if (screen.width <= 992) {
-            $(window).on('scroll', function () {
-                if ($(window).scrollTop() >= 220) {
-                    $("header .navbar > .search-box").css("display", "none");
-                    $("header .navbar .navbar-box .navbar-inner > .search-box").css("display", "flex");
-                } else {
-                    $("header .navbar > .search-box").css("display", "flex");
-                    $("header .navbar .navbar-box .navbar-inner > .search-box").css("display", "none");
-                }
-            });
-        }
-    });
+    // $(document).ready(function () {
+    //     if (screen.width <= 992) {
+    //         $(window).on('scroll', function () {
+    //             if ($(window).scrollTop() >= 220) {
+    //                 $("header .navbar > .search-box").css("display", "none");
+    //                 $("header .navbar .navbar-box .navbar-inner > .search-box").css("display", "flex");
+    //             } else {
+    //                 $("header .navbar > .search-box").css("display", "flex");
+    //                 $("header .navbar .navbar-box .navbar-inner > .search-box").css("display", "none");
+    //             }
+    //         });
+    //     }
+    // });
 
     $(document).on('touchstart', '.navbar-toggler', function (event) {
         $('.navbar-box').fadeIn(0).find('.navbar-inner').addClass('active');
