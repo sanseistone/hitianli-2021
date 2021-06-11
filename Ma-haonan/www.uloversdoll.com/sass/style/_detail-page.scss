@@ -175,6 +175,36 @@
   }
 }
 
+.add-to-cart-box {
+  & button[type="submit"] {
+    position: relative;
+
+    & .tips {
+      position: relative;
+      display: inline-block;
+      margin-left: 10px;
+      background: #fff;
+      border-radius: 4px;
+      padding: 3px 5px;
+      color: #333;
+      font-size: 12px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: -6px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0;
+        height: 0;
+        border-right: 6px solid #fff;
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+      }
+    }
+  }
+}
+
 @media (max-width: 1199px) {
   /*Extra large devices (large desktops, 992px and 1200px)*/
   .container-product-detail {
