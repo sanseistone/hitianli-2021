@@ -1,0 +1,19 @@
+//这里是混合宏预设集合
+
+//heading
+@mixin heading-bg-variant(
+  $color,
+  $background) {
+  color: color-yiq($color);
+  //@include button-default;
+  @include gradient-bg($background);
+}
+
+@mixin heading-bg-variant-o(
+  $color,
+  $border) {
+  color: $color;
+  //@include button-default;
+  border: 1px solid $border;
+  background: transparent;
+}

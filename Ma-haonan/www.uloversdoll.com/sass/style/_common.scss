@@ -155,14 +155,14 @@ a {
   & .title {
     display: -webkit-box;
     width: 100%;
-    height: calc(1.25rem * 1 * 1);
+    height: calc(1rem * 1 * 1);
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
 
     color: #000;
     line-height: 1;
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   & .price {
@@ -173,7 +173,7 @@ a {
 
     > span {
       color: $red-8;
-      font-size: 1.25rem;
+      font-size: 1rem;
     }
   }
 }
@@ -279,12 +279,6 @@ a {
   }
 
   .product-box {
-    & .title {
-      height: calc(1.15rem * 1 * 1.5);
-      line-height: 1.5;
-      font-size: 1.15rem;
-    }
-
     & .price {
       > del {
         margin-right: .5rem;

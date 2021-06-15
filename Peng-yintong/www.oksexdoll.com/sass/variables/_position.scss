@@ -1,0 +1,100 @@
+@import "variables";
+
+// ===== position =====
+$position-static: static !default;
+$position-fixed: fixed !default;
+$position-absolute: absolute !default;
+$position-relative: relative !default;
+$position-sticky: sticky !default;
+
+$position-default-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$position-default-series: map_merge(
+                (
+                        "static":$position-static,
+                        "relative":$position-relative,
+                        "absolute":$position-absolute,
+                        "fixed":$position-fixed,
+                        "sticky":$position-sticky,
+                ),
+                $position-default-series
+);
+
+$pin-none: auto !default;
+$position-round-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$position-round-series: map_merge(
+                (
+                        "0":($percent-1 * 0),
+                        "5p":($percent-1 * 5),
+                        "10p":($percent-1 * 10),
+                        "15p":($percent-1 * 15),
+                        "20p":($percent-1 * 20),
+                        "25p":($percent-1 * 25),
+                        "30p":($percent-1 * 30),
+                        "35p":($percent-1 * 35),
+                        "40p":($percent-1 * 40),
+                        "45p":($percent-1 * 45),
+                        "5": ($pixel-1 * 5),
+                        "10": ($pixel-1 * 10),
+                        "15": ($pixel-1 * 15),
+                        "20": ($pixel-1 * 20),
+                        "25": ($pixel-1 * 25),
+                        "30": ($pixel-1 * 30),
+                        "35": ($pixel-1 * 35),
+                        "40": ($pixel-1 * 40),
+                        "45": ($pixel-1 * 45),
+                        "50": ($pixel-1 * 50),
+                        "none": $pin-none,
+                ),
+                $position-round-series
+);
+
+$position-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$position-series: map_merge(
+                (
+                        "0":($percent-1 * 0),
+                        "5p":($percent-1 * 5),
+                        "10p":($percent-1 * 10),
+                        "15p":($percent-1 * 15),
+                        "20p":($percent-1 * 20),
+                        "25p":($percent-1 * 25),
+                        "30p":($percent-1 * 30),
+                        "35p":($percent-1 * 35),
+                        "40p":($percent-1 * 40),
+                        "45p":($percent-1 * 45),
+                        "50p":($percent-1 * 50),
+                        "55p":($percent-1 * 55),
+                        "60p":($percent-1 * 60),
+                        "65p":($percent-1 * 65),
+                        "70p":($percent-1 * 70),
+                        "75p":($percent-1 * 75),
+                        "80p":($percent-1 * 80),
+                        "85p":($percent-1 * 85),
+                        "90p":($percent-1 * 90),
+                        "95p":($percent-1 * 95),
+                        "100p":($percent-1 * 100),
+                        "5": ($pixel-1 * 5),
+                        "10": ($pixel-1 * 10),
+                        "15": ($pixel-1 * 15),
+                        "20": ($pixel-1 * 20),
+                        "25": ($pixel-1 * 25),
+                        "30": ($pixel-1 * 30),
+                        "35": ($pixel-1 * 35),
+                        "40": ($pixel-1 * 40),
+                        "45": ($pixel-1 * 45),
+                        "50": ($pixel-1 * 50),
+                        "55": ($pixel-1 * 55),
+                        "60": ($pixel-1 * 60),
+                        "65": ($pixel-1 * 65),
+                        "70": ($pixel-1 * 70),
+                        "75": ($pixel-1 * 75),
+                        "80": ($pixel-1 * 80),
+                        "85": ($pixel-1 * 85),
+                        "90": ($pixel-1 * 90),
+                        "95": ($pixel-1 * 95),
+                        "100": ($pixel-1 * 100),
+                ),
+                $position-series
+);

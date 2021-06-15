@@ -1,0 +1,14 @@
+//这里是混合宏预设集合
+
+//font
+@mixin font-family-variant($family) {
+  font-family: $family;
+}
+
+@mixin font-size-variant($size) {
+  font-size: $size;
+}
+
+@mixin font-weight-variant($weight) {
+  font-weight: $weight;
+}

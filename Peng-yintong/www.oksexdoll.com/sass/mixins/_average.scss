@@ -1,0 +1,6 @@
+//这里是混合宏预设集合
+
+//average
+@mixin width-column-variant($width) {
+  width: $width;
+}

@@ -1,0 +1,22 @@
+//这里是混合宏预设集合
+
+//height
+@mixin height-percent-variant($height) {
+  height: $height;
+}
+
+@mixin height-pixel-variant($height) {
+  height: $height;
+}
+
+@mixin height-rem-variant($height) {
+  height: $height;
+}
+
+@mixin max-height-variant($max-height) {
+  max-height: $max-height;
+}
+
+@mixin min-height-variant($min-height) {
+  min-height: $min-height;
+}
