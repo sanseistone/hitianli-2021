@@ -1,17 +1,42 @@
 //global
 @charset "utf-8";
 
-//body
 body {
 }
 
 .container {}
 
-//header
-header {
+.header-bar {
+  background: #000;
+  padding: .5rem 0;
+
+  & a {
+    color: #bbb;
+
+    &:focus, &:hover {
+      color: #fff;
+    }
+  }
 }
 
-//nav
+header {
+  padding: 1rem 0;
+
+  & .left {
+    & .logo-box {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    & .search-box {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+  }
+}
+
 .nav-main {
   padding: .5rem 0;
   border-top: 1px solid $color-d;
@@ -37,12 +62,17 @@ header {
   }
 }
 
-//breadcrumb
 .breadcrumb {
 }
 
-//footer
 footer {
+  position: relative;
+  border-top: 1px solid $red-6;
+  padding: 2rem 0;
+
+  & .footer-inner {
+    margin-bottom: 2rem;
+  }
 }
 
 @media (max-width: 1199px) {

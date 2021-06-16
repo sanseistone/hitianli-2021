@@ -18,14 +18,14 @@ a {
   transition: all .3s ease;
 
   &:hover {
-    color: $pink-5;
+    color: $red-6;
     text-decoration: none;
   }
 
   &:focus {
     outline: none;
     outline-offset: 0;
-    color: $pink-5;
+    color: $red-6;
     text-decoration: none;
   }
 }
@@ -39,8 +39,99 @@ a {
 }
 
 .container {
-  width: 1400px;
+  width: 1460px;
   max-width: 96%;
+}
+
+.heading-box {
+  margin-bottom: 1rem;
+
+  & .heading {
+    margin: 0;
+    text-align: center;
+    color: #000;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  & .more-box {
+    text-align: right;
+
+    & a {
+      color: $red-6;
+    }
+  }
+}
+
+.owl-carousel {
+  &.arrow-center {
+    position: relative;
+
+    & .owl-nav {
+      position: absolute;
+      top: 40%;
+      transform: translateY(-50%);
+      width: 100%;
+
+      & .owl-prev {
+        position: absolute;
+        left: -5px;
+      }
+
+      & .owl-next {
+        position: absolute;
+        right: -5px;
+      }
+    }
+  }
+
+  &.arrow-center .owl-nav {
+    opacity: .3;
+    transition: all .5s ease-in-out;
+  }
+
+  &:hover {
+    &.arrow-center .owl-nav {
+      opacity: 1;
+    }
+  }
+}
+
+.product-box {
+  position: relative;
+  display: block;
+  background: #f9f9f9;
+  border-radius: .5rem;
+  box-shadow: 0 0 0 rgba(0, 0, 0, .3);
+  overflow: hidden;
+  transition: all .15s ease-in-out;
+
+  &:focus,&:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+    color: #333;
+  }
+
+  & .pic-box {
+    position: relative;
+    overflow: hidden;
+  }
+
+  & .content {
+    padding: .5rem;
+    text-align: center;
+
+    & .title {
+      margin-bottom: .75rem;
+    }
+
+    & .price {
+      > span {
+        color: $red-6;
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+    }
+  }
 }
 
 //responsive-pc
@@ -57,6 +148,12 @@ a {
   .container {
     width: 100%;
     max-width: 100%;
+  }
+
+  .heading-box {
+    & .heading {
+      font-size: 1.5rem;
+    }
   }
 }
 
