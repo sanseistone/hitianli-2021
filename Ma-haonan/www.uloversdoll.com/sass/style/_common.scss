@@ -149,20 +149,22 @@ a {
   & .pic-box {
     position: relative;
     display: block;
-    margin-bottom: .5rem;
+    margin-bottom: .75rem;
   }
 
   & .title {
     display: -webkit-box;
     width: 100%;
-    height: calc(1rem * 1 * 1);
-    -webkit-line-clamp: 1;
+    height: calc(.9rem * 1.2 * 2);
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    margin-bottom: .35rem;
 
     color: #000;
-    line-height: 1;
-    font-size: 1rem;
+    text-align: center;
+    line-height: 1.2;
+    font-size: .9rem;
   }
 
   & .price {
@@ -375,6 +377,13 @@ a {
 
     &:after {
       background-size: 300% 60%;
+    }
+  }
+
+  .product-box {
+    & .title {
+      height: calc(.7rem * 1.2 * 2);
+      font-size: .7rem;
     }
   }
 }
