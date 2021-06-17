@@ -1,20 +1,4 @@
 $(document).ready(function () {
-    $(".slider-list-01").slick({
-        dots: true,
-        arrows: false,
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1
-    });
-
-    $(".slider-list-02").slick({
-        dots: true,
-        arrows: false,
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 1
-    });
-
     $('.slider-main').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
