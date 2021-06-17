@@ -25,7 +25,7 @@ a:focus {
 }
 
 #scrollUp {
-  background-image: url('../img/top.png?1621516478');
+  background-image: url('../img/top.png?1623765374');
   bottom: 20px;
   right: 20px;
   width: 38px;
@@ -938,6 +938,41 @@ footer .footer-inner {
     font-size: 1.25rem;
   }
 }
+.sub-page-main {
+  margin-bottom: 3rem;
+}
+
+.navbar-sub-box {
+  margin-bottom: 3rem;
+}
+
+.sort-box {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  background: #f9f9f9;
+  border-radius: .35rem;
+  margin-bottom: 1rem;
+  padding: .5rem .75rem;
+}
+.sort-box .btn:focus, .sort-box .btn:hover {
+  color: #e53935 !important;
+}
+.sort-box .btn.active {
+  color: #e53935;
+}
+.sort-box .btn.mixitup-control-active {
+  color: #e53935;
+}
+.sort-box .grid-box {
+  display: flex;
+  align-items: center;
+}
+.sort-box .grid-box .btn-box {
+  margin-right: 1rem;
+}
+
 @media (max-width: 1199px) {
   /*Extra large devices (large desktops, 992px and 1200px)*/
 }

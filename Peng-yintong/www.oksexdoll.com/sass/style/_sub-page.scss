@@ -1,4 +1,46 @@
 //sub-page
+.sub-page-main {
+  margin-bottom: 3rem;
+}
+
+.navbar-sub-box {
+  margin-bottom: 3rem;
+}
+
+.sort-box {
+  display: flex;
+  align-items: center;
+  //justify-content: space-between;
+  justify-content: end;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .3);
+  background: #f9f9f9;
+  border-radius: .35rem;
+  margin-bottom: 1rem;
+  padding: .5rem .75rem;
+
+  & .btn {
+    &:focus, &:hover {
+      color: $red-6 !important;
+    }
+
+    &.active {
+      color: $red-6;
+    }
+
+    &.mixitup-control-active {
+      color: $red-6;
+    }
+  }
+
+  & .grid-box {
+    display: flex;
+    align-items: center;
+
+    & .btn-box {
+      margin-right: 1rem;
+    }
+  }
+}
 
 @media (max-width: 1199px) {
   /*Extra large devices (large desktops, 992px and 1200px)*/
