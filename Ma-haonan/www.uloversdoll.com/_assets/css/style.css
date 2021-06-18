@@ -149,13 +149,16 @@ a:focus {
   line-height: 1.2;
   font-size: .9rem;
 }
+.product-box .price {
+  font-size: .9rem;
+}
 .product-box .price > del {
   margin-right: .5rem;
-  color: #333;
+  color: #666;
 }
 .product-box .price > span {
   color: #c62828;
-  font-size: 1rem;
+  font-weight: bold;
 }
 
 .owl-carousel .pic-box .mobile {

@@ -168,14 +168,16 @@ a {
   }
 
   & .price {
+    font-size: .9rem;
+
     > del {
       margin-right: .5rem;
-      color: #333;
+      color: #666;
     }
 
     > span {
       color: $red-8;
-      font-size: 1rem;
+      font-weight: bold;
     }
   }
 }
