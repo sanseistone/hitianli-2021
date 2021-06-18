@@ -2,6 +2,12 @@
 .product-main {
   & .product-detail {
     & .left {
+      & .row {
+        position: sticky;
+        top: 65px;
+        z-index: 999;
+      }
+
       & .slider-main {
         & .slick-prev {
           left: 25px;
@@ -114,66 +120,108 @@
     }
 
     & .right {
+      & .title-box {
+        position: sticky;
+        top: 65px;
+        z-index: 999;
+        //box-shadow: 0 2px 3px rgba(0, 0, 0, .3);
+        background: #fff;
+        padding: .35rem .25rem .5rem .25rem;
+      }
     }
   }
 
   & .product-options {
-    & .select-box {
-      & .form-check-label {
-        //padding-left: 1rem;
+    &:before {
+      content: "";
+      display: block;
+      height: 75px;
+      margin-top: -75px;
+    }
 
-        & .form-check-input {
-          display: none;
+    & .left {
+      & .select-box {
+        & .form-check {
+          display: inline-block;
+          padding: 0;
         }
 
-        & .pic-box {
-          position: relative;
-          display: block;
-          padding: 5px;
-          border: 1px solid $red-1;
-          border-radius: 5px;
-          overflow: hidden;
+        & .form-check-label {
+          text-align: center;
 
-          &::after {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            width: 15px;
-            height: 15px;
-            color: $color-f;
-            text-align: center;
-            font-size: 10px;
-            line-height: 15px;
-            background: $red-6;
+          & .form-check-input {
+            opacity: 0;
           }
-        }
 
-        &:focus, &:hover {
           & .pic-box {
-            padding: 5px;
-            border: 1px solid $red-6;
+            position: relative;
+            display: block;
+            padding: 3px;
+            border: 2px solid $grey-1;
+            border-radius: 100%;
+            overflow: hidden;
 
-            &::after {
-              content: "\f00c";
-              font-family: 'Font Awesome 5 Pro';
-              font-weight: 300;
+            & img {
+              border-radius: 100%;
             }
           }
-        }
 
-        & .form-check-input:checked ~ .pic-box {
-          padding: 5px;
-          border: 1px solid $red-6;
+          & .text-box {
+            position: relative;
+            display: block;
+            padding: 3px 8px;
+            border: 2px solid $grey-1;
+            border-radius: 15px;
+            overflow: hidden;
 
-          &::after {
-            content: "\f00c";
-            font-family: 'Font Awesome 5 Pro';
-            font-weight: 300;
+            font-size: .875rem;
+          }
+
+          &:focus, &:hover {
+            & .pic-box {
+              border: 2px solid $red-6;
+              padding: 3px;
+            }
+
+            & .text-box {
+              border: 2px solid $red-6;
+              padding: 3px 8px;
+            }
+          }
+
+          & .form-check-input:checked ~ .pic-box {
+            border: 2px solid $red-6;
+            padding: 3px;
+          }
+
+          & .form-check-input:checked ~ .text-box {
+            border: 2px solid $red-6;
+            padding: 3px 8px;
+          }
+
+          & .form-check-input {
+            margin-left: -1rem;
           }
         }
+      }
+    }
 
-        & .form-check-input {
-          margin-left: -1rem;
+    & .right {
+      & .cart-box {
+        position: sticky;
+        top: 75px;
+
+        & .btn-minus, & .btn-plus {
+          border-radius: 0;
+          border: 1px solid $red-6;
+        }
+
+        & .form-control {
+          box-shadow: none;
+          border-radius: 0;
+          border: 1px solid $red-6;
+          border-left-color: transparent;
+          border-right-color: transparent;
         }
       }
     }
@@ -187,36 +235,38 @@
 @media (max-width: 991px) {
   /*Large devices (desktops, 768px and 992px)*/
   .product-main {
-    & .product-left {
-      & .col-lg-2 {
-        display: none;
-      }
+    & .product-detail {
+      & .left {
+        & .col-lg-2 {
+          display: none;
+        }
 
-      & .slider-main {
-        & .slick-dots {
-          display: block !important;
-          margin-bottom: 30px;
+        & .slider-main {
+          & .slick-dots {
+            display: block !important;
+            margin-bottom: 30px;
 
-          & li {
-            width: 20px !important;
-            height: 20px !important;
-            float: none !important;
-            margin: 0 5px !important;
-            padding: 0 !important;
-            cursor: pointer;
+            & li {
+              width: 20px !important;
+              height: 20px !important;
+              float: none !important;
+              margin: 0 5px !important;
+              padding: 0 !important;
+              cursor: pointer;
 
-            & button:before {
-              display: block;
-            }
+              & button:before {
+                display: block;
+              }
 
-            & button.thumbnail img {
-              display: none;
-            }
+              & button.thumbnail img {
+                display: none;
+              }
 
-            & button {
-              width: 20px;
-              height: 20px;
-              padding: 5px;
+              & button {
+                width: 20px;
+                height: 20px;
+                padding: 5px;
+              }
             }
           }
         }
