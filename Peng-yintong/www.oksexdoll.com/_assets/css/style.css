@@ -496,6 +496,7 @@ header .left .logo-box {
   width: 100%;
 }
 header .left .logo-box .logo img {
+  width: auto;
   max-height: 50px;
 }
 header .left .search-box {
@@ -661,6 +662,7 @@ footer .footer-inner {
     left: 0;
     display: none;
     z-index: 9999999;
+    height: 100vh;
     background: rgba(0, 0, 0, 0.4);
   }
   .navbar-box .container {
@@ -856,6 +858,25 @@ footer .footer-inner {
 }
 .factory-pic .pic-box:focus, .factory-pic .pic-box:hover {
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+.video-box {
+  margin-bottom: 3rem;
+}
+
+.faq-box {
+  margin-bottom: 3rem;
+}
+.faq-box .card .card-header {
+  padding: .35rem .5rem;
+}
+
+.special-offer {
+  margin-bottom: 3rem;
+}
+
+.reviews-box {
+  margin-bottom: 3rem;
 }
 
 .social-pic {

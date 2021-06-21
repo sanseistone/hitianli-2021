@@ -30,6 +30,7 @@ header {
 
       & .logo {
         & img {
+          width: auto;
           max-height: 50px;
         }
       }
@@ -257,6 +258,7 @@ footer {
     display: none;
     //cursor: pointer;
     z-index: 9999999;
+    height: 100vh;
     background: rgba($color-0, 0.4);
 
     & .container {

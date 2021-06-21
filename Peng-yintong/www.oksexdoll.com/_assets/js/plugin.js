@@ -1,10 +1,10 @@
-$(document).ready(function () {
-    $('.nav-main li.dropdown').mouseover(function () {
-        $(this).children(".dropdown-menu").stop(true, false).slideDown(50).addClass('show');
-    }).mouseout(function () {
-        $(this).children(".dropdown-menu").stop(true, false).slideUp(50).removeClass('show');
-    });
-});
+// $(document).ready(function () {
+//     $('.nav-main li.dropdown').mouseover(function () {
+//         $(this).children(".dropdown-menu").stop(true, false).slideDown(50).addClass('show');
+//     }).mouseout(function () {
+//         $(this).children(".dropdown-menu").stop(true, false).slideUp(50).removeClass('show');
+//     });
+// });
 
 $(document).ready(function () {
     if (screen.width > 992) {

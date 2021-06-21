@@ -121,6 +121,28 @@
   }
 }
 
+.video-box {
+  margin-bottom: 3rem;
+}
+
+.faq-box {
+  margin-bottom: 3rem;
+
+  & .card {
+    & .card-header {
+      padding: .35rem .5rem;
+    }
+  }
+}
+
+.special-offer {
+  margin-bottom: 3rem;
+}
+
+.reviews-box {
+  margin-bottom: 3rem;
+}
+
 .social-pic {
   margin-bottom: 3rem;
 }
@@ -194,12 +216,12 @@
   }
 
   .catalog-box {
-      & .more {
-        & a {
-          font-size: .875rem;
-        }
+    & .more {
+      & a {
+        font-size: .875rem;
       }
     }
+  }
 }
 
 @media (max-width: 575px) {
