@@ -529,7 +529,7 @@ header .left .search-box > button > [class*="fa"] {
 header .right ul {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   margin-bottom: 0;
 }
 header .right ul > li + li {
@@ -572,6 +572,7 @@ header .navbar-toggler {
   padding: 0;
 }
 .navbar-box .navbar.nav-main .logo-box img {
+  width: auto;
   max-height: 40px;
 }
 .navbar-box .navbar.nav-main .search-box {
