@@ -132,6 +132,12 @@ a {
       }
     }
   }
+
+  &.blog-box {
+    & .content {
+      text-align: left;
+    }
+  }
 }
 
 //responsive-pc

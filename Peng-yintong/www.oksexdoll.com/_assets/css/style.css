@@ -25,7 +25,7 @@ a:focus {
 }
 
 #scrollUp {
-  background-image: url('../img/top.png?1623765374');
+  background-image: url('../img/top.png?1621516478');
   bottom: 20px;
   right: 20px;
   width: 38px;
@@ -107,6 +107,9 @@ a:focus {
   color: #e53935;
   font-size: 1.25rem;
   font-weight: bold;
+}
+.product-box.blog-box .content {
+  text-align: left;
 }
 
 @media (max-width: 1199px) {
@@ -871,6 +874,10 @@ footer .footer-inner {
 .faq-box .card .card-header {
   padding: .35rem .5rem;
 }
+.faq-box .card .card-header .btn-link {
+  color: #333333;
+  font-weight: bold;
+}
 
 .special-offer {
   margin-bottom: 3rem;
@@ -993,6 +1000,25 @@ footer .footer-inner {
 }
 .sort-box .grid-box .btn-box {
   margin-right: 1rem;
+}
+
+.blog-main {
+  margin-bottom: 3rem;
+}
+
+.aside-main .aside-box {
+  border: 1px solid #e53935;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+.aside-main .aside-box .aside-title {
+  background: #e53935;
+  padding: .5rem;
+}
+.aside-main .aside-box .aside-content {
+  border-radius: 0 0 .5rem .5rem;
+  overflow: hidden;
+  padding: .75rem;
 }
 
 @media (max-width: 1199px) {

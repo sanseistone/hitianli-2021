@@ -42,6 +42,29 @@
   }
 }
 
+.blog-main {
+  margin-bottom: 3rem;
+}
+
+.aside-main {
+  & .aside-box {
+    border: 1px solid $red-6;
+    border-radius: .5rem;
+    overflow: hidden;
+
+    & .aside-title {
+      background: $red-6;
+      padding: .5rem;
+    }
+
+    & .aside-content {
+      border-radius: 0 0 .5rem .5rem;
+      overflow: hidden;
+      padding: .75rem;
+    }
+  }
+}
+
 @media (max-width: 1199px) {
   /*Extra large devices (large desktops, 992px and 1200px)*/
 }

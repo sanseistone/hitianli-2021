@@ -131,6 +131,11 @@
   & .card {
     & .card-header {
       padding: .35rem .5rem;
+
+      & .btn-link {
+        color: $color-3;
+        font-weight: bold;
+      }
     }
   }
 }
