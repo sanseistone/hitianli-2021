@@ -112,6 +112,7 @@ a {
   }
 
   & .pic-box {
+    display: block;
     position: relative;
     overflow: hidden;
   }
@@ -134,6 +135,16 @@ a {
   }
 
   &.blog-box {
+    & .content {
+      text-align: left;
+    }
+  }
+
+  &.image-box {
+    & .pic-box {
+      margin-bottom: .35rem;
+    }
+
     & .content {
       text-align: left;
     }

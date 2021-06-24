@@ -1,66 +1,80 @@
 //sub-page
-.category-main {
-  margin-bottom: 3rem;
-}
-
 .navbar-sub-box {
   margin-bottom: 3rem;
 }
 
-.sort-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  //justify-content: end;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, .3);
-  background: #f9f9f9;
-  border-radius: .35rem;
-  margin-bottom: 1rem;
-  padding: .5rem .75rem;
-
-  & .btn {
-    &:focus, &:hover {
-      color: $red-6 !important;
-    }
-
-    &.active {
-      color: $red-6;
-    }
-
-    &.mixitup-control-active {
-      color: $red-6;
-    }
-  }
-
-  & .grid-box {
+.sub-main {
+  & .sort-box {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    //justify-content: end;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .3);
+    background: #f9f9f9;
+    border-radius: .35rem;
+    margin-bottom: 1rem;
+    padding: .5rem .75rem;
 
-    & .btn-box {
-      margin-right: 1rem;
+    & .btn {
+      &:focus, &:hover {
+        color: $red-6 !important;
+      }
+
+      &.active {
+        color: $red-6;
+      }
+
+      &.mixitup-control-active {
+        color: $red-6;
+      }
+    }
+
+    & .grid-box {
+      display: flex;
+      align-items: center;
+
+      & .btn-box {
+        margin-right: 1rem;
+      }
     }
   }
+
+  & .aside-main {
+    & .aside-box {
+      border: 1px solid $red-6;
+      border-radius: .5rem;
+      overflow: hidden;
+
+      & .aside-title {
+        background: $red-6;
+        padding: .5rem;
+      }
+
+      & .aside-content {
+        border-radius: 0 0 .5rem .5rem;
+        overflow: hidden;
+        padding: .75rem;
+      }
+    }
+  }
+}
+
+.category-main {
+  margin-bottom: 3rem;
 }
 
 .blog-main {
   margin-bottom: 3rem;
 }
 
-.aside-main {
-  & .aside-box {
-    border: 1px solid $red-6;
-    border-radius: .5rem;
-    overflow: hidden;
+.gallery-main {
+  margin-bottom: 3rem;
 
-    & .aside-title {
-      background: $red-6;
-      padding: .5rem;
-    }
-
-    & .aside-content {
-      border-radius: 0 0 .5rem .5rem;
-      overflow: hidden;
-      padding: .75rem;
+  & .btn-box {
+    & .btn {
+      border-radius: .3rem;
+      padding: .5rem 1rem;
+      font-size: 1.25rem;
     }
   }
 }
@@ -79,4 +93,14 @@
 
 @media (max-width: 575px) {
   /*Small devices (landscape phones, max-width 576px)*/
+  .gallery-main {
+    & .btn-box {
+      & .btn {
+        border-radius: .25rem;
+        padding: .5rem .75rem;
+        font-size: 1rem;
+      }
+    }
+  }
+
 }
