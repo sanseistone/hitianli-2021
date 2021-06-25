@@ -1223,6 +1223,16 @@ footer .footer-inner {
   border-left-color: transparent;
   border-right-color: transparent;
 }
+.product-main .product-description .aside-box ul > li .item {
+  width: 100%;
+}
+.product-main .product-description .aside-box ul > li .item .pic {
+  width: 100px;
+}
+.product-main .product-description .aside-box ul > li .item .content {
+  width: calc(100% - 100px);
+  margin-left: 15px;
+}
 
 @media (max-width: 1199px) {
   /*Extra large devices (large desktops, 992px and 1200px)*/

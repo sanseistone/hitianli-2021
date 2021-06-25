@@ -226,6 +226,25 @@
       }
     }
   }
+
+  & .product-description {
+    & .aside-box {
+      & ul>li {
+        & .item {
+          width: 100%;
+
+          & .pic {
+            width: 100px;
+          }
+
+          & .content {
+            width: calc(100% - 100px);
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1199px) {
