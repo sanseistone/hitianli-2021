@@ -34,7 +34,7 @@
   & .box {
     display: block;
     border: 1px solid $red-5;
-    padding: 1rem;
+    padding: .5rem;
 
     & .pic-box {
       display: block;
@@ -52,7 +52,7 @@
         padding: .5rem;
         text-align: center;
         color: #fff;
-        font-size: 1.75rem;
+        font-size: 1.25rem;
         font-weight: bold;
       }
 
@@ -66,7 +66,7 @@
         > span:first-child {
           display: inline-block;
           color: $red-8;
-          font-size: 1.5rem;
+          font-size: 1.25rem;
           font-weight: bold;
         }
 
@@ -89,10 +89,6 @@
   /*Extra large devices (large desktops, 992px and 1200px)*/
   .countdown-product {
     & .box {
-      display: block;
-      border: 1px solid $red-5;
-      padding: .5rem;
-
       & .pic-box {
         display: block;
         border-radius: 15px;
