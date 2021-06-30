@@ -92,6 +92,23 @@ a:focus {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   color: #333;
 }
+.product-box .corner {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 99;
+}
+.product-box .corner .new {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: #e53935;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  font-size: .875rem;
+}
 .product-box .pic-box {
   display: block;
   position: relative;
