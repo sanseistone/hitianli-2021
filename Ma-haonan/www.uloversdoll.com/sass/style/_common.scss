@@ -41,6 +41,11 @@ a {
 .container {
   width: 100%;
   max-width: 96%;
+
+  &.container-sub {
+    width: 1460px;
+    max-width: 96%;
+  }
 }
 
 .headline {
@@ -265,6 +270,11 @@ a {
   .container {
     width: 100%;
     max-width: 100%;
+
+    &.container-sub {
+      width: 100%;
+      max-width: 100%;
+    }
   }
 
   .headline {
@@ -303,6 +313,11 @@ a {
   .container {
     width: 100%;
     max-width: 100%;
+
+    &.container-sub {
+      width: 100%;
+      max-width: 100%;
+    }
   }
 
   .headline {
@@ -325,6 +340,11 @@ a {
   .container {
     width: 100%;
     max-width: 100%;
+
+    &.container-sub {
+      width: 100%;
+      max-width: 100%;
+    }
   }
 
   .headline {
@@ -407,6 +427,11 @@ a {
   .container {
     width: 100%;
     max-width: 100%;
+
+    &.container-sub {
+      width: 100%;
+      max-width: 100%;
+    }
   }
 
   .owl-carousel {
