@@ -1,0 +1,62 @@
+//这里是混合宏预设集合
+
+//position
+@mixin position-default-variant($position) {
+  position: $position;
+}
+
+@mixin position-round-variant(
+  $top,$right,$bottom,$left) {
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  transform: inherit;
+}
+
+@mixin position-top-variant($top) {
+  top: $top;
+  transform: translateY(0);
+}
+
+@mixin position-top-out-variant($top) {
+  top: -($top);
+  transform: translateY(0);
+}
+
+@mixin position-right-variant($right) {
+  right: $right;
+}
+
+@mixin position-right-out-variant($right) {
+  right: -($right);
+}
+
+@mixin position-bottom-variant($bottom) {
+  bottom: $bottom;
+  transform: translateY(0);
+}
+
+@mixin position-bottom-out-variant($bottom) {
+  bottom: -($bottom);
+  transform: translateY(0);
+}
+
+@mixin position-left-variant($left) {
+  left: $left;
+}
+
+@mixin position-left-out-variant($left) {
+  left: -($left);
+}
+
+@mixin position-x-axis-variant($right,$left) {
+  right: $right;
+  left: $left;
+}
+
+@mixin position-y-axis-variant($top,$bottom) {
+  top: $top;
+  bottom: $bottom;
+  transform: translateY(0);
+}

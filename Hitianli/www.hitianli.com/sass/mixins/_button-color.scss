@@ -1,0 +1,38 @@
+//这里是混合宏预设集合
+
+//button-color
+@mixin button-variant(
+  $color,
+  $border,
+  $background,
+  $hover-color: darken($color, 10%),
+  $hover-border: darken($border, 10%),
+  $hover-background: darken($background, 7.5%),
+  $active-color: darken($color, 12.5%),
+  $active-border: darken($border, 12.5%),
+  $active-background: darken($background, 10%)) {
+  color: color-yiq($color);
+  border-color: $border;
+  @include gradient-bg($background);
+}
+
+@mixin button-variant-o(
+  $color,
+  $border,
+  $background,
+  $hover-color: darken($color, 10%),
+  $hover-border: darken($border, 10%),
+  $hover-background: darken($background, 7.5%),
+  $active-color: darken($color, 12.5%),
+  $active-border: darken($border, 12.5%),
+  $active-background: darken($background, 10%)) {
+  color: $color;
+  border-color: $border;
+  background: transparent;
+
+  &:focus, &:hover {
+    color: color-yiq($color);
+    border-color: $border;
+    @include gradient-bg($background);
+  }
+}

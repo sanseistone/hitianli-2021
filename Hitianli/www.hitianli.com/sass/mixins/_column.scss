@@ -1,0 +1,6 @@
+//这里是混合宏预设集合
+
+//column
+@mixin column-count-variant($column-count) {
+  column-count: $column-count;
+}
