@@ -18,14 +18,14 @@ a {
   transition: all .3s ease;
 
   &:hover {
-    color: $pink-5;
+    color: #ffa824;
     text-decoration: none;
   }
 
   &:focus {
     outline: none;
     outline-offset: 0;
-    color: $pink-5;
+    color: #ffa824;
     text-decoration: none;
   }
 }
@@ -39,7 +39,7 @@ a {
 }
 
 .container {
-  width: 1400px;
+  width: 1600px;
   max-width: 96%;
 }
 
