@@ -1,4 +1,115 @@
-//sub-page
+header {
+  &.sub-header {
+    & .nav-main {
+      & .navbar-nav {
+        & .nav-item {
+          & .nav-link {
+            padding: .5rem 1rem;
+            color: #100739;
+            font-size: .875rem;
+            font-weight: bold;
+
+            &:focus, &:hover {
+              color: #ffa824;
+            }
+          }
+
+          &.active {
+            & .nav-link {}
+          }
+        }
+      }
+    }
+  }
+
+  & .about-banner {
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: image-url('about-banner-bg.png') center center no-repeat;
+      opacity: .1;
+      background-size: cover;
+      transition: background .3s, border-radius .3s, opacity .3s;
+    }
+  }
+
+  & .sub-banner {
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: #0046a0;
+      z-index: -1;
+    }
+
+    & .row {
+      min-height: 350px;
+      align-items: center;
+
+      & .left {
+        & .main-title {
+          margin-top: 0;
+          margin-bottom: 1rem;
+          color: #fff;
+          font-size: 3rem;
+          font-weight: 800;
+        }
+
+        & .title-hr {
+          width: 50px;
+          border: 3px solid #fff;
+        }
+      }
+
+      & .right {
+        & .header-pic {
+          & img {
+            width: 50%;
+            max-width: 120px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-services {
+  padding: 5rem 0;
+
+  & .heading {
+    text-align: center;
+
+    & .sub-title {
+      margin-bottom: .25rem;
+      color: #0458e9;
+      font-size: 1.15rem;
+      font-weight: bold;
+    }
+
+    & .title {
+      margin-bottom: .5rem;
+      color: #100739;
+      line-height: 1;
+      font-size: 2.25rem;
+      font-weight: 800;
+    }
+
+    & .summary {
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+  }
+}
 
 @media (max-width: 1199px) {
   /*Extra large devices (large desktops, 992px and 1200px)*/
