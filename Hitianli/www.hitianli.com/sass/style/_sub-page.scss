@@ -22,22 +22,7 @@ header {
     }
   }
 
-  & .about-banner {
-    &:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background: image-url('about-banner-bg.png') center center no-repeat;
-      opacity: .1;
-      background-size: cover;
-      transition: background .3s, border-radius .3s, opacity .3s;
-    }
-  }
-
-  & .sub-banner {
+  & .sub-heading {
     position: relative;
     overflow: hidden;
 
@@ -51,7 +36,9 @@ header {
       background: #0046a0;
       z-index: -1;
     }
+  }
 
+  & .about-heading, & .news-heading {
     & .row {
       min-height: 350px;
       align-items: center;
@@ -72,12 +59,88 @@ header {
       }
 
       & .right {
+        min-height: 350px;
+
         & .header-pic {
+          position: absolute;
+          top: 15%;
+          left: 50%;
+          transform: translateX(-50%);
+
           & img {
-            width: 50%;
-            max-width: 120px;
+            width: 100%;
+            max-width: 150px;
           }
         }
+      }
+    }
+  }
+
+  & .about-heading {
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: image-url('about-banner-bg.png') center center no-repeat;
+      opacity: .1;
+      background-size: cover;
+      transition: background .3s, border-radius .3s, opacity .3s;
+    }
+  }
+
+  & .news-heading {
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: image-url('news-heading-bg.png') center center no-repeat;
+      opacity: .1;
+      background-size: cover;
+      transition: background .3s, border-radius .3s, opacity .3s;
+    }
+  }
+
+  & .single-news-heading {
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: image-url('single-news-heading-bg.png') center center no-repeat;
+      opacity: .1;
+      background-size: cover;
+      transition: background .3s, border-radius .3s, opacity .3s;
+    }
+
+    & .heading-content {
+      display: flex;
+      min-height: 400px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+
+      & .breadcrumb-link {
+        margin-bottom: 1rem;
+
+        & a {
+          color: #fff;
+        }
+      }
+
+      & .main-title {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 800;
       }
     }
   }
@@ -289,7 +352,7 @@ header {
   overflow: hidden;
   position: relative;
   padding-top: 8rem;
-  padding-bottom: 16rem;
+  padding-bottom: 4rem;
 
   &:before {
     content: "";
@@ -351,15 +414,19 @@ header {
   }
 
   & .right {
+    position: relative;
+    min-height: 400px;
+
     & .box {
-      position: relative;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
 
       & .pic-box {
-        position: absolute;
-
         img {
-          width: 50%;
-          max-width: 50%;
+          width: 60%;
+          max-width: 60%;
         }
       }
     }
@@ -379,6 +446,62 @@ header {
       transform-origin: center;
       -webkit-transform: rotateY(0deg);
       transform: rotateY(0deg);
+    }
+  }
+}
+
+.section-sub-05 {
+  padding: 2rem 0 8rem;
+
+  & .heading {
+    text-align: center;
+
+    & .sub-title {
+      margin-bottom: .25rem;
+      color: #0458e9;
+      font-size: 1.15rem;
+      font-weight: bold;
+    }
+
+    & .title {
+      margin-bottom: .5rem;
+      color: #100739;
+      line-height: 1;
+      font-size: 2.25rem;
+      font-weight: 800;
+    }
+
+    & .summary {
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+  }
+
+  & .section-body {
+    position: relative;
+
+    & .row {
+      & .box {
+        position: relative;
+        background: #e2ecf7;
+        border-radius: .5rem;
+        box-shadow: 0 0 30px -10px rgba(0, 0, 0, .15);
+        overflow: hidden;
+        text-align: center;
+
+        &:focus, &:hover {
+          background: #fff;
+        }
+
+        & .content {
+          padding: 1rem;
+
+          & .title {
+            font-size: 1.25rem;
+            font-weight: 800;
+          }
+        }
+      }
     }
   }
 }
