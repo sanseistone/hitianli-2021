@@ -1531,7 +1531,7 @@ header .single-news-heading:before {
   bottom: 0;
   left: 0;
   background: url('../img/single-news-heading-bg.png?1626856732') center center no-repeat;
-  opacity: .1;
+  opacity: .15;
   background-size: cover;
   transition: background .3s, border-radius .3s, opacity .3s;
 }
@@ -1861,6 +1861,7 @@ header .single-news-heading .heading-content .main-title {
   /*Small devices (landscape phones, max-width 576px)*/
 }
 main.news-body {
+  margin-top: 3rem;
   margin-bottom: 5rem;
 }
 main.news-body .main-content {
@@ -1870,7 +1871,7 @@ main.news-body .main-content .box {
   background: #fff;
   border-radius: .5rem;
   box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0.15);
-  margin-top: -5rem;
+  margin-top: -8rem;
   padding: 2rem;
 }
 
