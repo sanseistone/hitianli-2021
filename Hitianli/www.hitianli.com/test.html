@@ -17,11 +17,11 @@
                          src="https://us03-imgcdn.ymcart.com/60671/2021/07/16/2/1/215421927325d372.jpg?x-oss-process=image/quality,Q_90/auto-orient,1/resize,m_lfit,w_500,h_500/format,webp"
                          title="Emma - Long Black Hair Sex Doll Nude 5# Head Silicone Head 163cm WM Real Life Dolls"
                          alt="Emma - Long Black Hair Sex Doll Nude 5# Head Silicone Head 163cm WM Real Life Dolls">
-                    <img class="switch_picture"
-                         src="https://us03-imgcdn.ymcart.com/60671/2021/07/16/2/1/215421927325d372.jpg?x-oss-process=image/quality,Q_90/auto-orient,1/resize,m_lfit,w_500,h_500/format,webp"
-                         title="Emma - Long Black Hair Sex Doll Nude 5# Head Silicone Head 163cm WM Real Life Dolls"
-                         data_pic="https://us03-imgcdn.ymcart.com/60671/2021/07/16/8/e/8ee788c89bb2b7ee.jpg?x-oss-process=image/quality,Q_90/auto-orient,1/resize,m_lfit,w_500,h_500/format,webp"
-                         alt="Emma - Long Black Hair Sex Doll Nude 5# Head Silicone Head 163cm WM Real Life Dolls">
+                    <!--<img class="switch_picture"-->
+                    <!--     src="https://us03-imgcdn.ymcart.com/60671/2021/07/16/2/1/215421927325d372.jpg?x-oss-process=image/quality,Q_90/auto-orient,1/resize,m_lfit,w_500,h_500/format,webp"-->
+                    <!--     title="Emma - Long Black Hair Sex Doll Nude 5# Head Silicone Head 163cm WM Real Life Dolls"-->
+                    <!--     data_pic="https://us03-imgcdn.ymcart.com/60671/2021/07/16/8/e/8ee788c89bb2b7ee.jpg?x-oss-process=image/quality,Q_90/auto-orient,1/resize,m_lfit,w_500,h_500/format,webp"-->
+                    <!--     alt="Emma - Long Black Hair Sex Doll Nude 5# Head Silicone Head 163cm WM Real Life Dolls">-->
                 </a>
             </div>
             <div class="detail_drawing" id="detail_drawing_2644701">
@@ -80,11 +80,11 @@
                          src="https://us03-imgcdn.ymcart.com/60671/2021/07/16/2/1/215421927325d372.jpg?x-oss-process=image/quality,Q_90/auto-orient,1/resize,m_lfit,w_500,h_500/format,webp"
                          title="Emma - Long Black Hair Sex Doll Nude 5# Head Silicone Head 163cm WM Real Life Dolls"
                          alt="Emma - Long Black Hair Sex Doll Nude 5# Head Silicone Head 163cm WM Real Life Dolls">
-                    <img class="switch_picture"
-                         src="https://us03-imgcdn.ymcart.com/60671/2021/07/16/2/1/215421927325d372.jpg?x-oss-process=image/quality,Q_90/auto-orient,1/resize,m_lfit,w_500,h_500/format,webp"
-                         title="Emma - Long Black Hair Sex Doll Nude 5# Head Silicone Head 163cm WM Real Life Dolls"
-                         data_pic="https://us03-imgcdn.ymcart.com/60671/2021/07/16/8/e/8ee788c89bb2b7ee.jpg?x-oss-process=image/quality,Q_90/auto-orient,1/resize,m_lfit,w_500,h_500/format,webp"
-                         alt="Emma - Long Black Hair Sex Doll Nude 5# Head Silicone Head 163cm WM Real Life Dolls">
+                    <!--<img class="switch_picture"-->
+                    <!--     src="https://us03-imgcdn.ymcart.com/60671/2021/07/16/2/1/215421927325d372.jpg?x-oss-process=image/quality,Q_90/auto-orient,1/resize,m_lfit,w_500,h_500/format,webp"-->
+                    <!--     title="Emma - Long Black Hair Sex Doll Nude 5# Head Silicone Head 163cm WM Real Life Dolls"-->
+                    <!--     data_pic="https://us03-imgcdn.ymcart.com/60671/2021/07/16/8/e/8ee788c89bb2b7ee.jpg?x-oss-process=image/quality,Q_90/auto-orient,1/resize,m_lfit,w_500,h_500/format,webp"-->
+                    <!--     alt="Emma - Long Black Hair Sex Doll Nude 5# Head Silicone Head 163cm WM Real Life Dolls">-->
                 </a>
             </div>
             <div class="detail_drawing" id="detail_drawing_2644702">
@@ -138,18 +138,32 @@
 </ul>
 <script>
     $(function () {
-        var main_src = $('.product_img a img.original_picture').attr('src');
-        var sub_src = $('.detail_drawing_wapper dl dd:last-child a img').attr('data_image');
-        $('.product_img a img.original_picture').on({
-            mouseover: function () {
-                $('.product_img a img.original_picture').attr('src', sub_src);
-            }
+        $('.product_img').each(function () {
+            let obj = $(this);
+            let img = obj.find('.original_picture').attr('src');
+            let new_img = obj.parent().find('.detail_drawing_wapper dl dd:last-child a img').attr('data_image');
+
+            obj.mouseover(function () {
+                obj.find('.original_picture').attr('src', new_img);
+            }).mouseout(function () {
+                obj.find('.original_picture').attr('src', img);
+            });
         });
-        $('.product_img a img.original_picture').on({
-            mouseout: function () {
-                $('.product_img a img.original_picture').attr('src', main_src);
-            }
-        });
+
+
+        // var main_src = $('.product_img a img.original_picture').attr('src');
+        // var sub_src = $('.detail_drawing_wapper dl dd:last-child a img').attr('data_image');
+        //
+        // $('.product_img a img.original_picture').on({
+        //     mouseover: function () {
+        //         $('.product_img a img.original_picture').attr('src', sub_src);
+        //     }
+        // });
+        // $('.product_img a img.original_picture').on({
+        //     mouseout: function () {
+        //         $('.product_img a img.original_picture').attr('src', main_src);
+        //     }
+        // });
     });
 </script>
 
