@@ -14,6 +14,54 @@ main {
         padding: 2rem;
       }
     }
+
+    & .aside-content {
+      & .aside-box + .aside-box {
+        margin-top: 3rem;
+      }
+
+      & .aside-box {
+        & .title {
+          font-size: 1.25rem;
+          font-weight: 800;
+        }
+
+        & .social {
+          & [class*="fa"] {
+            font-size: 2rem;
+          }
+        }
+
+        & .list {
+          & .list-title {
+            margin-bottom: 1rem;
+
+            & a {
+              width: 100%;
+              height: calc(1rem * 1 * 1.2 * 2);
+              -webkit-line-clamp: 2;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+
+              color: #0046a0;
+              font-weight: 800;
+              line-height: 1.2;
+            }
+          }
+
+          & .read-more {
+            & a {
+              display: inline-block;
+              color: #111;
+              font-size: .875rem;
+              font-weight: 600;
+              text-decoration: underline !important;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
