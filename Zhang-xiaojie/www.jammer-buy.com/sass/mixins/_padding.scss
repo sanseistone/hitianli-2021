@@ -1,0 +1,40 @@
+//这里是混合宏预设集合
+
+//padding
+@mixin group-p-variant($padding) {
+  padding: $padding;
+}
+
+@mixin group-pt-variant($padding-top) {
+  padding-top: $padding-top;
+}
+
+@mixin group-pr-variant($padding-right) {
+  padding-right: $padding-right;
+}
+
+@mixin group-pb-variant($padding-bottom) {
+  padding-bottom: $padding-bottom;
+}
+
+@mixin group-pl-variant($padding-left) {
+  padding-left: $padding-left;
+}
+
+@mixin group-px-variant(
+  $padding-left,
+  $padding-right) {
+  padding-left: $padding-left;
+  padding-right: $padding-right;
+}
+
+@mixin group-py-variant(
+  $padding-top,
+  $padding-bottom) {
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
+}
+
+@mixin padding-pixel-variant($padding) {
+  padding: $padding;
+}

@@ -1,0 +1,70 @@
+//这里是混合宏预设集合
+
+//margin
+@mixin group-m-variant($margin) {
+  margin: $margin;
+}
+
+@mixin group-mt-variant($margin-top) {
+  margin-top: $margin-top;
+}
+
+@mixin group-mr-variant($margin-right) {
+  margin-right: $margin-right;
+}
+
+@mixin group-mb-variant($margin-bottom) {
+  margin-bottom: $margin-bottom;
+}
+
+@mixin group-ml-variant($margin-left) {
+  margin-left: $margin-left;
+}
+
+@mixin group-mx-variant(
+  $margin-left,
+  $margin-right) {
+  margin-left: $margin-left;
+  margin-right: $margin-right;
+}
+
+@mixin group-my-variant(
+  $margin-top,
+  $margin-bottom) {
+  margin-top: $margin-top;
+  margin-bottom: $margin-bottom;
+}
+
+@mixin margin-pixel-variant($margin) {
+  margin: $margin;
+}
+
+@mixin margin-ot-variant($margin-top) {
+  margin-top: $margin-top;
+}
+
+@mixin margin-or-variant($margin-right) {
+  margin-right: $margin-right;
+}
+
+@mixin margin-ob-variant($margin-bottom) {
+  margin-bottom: $margin-bottom;
+}
+
+@mixin margin-ol-variant($margin-left) {
+  margin-left: $margin-left;
+}
+
+@mixin margin-ox-variant(
+  $margin-left,
+  $margin-right) {
+  margin-left: $margin-left;
+  margin-right: $margin-right;
+}
+
+@mixin margin-oy-variant(
+  $margin-top,
+  $margin-bottom) {
+  margin-top: $margin-top;
+  margin-bottom: $margin-bottom;
+}
