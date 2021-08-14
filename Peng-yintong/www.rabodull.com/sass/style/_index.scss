@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+.section-banner {
+  & .item-block {
+    & a {
+      display: block;
+      //overflow: hidden;
+      //border: 1px solid #f37e7e;
+      //border-radius: .5rem;
+    }
+  }
+}
+
+//responsive-pc
+@media (max-width: 1399px) {
+  //xxl devices (xxl desktops, 1200px and 1400px)
+}
+
+@media (max-width: 1199px) {
+  //Extra large devices (large desktops, 992px and 1200px)
+}
+
+@media (max-width: 991px) {
+  //Large devices (desktops, 768px and 992px)
+}
+
+@media (max-width: 767px) {
+  //Medium devices (tablets, 576px and 768px)
+}
+
+@media (max-width: 575px) {
+  //Small devices (landscape phones, max-width 576px)
+}
