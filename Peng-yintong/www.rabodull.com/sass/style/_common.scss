@@ -1,8 +1,18 @@
 @charset "utf-8";
 
+a {
+  color: #333;
+  text-decoration: none;
+  
+  &:focus,&:hover {
+    color: #f37e7e;
+  }
+}
+
 img {
   width: 100%;
   height: auto;
+  transition: all ease-in-out .3s;
 }
 
 .container {
