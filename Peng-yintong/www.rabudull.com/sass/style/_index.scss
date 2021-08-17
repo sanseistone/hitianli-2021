@@ -15,6 +15,7 @@
   & .content {
     & .item {
       display: flex;
+      flex-wrap: wrap;
 
       & + .item {
         margin-top: .75rem;
@@ -109,6 +110,31 @@
 }
 
 .section-brand {}
+
+.section-ranking {
+  & .nav-tabs {
+    border-bottom: 1px solid #f0002f;
+
+    & .nav-item {
+      & + .nav-item {
+        margin-left: .5rem;
+      }
+
+      & .nav-link {
+        color: #333;
+      }
+    }
+  }
+
+  & .nav-tabs .nav-item.show .nav-link,
+  & .nav-tabs .nav-link:focus,
+  & .nav-tabs .nav-link:hover,
+  & .nav-tabs .nav-link.active {
+    color: #fff;
+    border: 1px solid #ff4a6d;
+    background-color: #f0002f;
+  }
+}
 
 .section-blog {
   & .blog-block {
@@ -286,11 +312,13 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            flex-wrap: wrap;
             margin-bottom: .5rem;
 
             & .score {
               display: flex;
               align-items: center;
+              flex-wrap: wrap;
 
               > * + * {
                 margin-left: .5rem;
@@ -438,6 +466,22 @@
   }
 }
 
+.section-collection {
+  & .more-block {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    > a {
+      display: inline-block;
+      color: #666;
+      font-size: .875rem;
+      font-style: italic;
+      text-decoration: underline;
+    }
+  }
+}
+
 //responsive-pc
 @media (max-width: 1399px) {
   //xxl devices (xxl desktops, 1200px and 1400px)
@@ -453,6 +497,102 @@
 
 @media (max-width: 767px) {
   //Medium devices (tablets, 576px and 768px)
+  .section-notice {
+    & .content {
+      & .item {
+        & .title {
+          margin-left: 0;
+
+          > a {
+            display: block;
+            margin-top: .5rem;
+            color: #333;
+            font-size: .875rem;
+            text-decoration: none;
+
+            &:focus, &:hover {
+              color: #f37e7e;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .section-discount {
+    & .heading-title {
+      & .inner {
+       flex-wrap: wrap;
+
+        & .tips {
+          font-size: .875rem;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
+  .section-reviews {
+    & .reviews-block {
+      & .list {
+        & .item {
+          & .left {
+            margin-bottom: .5rem;
+
+            & .title {
+              text-align: left;
+              font-size: .75rem;
+            }
+          }
+
+          & .right {
+            & .status {
+              & .score {
+                margin-bottom: .5rem;
+
+                & .m-title {
+                  font-size: .875rem;
+                }
+
+                & .s-item {
+                  & .s-title {
+                    font-size: .75rem;
+                  }
+                }
+              }
+
+              & .date {
+                & .block {
+                  font-size: .75rem;
+                }
+              }
+            }
+
+            & .content {
+              & .title {
+                > a {
+                  font-size: .875rem;
+                }
+              }
+
+              & .summary {
+                font-size: .75rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .section-video {
+    & .video-block {
+      & video {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
 }
 
 @media (max-width: 575px) {
