@@ -1,9 +1,9 @@
 $(document).ready(function () {
-    // $('.nav-main li.dropdown').mouseover(function () {
-    //     $(this).children(".dropdown-menu").addClass('show');
-    // }).mouseout(function () {
-    //     $(this).children(".dropdown-menu").removeClass('show');
-    // });
+    $('.nav-main li.dropdown').mouseover(function () {
+        $(this).children('.dropdown-menu').addClass('show');
+    }).mouseout(function () {
+        $(this).children('.dropdown-menu').removeClass('show');
+    });
 
     window.onscroll = function () {
         var navigation_box = $(document).scrollTop();
