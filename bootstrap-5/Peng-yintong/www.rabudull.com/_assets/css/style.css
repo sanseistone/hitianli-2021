@@ -1135,7 +1135,7 @@ footer .footer-categories .right .menu-list > a {
     position: static;
   }
   nav.navbar.nav-main .navbar-nav .dropdown-large .dropdown-large-menu {
-    position: relative;
+    position: static;
     width: 100%;
     padding: 15px 20px;
   }
