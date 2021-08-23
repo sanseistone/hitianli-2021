@@ -207,10 +207,14 @@
     }
 
     & .right {
-      & .cart-box {
+      & .item-block {
+        background: #fff;
         position: sticky;
         top: 75px;
+        z-index: 999;
+      }
 
+      & .cart-box {
         & .btn-minus, & .btn-plus {
           border-radius: 0;
           border: 1px solid $red-6;
@@ -224,12 +228,18 @@
           border-right-color: transparent;
         }
       }
+
+      & .video-block {
+        > video {
+          width: 100%;
+        }
+      }
     }
   }
 
   & .product-description {
     & .aside-box {
-      & ul>li {
+      & ul > li {
         & .item {
           width: 100%;
 
