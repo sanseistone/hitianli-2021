@@ -79,6 +79,15 @@
   }
 }
 
+.video-main {
+  & .video-list {
+    & .video-block {
+      border-radius: 0;
+      border: 1px solid #ddd;
+    }
+  }
+}
+
 @media (max-width: 1199px) {
   /*Extra large devices (large desktops, 992px and 1200px)*/
 }
