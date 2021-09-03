@@ -19,6 +19,9 @@ header {
   background: $blue-6;
 
   & .navbar-nav {
+    position: relative;
+    width: 100%;
+
     & .nav-item {
       &.active {
         & .nav-link {
@@ -32,6 +35,50 @@ header {
 
         &:focus, &:hover {
           color: $color-1;
+        }
+      }
+    }
+
+    & .dropdown-menu {
+      margin-top: -1px;
+      padding: 25px 15px;
+
+      & .dropdown-item {
+        display: inline-block;
+        color: $color-3;
+        padding: .15rem 0;
+        background: transparent;
+
+        &:focus, &:hover {
+          color: $red-6;
+        }
+      }
+    }
+
+    & .dropdown-large {
+      position: static;
+
+      & .dropdown-large-menu {
+        width: 100%;
+        padding: 25px 50px;
+
+        & ul {
+          > li {
+            &.list-header {
+              margin-bottom: .5rem;
+              color: #666;
+            }
+
+            > a {
+              display: inline-block;
+              color: $color-3;
+              padding: .15rem 0;
+
+              &:focus, &:hover {
+                color: $red-6;
+              }
+            }
+          }
         }
       }
     }
