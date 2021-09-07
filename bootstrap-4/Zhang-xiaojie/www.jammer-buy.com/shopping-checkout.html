@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shopping Checkout</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Web Template Demo Index">
+    <meta name="keywords" content="keywords">
+    <meta name="author" content="mr.koujun@gmail.com">
+    <link rel="icon" href="_assets/img/favicon.png">
+    <link rel="stylesheet" href="../../_assets/css/plug-in-v4.css">
+    <link rel="stylesheet" href="../../_assets/css/common.css">
+    <link rel="stylesheet" href="../../_assets/css/base.css">
+    <link rel="stylesheet" href="_assets/css/style.css">
+    <link rel="stylesheet" href="_assets/css/user.css">
+</head>
+<body>
+
+<header class="py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <a href="#" class="logo inline-block">
+                    <img src="http://placehold.it/260x80" alt="">
+                </a>
+            </div>
+            <div class="col-md-6 col-sm-12 text-r text-l-sm">
+                <div class="note mb-2 font-r0875">Jammer-buy.com offers high quality jammers. Free shipping and one year warranty.</div>
+                <div class="search flex items-center justify-end mb-2">
+                    <input class="form-control" type="search" placeholder="Search..." style="max-width: 300px;">
+                    <button class="btn btn-blue6">Search</button>
+                </div>
+                <div class="keyword font-r0875">
+                    Popular Searches: <a href="#" class="inline-block">4G LTE Jammer</a> | <a href="#" class="inline-block">Wireless Jammer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<nav class="navbar navbar-expand-lg nav-main mb-3">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main"
+                aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-main">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown dropdown-large">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Lager</a>
+                    <div class="dropdown-menu dropdown-large-menu">
+                        <div class="row flex justify-center justify-start-lg gmb-15 four three-md two-sm one-xs">
+                            <div class="average">
+                                <ul class="list list-reset">
+                                    <li class="list-header">
+                                        <span class="bold">Getting started</span>
+                                    </li>
+                                    <li><a href="#">Introduction</a></li>
+                                    <li><a href="#">Download</a></li>
+                                    <li><a href="#">Contents</a></li>
+                                    <li><a href="#">Browsers & devices</a></li>
+                                    <li><a href="#">JavaScript</a></li>
+                                    <li><a href="#">Theming</a></li>
+                                    <li><a href="#">Build tools</a></li>
+                                    <li><a href="#">Webpack</a></li>
+                                    <li><a href="#">Accessibility</a></li>
+                                </ul>
+                            </div>
+                            <div class="average">
+                                <ul class="list list-reset">
+                                    <li class="list-header">
+                                        <span class="bold">Layout</span>
+                                    </li>
+                                    <li><a href="#">Overview</a></li>
+                                    <li><a href="#">Grid</a></li>
+                                    <li><a href="#">Utilities for layout</a></li>
+                                </ul>
+                            </div>
+                            <div class="average">
+                                <ul class="list list-reset">
+                                    <li class="list-header">
+                                        <span class="bold">Content</span>
+                                    </li>
+                                    <li><a href="#">Reboot</a></li>
+                                    <li><a href="#">Typography</a></li>
+                                    <li><a href="#">Code</a></li>
+                                    <li><a href="#">Images</a></li>
+                                    <li><a href="#">Tables</a></li>
+                                    <li><a href="#">Figures</a></li>
+                                </ul>
+                            </div>
+                            <div class="average">
+                                <ul class="list list-reset">
+                                    <li class="list-header">
+                                        <span class="bold">Components</span>
+                                    </li>
+                                    <li><a href="#">Buttons</a></li>
+                                    <li><a href="#">Forms</a></li>
+                                    <li><a href="#">List</a></li>
+                                    <li><a href="#">Navs</a></li>
+                                    <li><a href="#">Pagination</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main>
+    <div class="container mb-3">
+        <div class="mb-5">
+            <div class="title-box bd b-solid mb-3">
+                <div class="title mb-2 font-r125 bold">Shopping Cart</div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-sm table-bordered font-r0875">
+                    <thead>
+                    <tr>
+                        <th colspan="3">Product Information</th>
+                        <th>Unit Price</th>
+                        <th>Qty</th>
+                        <th>Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><img src="http://placehold.it/100" alt=""></td>
+                        <td>
+                            <div class="title font-r0875">Portable GPS Tracking Jammer GSM 3G 4G WiFi Blocker Devices Configuration-3G+4G</div>
+                        </td>
+                        <td>EO05102US</td>
+                        <td>$339.88</td>
+                        <td>1</td>
+                        <td>$339.88</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="mb-5">
+            <div class="title-box bd b-solid mb-3">
+                <div class="title mb-2 font-r125 bold">Shopping Address</div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-8 col-12">
+                    <form>
+                        <div class="form-group">
+                            <div class="flex">
+                                <div class="mr-1">
+                                    <label for="first-name">First Name <span class="font-red">*</span></label>
+                                    <input type="text" class="form-control" id="first-name">
+                                </div>
+                                <div class="mr-1">
+                                    <label for="last-name">Last Name <span class="font-red">*</span></label>
+                                    <input type="text" class="form-control" id="last-name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="country">country <span class="font-red">*</span></label>
+                            <select name="" class="form-control" id="country">
+                                <option value="">Default</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="postal">Zip/Postal <span class="font-red">*</span></label>
+                            <input type="text" class="form-control" id="postal">
+                        </div>
+                        <div class="form-group">
+                            <label for="state">State <span class="font-red">*</span></label>
+                            <input type="text" class="form-control" id="state">
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City <span class="font-red">*</span></label>
+                            <input type="text" class="form-control" id="city">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address <span class="font-red">*</span></label>
+                            <input type="text" class="form-control" id="address">
+                        </div>
+                        <div class="form-group">
+                            <label for="telephone">Telephone <span class="font-red">*</span></label>
+                            <input type="number" class="form-control" id="telephone">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="font-red">*</span></label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="mb-5">
+            <div class="title-box bd b-solid mb-3">
+                <div class="title mb-2 font-r125 bold">Shopping Method</div>
+            </div>
+            <form>
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>Shipping Method</th>
+                        <th>The time of arrival of goods</th>
+                        <th>Freight</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <label for="ship-express-table1" class="checkboxLabel">
+                                <input type="radio" name="shipping" value="express_table1" checked="checked" onclick="updateForm();" id="ship-express-table1"> Free Shipping
+                            </label>
+                        </td>
+                        <td>5-7 Working days</td>
+                        <td>$0.00</td>
+                    </tr>
+                    <tr style="height:40px;">
+                        <td>
+                            <label for="ship-super-table1" class="checkboxLabel">
+                                <input type="radio" name="shipping" value="super_table1" onclick="updateForm();" id="ship-super-table1"> Airmail
+                            </label>
+                        </td>
+                        <td>2-5 Working days</td>
+                        <td>$15.00</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <div class="mb-5">
+            <div class="title-box bd b-solid mb-3">
+                <div class="title mb-2 font-r125 bold">Payment Method</div>
+            </div>
+            <form>
+                <div class="bg-grey1 mb-3 p-3">
+                    <label for="pmt-payment_ccwonline" class="font-r125 bold">
+                        <input type="radio" name="payment" value="payment_ccwonline" id="pmt-payment_ccwonline"> cardpay
+                    </label>
+                    <div class="content">
+                        <p>Credit Card online Gateway</p>
+                        <div class="flex mb-3 gmx-5">
+                            <img class="img-wide" src="https://www.jammer-buy.com/images/ccwonline/visa.jpg" alt="">
+                            <img class="img-wide" src="https://www.jammer-buy.com/images/ccwonline/master.jpg" alt="">
+                            <img class="img-wide" src="https://www.jammer-buy.com/images/ccwonline/jcb.jpg" alt="">
+                        </div>
+                        <div class="gmb-15">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-3 col-12"><span class="font-red">*</span> Card Number</div>
+                                <div class="col-md-4 col-sm-6 col-12"><input type="text" class="form-control"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-3 col-12"><span class="font-red">*</span> Expiration Date</div>
+                                <div class="col-md-4 col-sm-6 col-12">
+                                    <div class="flex items-center">
+                                        <select class="form-control">
+                                            <option value="Month">Month</option>
+                                        </select>
+                                        <span class="mx-2">/</span>
+                                        <select class="form-control">
+                                            <option value="Year">Year</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-3 col-12"><span class="font-red">*</span> CVC/CVV2</div>
+                                <div class="col-md-4 col-sm-6 col-12"><input type="text" class="form-control"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-grey1 mb-3 p-3">
+                    <label for="pmt-ccpay" class="font-r125 bold">
+                        <input type="radio" name="payment" value="ccpay" id="pmt-ccpay"> credit card
+                    </label>
+                    <div class="content">
+                        <p>Credit Card online Gateway</p>
+                        <div class="flex mb-3 gmx-5">
+                            <img class="img-wide" src="https://www.jammer-buy.com/images/ccwonline/visa.jpg" alt="">
+                            <img class="img-wide" src="https://www.jammer-buy.com/images/ccwonline/master.jpg" alt="">
+                            <img class="img-wide" src="https://www.jammer-buy.com/images/ccwonline/jcb.jpg" alt="">
+                        </div>
+                        <div class="gmb-15">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-3 col-12"><span class="font-red">*</span> Card Number</div>
+                                <div class="col-md-4 col-sm-6 col-12"><input type="text" class="form-control"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-3 col-12"><span class="font-red">*</span> Expiration Date</div>
+                                <div class="col-md-4 col-sm-6 col-12">
+                                    <div class="flex items-center">
+                                        <select class="form-control">
+                                            <option value="Month">Month</option>
+                                        </select>
+                                        <span class="mx-2">/</span>
+                                        <select class="form-control">
+                                            <option value="Year">Year</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-3 col-12"><span class="font-red">*</span> CVC/CVV2</div>
+                                <div class="col-md-4 col-sm-6 col-12"><input type="text" class="form-control"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="mb-5">
+            <table class="table table-sm table-borderless">
+                <tbody>
+                <tr>
+                    <td colspan="2">
+                        <div id="otsubtotal" class="text-r">Sub-Total: <span>$339.88</span></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div id="otshipping" class="text-r">Free Shipping : <span>$0.00</span></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div id="ottotal" class="text-r">
+                            <span class="font-red">Discount amount:</span>
+                            <span class="font-red">-$20 (total amount over $300)</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div id="ottotal" class="text-r">Total: <span>$319.88</span></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button type="submit" class="btn btn-grey3">Back to shopping cart</button></td>
+                    <td class="text-r"><button type="button" class="btn btn-orange">Place Order</button></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main>
+<footer class="bd bd-2 t-bold bd-color2">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="title font-color2 font-r125 bold">Company Info</div>
+                <ul class="list list-reset dashed font-r0875">
+                    <li>
+                        <a href="https://www.jammer-buy.com/new-blog-about-jammer.html">More Blog</a>
+                    </li>
+                    <li>
+                        <a href="https://www.jammer-buy.com/jammer-news-videos.html">Video</a>
+                    </li>
+                    <li>
+                        <a href="https://www.jammer-buy.com/jammer-informations-forum.html">Forum</a>
+                    </li>
+                    <li>
+                        <a href="https://www.jammer-buy.com/jammer-articles.html">Articles</a>
+                    </li>
+                    <li>
+                        <a href="https://www.jammer-buy.com/page/">Page</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="title font-color2 font-r125 bold">Other categories</div>
+                <ul class="list list-reset dashed font-r0875">
+                    <li>
+                        <a href="https://www.jammer-buy.com/lojack-4g-jammer/c-35.html">Lojack 4G Jammer</a>
+                    </li>
+                    <li>
+                        <a href="https://www.jammer-buy.com/spy-camer-jammer/c-33.html">Spy Camera Jammer</a>
+                    </li>
+                    <li>
+                        <a href="https://www.jammer-buy.com/remote-control-jammer/c-31.html">Remote Control Jammer</a>
+                    </li>
+                    <li>
+                        <a href="https://www.jammer-buy.com/uhf-vhf-jammer/c-30.html">UHF VHF Jammer</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="title font-color2 font-r125 bold">Company Policies</div>
+                <ul class="list list-reset dashed font-r0875">
+                    <li>
+                        <a rel="nofollow" href="https://www.jammer-buy.com/help/h-1.html">About Us</a>
+                    </li>
+                    <li>
+                        <a rel="nofollow" href="https://www.jammer-buy.com/help/h-2.html">Privacy &amp; Security</a>
+                    </li>
+                    <li>
+                        <a rel="nofollow" href="https://www.jammer-buy.com/help/h-3.html">Shipping Policy</a>
+                    </li>
+                    <li>
+                        <a rel="nofollow" href="https://www.jammer-buy.com/help/h-4.html">Return &amp; Warranty</a>
+                    </li>
+                    <li>
+                        <a rel="nofollow" href="https://www.jammer-buy.com/help/h-5.html">Disclaimer</a>
+                    </li>
+                    <li>
+                        <a href="https://www.jammer-buy.com/help/h-7.html">Sitemap</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="title font-color2 font-r125 bold">Follow Us</div>
+                <ul class="list list-reset dashed font-r0875">
+                    <li>
+                        <a href="https://www.facebook.com/Jammers-370334603428470"><i class="fab fa-facebook-square mr-2"></i>Facebook</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/FUJIN1992"><i class="fab fa-twitter-square mr-2"></i>Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/108875081730967943340"><i class="fab fa-google-plus-square mr-2"></i>Google+</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCnFWkvQ2CckyaUHVfWk5teA"><i class="fab fa-youtube-square mr-2"></i>Youtube</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="copyright bg-color6 p-2">
+        <div class="text-c font-colorf bold">Copyright © 2016-2020 Jammer-Buy.com All Rights Reserved.</div>
+    </div>
+</footer>
+
+<script src="../../_assets/js/jQuery-v3.4.1.min.js"></script>
+<script src="../../_assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../_assets/plug-in/jquery.scrollUp/jquery.scrollUp.js"></script>
+<script src="_assets/js/plugin.js"></script>
+<script>
+    $(function () {
+        $.scrollUp({
+            scrollSpeed: 200,
+            scrollImg: true
+        });
+    });
+</script>
+
+</body>
+</html>
