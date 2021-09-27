@@ -123,36 +123,44 @@
         </div>
     </div>
 </nav>
-<main>
+<main class="shopping-cart">
     <div class="container mb-3">
         <div class="mb-5">
             <div class="title-box bd b-solid mb-3">
                 <div class="title mb-2 font-r125 bold">Shopping Cart</div>
             </div>
-            <!--<div class="table-responsive">-->
-                <table class="table table-sm table-bordered font-r0875">
-                    <thead>
-                    <tr>
-                        <th colspan="3">Product Information</th>
-                        <th>Unit Price</th>
-                        <th>Qty</th>
-                        <th>Total</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td><img src="http://placehold.it/100" alt=""></td>
-                        <td>
-                            <div class="title font-r0875">Portable GPS Tracking Jammer GSM 3G 4G WiFi Blocker Devices Configuration-3G+4G</div>
-                        </td>
-                        <td>EO05102US</td>
-                        <td>$339.88</td>
-                        <td>1</td>
-                        <td>$339.88</td>
-                    </tr>
-                    </tbody>
-                </table>
-            <!--</div>-->
+            <div class="cart-list cart-list-checkout">
+                <div class="item item-header">
+                    <div>Product Information</div>
+                    <div>Title</div>
+                    <div>SKU</div>
+                    <div>Unit Price</div>
+                    <div>Qty</div>
+                    <div>Total</div>
+                </div>
+                <div class="item">
+                    <div><img src="http://placehold.it/300" alt=""></div>
+                    <div>
+                        <div class="title font-r0875">Portable GPS Tracking Jammer GSM 3G 4G WiFi Blocker Devices Configuration-3G+4G</div>
+                    </div>
+                    <div>EO05102US</div>
+                    <div>$339.88</div>
+                    <div>1</div>
+                    <div>$339.88</div>
+                    <div><a href="#" class="btn btn-sm btn-dark">Remove</a></div>
+                </div>
+                <div class="item">
+                    <div><img src="http://placehold.it/300" alt=""></div>
+                    <div>
+                        <div class="title font-r0875">Portable GPS Tracking Jammer GSM 3G 4G WiFi Blocker Devices Configuration-3G+4G</div>
+                    </div>
+                    <div>EO05102US</div>
+                    <div>$339.88</div>
+                    <div>1</div>
+                    <div>$339.88</div>
+                    <div><a href="#" class="btn btn-sm btn-dark">Remove</a></div>
+                </div>
+            </div>
         </div>
         <div class="mb-5">
             <div class="title-box bd b-solid mb-3">
@@ -351,8 +359,12 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><button type="submit" class="btn btn-grey3">Back to shopping cart</button></td>
-                    <td class="text-r"><button type="button" class="btn btn-orange">Place Order</button></td>
+                    <td>
+                        <button type="submit" class="btn btn-grey3">Back to shopping cart</button>
+                    </td>
+                    <td class="text-r">
+                        <button type="button" class="btn btn-orange">Place Order</button>
+                    </td>
                 </tr>
                 </tbody>
             </table>

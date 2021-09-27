@@ -123,84 +123,66 @@
         </div>
     </div>
 </nav>
-<main>
+<main class="shopping-cart">
     <div class="container mb-3">
         <div class="title-box bd b-solid mb-3">
             <div class="title mb-2 font-r125 bold">Shopping Cart</div>
         </div>
-        <!--<div class="table-responsive">-->
-            <table class="table table-sm table-bordered font-r0875">
-                <thead>
-                <tr>
-                    <th colspan="3">Product Information</th>
-                    <th>Unit Price</th>
-                    <th>Qty</th>
-                    <th>Total</th>
-                    <th>Option</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td><img src="http://placehold.it/100" alt=""></td>
-                    <td>
-                        <div class="title font-r0875">Portable GPS Tracking Jammer GSM 3G 4G WiFi Blocker Devices Configuration-3G+4G</div>
-                    </td>
-                    <td>EO05102US</td>
-                    <td>$339.88</td>
-                    <td>
-                        <div class="flex items-center">
-                            <button class="btn btn-grey4-o"><i class="fal fa-minus"></i></button>
-                            <input class="form-control w-80 mx-2" type="text">
-                            <button class="btn btn-grey4-o"><i class="fal fa-plus"></i></button>
-                        </div>
-                    </td>
-                    <td>$339.88</td>
-                    <td><a href="#" class="inline-block bold">Remove</a></td>
-                </tr>
-                <tr>
-                    <td><img src="http://placehold.it/100" alt=""></td>
-                    <td>
-                        <div class="title font-r0875">Portable GPS Tracking Jammer GSM 3G 4G WiFi Blocker Devices Configuration-3G+4G</div>
-                    </td>
-                    <td>EO05102US</td>
-                    <td>$339.88</td>
-                    <td>
-                        <div class="flex items-center">
-                            <button class="btn btn-grey4-o"><i class="fal fa-minus"></i></button>
-                            <input class="form-control w-80 mx-2" type="text">
-                            <button class="btn btn-grey4-o"><i class="fal fa-plus"></i></button>
-                        </div>
-                    </td>
-                    <td>$339.88</td>
-                    <td><a href="#" class="inline-block bold">Remove</a></td>
-                </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered font-r0875">
-                <tbody>
-                <tr>
-                    <td colspan="7">
-                        <div class="text-r bold">Total Quantity: 1 items</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="7">
-                        <div class="text-r bold">Subtotal: <span class="font-red font-r125 bold">$339.88</span></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="7">
-                        <div class="text-r bold">
-                            <a href="#" class="btn btn-orange">Checkout</a>
-                        </div>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-        <!--</div>-->
+        <div class="cart-list">
+            <div class="item item-header">
+                <div>Product Information</div>
+                <div>Title</div>
+                <div>SKU</div>
+                <div>Unit Price</div>
+                <div>Qty</div>
+                <div>Total</div>
+                <div>Option</div>
+            </div>
+            <div class="item">
+                <div><img src="http://placehold.it/300" alt=""></div>
+                <div>
+                    <div class="title font-r0875">Portable GPS Tracking Jammer GSM 3G 4G WiFi Blocker Devices Configuration-3G+4G</div>
+                </div>
+                <div>EO05102US</div>
+                <div>$339.88</div>
+                <div>
+                    <div class="qty-box flex items-center">
+                        <button class="btn btn-sm btn-grey4-o"><i class="fal fa-minus"></i></button>
+                        <input class="form-control form-control-sm w-80 mx-2" type="text">
+                        <button class="btn btn-sm btn-grey4-o"><i class="fal fa-plus"></i></button>
+                    </div>
+                </div>
+                <div>$339.88</div>
+                <div><a href="#" class="btn btn-sm btn-dark">Remove</a></div>
+            </div>
+            <div class="item">
+                <div><img src="http://placehold.it/300" alt=""></div>
+                <div>
+                    <div class="title font-r0875">Portable GPS Tracking Jammer GSM 3G 4G WiFi Blocker Devices Configuration-3G+4G</div>
+                </div>
+                <div>EO05102US</div>
+                <div>$339.88</div>
+                <div>
+                    <div class="qty-box flex items-center">
+                        <button class="btn btn-sm btn-grey4-o"><i class="fal fa-minus"></i></button>
+                        <input class="form-control form-control-sm w-80 mx-2" type="text">
+                        <button class="btn btn-sm btn-grey4-o"><i class="fal fa-plus"></i></button>
+                    </div>
+                </div>
+                <div>$339.88</div>
+                <div><a href="#" class="btn btn-sm btn-dark">Remove</a></div>
+            </div>
+        </div>
+        <div class="cart-total">
+            <div class="text-r bold">Total Quantity: 1 items</div>
+            <div class="my-2 text-r bold">Subtotal: <span class="font-red font-r125 bold">$339.88</span></div>
+            <div class="text-r bold">
+                <a href="#" class="btn btn-orange">Checkout</a>
+            </div>
+        </div>
     </div>
 </main>
-<footer class="bd bd-2 t-bold bd-color2">
+<footer class="bd bd-2 t-solid bd-color2">
     <div class="container py-4">
         <div class="row">
             <div class="col-md-3 col-sm-6 col-12">
