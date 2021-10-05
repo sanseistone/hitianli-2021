@@ -1,4 +1,28 @@
 $(document).ready(function () {
+    var containerEl = document.querySelector('.main-content');
+    var checkboxGroup = document.querySelector('.checkbox-group');
+    var checkboxes = checkboxGroup.querySelectorAll('input[type="checkbox"]');
+
+    var mixer = mixitup(containerEl);
+
+    checkboxGroup.addEventListener('change', function() {
+        var selectors = [];
+
+        for (var i = 0; i < checkboxes.length; i++) {
+            var checkbox = checkboxes[i];
+
+            if (checkbox.checked) selectors.push(checkbox.value);
+        }
+
+        var selectorString = selectors.length > 0 ?
+            selectors.join(',') :
+            'all';
+
+        mixer.filter(selectorString);
+    });
+});
+
+$(document).ready(function () {
     window.onscroll = function () {
         var navigation_box = $(document).scrollTop();
         if (navigation_box > 200) {
