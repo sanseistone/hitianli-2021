@@ -186,7 +186,7 @@ header {
 nav.navbar.nav-main {
   position: sticky;
   top: 10px;
-  z-index: 9999;
+  z-index: 99;
   width: 100%;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
@@ -1066,6 +1066,10 @@ footer {
     }
   }
 
+  & .show-aside {
+    display: none;
+  }
+
   & .message {
     right: 0;
     bottom: 60px;
@@ -1331,6 +1335,15 @@ footer {
           }
         }
       }
+    }
+  }
+
+  .navigation-box {
+    & .show-aside {
+      display: block;
+      cursor: pointer;
+      right: 0;
+      bottom: 100px;
     }
   }
 }

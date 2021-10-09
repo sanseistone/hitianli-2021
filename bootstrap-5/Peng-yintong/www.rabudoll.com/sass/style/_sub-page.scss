@@ -29,23 +29,24 @@ main {
       & .sort-block {
         display: inline-flex;
         align-items: center;
-        border: 1px solid #f37e7e;
+        flex-wrap: wrap;
         margin-bottom: 2rem;
 
         & .title {
           background: #f37e7e;
-          padding: .5rem;
+          padding: .45rem .5rem;
           color: #fff;
         }
 
         & .controls {
           display: flex;
           align-items: center;
-          margin-left: .25rem;
+          border: 1px solid #f37e7e;
 
           & .control {
             cursor: pointer;
             padding: .5rem 1rem;
+            white-space: nowrap;
             font-size: .875rem;
 
             & + .control {
@@ -261,6 +262,87 @@ main {
     & .main-aside {
       &.offcanvas-start {
         width: 85%;
+      }
+    }
+
+    & .main-content {
+      flex: 0 0 auto;
+      width: 100%;
+
+      & .page-info {
+        background: #f5f5f5;
+        padding: 1rem;
+
+        & .heading-sub {
+          border-bottom: 1px solid #ddd;
+          margin-bottom: 1rem;
+
+          & .title {
+            font-size: 1.5rem;
+            font-weight: bold;
+          }
+        }
+      }
+
+      & .option-box {
+        & .sort-block {
+          display: inline-flex;
+          align-items: center;
+          flex-wrap: wrap;
+          margin-bottom: 2rem;
+
+          & .title {
+            background: #f37e7e;
+            padding: .35rem .5rem;
+            color: #fff;
+          }
+
+          & .controls {
+            display: flex;
+            align-items: center;
+            border: 1px solid #f37e7e;
+
+            & .control {
+              cursor: pointer;
+              padding: .35rem .5rem;
+              white-space: nowrap;
+              font-size: .75rem;
+
+              & + .control {
+                border-left: 1px solid #f37e7e;
+              }
+            }
+          }
+        }
+      }
+
+      & .pagination-nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        & .pagination {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        & .page-item {
+          > a {
+            color: #333;
+
+            &:focus, &:hover {
+              color: #f37e7e;
+            }
+          }
+
+          &.active {
+            > a {
+              background: #f37e7e;
+              border-color: #f37e7e;
+              color: #fff;
+            }
+          }
+        }
       }
     }
   }

@@ -481,7 +481,7 @@ header .right .social-list > li > a > svg ~ span {
 nav.navbar.nav-main {
   position: sticky;
   top: 10px;
-  z-index: 9999;
+  z-index: 99;
   width: 100%;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
@@ -1159,6 +1159,9 @@ footer .footer-categories .right .menu-list > a {
   height: 30px;
   fill: #fff;
 }
+.navigation-box .show-aside {
+  display: none;
+}
 .navigation-box .message {
   right: 0;
   bottom: 60px;
@@ -1332,6 +1335,13 @@ footer .footer-categories .right .menu-list > a {
   }
   nav.navbar.nav-main .navbar-nav .dropdown-large .dropdown-large-menu .right .menu-list .col > a {
     font-size: .875rem;
+  }
+
+  .navigation-box .show-aside {
+    display: block;
+    cursor: pointer;
+    right: 0;
+    bottom: 100px;
   }
 }
 @media (max-width: 767px) {
@@ -2161,22 +2171,23 @@ main .main-content .page-info .heading-sub .title {
 main .main-content .option-box .sort-block {
   display: inline-flex;
   align-items: center;
-  border: 1px solid #f37e7e;
+  flex-wrap: wrap;
   margin-bottom: 2rem;
 }
 main .main-content .option-box .sort-block .title {
   background: #f37e7e;
-  padding: .5rem;
+  padding: .45rem .5rem;
   color: #fff;
 }
 main .main-content .option-box .sort-block .controls {
   display: flex;
   align-items: center;
-  margin-left: .25rem;
+  border: 1px solid #f37e7e;
 }
 main .main-content .option-box .sort-block .controls .control {
   cursor: pointer;
   padding: .5rem 1rem;
+  white-space: nowrap;
   font-size: .875rem;
 }
 main .main-content .option-box .sort-block .controls .control + .control {
@@ -2325,5 +2336,66 @@ main .main-aside .aside-box .list > li.active > a {
 @media (max-width: 575px) {
   main .main-aside.offcanvas-start {
     width: 85%;
+  }
+  main .main-content {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  main .main-content .page-info {
+    background: #f5f5f5;
+    padding: 1rem;
+  }
+  main .main-content .page-info .heading-sub {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1rem;
+  }
+  main .main-content .page-info .heading-sub .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  main .main-content .option-box .sort-block {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  main .main-content .option-box .sort-block .title {
+    background: #f37e7e;
+    padding: .35rem .5rem;
+    color: #fff;
+  }
+  main .main-content .option-box .sort-block .controls {
+    display: flex;
+    align-items: center;
+    border: 1px solid #f37e7e;
+  }
+  main .main-content .option-box .sort-block .controls .control {
+    cursor: pointer;
+    padding: .35rem .5rem;
+    white-space: nowrap;
+    font-size: .75rem;
+  }
+  main .main-content .option-box .sort-block .controls .control + .control {
+    border-left: 1px solid #f37e7e;
+  }
+  main .main-content .pagination-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  main .main-content .pagination-nav .pagination {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .main-content .pagination-nav .page-item > a {
+    color: #333;
+  }
+  main .main-content .pagination-nav .page-item > a:focus, main .main-content .pagination-nav .page-item > a:hover {
+    color: #f37e7e;
+  }
+  main .main-content .pagination-nav .page-item.active > a {
+    background: #f37e7e;
+    border-color: #f37e7e;
+    color: #fff;
   }
 }
