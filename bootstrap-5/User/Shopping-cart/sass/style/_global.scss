@@ -155,20 +155,36 @@ nav.navbar.nav-main {
 }
 
 .breadcrumb {
+  display: flex;
   align-items: center;
-  background: #f0f0f0;
-  padding: .75rem;
+  justify-content: center;
+  background-position: center center;
+  background-size: contain;
+  margin: 0;
 
   & .breadcrumb-item {
-    > a {
-      display: flex;
+    color: #999;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    &:before {
+      color: #999;
+    }
+
+    &.active {
+      border-bottom: 2px solid #bb2d3b;
+      color: #fff;
     }
   }
 }
 
 main {
   height: 100%;
-  min-height: calc(100vh - 92px - 66px - 96px - 136px);
+  min-height: calc(100vh - 92px - 64px - 136px);
+}
+
+.section-breadcrumb {
+  margin-bottom: 2rem;
 }
 
 .section-shopping {
@@ -182,42 +198,156 @@ main {
   }
 
   & .cart-list {
-    & .pic {
-      display: block;
-    }
-
-    & .title {
-      margin-bottom: .5rem;
-      text-decoration: none;
-
-      > a {
+    & .table {
+      & .pic {
         display: block;
-        font-weight: bold;
+      }
+
+      & .title {
+        margin-bottom: .5rem;
+        text-decoration: none;
+
+        > a {
+          display: block;
+          font-weight: bold;
+        }
+      }
+
+      & .summary {
+        padding-left: 0;
+        list-style: none;
+        font-size: .75rem;
+      }
+
+      & .qty {
+        display: flex;
+        //align-items: center;
+      }
+
+      & .btn-box {
+        display: flex;
+        margin-left: .5rem;
+        white-space: nowrap;
+
+        & .btn {
+          display: flex;
+          align-items: center;
+
+          & + .btn {
+            margin-left: .5rem;
+          }
+        }
+      }
+    }
+  }
+
+  & .cart-block {
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+
+    & .list-item {
+      width: 100%;
+      display: flex;
+
+      > * {
+        padding: .5rem .75rem;
+
+        & ~ * {
+          border-left: 1px solid #ddd;
+        }
+      }
+
+      > *:nth-of-type(1) {
+        flex: 0 0 auto;
+        width: 15%;
+      }
+
+      > *:nth-of-type(2) {
+        flex: 0 0 auto;
+        width: 30%;
+
+        & .title {
+          font-weight: bold;
+        }
+
+        & .summary {
+          padding-left: 0;
+          list-style: none;
+          font-size: .75rem;
+        }
+      }
+
+      > *:nth-of-type(3) {
+        flex: 0 0 auto;
+        width: 15%;
+      }
+
+      > *:nth-of-type(4) {
+        flex: 0 0 auto;
+        width: 20%;
+
+        & .qty {
+          display: flex;
+
+          > * + * {
+            margin-left: .5rem;
+          }
+
+          & .btn-box {
+            display: flex;
+
+            > * + * {
+              margin-left: .5rem;
+            }
+          }
+        }
+      }
+
+      > *:nth-of-type(5) {
+        flex: 0 0 auto;
+        width: 10%;
+      }
+
+      > *:nth-of-type(6) {
+        flex: 0 0 auto;
+        width: 10%;
+      }
+
+      &.list-header {
+        background: #f0f0f0;
+        border-bottom: 2px solid #ddd;
+        color: #666;
       }
     }
 
-    & .summary {
-      padding-left: 0;
-      list-style: none;
-      font-size: .75rem;
-    }
+    &.cart-block-aside {
+      & .list-item {
+        > * {
+          flex: 0 0 auto;
+        }
 
-    & .qty {
-      display: flex;
-      //align-items: center;
-    }
+        > *:nth-of-type(1) {
+          width: 15%;
+        }
 
-    & .btn-box {
-      display: flex;
-      margin-left: .5rem;
-      white-space: nowrap;
+        > *:nth-of-type(2) {
+          width: 30%;
+        }
 
-      & .btn {
-        display: flex;
-        align-items: center;
+        > *:nth-of-type(3) {
+          width: 20%;
+        }
 
-        & + .btn {
-          margin-left: .5rem;
+        > *:nth-of-type(4) {
+          width: 15%;
+        }
+
+        > *:nth-of-type(5) {
+          width: 20%;
+        }
+
+        &.list-header {
+          font-size: .875rem;
         }
       }
     }
@@ -529,6 +659,151 @@ footer {
                 }
               }
             }
+          }
+        }
+      }
+    }
+  }
+
+  .section-shopping {
+    & .cart-block {
+      border: 1px solid #ddd;
+      margin-bottom: 1rem;
+
+      & .list-item {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 40%;
+
+        > * {
+          padding: .5rem .75rem;
+
+          & ~ * {
+            border: none;
+          }
+
+          &:before {
+            color: #666;
+            font-size: .875rem;
+            font-style: italic;
+          }
+        }
+
+        > *:nth-of-type(1) {
+          position: absolute;
+          top: 0;
+          left: 10%;
+          width: 30%;
+        }
+
+        > *:nth-of-type(2) {
+          width: 100%;
+
+          &:before {
+            display: block;
+            content: "Product:";
+          }
+        }
+
+        > *:nth-of-type(3) {
+          width: 100%;
+
+          &:before {
+            display: inline-block;
+            content: "Product-ID:";
+            margin-right: .5rem;
+          }
+        }
+
+        > *:nth-of-type(4) {
+          width: 100%;
+
+          &:before {
+            display: block;
+            content: "Quantity:";
+          }
+        }
+
+        > *:nth-of-type(5) {
+          width: 100%;
+
+          &:before {
+            display: inline-block;
+            content: "Sub-Total:";
+            margin-right: .5rem;
+          }
+        }
+
+        > *:nth-of-type(6) {
+          position: absolute;
+          width: 10%;
+          top: 0;
+          left: 0;
+        }
+
+        &.list-header {
+          display: none;
+        }
+      }
+
+      &.cart-block-aside {
+        & .list-item {
+          position: relative;
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          padding-left: 30%;
+
+          > *:nth-of-type(1) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30%;
+          }
+
+          > *:nth-of-type(2) {
+            width: 100%;
+
+            &:before {
+              display: block;
+              content: "Product:";
+            }
+          }
+
+          > *:nth-of-type(3) {
+            width: 100%;
+
+            &:before {
+              display: inline-block;
+              content: "Product-ID:";
+              margin-right: .5rem;
+            }
+          }
+
+          > *:nth-of-type(4) {
+            width: 100%;
+
+            &:before {
+              display: inline-block;
+              content: "Quantity:";
+              margin-right: .5rem;
+            }
+          }
+
+          > *:nth-of-type(5) {
+            width: 100%;
+
+            &:before {
+              display: inline-block;
+              content: "Sub-Total:";
+              margin-right: .5rem;
+            }
+          }
+
+          &.list-header {
+            display: none;
           }
         }
       }

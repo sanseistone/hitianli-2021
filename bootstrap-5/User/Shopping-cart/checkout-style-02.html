@@ -114,27 +114,18 @@
         </div>
     </div>
 </nav>
-<div class="section-block section-breadcrumb my-4">
-    <div class="container">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item">
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-                            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-                        </svg>
-                    </a>
-                </li>
-                <li class="breadcrumb-item"><a href="#">Library</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Data</li>
-            </ol>
-        </nav>
-    </div>
-</div>
 <main role="main">
-    <div class="container">
-        <div class="section-shopping section-checkout mb-5">
+    <div class="section-block section-breadcrumb py-5" style="background-image: url(_assets/image/section-breadcrumb-bg.jpg);">
+        <div class="container">
+            <nav class="breadcrumb">
+                <div class="breadcrumb-item">Shopping Cart</div>
+                <div class="breadcrumb-item active">Checkout</div>
+                <div class="breadcrumb-item">Order Complete</div>
+            </nav>
+        </div>
+    </div>
+    <div class="section-shopping section-checkout mb-5">
+        <div class="container">
             <div class="title-block mb-3">
                 <div class="title mb-2">Checkout</div>
             </div>
@@ -148,7 +139,7 @@
                             <div class="row row-cols-md-2 row-cols-1 g-3 mb-4">
                                 <div class="col">
                                     <fieldset>
-                                        <legend>User</legend>
+                                        <legend>Billing Details</legend>
                                         <div class="form-group required">
                                             <label><span>*</span> First Name</label>
                                             <input type="text" name="firstname" value="" placeholder="First Name" class="form-control">
@@ -213,35 +204,35 @@
                     </div>
                     <div class="item-block delivery-block">
                         <div class="card-header">
-                            <div class="title">Title</div>
+                            <div class="title">Shipping method</div>
                         </div>
                         <div class="card-body">
-                            <div class="content mb-3">
-                                <div class="summary">Shipping method</div>
-                            </div>
+                            <!--<div class="content mb-3">-->
+                            <!--    <div class="summary">Shipping method</div>-->
+                            <!--</div>-->
                             <div class="content">
                                 <div class="title-box mb-3">
-                                    <div class="title">Shipping method</div>
+                                    <div class="title">7-15</div>
                                 </div>
                                 <div class="radio">
-                                    <label><input type="radio" name="shipping_method" value="" checked="checked" class="me-2">Free</label>
+                                    <label><input type="radio" name="shipping_method" value="" checked class="me-2">Free</label>
                                 </div>
-                                <div class="buttons text-end">
-                                    <input type="button" value="Submit" class="btn btn-danger">
-                                </div>
+                            </div>
+                            <div class="buttons text-end">
+                                <input type="button" value="Submit" class="btn btn-danger">
                             </div>
                         </div>
                     </div>
                     <div class="item-block payment-block">
                         <div class="card-header">
-                            <div class="title">Title</div>
+                            <div class="title">Payment Method</div>
                         </div>
                         <div class="card-body">
                             <div class="content">
                                 <div class="summary mb-3">Payment Method</div>
                                 <div class="radio-list mb-3">
                                     <div class="radio">
-                                        <label><input type="radio" name="payment_method" value="" checked="checked" class="me-2">Payment Method</label>
+                                        <label><input type="radio" name="payment_method" value="" checked class="me-2">Payment Method</label>
                                     </div>
                                     <div class="radio">
                                         <label><input type="radio" name="payment_method" value="" class="me-2">Payment Method</label>
@@ -256,7 +247,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>
-                                            <input type="checkbox" name="agree" value="1" checked="checked" class="me-2">
+                                            <input type="checkbox" name="agree" value="1" checked class="me-2">
                                             <a class="fancybox" href="#" title="Policy">Policy</a>
                                         </label>
                                     </div>
@@ -277,46 +268,34 @@
                 </div>
                 <div class="col">
                     <div class="item-block product-detail-block">
-                        <div class="card-header"><div class="title">Title</div></div>
+                        <div class="card-header"><div class="title">Your Order</div></div>
                         <div class="card-body">
-                            <div class="cart-list mb-3">
-                                <div class="table-responsive">
-                                    <table class="table table-bordered">
-                                        <thead>
-                                        <tr>
-                                            <th>Product</th>
-                                            <th>Product-ID</th>
-                                            <th>Price</th>
-                                            <th>Quantity</th>
-                                            <th>Sub-Total</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="pic">
-                                                    <a href="#"><img src="http://placehold.it/600" alt="" style="max-width: 120px;"></a>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="title">
-                                                    <a href="#">title</a>
-                                                </div>
-                                                <ul class="summary">
-                                                    <li>Skin:Natural</li>
-                                                    <li>Eye:Brown</li>
-                                                    <li>Vagina:Built in</li>
-                                                    <li>Double Knee Joints:No</li>
-                                                    <li>Standing:No standing</li>
-                                                    <li>Shoulder:Fixed</li>
-                                                </ul>
-                                            </td>
-                                            <td>SKU</td>
-                                            <td>1</td>
-                                            <td>¥6,610.00</td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
+                            <div class="cart-block cart-block-aside mb-3">
+                                <div class="list-item list-header">
+                                    <div>Product</div>
+                                    <div>Product-ID</div>
+                                    <div>Price</div>
+                                    <div>Quantity</div>
+                                    <div>Sub-Total</div>
+                                </div>
+                                <div class="list-item">
+                                    <div>
+                                        <a href="#"><img src="http://placehold.it/600" alt="" style="max-width: 120px;"></a>
+                                    </div>
+                                    <div>
+                                        <div class="title">title</div>
+                                        <ul class="summary">
+                                            <li>Skin:Natural</li>
+                                            <li>Eye:Brown</li>
+                                            <li>Vagina:Built in</li>
+                                            <li>Double Knee Joints:No</li>
+                                            <li>Standing:No standing</li>
+                                            <li>Shoulder:Fixed</li>
+                                        </ul>
+                                    </div>
+                                    <div>SKU</div>
+                                    <div>1</div>
+                                    <div>¥6,610.00</div>
                                 </div>
                             </div>
                             <div class="total-box mb-4">
