@@ -33,3 +33,10 @@ $(document).on('touchstart', '.navbar-box', function (e) {
         setTimeout("$('.navbar-box').fadeOut(50)", 220);
     }
 });
+
+$('.readmore-box').readmore({
+    speed: 75,
+    collapsedHeight: 72,
+    moreLink: '<span class="btn btn-block btn-black mt-3">More <i class="fal fa-angle-down"></i></span>',
+    lessLink: '<span class="btn btn-block btn-black mt-3">More <i class="fal fa-angle-up"></i></span>'
+});

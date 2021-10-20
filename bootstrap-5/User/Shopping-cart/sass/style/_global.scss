@@ -199,6 +199,12 @@ main {
 
   & .cart-list {
     & .table {
+      > thead {
+        > tr > th {
+          white-space: nowrap;
+        }
+      }
+
       & .pic {
         display: block;
       }
@@ -217,6 +223,10 @@ main {
         padding-left: 0;
         list-style: none;
         font-size: .75rem;
+
+        > li {
+          white-space: nowrap;
+        }
       }
 
       & .qty {
@@ -390,6 +400,7 @@ main {
 
     & .card-header {
       & .title {
+        font-size: 1.15rem;
         font-weight: bold;
       }
     }
@@ -454,7 +465,7 @@ main {
           border-bottom: 1px solid #ddd;
           margin-bottom: .5rem;
           padding-bottom: .25rem;
-          font-size: 1rem;
+          font-size: .875rem;
           font-weight: bold;
         }
 
@@ -623,10 +634,31 @@ footer {
       }
     }
   }
+
+  .section-checkout {
+    & .item-block {
+      &.product-detail-block {
+        position: sticky;
+        top: 0;
+        z-index: 99;
+      }
+    }
+  }
 }
 
 @media (max-width: 991px) {
   //Large devices (desktops, 768px and 992px)
+  header {
+    & .logo {
+      margin-bottom: .5rem;
+      text-align: center;
+
+      & .logo-block {
+        display: inline-block;
+      }
+    }
+  }
+
   nav.navbar.nav-main {
     & .offcanvas-start {
       width: 75%;
@@ -809,10 +841,36 @@ footer {
       }
     }
   }
+
+  footer {
+    padding: 2rem 0;
+
+    & .copyright {
+      & .inner {
+        font-size: .875rem;
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {
   //Medium devices (tablets, 576px and 768px)
+  .breadcrumb {
+    & .breadcrumb-item {
+      color: #999;
+      font-size: 1.05rem;
+      font-weight: 400;
+
+      &:before {
+        color: #999;
+      }
+
+      &.active {
+        border-bottom: 2px solid #bb2d3b;
+        color: #fff;
+      }
+    }
+  }
 }
 
 @media (max-width: 575px) {

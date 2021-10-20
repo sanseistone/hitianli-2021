@@ -168,6 +168,57 @@ a {
       text-align: left;
     }
   }
+
+  &.product-box-double {
+    & .pic-box {
+      &.pic-box-double {
+        > img {
+          transition: all .3s ease-in-out;
+        }
+
+        > img:first-child {}
+
+        > img:last-child {
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+        }
+
+        &:hover {
+          > img:first-child {
+            opacity: 0;
+          }
+
+          > img:last-child {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    & .content {
+      padding: .5rem;
+      text-align: left;
+
+      & .title {
+        margin-bottom: .25rem;
+      }
+
+      & .price {
+        > span {
+          color: $red-6;
+          font-size: 1.25rem;
+          font-weight: bold;
+        }
+
+        > del {
+          color: $color-6;
+          font-size: .875rem;
+        }
+      }
+    }
+  }
 }
 
 .iframe-main {

@@ -1,10 +1,14 @@
 @charset "utf-8";
 
+html, body {
+  font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif;
+}
+
 a {
   color: #333;
   text-decoration: none;
-  
-  &:focus,&:hover {
+
+  &:focus, &:hover {
     color: #f37e7e;
   }
 }
@@ -34,22 +38,27 @@ img {
   flex: 0 0 auto;
   width: calc(100% / 7);
 }
+
 .row-cols-8 > * {
   flex: 0 0 auto;
   width: calc(100% / 8);
 }
+
 .row-cols-9 > * {
   flex: 0 0 auto;
   width: calc(100% / 9);
 }
+
 .row-cols-10 > * {
   flex: 0 0 auto;
   width: calc(100% / 10);
 }
+
 .row-cols-11 > * {
   flex: 0 0 auto;
   width: calc(100% / 11);
 }
+
 .row-cols-12 > * {
   flex: 0 0 auto;
   width: calc(100% / 12);

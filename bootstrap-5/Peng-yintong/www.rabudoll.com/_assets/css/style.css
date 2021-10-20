@@ -1,3 +1,8 @@
+@charset "UTF-8";
+html, body {
+  font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif;
+}
+
 a {
   color: #333;
   text-decoration: none;
@@ -841,6 +846,27 @@ nav.navbar.nav-main .navbar-nav .dropdown-menu a.tips-item .tips > span.purple {
 }
 .product-block .p-pic > a {
   display: block;
+}
+.product-block .content .label-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: .5rem;
+}
+.product-block .content .label-block .label-item {
+  padding: .15rem .35rem;
+  color: #fff;
+  font-size: .75rem;
+}
+.product-block .content .label-block .label-item + .label-item {
+  margin-left: .5rem;
+}
+.product-block .content .label-block .label-item.red {
+  background: red;
+}
+.product-block .content .label-block .label-item.orange {
+  background: orange;
 }
 .product-block .content .p-tags {
   display: flex;
@@ -2156,6 +2182,21 @@ main .main-content {
   flex: 0 0 auto;
   width: 80%;
 }
+main .main-content .category-title-block {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+main .main-content .category-title-block .title {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+main .main-content .category-title-block .banner > a {
+  display: inline-block;
+}
+main .main-content .category-title-block .banner > a > img {
+  width: auto;
+  height: 100%;
+}
 main .main-content .page-info {
   background: #f5f5f5;
   padding: 1rem;
@@ -2168,34 +2209,32 @@ main .main-content .page-info .heading-sub .title {
   font-size: 1.5rem;
   font-weight: bold;
 }
+main .main-content .option-box {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
 main .main-content .option-box .sort-block {
   display: inline-flex;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
 }
 main .main-content .option-box .sort-block .title {
-  background: #f37e7e;
-  padding: .45rem .5rem;
-  color: #fff;
+  border-radius: 0;
+  cursor: none;
 }
 main .main-content .option-box .sort-block .controls {
   display: flex;
   align-items: center;
-  border: 1px solid #f37e7e;
 }
 main .main-content .option-box .sort-block .controls .control {
-  cursor: pointer;
-  padding: .5rem 1rem;
-  white-space: nowrap;
-  font-size: .875rem;
+  border-radius: 0;
 }
-main .main-content .option-box .sort-block .controls .control + .control {
-  border-left: 1px solid #f37e7e;
+main .main-content .option-box .sort-block .controls .control:focus {
+  box-shadow: none;
 }
 main .main-content .pagination-nav {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
 }
 main .main-content .pagination-nav .pagination {
@@ -2252,7 +2291,6 @@ main .main-aside .aside-box .title-box .title {
 }
 main .main-aside .aside-box .list {
   list-style: none;
-  padding-left: 0;
 }
 main .main-aside .aside-box .list > li + li {
   border-top: 1px dashed #ddd;
@@ -2267,8 +2305,10 @@ main .main-aside .aside-box .list > li > a:focus, main .main-aside .aside-box .l
 main .main-aside .aside-box .list > li > label {
   display: inline-flex;
   align-items: center;
-  padding: .35rem 0;
-  color: #666;
+  padding: .5rem 0;
+  color: #111;
+  font-size: .875rem;
+  font-weight: 300;
 }
 main .main-aside .aside-box .list > li > label:focus, main .main-aside .aside-box .list > li > label:hover {
   color: #b71c1c;

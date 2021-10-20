@@ -10,6 +10,27 @@ main {
     flex: 0 0 auto;
     width: 80%;
 
+    & .category-title-block {
+      margin-bottom: 2rem;
+      text-align: center;
+
+      & .title {
+        margin-bottom: 1rem;
+        font-size: 1.25rem;
+      }
+
+      & .banner {
+        > a {
+          display: inline-block;
+
+          > img {
+            width: auto;
+            height: 100%;
+          }
+        }
+      }
+    }
+
     & .page-info {
       background: #f5f5f5;
       padding: 1rem;
@@ -26,31 +47,29 @@ main {
     }
 
     & .option-box {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 1rem;
+
       & .sort-block {
         display: inline-flex;
         align-items: center;
         flex-wrap: wrap;
-        margin-bottom: 2rem;
 
         & .title {
-          background: #f37e7e;
-          padding: .45rem .5rem;
-          color: #fff;
+          border-radius: 0;
+          cursor: none;
         }
 
         & .controls {
           display: flex;
           align-items: center;
-          border: 1px solid #f37e7e;
 
           & .control {
-            cursor: pointer;
-            padding: .5rem 1rem;
-            white-space: nowrap;
-            font-size: .875rem;
+            border-radius: 0;
 
-            & + .control {
-              border-left: 1px solid #f37e7e;
+            &:focus {
+              box-shadow: none;
             }
           }
         }
@@ -59,7 +78,7 @@ main {
 
     & .pagination-nav {
       display: flex;
-      justify-content: center;
+      //justify-content: center;
       flex-wrap: wrap;
 
       & .pagination {
@@ -135,7 +154,7 @@ main {
 
       & .list {
         list-style: none;
-        padding-left: 0;
+        //padding-left: 1rem;
 
         > li + li {
           border-top: 1px dashed #ddd;
@@ -155,8 +174,10 @@ main {
           > label {
             display: inline-flex;
             align-items: center;
-            padding: .35rem 0;
-            color: #666;
+            padding: .5rem 0;
+            color: #111;
+            font-size: .875rem;
+            font-weight: 300;
 
             &:focus, &:hover {
               color: #b71c1c;

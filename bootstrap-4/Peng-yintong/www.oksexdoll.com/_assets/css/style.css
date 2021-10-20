@@ -135,6 +135,37 @@ a:focus {
 .product-box.image-box .content {
   text-align: left;
 }
+.product-box.product-box-double .pic-box.pic-box-double > img {
+  transition: all .3s ease-in-out;
+}
+.product-box.product-box-double .pic-box.pic-box-double > img:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.product-box.product-box-double .pic-box.pic-box-double:hover > img:first-child {
+  opacity: 0;
+}
+.product-box.product-box-double .pic-box.pic-box-double:hover > img:last-child {
+  opacity: 1;
+}
+.product-box.product-box-double .content {
+  padding: .5rem;
+  text-align: left;
+}
+.product-box.product-box-double .content .title {
+  margin-bottom: .25rem;
+}
+.product-box.product-box-double .content .price > span {
+  color: #e53935;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.product-box.product-box-double .content .price > del {
+  color: #666666;
+  font-size: .875rem;
+}
 
 .iframe-main {
   position: relative;
@@ -832,10 +863,26 @@ footer .footer-inner {
   color: #fff;
 }
 
+.category-box,
+.new-arrival,
+.product-collection,
+.catalog-box,
+.text-info-box,
+.factory-pic,
+.video-box,
+.faq-box,
+.special-offer,
+.reviews-box,
+.social-pic,
+.text-with-icon,
+.main-page-text,
+.brand-list {
+  margin-bottom: 3rem;
+}
+
 .category-box {
   position: relative;
   overflow: hidden;
-  margin-bottom: 3rem;
 }
 .category-box:before {
   content: "";
@@ -862,13 +909,6 @@ footer .footer-inner {
   font-weight: bold;
 }
 
-.new-arrival {
-  margin-bottom: 3rem;
-}
-
-.catalog-box {
-  margin-bottom: 3rem;
-}
 .catalog-box .left .title {
   margin-bottom: 2rem;
   font-size: 1.75rem;
@@ -887,13 +927,6 @@ footer .footer-inner {
   margin-bottom: .5rem;
 }
 
-.text-info-box {
-  margin-bottom: 3rem;
-}
-
-.factory-pic {
-  margin-bottom: 3rem;
-}
 .factory-pic .pic-box {
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
   overflow: hidden;
@@ -903,13 +936,6 @@ footer .footer-inner {
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
 }
 
-.video-box {
-  margin-bottom: 3rem;
-}
-
-.faq-box {
-  margin-bottom: 3rem;
-}
 .faq-box .card .card-header {
   padding: .35rem .5rem;
 }
@@ -918,25 +944,6 @@ footer .footer-inner {
   font-weight: bold;
 }
 
-.special-offer {
-  margin-bottom: 3rem;
-}
-
-.reviews-box {
-  margin-bottom: 3rem;
-}
-
-.social-pic {
-  margin-bottom: 3rem;
-}
-
-.text-with-icon {
-  margin-bottom: 3rem;
-}
-
-.main-page-text {
-  margin-bottom: 3rem;
-}
 .main-page-text .title {
   color: #e53935;
   font-size: 1.5rem;
@@ -1049,6 +1056,74 @@ footer .footer-inner {
   border-radius: 0 0 .5rem .5rem;
   overflow: hidden;
   padding: .75rem;
+}
+.sub-main .category-left .aside-box .accordion dt {
+  position: relative;
+  border: solid 1px #dddddd;
+  margin-top: 1rem;
+  padding: 10px 5px;
+  cursor: pointer;
+  color: #333;
+}
+.sub-main .category-left .aside-box .accordion dt:first-child {
+  margin-top: 0;
+}
+.sub-main .category-left .aside-box .accordion dt::before {
+  content: "";
+  position: absolute;
+  top: 42%;
+  right: 14px;
+  transform: translateX(-50%);
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #c62828;
+  vertical-align: top;
+  margin: -2px 0 0 0;
+}
+.sub-main .category-left .aside-box .accordion dt::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateX(-50%);
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #c62828;
+  vertical-align: top;
+  margin: -2px 0 0 0;
+}
+.sub-main .category-left .aside-box .accordion dt.open::before {
+  display: none;
+}
+.sub-main .category-left .aside-box .accordion dd {
+  border: solid 1px #dddddd;
+  padding: .5rem;
+}
+.sub-main .category-left .aside-box .accordion dd > ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+}
+.sub-main .category-left .aside-box .accordion dd > ul > li {
+  border-bottom: solid 1px #dddddd;
+}
+.sub-main .category-left .aside-box .accordion dd > ul > li:last-child {
+  border-bottom: none;
+}
+.sub-main .category-left .aside-box .accordion dd > ul > li > a {
+  display: block;
+  position: relative;
+  background-color: white;
+  padding: 10px 5px;
+  transition: background-color .3s;
+  color: #464646;
+  font-size: .875rem;
+  text-decoration: none;
+}
+.sub-main .category-left .aside-box .accordion dd > ul > li > a:hover, .sub-main .category-left .aside-box .accordion dd > ul > li > a:focus {
+  background: #eeeeee;
 }
 
 .category-main {

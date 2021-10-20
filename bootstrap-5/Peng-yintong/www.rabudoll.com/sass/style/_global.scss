@@ -635,6 +635,32 @@ nav.navbar.nav-main {
   }
 
   & .content {
+    & .label-block {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: .5rem;
+
+      & .label-item {
+        padding: .15rem .35rem;
+        color: #fff;
+        font-size: .75rem;
+
+        & + .label-item {
+          margin-left: .5rem;
+        }
+
+        &.red {
+          background: red;
+        }
+
+        &.orange {
+          background: orange;
+        }
+      }
+    }
+
     & .p-tags {
       display: flex;
       align-items: center;

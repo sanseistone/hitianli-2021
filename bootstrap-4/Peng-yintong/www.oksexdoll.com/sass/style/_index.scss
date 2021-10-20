@@ -4,6 +4,8 @@
   margin-bottom: 3rem;
 }
 
+
+
 .promise-box {
   position: relative;
   overflow: hidden;
@@ -34,10 +36,26 @@
   }
 }
 
+.category-box,
+.new-arrival,
+.product-collection,
+.catalog-box,
+.text-info-box,
+.factory-pic,
+.video-box,
+.faq-box,
+.special-offer,
+.reviews-box,
+.social-pic,
+.text-with-icon,
+.main-page-text,
+.brand-list {
+  margin-bottom: 3rem;
+}
+
 .category-box {
   position: relative;
   overflow: hidden;
-  margin-bottom: 3rem;
 
   &:before {
     content: "";
@@ -67,13 +85,7 @@
   }
 }
 
-.new-arrival {
-  margin-bottom: 3rem;
-}
-
 .catalog-box {
-  margin-bottom: 3rem;
-
   & .left {
     & .title {
       margin-bottom: 2rem;
@@ -103,13 +115,7 @@
   }
 }
 
-.text-info-box {
-  margin-bottom: 3rem;
-}
-
 .factory-pic {
-  margin-bottom: 3rem;
-
   & .pic-box {
     box-shadow: 0 0 0 rgba(0, 0, 0, .3);
     overflow: hidden;
@@ -121,13 +127,7 @@
   }
 }
 
-.video-box {
-  margin-bottom: 3rem;
-}
-
 .faq-box {
-  margin-bottom: 3rem;
-
   & .card {
     & .card-header {
       padding: .35rem .5rem;
@@ -140,25 +140,7 @@
   }
 }
 
-.special-offer {
-  margin-bottom: 3rem;
-}
-
-.reviews-box {
-  margin-bottom: 3rem;
-}
-
-.social-pic {
-  margin-bottom: 3rem;
-}
-
-.text-with-icon {
-  margin-bottom: 3rem;
-}
-
 .main-page-text {
-  margin-bottom: 3rem;
-
   & .title {
     color: $red-6;
     font-size: 1.5rem;
