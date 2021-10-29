@@ -887,6 +887,95 @@
                     </div>
                 </div>
                 <div class="col-md-5 col-sm-12 right">
+                    <div class="aside-box">
+                        <dl class="accordion">
+                            <dt class="open">Marke</dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        <a href="#">Gleitgel & Massageöl</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Kondome</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Schwangerschaftstests & Ovulationstests</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Sexspielzeug</a>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dt>Geschlecht</dt>
+                            <dd style="display: none;">
+                                <ul>
+                                    <li>
+                                        <a href="#">Gleitgel & Massageöl</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Kondome</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Schwangerschaftstests & Ovulationstests</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Sexspielzeug</a>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dt>Verfügbarkeit</dt>
+                            <dd style="display: none;">
+                                <ul>
+                                    <li>
+                                        <a href="#">Gleitgel & Massageöl</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Kondome</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Schwangerschaftstests & Ovulationstests</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Sexspielzeug</a>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dt>Filialversandfähig</dt>
+                            <dd style="display: none;">
+                                <ul>
+                                    <li>
+                                        <a href="#">Gleitgel & Massageöl</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Kondome</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Schwangerschaftstests & Ovulationstests</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Sexspielzeug</a>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dt>Bewertung</dt>
+                            <dd style="display: none;">
+                                <ul>
+                                    <li>
+                                        <a href="#">Gleitgel & Massageöl</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Kondome</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Schwangerschaftstests & Ovulationstests</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Sexspielzeug</a>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
                     <div class="item-block sticky-top">
                         <div class="cart-box mb-3">
                             <p class="bold">Quantity:</p>
@@ -1643,6 +1732,14 @@
         $.scrollUp({
             scrollSpeed: 200,
             scrollImg: true
+        });
+    });
+</script>
+<script>
+    $(function ($) {
+        $(".accordion > dt").click(function () {
+            $(this).next("dd:not(:animated)").slideToggle('fast');
+            $(this).toggleClass("open");
         });
     });
 </script>

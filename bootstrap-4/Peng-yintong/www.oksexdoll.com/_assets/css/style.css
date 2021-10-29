@@ -1349,6 +1349,74 @@ footer .footer-inner {
   width: calc(100% - 100px);
   margin-left: 15px;
 }
+.product-main .aside-box .accordion dt {
+  position: relative;
+  border: solid 1px #dddddd;
+  margin-top: 1rem;
+  padding: 10px 5px;
+  cursor: pointer;
+  color: #333;
+}
+.product-main .aside-box .accordion dt:first-child {
+  margin-top: 0;
+}
+.product-main .aside-box .accordion dt::before {
+  content: "";
+  position: absolute;
+  top: 42%;
+  right: 14px;
+  transform: translateX(-50%);
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #c62828;
+  vertical-align: top;
+  margin: -2px 0 0 0;
+}
+.product-main .aside-box .accordion dt::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateX(-50%);
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #c62828;
+  vertical-align: top;
+  margin: -2px 0 0 0;
+}
+.product-main .aside-box .accordion dt.open::before {
+  display: none;
+}
+.product-main .aside-box .accordion dd {
+  border: solid 1px #dddddd;
+  padding: .5rem;
+}
+.product-main .aside-box .accordion dd > ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+}
+.product-main .aside-box .accordion dd > ul > li {
+  border-bottom: solid 1px #dddddd;
+}
+.product-main .aside-box .accordion dd > ul > li:last-child {
+  border-bottom: none;
+}
+.product-main .aside-box .accordion dd > ul > li > a {
+  display: block;
+  position: relative;
+  background-color: white;
+  padding: 10px 5px;
+  transition: background-color .3s;
+  color: #464646;
+  font-size: .875rem;
+  text-decoration: none;
+}
+.product-main .aside-box .accordion dd > ul > li > a:hover, .product-main .aside-box .accordion dd > ul > li > a:focus {
+  background: #eeeeee;
+}
 
 @media (max-width: 1199px) {
   /*Extra large devices (large desktops, 992px and 1200px)*/
