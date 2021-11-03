@@ -1,0 +1,18 @@
+//这里是混合宏预设集合
+
+//display
+@mixin display-variant($display) {
+  display: $display;
+}
+
+@mixin opacity-variant($opacity) {
+  opacity: $opacity;
+}
+
+@mixin z-index-variant($z-index) {
+  z-index: $z-index;
+}
+
+@mixin box-shadow-variant($box-shadow) {
+  box-shadow: $box-shadow;
+}

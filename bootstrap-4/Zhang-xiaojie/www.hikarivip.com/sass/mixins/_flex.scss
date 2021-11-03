@@ -1,0 +1,7 @@
+//这里是混合宏预设集合
+
+//flex
+@mixin flex-order-variant($order) {
+  -ms-flex-order: $order;
+  order: $order;
+}

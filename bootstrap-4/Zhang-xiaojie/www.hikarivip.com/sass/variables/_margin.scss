@@ -1,0 +1,80 @@
+@import "variables";
+
+// ===== margin =====
+$group-m-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$group-m-series: map_merge(
+                (
+                        "0": ($pixel-1 * 0),
+                        "1": ($pixel-1 * 1),
+                        "2": ($pixel-1 * 2),
+                        "3": ($pixel-1 * 3),
+                        "4": ($pixel-1 * 4),
+                        "5": ($pixel-1 * 5),
+                        "6": ($pixel-1 * 6),
+                        "7": ($pixel-1 * 7),
+                        "8": ($pixel-1 * 8),
+                        "9": ($pixel-1 * 9),
+                        "10": ($pixel-1 * 10),
+                        "15": ($pixel-1 * 15),
+                        "20": ($pixel-1 * 20),
+                        "25": ($pixel-1 * 25),
+                        "30": ($pixel-1 * 30),
+                        "35": ($pixel-1 * 35),
+                        "40": ($pixel-1 * 40),
+                        "45": ($pixel-1 * 45),
+                        "50": ($pixel-1 * 50),
+                        "55": ($pixel-1 * 55),
+                        "60": ($pixel-1 * 60),
+                        "65": ($pixel-1 * 65),
+                        "70": ($pixel-1 * 70),
+                        "75": ($pixel-1 * 75),
+                        "80": ($pixel-1 * 80),
+                        "85": ($pixel-1 * 85),
+                        "90": ($pixel-1 * 90),
+                        "95": ($pixel-1 * 95),
+                        "100": ($pixel-1 * 100),
+                        "auto": $auto,
+                        "inherit": $inherit,
+                ),
+                $group-m-series
+);
+
+$group-mo-series: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$group-mo-series: map_merge(
+                (
+                        "0": -($pixel-1 * 0),
+                        "1": -($pixel-1 * 1),
+                        "2": -($pixel-1 * 2),
+                        "3": -($pixel-1 * 3),
+                        "4": -($pixel-1 * 4),
+                        "5": -($pixel-1 * 5),
+                        "6": -($pixel-1 * 6),
+                        "7": -($pixel-1 * 7),
+                        "8": -($pixel-1 * 8),
+                        "9": -($pixel-1 * 9),
+                        "10": -($pixel-1 * 10),
+                        "15": -($pixel-1 * 15),
+                        "20": -($pixel-1 * 20),
+                        "25": -($pixel-1 * 25),
+                        "30": -($pixel-1 * 30),
+                        "35": -($pixel-1 * 35),
+                        "40": -($pixel-1 * 40),
+                        "45": -($pixel-1 * 45),
+                        "50": -($pixel-1 * 50),
+                        "55": -($pixel-1 * 55),
+                        "60": -($pixel-1 * 60),
+                        "65": -($pixel-1 * 65),
+                        "70": -($pixel-1 * 70),
+                        "75": -($pixel-1 * 75),
+                        "80": -($pixel-1 * 80),
+                        "85": -($pixel-1 * 85),
+                        "90": -($pixel-1 * 90),
+                        "95": -($pixel-1 * 95),
+                        "100": -($pixel-1 * 100),
+                        "auto": $auto,
+                        "inherit": $inherit,
+                ),
+                $group-mo-series
+);
