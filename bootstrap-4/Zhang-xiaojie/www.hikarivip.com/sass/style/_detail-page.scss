@@ -60,6 +60,64 @@
   }
 }
 
+.product-option {
+  & .form-check-label {
+    & .form-check-input {
+      display: none;
+    }
+
+    & .pic-box {
+      position: relative;
+      display: block;
+      padding: 5px 20px;
+      border: 1px solid $color-c;
+      border-radius: 5px;
+      overflow: hidden;
+
+      &::after {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 15px;
+        height: 15px;
+        color: $color-f;
+        text-align: center;
+        font-size: 10px;
+        line-height: 15px;
+        background: $red;
+      }
+    }
+
+    &:focus, &:hover {
+      & .pic-box {
+        padding: 5px 20px;
+        border: 1px solid $red-5;
+
+        &::after {
+          content: "\f00c";
+          font-family: 'Font Awesome 5 Pro';
+          font-weight: 300;
+        }
+      }
+    }
+
+    & .form-check-input:checked ~ .pic-box {
+      padding: 5px 20px;
+      border: 1px solid $red-5;
+
+      &::after {
+        content: "\f00c";
+        font-family: 'Font Awesome 5 Pro';
+        font-weight: 300;
+      }
+    }
+
+    & .form-check-input {
+      margin-left: -1rem;
+    }
+  }
+}
+
 .product-detail {
   & .product-option {
     & .form-check {
