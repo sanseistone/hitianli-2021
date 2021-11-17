@@ -80,6 +80,36 @@ $(document).ready(function () {
             }
         }
     });
+    $('.owl-eight').owlCarousel({
+        loop: true,
+        margin: 20,
+        navText: ['<img src="_assets/img/svg/caret-left-fill.svg" alt="">', '<img src="_assets/img/svg/caret-right-fill.svg" alt="">'],
+        autoplay: true,
+        autoplayTimeout: 50000,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 3,
+                nav: true,
+                dots: false
+            },
+            575: {
+                items: 4,
+                nav: true,
+                dots: false
+            },
+            991: {
+                items: 6,
+                nav: true,
+                dots: false
+            },
+            1199: {
+                items: 8,
+                nav: true,
+                dots: false
+            }
+        }
+    });
     $('.owl-six').owlCarousel({
         loop: true,
         margin: 20,
@@ -110,9 +140,39 @@ $(document).ready(function () {
             }
         }
     });
+    $('.owl-five').owlCarousel({
+        loop: true,
+        margin: 20,
+        navText: ['<img src="_assets/img/svg/caret-left-fill.svg" alt="">', '<img src="_assets/img/svg/caret-right-fill.svg" alt="">'],
+        autoplay: true,
+        autoplayTimeout: 50000,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 2,
+                nav: true,
+                dots: false
+            },
+            575: {
+                items: 3,
+                nav: true,
+                dots: false
+            },
+            991: {
+                items: 4,
+                nav: true,
+                dots: false
+            },
+            1199: {
+                items: 5,
+                nav: true,
+                dots: false
+            }
+        }
+    });
     $('.owl-four').owlCarousel({
         loop: true,
-        margin: 30,
+        margin: 20,
         navText: ['<img src="_assets/img/svg/caret-left-fill.svg" alt="">', '<img src="_assets/img/svg/caret-right-fill.svg" alt="">'],
         autoplay: true,
         autoplayTimeout: 50000,
@@ -142,6 +202,13 @@ $(document).ready(function () {
     });
 
     $('.countdown-box').downCount({
+        date: '12/12/2030 00:00:00',
+        offset: +9
+    }, function () {
+        alert('カウントダウン!');
+    });
+
+    $('.countdown-special').downCount({
         date: '12/12/2030 00:00:00',
         offset: +9
     }, function () {
