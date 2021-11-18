@@ -180,21 +180,25 @@ $(document).ready(function () {
         responsive: {
             0: {
                 items: 2,
+                margin: 5,
                 nav: true,
                 dots: false
             },
             575: {
-                items: 2,
+                items: 3,
+                margin: 10,
                 nav: true,
                 dots: false
             },
             991: {
-                items: 3,
+                items: 4,
+                margin: 15,
                 nav: true,
                 dots: false
             },
             1199: {
                 items: 4,
+                margin: 10,
                 nav: true,
                 dots: false
             }
