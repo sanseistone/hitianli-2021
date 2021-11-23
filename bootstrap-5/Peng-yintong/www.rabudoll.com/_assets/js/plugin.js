@@ -1,11 +1,47 @@
 $(document).ready(function () {
+    //back-to-top
+    window.onscroll = function () {
+        var navigation_box = $(document).scrollTop();
+        if (navigation_box > 200) {
+            $(".navigation-box .back-to-top").css("display", "block");
+        } else {
+            $(".navigation-box .back-to-top").css("display", "none");
+        }
+    }
+    $(".back-to-top").click(function () {
+        $('body,html').animate({scrollTop: 0}, 500);
+    });
+
+    //lazyload
+    $(function () {
+        $("img.lazy").lazyload({
+            effect: "fadeIn"
+        });
+    });
+
+    //readmore-box
+    $(function () {
+        $('.readmore-box').readmore({
+            speed: 75,
+            collapsedHeight: 0,
+            moreLink: '<div class="d-grid"><button class="btn btn-dark" type="button">More <img src="_assets/img/svg/chevron-down-white.svg" alt=""></button></div>',
+            lessLink: '<div class="d-grid"><button class="btn btn-danger" type="button">Less <img src="_assets/img/svg/chevron-up-white.svg" alt=""></button></div>'
+        });
+    });
+
+    $('#customize-check').click(function(){
+        $('#customize-text').toggle();
+    });
+});
+
+$(document).ready(function () {
     var containerEl = document.querySelector('.main-content');
     var checkboxGroup = document.querySelector('.checkbox-group');
     var checkboxes = checkboxGroup.querySelectorAll('input[type="checkbox"]');
 
     var mixer = mixitup(containerEl);
 
-    checkboxGroup.addEventListener('change', function() {
+    checkboxGroup.addEventListener('change', function () {
         var selectors = [];
 
         for (var i = 0; i < checkboxes.length; i++) {
@@ -23,33 +59,23 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    window.onscroll = function () {
-        var navigation_box = $(document).scrollTop();
-        if (navigation_box > 200) {
-            $(".navigation-box .back-to-top").css("display", "block");
-        } else {
-            $(".navigation-box .back-to-top").css("display", "none");
-        }
-    }
-    $(".back-to-top").click(function () {
-        $('body,html').animate({scrollTop: 0}, 500);
+    //countdown
+    $('.countdown-box').downCount({
+        date: '12/12/2030 00:00:00',
+        offset: +9
+    }, function () {
+        alert('カウントダウン!');
     });
-
-    $(function() {
-        $("img.lazy").lazyload({
-            effect : "fadeIn"
-        });
+    $('.countdown-special').downCount({
+        date: '12/12/2030 00:00:00',
+        offset: +9
+    }, function () {
+        alert('カウントダウン!');
     });
+});
 
-    $(function() {
-        $('.readmore-box').readmore({
-            speed: 75,
-            collapsedHeight: 0,
-            moreLink: '<div class="d-grid"><button class="btn btn-dark" type="button">More <img src="_assets/img/svg/chevron-down-white.svg" alt=""></button></div>',
-            lessLink: '<div class="d-grid"><button class="btn btn-danger" type="button">Less <img src="_assets/img/svg/chevron-up-white.svg" alt=""></button></div>'
-        });
-    });
-
+$(document).ready(function () {
+    //owlCarousel
     $('.owl-ten').owlCarousel({
         loop: true,
         margin: 20,
@@ -204,18 +230,29 @@ $(document).ready(function () {
             }
         }
     });
+});
 
-    $('.countdown-box').downCount({
-        date: '12/12/2030 00:00:00',
-        offset: +9
-    }, function () {
-        alert('カウントダウン!');
+$(document).ready(function () {
+    //slider
+    $('.slider-main').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: true,
+        dots: true,
+        asNavFor: '.slider-thumbs'
     });
-
-    $('.countdown-special').downCount({
-        date: '12/12/2030 00:00:00',
-        offset: +9
-    }, function () {
-        alert('カウントダウン!');
+    $('.slider-thumbs').slick({
+        asNavFor: '.slider-main',
+        // dots: true,
+        vertical: true,
+        verticalSwiping: true,
+        // centerMode: true,
+        centerPadding: '0',
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: true,
+        speed: 600,
+        focusOnSelect: true,
     });
 });

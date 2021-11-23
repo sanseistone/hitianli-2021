@@ -184,9 +184,6 @@ header {
 }
 
 nav.navbar.nav-main {
-  position: sticky;
-  top: 10px;
-  z-index: 99;
   width: 100%;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
@@ -219,6 +216,12 @@ nav.navbar.nav-main {
     width: 100%;
     height: calc(100% + 11px + 5px);
     background: url('../img/navbar/navbar-adorn-left.png') -5px calc(100% + 10px) no-repeat, url('../img/navbar/navbar-adorn-right.png') 100% -5px no-repeat;
+  }
+
+  &.nav-sticky {
+    position: sticky;
+    top: 10px;
+    z-index: 99;
   }
 
   & .offcanvas {
@@ -1072,7 +1075,7 @@ footer {
 .navigation-box {
   position: fixed;
   right: 15px;
-  bottom: 60px;
+  bottom: 120px;
   z-index: 10;
 
   & .item {
@@ -1737,7 +1740,7 @@ footer {
   .navigation-box {
     position: fixed;
     right: 15px;
-    bottom: 50px;
+    bottom: 120px;
     z-index: 10;
 
     & .item {
