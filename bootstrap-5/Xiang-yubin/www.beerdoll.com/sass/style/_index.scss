@@ -599,6 +599,19 @@
 
 @media (min-width: 1200px) {
   //Extra large devices (large desktops, 1200px and up)
+  .section-block {
+    &.section-text-block {
+      & .readmore-box {
+        font-size: 1rem;
+      }
+    }
+
+    &.section-info-block {
+      & .content {
+        font-size: 1rem;
+      }
+    }
+  }
 }
 
 @media (min-width: 1400px) {

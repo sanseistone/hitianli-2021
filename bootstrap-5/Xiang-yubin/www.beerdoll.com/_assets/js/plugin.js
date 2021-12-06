@@ -35,30 +35,6 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    var containerEl = document.querySelector('.main-content');
-    var checkboxGroup = document.querySelector('.checkbox-group');
-    var checkboxes = checkboxGroup.querySelectorAll('input[type="checkbox"]');
-
-    var mixer = mixitup(containerEl);
-
-    checkboxGroup.addEventListener('change', function () {
-        var selectors = [];
-
-        for (var i = 0; i < checkboxes.length; i++) {
-            var checkbox = checkboxes[i];
-
-            if (checkbox.checked) selectors.push(checkbox.value);
-        }
-
-        var selectorString = selectors.length > 0 ?
-            selectors.join(',') :
-            'all';
-
-        mixer.filter(selectorString);
-    });
-});
-
-$(document).ready(function () {
     //countdown
     $('.countdown-box').downCount({
         date: '12/12/2030 00:00:00',
