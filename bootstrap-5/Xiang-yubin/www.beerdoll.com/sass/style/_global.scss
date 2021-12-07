@@ -509,6 +509,7 @@ footer {
       padding: .25rem 0;
       color: #ddd;
       font-weight: bold;
+      cursor: pointer;
 
       &:after {
         display: none;
@@ -516,6 +517,8 @@ footer {
     }
 
     & .list {
+      display: none;
+
       > li {
         & + li {
           margin-top: .5rem;
@@ -617,6 +620,14 @@ footer {
 
   footer {
     & .main {
+      & .heading {
+        cursor: auto;
+      }
+
+      & .list {
+        display: block;
+      }
+
       & .content {
         & .pay-icon {
           > img {

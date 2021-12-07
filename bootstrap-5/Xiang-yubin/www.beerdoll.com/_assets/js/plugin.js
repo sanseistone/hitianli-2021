@@ -29,9 +29,11 @@ $(document).ready(function () {
         });
     });
 
-    $('#customize-check').click(function(){
-        $('#customize-text').toggle();
-    });
+    if (screen.width < 768) {
+        $('.footer-menu .heading').click(function () {
+            $(this).next('.list').slideToggle();
+        });
+    }
 });
 
 $(document).ready(function () {

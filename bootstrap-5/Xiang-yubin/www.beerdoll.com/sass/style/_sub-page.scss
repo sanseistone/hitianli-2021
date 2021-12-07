@@ -14,7 +14,8 @@
         > li {
           > a {
             display: block;
-            padding: .5rem 1rem;
+            padding: .35rem .75rem;
+            font-size: .875rem;
           }
         }
       }
@@ -23,6 +24,7 @@
         & .col {
           > a {
             display: block;
+            font-size: .875rem;
           }
         }
       }
