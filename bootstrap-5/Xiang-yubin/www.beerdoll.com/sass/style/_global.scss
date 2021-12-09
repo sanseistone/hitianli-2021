@@ -501,18 +501,34 @@ footer {
 
     & .footer-info {
       order: 1;
+
+      & .heading {
+        &:after {
+          display: none;
+        }
+      }
     }
 
     & .heading {
       border-bottom: 1px solid #666;
       margin-bottom: .5rem;
-      padding: .25rem 0;
+      padding: .25rem 1.5rem .25rem 0;
       color: #ddd;
       font-weight: bold;
       cursor: pointer;
 
       &:after {
-        display: none;
+        //display: none;
+        content: "+";
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        transform: translateY(-50%);
+        bottom: inherit;
+        width: auto;
+        height: auto;
+        background: none;
+        font-weight: lighter;
       }
     }
 
@@ -622,6 +638,10 @@ footer {
     & .main {
       & .heading {
         cursor: auto;
+
+        &:after {
+          display: none;
+        }
       }
 
       & .list {
@@ -883,6 +903,26 @@ footer {
                 }
               }
             }
+          }
+        }
+      }
+    }
+  }
+
+  .product-block {
+    & .p-pic {
+
+      > a {
+        display: block;
+        overflow: hidden;
+
+        > img {
+          transition: all ease-in-out .3s;
+        }
+
+        &:hover {
+          > img {
+            transform: scale(1.15, 1.15);
           }
         }
       }

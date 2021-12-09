@@ -29,11 +29,26 @@ $(document).ready(function () {
         });
     });
 
+    //screen
     if (screen.width < 768) {
         $('.footer-menu .heading').click(function () {
             $(this).next('.list').slideToggle();
         });
     }
+
+    //accordion
+    $(function ($) {
+        $(".accordion.item-box").click(function () {
+            $(this).children(".content:not(:animated)").slideToggle('fast');
+            $(this).toggleClass("open");
+        });
+    });
+    $(function ($) {
+        $(".accordion > dt").click(function () {
+            $(this).next("dd:not(:animated)").slideToggle('fast');
+            $(this).toggleClass("open");
+        });
+    });
 });
 
 $(document).ready(function () {
