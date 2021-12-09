@@ -867,6 +867,8 @@
       & .right {
         & .product-price {
           & .price-box {
+            margin-bottom: .5rem;
+
             & span:nth-of-type(1) {
               font-size: 1.75rem;
             }

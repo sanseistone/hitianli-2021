@@ -624,7 +624,7 @@
                     <hr>
                     <div class="product-option mb-4">
                         <div class="option-title">Product Option:</div>
-                        <form class="option-list radio-list">
+                        <div class="option-list radio-list">
                             <div class="item-box option-box-main mb-3">
                                 <div class="item-title">
                                     <div class="title">
@@ -1889,7 +1889,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <div class="product-quantity mb-4">
                         <button class="btn btn-secondary btn-minus"><img src="_assets/img/svg/dash-lg-white.svg" alt=""></button>
@@ -1908,14 +1908,22 @@
                                 <del class="ml-2" id="old_price_show">1.501,53 €</del>
                             </div>
                         </div>
-                        <div class="btn-box">
-                            <button class="btn btn-danger btn-add-to-cart" type="submit">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                </svg>
-                                <span>In den Warenkorb</span>
-                            </button>
-                        </div>
+                        <form action="https://www.beerdoll.com/admin/addtocart" method="post" target="_blank">
+                            <input type="hidden" name="currency_code" value="EUR">
+                            <input type="hidden" name="sku" value="SD418801" id="sku">
+                            <input type="hidden" name="pic" value="SD418801">
+                            <input type="hidden" name="product_name" id="itema" value="Augenfarbe:Eyes-1+Perücke:Wig-1+Zehennägel:Foot-01+Hautfarbe:White+Farbe der Brustwarzen:Skin Tone+Farbe der Schamlippen:Skin+Haptik der Brust:komplett Gefüllt+Mund Typ:Kopf ohne Zunge+Schulter:Reguläre Schulter+Kniegelenk:Gewöhnliches Skelett+Vaginaler:Eingebaute Vagina+Schambehaarung:Keine+Stehend:Klassisch+Finger Skelett:Nein+Größe:141cm A-cup+SD418803+Extra Kopf:Wie das bild zeigt">
+                            <input type="hidden" name="price" value="1276.30" id="add_sum">
+                            <input type="hidden" name="language" value="de">
+                            <div class="btn-box">
+                                <button class="btn btn-danger btn-add-to-cart" type="submit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                    </svg>
+                                    <span>In den Warenkorb</span>
+                                </button>
+                            </div>
+                        </form>
                     </div>
                     <hr>
                     <div class="product-discount mb-4">

@@ -2244,6 +2244,9 @@ footer .copyright .text {
   }
 }
 @media (min-width: 992px) {
+  .section-block.section-product-detail .right .product-price .price-box {
+    margin-bottom: .5rem;
+  }
   .section-block.section-product-detail .right .product-price .price-box span:nth-of-type(1) {
     font-size: 1.75rem;
   }
