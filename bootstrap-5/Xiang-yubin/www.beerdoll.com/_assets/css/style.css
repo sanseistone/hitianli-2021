@@ -1605,6 +1605,9 @@ footer .copyright .text {
   display: flex;
   justify-content: center;
 }
+.section-block .pagination-nav .pagination {
+  flex-wrap: wrap;
+}
 .section-block .pagination-nav .page-item > a {
   color: #333;
 }
@@ -1801,7 +1804,7 @@ footer .copyright .text {
 .section-block.section-product-detail .right .product-option .option-list .option-box-main .item-title .title span {
   color: red;
 }
-.section-block.section-product-detail .right .product-option .option-list .option-box-main .item-title .property-1 {
+.section-block.section-product-detail .right .product-option .option-list .option-box-main .item-title [class*="property"] {
   display: inline-block;
   color: #c62828;
   font-size: .75rem;

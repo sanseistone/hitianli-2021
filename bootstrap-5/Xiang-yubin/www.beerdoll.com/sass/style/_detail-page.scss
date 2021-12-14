@@ -243,7 +243,7 @@
                 }
               }
 
-              & .property-1 {
+              & [class*="property"] {
                 display: inline-block;
                 color: #c62828;
                 font-size: .75rem;

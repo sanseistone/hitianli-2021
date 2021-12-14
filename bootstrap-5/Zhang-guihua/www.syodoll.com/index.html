@@ -10,85 +10,2253 @@
     <meta name="author" content="">
     <link rel="icon" href="_assets/img/favicon.png">
     <link rel="stylesheet" href=".././../_assets/frame/bootstrap-5/css/bootstrap.min.css">
+    <link rel="stylesheet" href=".././../_assets/plug-in/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href=".././../_assets/plug-in/owlcarousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="_assets/css/style.css">
 </head>
 <body>
 
-<div class="header-bar py-2 mb-3 bg-dark">
+<div class="header-bar py-1 py-sm-2">
     <div class="container">
-        <p class="mb-0">This is ...</p>
+        <div class="row row-cols-2 row-cols-sm-4 g-2">
+            <div class="col">
+                <img src="_assets/img/svg/check-square.svg" alt="">
+                <span class="title">SSL-Verschlüsselung</span>
+            </div>
+            <div class="col">
+                <img src="_assets/img/svg/check-square.svg" alt="">
+                <span class="title">Kostenlose Lieferung</span>
+            </div>
+            <div class="col">
+                <img src="_assets/img/svg/check-square.svg" alt="">
+                <span class="title">100% Diskret Versand</span>
+            </div>
+            <div class="col">
+                <img src="_assets/img/svg/check-square.svg" alt="">
+                <span class="title">30 Tage Rücknahmegarantie</span>
+            </div>
+        </div>
     </div>
 </div>
-<header class="py-3 mb-3">
+<header class="py-2">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-md-12 logo">
-                <a href="#" class="d-block"><img class="wide" src="http://placehold.it/220x60" alt=""></a>
+        <div class="row align-items-center gy-2 gy-md-0">
+            <div class="col-5 col-md-3 col-lg-3 logo">
+                <a href="#" class="d-inline-block"><img src="_assets/img/logo.png" alt=""></a>
             </div>
-            <div class="col-lg-4 col-md-6 col-6 search">
-                <form action="" class="d-flex justify-content-between align-items-center">
-                    <input type="search" class="form-control mr-1" placeholder="Search">
-                    <button class="btn btn-primary"><i class="fas fa-search"></i></button>
-                </form>
+            <div class="col-7 col-md-4 col-lg-4 banner">
+                <a href="#">
+                    <img src="https://www.syodoll.com/images/top.png" alt="">
+                    <span class="text">Heißeste<br>Puppen</span>
+                </a>
+                <a href="#">
+                    <img src="https://www.syodoll.com/images/hot.png" alt="">
+                    <span class="text">Günstige<br>Puppen</span>
+                </a>
             </div>
-            <div class="col-lg-4 col-md-6 col-6 header-nav">
-                <div class="d-flex justify-content-end align-items-center">
-                    <a href="#" class="btn btn-primary"><i class="fas fa-user"></i></a>
-                    <a href="#" class="btn btn-primary"><i class="fas fa-user"></i></a>
-                    <a href="#" class="btn btn-primary"><i class="fas fa-user"></i></a>
+            <div class="col-12 col-md-5 search">
+                <div class="navbar-header">
+                    <div class="show-navbar">
+                        <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar-main" aria-controls="navbar-main">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                      d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <form action="" class="search-block">
+                        <input type="search" class="form-control mr-1" placeholder="Search">
+                        <button class="btn btn-danger">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </header>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+<nav class="navbar navbar-expand-xl nav-main sticky-top">
     <div class="container">
-        <a class="navbar-brand" href="#">Expand at lg</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample-00"
-                aria-controls="navbarsExample-00" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarsExample-00">
-            <ul class="navbar-nav mr-auto">
+        <div class="offcanvas offcanvas-start" data-bs-scroll="false" tabindex="-1" id="navbar-main" aria-labelledby="navbar-main-Label">
+            <div class="offcanvas-header">
+                <div class="offcanvas-title" id="navbar-main-Label">
+                    <!--<img src="assets/images/logo.png" width="210" height="64" alt="Logo"/>-->
+                    <img src="_assets/img/logo.png" alt="">
+                </div>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="https://www.syodoll.com/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="in-stock-produkte-sexpuppen.html">Sofort Lieferbar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
+                    <a class="nav-link" href="silikonpuppen.html">Silikonpuppen</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown-00" data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown-00">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="tpe-sexpuppen.html">TPE Sexpuppen</a>
+                </li>
+                <li class="nav-item dropdown dropdown-large">
+                    <span class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sexpuppen</span>
+                    <div class="dropdown-menu dropdown-large-menu">
+                        <div class="row row-cols-xl-4 row-cols-lg-2 row-cols-sm-2 row-cols-1 gy-3">
+                            <div class="col">
+                                <div class="list-header">Neue Real Dolls</div>
+                                <ul class="list">
+                                    <li><a href="sexpuppen.html">Sexpuppen</a></li>
+                                    <li><a href="liebespuppen.html">Liebespuppen</a></li>
+                                    <li><a href="real-doll.html">Real Doll</a></li>
+                                    <li><a href="love-doll.html">Love Doll</a></li>
+                                    <li><a href="sexroboter.html">Sexroboter</a></li>
+                                    <li><a href="schwangere-sexpuppe.html">Schwangere Sexpuppe</a></li>
+                                    <li><a href="anime-sexpuppen.html">Anime Sexpuppen</a></li>
+                                    <li><a href="liebespuppen-kleine-bruste.html">Kleine Brüste</a></li>
+                                    <li><a href="sexpuppen-groben-brusten.html">Große Brüste</a></li>
+                                    <li><a href="mollige-sexpuppen.html">Mollige Sexpuppen</a></li>
+                                    <li><a href="mannliche-sexpuppen.html">Männliche Puppen</a></li>
+                                    <li><a href="liebestorso.html">Torsos</a></li>
+                                    <li><a href="kleine-sexpuppen.html">Kleine Sexpuppen</a></li>
+                                    <li><a href="flache-brust-sexpuppen.html">Flache Brüste</a></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <div class="list-header">Premiumhersteller</div>
+                                <ul class="list">
+                                    <li><a href="fire-doll-lebensechte-sexpuppen.html">Fire Doll</a></li>
+                                    <li><a href="dl-doll.html">DL Doll</a></li>
+                                    <li><a href="xy-doll-lifelike-jung-silikonkopf-sexpuppe.html">XY Doll</a></li>
+                                    <li><a href="suekiss-doll-beste-silikonpuppe.html">Futuregirl Doll</a></li>
+                                    <li><a href="se-doll.html">SE Doll</a></li>
+                                    <li><a href="zelex-doll.html">ZELEX Doll</a></li>
+                                    <li class="d-none"><a href="wax-doll.html">WAX Doll</a></li>
+                                    <li><a href="jy-doll.html">JY-Doll</a></li>
+                                    <li><a href="as-doll.html">AS-Doll</a></li>
+                                    <li><a href="dollhouse168.html">Dollhouse168</a></li>
+                                    <li><a href="sm-doll.html">SM-Doll</a></li>
+                                    <li><a href="qitadoll.html">QitaDoll</a></li>
+                                    <li><a href="irontech-doll.html">Irontech-Doll</a></li>
+                                    <li><a href="yl-doll.html">YL-Doll</a></li>
+                                    <li><a href="axb-doll.html">AXB-Doll</a></li>
+                                    <li><a href="elsababe.html">Elsa Babe</a></li>
+                                    <li><a href="hr-doll.html">HR-Doll</a></li>
+                                    <li><a href="sanhui-doll.html">Sanhui-Doll</a></li>
+                                    <li><a href="6ye-doll.html">6YE-Doll</a></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <div class="list-header">Preis Optionen</div>
+                                <ul class="list">
+                                    <li><a href="preis-999.html">&lt; 999€</a></li>
+                                    <li><a href="preis-1000-1499.html">1000 - 1499€</a></li>
+                                    <li><a href="preis-1500-1999.html">1500 - 1999€</a></li>
+                                    <li><a href="preis-2000.html">&gt; 2000€</a></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <div class="list-header">Größe Optionen</div>
+                                <ul class="list">
+                                    <li><a href="lovedolls-145cm-bis-148cm.html"> 145 cm bis 148 cm</a></li>
+                                    <li><a href="lovedolls-150cm-bis-155cm.html">150 cm bis 155 cm</a></li>
+                                    <li><a href="lovedolls-156cm-bis-159cm.html"> 156 cm bis 159 cm</a></li>
+                                    <li><a href="lovedolls-160cm-bis-163cm.html"> 160 cm bis 163 cm</a></li>
+                                    <li><a href="lovedolls-165cm-bis-168cm.html"> 165 cm bis 168 cm</a></li>
+                                    <li><a href="lovedolls-170cm-bis-173cm.html"> 170 cm bis 173 cm</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="wm-doll.html">WM Doll</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <span class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Hilfe &amp; Info</span>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="faq.html">FQAs</a></li>
+                        <li><a class="dropdown-item" href="pflege-sexpuppen.html">Sexpuppen Pflege</a></li>
+                        <li><a class="dropdown-item" href="wie-man-bestellt.html">Wie man bestellt</a></li>
+                        <li><a class="dropdown-item" href="warum-eine-sexy-sexpuppe-kaufen.html">Warum eine sexy Sexpuppe kaufen?</a></li>
+                        <li><a class="dropdown-item" href="der-unterschied-zwischen-TPE-und-silikonpuppe.html">Die Unterschiede zwischen TPE und Silikonpuppen?</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="bilder-produkte.html" class="nav-link">Bilder ansehen</a>
+                </li>
+                <li class="nav-item">
+                    <a href="video.html" class="nav-link">Videos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </li>
             </ul>
-            <form class="form-inline my-2 my-md-0">
-                <input class="form-control" type="text" placeholder="Search">
-            </form>
         </div>
     </div>
 </nav>
-<footer>
-    <div class="container">
-        <!--copyright s-->
-        <div class="copyright">
-            <p>Copyright © 2019
-                <a href="#" target="_blank">WEB</a> All Rights Reserved.
-            </p>
+<main role="main">
+    <div class="section-block section-carousel-block mb-3">
+        <div class="container">
+            <div id="carousel-main" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="http://placehold.it/1920x600" width="1920" height="600" alt="...">
+                        <img src="http://placehold.it/1000x800" width="1000" height="800" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="http://placehold.it/1920x600" width="1920" height="600" alt="...">
+                        <img src="http://placehold.it/1000x800" width="1000" height="800" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="http://placehold.it/1920x600" width="1920" height="600" alt="...">
+                        <img src="http://placehold.it/1000x800" width="1000" height="800" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-main" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-main" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
-        <!--copyright e-->
+    </div>
+    <div class="section-block section-category-block mb-5">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-3 g-3">
+                <div class="col">
+                    <a class="item" href="#">
+                        <div class="inner-text right bottom left">
+                            <p class="title">Günstige Liebespuppen. Die Sexy Gefährtin.</p>
+                            <p class="button">More</p>
+                        </div>
+                        <img src="http://placehold.it/1000x500" alt="">
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="item" href="#">
+                        <div class="inner-text right bottom left">
+                            <p class="title">Sexpuppe Lebensecht-Hanna. Sex Doll Schön Robust.</p>
+                            <p class="button">More</p>
+                        </div>
+                        <img src="http://placehold.it/1000x500" alt="">
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="item" href="#">
+                        <div class="inner-text right bottom left">
+                            <p class="title">Japanische Sexpuppe-Jolenta. Introvertiert und Sexy.</p>
+                            <p class="button">More</p>
+                        </div>
+                        <img src="http://placehold.it/1000x500" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-block section-text-block mb-5">
+        <div class="container">
+            <div class="heading title mb-3">
+                <div class="inner">
+                    <h1 class="main">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
+                            <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                            <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8zm0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                        <span>Beste Realistische Sexpuppen Lebensgroße WM Doll TPE Liebespuppen Mädchen Puppe für Erwachsene</span>
+                    </h1>
+                </div>
+            </div>
+            <div class="readmore-box content">
+                Sexpuppen fühlen sich wirklich wie echte menschliche Haut und Fleisch an. Wenn Sie ein Budget von 800 € bis ungefähr 2000 € haben, können Sie leicht eine echte
+                Puppe haben. Mit einer realistischen lebensechten Sexpuppe können Sie Ihr Sexualleben verbessern. Syodoll vertreibt und produziert super realistische <strong><a
+                    href="liebespuppen.html">Liebespuppen</a></strong> und in Zukunft auch love dolls oder Sexroboter mit künstlicher Intelligenz.Diese Liebespuppen bieten
+                Flexibilität und Unterwerfung, die es den Besitzern ermöglichen, buchstäblich jede sexuelle Begegnung mit ihnen zu versuchen, ohne jederzeit das Risiko von
+                sexuellen Infektionen oder Schuldgefühlen einzugehen. Sie können ein therapeutisches und einfaches Vergnügen für jeden sein, der es braucht.
+                <br>Eine Sexpuppe ist der beste Weg, um Zeit in Quarantäne und sozialer Distanz zu verbringen. Sobald Sie Ihre eigene Sexpuppe bekommen, möchten Sie wie nie zuvor
+                zu Hause bleiben. Es wird Sie gesund halten und Ihr Sexualleben verbessern.
+            </div>
+        </div>
+    </div>
+    <div class="section-block section-product-block mb-5">
+        <div class="container">
+            <div class="heading mb-3">
+                <div class="inner">
+                    <div class="main">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">
+                            <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"/>
+                        </svg>
+                        <span>Unsere Bestseller Sexpuppen</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-xl-5 g-3">
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-summary">(Versand innerhalb von 24 Stunden)</div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-block section-product-block mb-5">
+        <div class="container">
+            <div class="heading mb-3">
+                <div class="inner">
+                    <div class="main">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">
+                            <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"/>
+                        </svg>
+                        <span>2-3 Tage Lieferung---Versand aus Deutschland, schneller und billiger</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-xl-5 g-3">
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-summary">2 Auf Lager! Lieferzeit: Sofort lieferbar (2-3 Tage)*</div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-block section-product-block mb-5">
+        <div class="container">
+            <div class="heading mb-3">
+                <div class="inner">
+                    <a href="#" class="link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                            <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                            <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                        </svg>
+                        <span>Neue Produkte >></span>
+                    </a>
+                </div>
+            </div>
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-xl-5 g-3">
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-block section-product-block mb-5">
+        <div class="container">
+            <div class="heading mb-3">
+                <div class="inner">
+                    <a href="#" class="link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                            <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                            <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                        </svg>
+                        <span>Sexy Liebestorso >></span>
+                    </a>
+                </div>
+            </div>
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-xl-5 g-3">
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-block section-product-block mb-5">
+        <div class="container">
+            <div class="heading mb-3">
+                <div class="inner">
+                    <a href="#" class="link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                            <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                            <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                        </svg>
+                        <span>WM Dolls Sexdoll-Star >></span>
+                    </a>
+                </div>
+            </div>
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-xl-5 g-3">
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-block section-product-block mb-5">
+        <div class="container">
+            <div class="heading mb-3">
+                <div class="inner">
+                    <a href="#" class="link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                            <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                            <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                        </svg>
+                        <span>Männliche Sexpuppen >></span>
+                    </a>
+                </div>
+            </div>
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-xl-5 g-3">
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block">
+                        <div class="p-pic">
+                            <a href="#">
+                                <img class="lazy" src="http://placehold.it/600x900" data-original="http://placehold.it/600x900" alt="" style="" width="600" height="900">
+                            </a>
+                        </div>
+                        <div class="content center">
+                            <div class="p-title">
+                                <a href="#">Sofort Lieferbar Love Dolls 148cm TPE Kitty</a>
+                            </div>
+                            <div class="p-ranking">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star-fill" src="_assets/img/svg/star-fill.svg" alt="">
+                                <img class="star" src="_assets/img/svg/star.svg" alt="">
+                                <img class="star-half" src="_assets/img/svg/star-half.svg" alt="">
+                            </div>
+                            <div class="p-price center">
+                                <span>679.00€</span>
+                                <del>905,33€</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-block section-blog-block mb-5">
+        <div class="container">
+            <div class="heading center mb-3">
+                <div class="inner">
+                    <div class="main">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-fill" viewBox="0 0 16 16">
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5z"/>
+                        </svg>
+                        <span>Andere Empfehlungen</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-3">
+                <div class="col">
+                    <div class="product-block blog-black">
+                        <div class="row g-3">
+                            <div class="col-4">
+                                <div class="p-pic">
+                                    <a href="#">
+                                        <img class="lazy" src="http://placehold.it/400x600" data-original="http://placehold.it/600x900" alt="" width="600" height="900">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="content">
+                                    <div class="p-title">
+                                        <a href="#">Dora will loslassen, um Sex mit einem erfahrenen Mann zu entdecken und wird alles tun, was Sie ihm sagen, solange Sie ihm Vergnügen bereiten.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block blog-black">
+                        <div class="row g-3">
+                            <div class="col-4">
+                                <div class="p-pic">
+                                    <a href="#">
+                                        <img class="lazy" src="http://placehold.it/400x600" data-original="http://placehold.it/600x900" alt="" width="600" height="900">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="content">
+                                    <div class="p-title">
+                                        <a href="#">Dora will loslassen, um Sex mit einem erfahrenen Mann zu entdecken und wird alles tun, was Sie ihm sagen, solange Sie ihm Vergnügen bereiten.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block blog-black">
+                        <div class="row g-3">
+                            <div class="col-4">
+                                <div class="p-pic">
+                                    <a href="#">
+                                        <img class="lazy" src="http://placehold.it/400x600" data-original="http://placehold.it/600x900" alt="" width="600" height="900">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="content">
+                                    <div class="p-title">
+                                        <a href="#">Dora will loslassen, um Sex mit einem erfahrenen Mann zu entdecken und wird alles tun, was Sie ihm sagen, solange Sie ihm Vergnügen bereiten.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block blog-black">
+                        <div class="row g-3">
+                            <div class="col-4">
+                                <div class="p-pic">
+                                    <a href="#">
+                                        <img class="lazy" src="http://placehold.it/400x600" data-original="http://placehold.it/600x900" alt="" width="600" height="900">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="content">
+                                    <div class="p-title">
+                                        <a href="#">Dora will loslassen, um Sex mit einem erfahrenen Mann zu entdecken und wird alles tun, was Sie ihm sagen, solange Sie ihm Vergnügen bereiten.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block blog-black">
+                        <div class="row g-3">
+                            <div class="col-4">
+                                <div class="p-pic">
+                                    <a href="#">
+                                        <img class="lazy" src="http://placehold.it/400x600" data-original="http://placehold.it/600x900" alt="" width="600" height="900">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="content">
+                                    <div class="p-title">
+                                        <a href="#">Dora will loslassen, um Sex mit einem erfahrenen Mann zu entdecken und wird alles tun, was Sie ihm sagen, solange Sie ihm Vergnügen bereiten.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block blog-black">
+                        <div class="row g-3">
+                            <div class="col-4">
+                                <div class="p-pic">
+                                    <a href="#">
+                                        <img class="lazy" src="http://placehold.it/400x600" data-original="http://placehold.it/600x900" alt="" width="600" height="900">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="content">
+                                    <div class="p-title">
+                                        <a href="#">Dora will loslassen, um Sex mit einem erfahrenen Mann zu entdecken und wird alles tun, was Sie ihm sagen, solange Sie ihm Vergnügen bereiten.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block blog-black">
+                        <div class="row g-3">
+                            <div class="col-4">
+                                <div class="p-pic">
+                                    <a href="#">
+                                        <img class="lazy" src="http://placehold.it/400x600" data-original="http://placehold.it/600x900" alt="" width="600" height="900">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="content">
+                                    <div class="p-title">
+                                        <a href="#">Dora will loslassen, um Sex mit einem erfahrenen Mann zu entdecken und wird alles tun, was Sie ihm sagen, solange Sie ihm Vergnügen bereiten.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block blog-black">
+                        <div class="row g-3">
+                            <div class="col-4">
+                                <div class="p-pic">
+                                    <a href="#">
+                                        <img class="lazy" src="http://placehold.it/400x600" data-original="http://placehold.it/600x900" alt="" width="600" height="900">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="content">
+                                    <div class="p-title">
+                                        <a href="#">Dora will loslassen, um Sex mit einem erfahrenen Mann zu entdecken und wird alles tun, was Sie ihm sagen, solange Sie ihm Vergnügen bereiten.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-block section-video-block mb-5">
+        <div class="container">
+            <div class="heading center mb-3">
+                <div class="inner">
+                    <div class="main fw-bold">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-btn-fill" viewBox="0 0 16 16">
+                            <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                        </svg>
+                        <span>Real Doll Porn & Luxus Liebespuppen Video</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3">
+                <div class="col">
+                    <div class="product-block video-black">
+                        <video class="d-block w-100 mb-2" controls="">
+                            <source src="https://www.syodoll.com/video/Leila2.mp4" type="video/mp4">
+                        </video>
+                        <div class="content">
+                            <div class="p-summary">
+                                Dies ist eine echte mini realdoll. und in einigen Fällen sind liebespuppe echte die am häufigsten verwendeten Sexspielzeuge. Sie helfen Kunden mit einzigartigen sexuellen Aktivitäten. Die meisten Leute benutzen real sex doll, um den Spaß am Masturbieren zu verändern. Diese real love doll können an verschiedene Größen und Formen angepasst werden. TPE sexpuppen oder reale sexpuppen sind die häufigsten und am einfachsten zu verstehenden emotionalen Experten.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block video-black">
+                        <video class="d-block w-100 mb-2" controls="">
+                            <source src="https://www.syodoll.com/video/Leila2.mp4" type="video/mp4">
+                        </video>
+                        <div class="content">
+                            <div class="p-summary">
+                                Dies ist eine echte mini realdoll. und in einigen Fällen sind liebespuppe echte die am häufigsten verwendeten Sexspielzeuge. Sie helfen Kunden mit einzigartigen sexuellen Aktivitäten. Die meisten Leute benutzen real sex doll, um den Spaß am Masturbieren zu verändern. Diese real love doll können an verschiedene Größen und Formen angepasst werden. TPE sexpuppen oder reale sexpuppen sind die häufigsten und am einfachsten zu verstehenden emotionalen Experten.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block video-black">
+                        <video class="d-block w-100 mb-2" controls="">
+                            <source src="https://www.syodoll.com/video/Leila2.mp4" type="video/mp4">
+                        </video>
+                        <div class="content">
+                            <div class="p-summary">
+                                Dies ist eine echte mini realdoll. und in einigen Fällen sind liebespuppe echte die am häufigsten verwendeten Sexspielzeuge. Sie helfen Kunden mit einzigartigen sexuellen Aktivitäten. Die meisten Leute benutzen real sex doll, um den Spaß am Masturbieren zu verändern. Diese real love doll können an verschiedene Größen und Formen angepasst werden. TPE sexpuppen oder reale sexpuppen sind die häufigsten und am einfachsten zu verstehenden emotionalen Experten.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block video-black">
+                        <video class="d-block w-100 mb-2" controls="">
+                            <source src="https://www.syodoll.com/video/Leila2.mp4" type="video/mp4">
+                        </video>
+                        <div class="content">
+                            <div class="p-summary">
+                                Dies ist eine echte mini realdoll. und in einigen Fällen sind liebespuppe echte die am häufigsten verwendeten Sexspielzeuge. Sie helfen Kunden mit einzigartigen sexuellen Aktivitäten. Die meisten Leute benutzen real sex doll, um den Spaß am Masturbieren zu verändern. Diese real love doll können an verschiedene Größen und Formen angepasst werden. TPE sexpuppen oder reale sexpuppen sind die häufigsten und am einfachsten zu verstehenden emotionalen Experten.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-block section-video-block mb-5">
+        <div class="container">
+            <div class="heading center mb-3">
+                <div class="inner">
+                    <div class="main fw-bold">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-btn-fill" viewBox="0 0 16 16">
+                            <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                        </svg>
+                        <span>Real Doll Porn & Luxus Liebespuppen Video</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3">
+                <div class="col">
+                    <div class="product-block video-black">
+                        <div class="iframe-main">
+                            <iframe class="iframe-inner" src="https://www.youtube.com/embed/8WVXk0Gz66E" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="content">
+                            <div class="p-summary">
+                                Dies ist eine echte mini realdoll. und in einigen Fällen sind liebespuppe echte die am häufigsten verwendeten Sexspielzeuge. Sie helfen Kunden mit einzigartigen sexuellen Aktivitäten. Die meisten Leute benutzen real sex doll, um den Spaß am Masturbieren zu verändern. Diese real love doll können an verschiedene Größen und Formen angepasst werden. TPE sexpuppen oder reale sexpuppen sind die häufigsten und am einfachsten zu verstehenden emotionalen Experten.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block video-black">
+                        <div class="iframe-main">
+                            <iframe class="iframe-inner" src="https://www.youtube.com/embed/8WVXk0Gz66E" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="content">
+                            <div class="p-summary">
+                                Dies ist eine echte mini realdoll. und in einigen Fällen sind liebespuppe echte die am häufigsten verwendeten Sexspielzeuge. Sie helfen Kunden mit einzigartigen sexuellen Aktivitäten. Die meisten Leute benutzen real sex doll, um den Spaß am Masturbieren zu verändern. Diese real love doll können an verschiedene Größen und Formen angepasst werden. TPE sexpuppen oder reale sexpuppen sind die häufigsten und am einfachsten zu verstehenden emotionalen Experten.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block video-black">
+                        <div class="iframe-main">
+                            <iframe class="iframe-inner" src="https://www.youtube.com/embed/8WVXk0Gz66E" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="content">
+                            <div class="p-summary">
+                                Dies ist eine echte mini realdoll. und in einigen Fällen sind liebespuppe echte die am häufigsten verwendeten Sexspielzeuge. Sie helfen Kunden mit einzigartigen sexuellen Aktivitäten. Die meisten Leute benutzen real sex doll, um den Spaß am Masturbieren zu verändern. Diese real love doll können an verschiedene Größen und Formen angepasst werden. TPE sexpuppen oder reale sexpuppen sind die häufigsten und am einfachsten zu verstehenden emotionalen Experten.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-block video-black">
+                        <div class="iframe-main">
+                            <iframe class="iframe-inner" src="https://www.youtube.com/embed/8WVXk0Gz66E" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="content">
+                            <div class="p-summary">
+                                Dies ist eine echte mini realdoll. und in einigen Fällen sind liebespuppe echte die am häufigsten verwendeten Sexspielzeuge. Sie helfen Kunden mit einzigartigen sexuellen Aktivitäten. Die meisten Leute benutzen real sex doll, um den Spaß am Masturbieren zu verändern. Diese real love doll können an verschiedene Größen und Formen angepasst werden. TPE sexpuppen oder reale sexpuppen sind die häufigsten und am einfachsten zu verstehenden emotionalen Experten.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<div class="section-block section-promise-block mb-5">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3">
+            <div class="col">
+                <div class="row g-3">
+                    <div class="col-2 col-lg-3"><img src="https://www.syodoll.com/images/professionell.png" alt=""></div>
+                    <div class="col-10 col-lg-9">
+                        <div class="main">Professionell</div>
+                        <div class="sub">Auf der Suche nach einer Sexpuppe? Sie sind hier richtig! Syodoll ist seit Jahren im Puppengeschäft tätig, hier finden Sie immer was Sie wollen! </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row g-3">
+                    <div class="col-2 col-lg-3"><img src="https://www.syodoll.com/images/sorgenfrei.png" alt=""></div>
+                    <div class="col-10 col-lg-9">
+                        <div class="main">Sorgenfrei</div>
+                        <div class="sub">Syodoll bietet Ihnen eine Vielzahl von Optionen. Unsere Mitarbeiter werden unermüdlich dafür sorgen, dass Ihre Bestellungen gut bearbeitet werden. </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row g-3">
+                    <div class="col-2 col-lg-3"><img src="https://www.syodoll.com/images/diskret.png" alt=""></div>
+                    <div class="col-10 col-lg-9">
+                        <div class="main">Diskret</div>
+                        <div class="sub">Alle Informationen in Bezug auf Ihre Bestellung werden diskret behandelt. Ihre Privatsphäre bedeutet uns sehr viel. Syodoll ist ein Hersteller, dem Sie vertrauen können. </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row g-3">
+                    <div class="col-2 col-lg-3"><img src="https://www.syodoll.com/images/reaktionsschnell.png" alt=""></div>
+                    <div class="col-10 col-lg-9">
+                        <div class="main">Reaktionsschnell</div>
+                        <div class="sub">Sie können uns über E-Mails, Live-Chat und soziale Medien erreichen. Wir hoffen, Ihnen das beste Einkaufserlebnis zu bieten, wir stehen Ihnen zur Verfügung. </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section-block section-info-block mb-5">
+    <div class="container">
+        <div class="heading center mb-3">
+            <div class="inner">
+                <div class="main">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                    </svg>
+                    <span>Warum kaufen Sie eine Lebensechte Sexpuppe von Syodoll?</span>
+                </div>
+            </div>
+        </div>
+        <div class="readmore-box content">
+            <p>Unser Ziel ist es, die beste Puppe zu finden, damit Sie Ihre Träume verwirklichen können. Dazu haben wir uns mit den besten Herstellern
+                zusammengetan, um Ihnen die besten Modelle und Preise anzubieten. Hersteller sind <strong><a href="wm-doll.html">WM Doll</a>, JY Doll, SM Doll, 6YE Doll und Sanhui Doll</strong>. Egal, ob Sie sich mit
+                TPE, Silikon, Minipuppen oder <em><a href="sexpuppen.html">Sexpuppen</a></em> in realistischer Größe beschäftigen, Syodoll ist Ihre beste Wahl. Unser Team wird
+                sicherstellen, dass Sie das bestmögliche Kundenerlebnis erhalten und dass wir Ihnen die Puppe anbieten, die Ihren Bedürfnissen am besten entspricht.<br>
+                Unsere Puppen bestehen aus hochwertigem medizinischem Silikon oder TPE-Material. So behält Ihre Puppe jahrelang ihre weibliche Form.<br>
+                Hergestellt aus einem Metallskelett mit flexiblen Gelenken. Sie können sie in jede sexuelle Position versetzen, die Sie wünschen. Sie können vaginal, anal und oral mit
+                perfektem Vergnügen erleben.<br>
+                Ihre Hand von Künstlern geformt. Wir verstehen, dass die feineren Details wichtig sind! Fingernägel, Wimpern und andere kleine Details werden so naturgetreu wie möglich
+                gestaltet. Wir überprüfen alle Puppen vor dem Versand auf Unvollkommenheiten, damit Sie sicher sein können, dass Sie nur das Beste bekommen.<br>
+                Die Abmessungen der Pakete betragen ca. 160 cm x 38 cm. Der gesamte Inhalt ist fest und sicher verpackt. Alle unsere Pakete werden mit absoluter Anonymität und
+                Diskretion ausgeliefert. Sie haben keine Kennzeichnung, die auf die Marke oder den Inhalt hinweist. Die Beruhigung des Kunden ist für alle unsere Puppen von größter
+                Wichtigkeit. Außerdem werden bei jeder Bestellung Handschuhe, ein Starter-Reinigungsset und eine weiche Decke mitgeliefert, um die Pflege jeder Puppe zu
+                gewährleisten.<br>
+                Kunden können mit einer Wartezeit von 15 bis 21 Tagen auf den Bau und die Lieferung ihrer Liesbespuppe rechnen. Alle Produkte werden auf Bestellung gefertigt, genau
+                nach Kundenwunsch. Bestimmte Modelle können je nach den angeforderten Funktionen länger dauern.</p>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="main py-4 py-lg-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-lg-9 footer-menu">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3 g-md-4">
+                        <div class="col">
+                            <div class="footer-logo"><img class="wide" src="https://www.syodoll.com/images/logo2.png" alt=""></div>
+                            <div class="footer-info">
+                                <p>Willkommen bei Syodoll.com, wir sind ein Premiumhersteller von wirklich luxuriösen Sexpuppen. Unser Team ist seit 10 Jahren im Liebespuppen und Sexspielzeug geschäft tätig. </p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="heading">Alle Sammlung</div>
+                            <ul class="list">
+                                <li><a href="sexpuppen.html">Sexpuppen</a></li>
+                                <li><a href="liebespuppen.html">Liebespuppen</a></li>
+                                <li><a href="sex-doll.html">Sex Dolls</a></li>
+                                <li><a href="real-doll.html">Real Doll</a></li>
+                                <li><a href="love-doll.html">Love Doll</a></li>
+                                <li><a href="wm-doll.html">WM Doll</a></li>
+                                <li><a href="silikonpuppen.html">Silikonpuppen</a></li>
+                                <li><a href="tpe-sexpuppen.html">TPE Sexpuppen</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <div class="heading">Andere Kategorien</div>
+                            <ul class="list">
+                                <li><a href="gunstige-liebespuppen.html">Günstige Puppen</a></li>
+                                <li><a href="neue-produkte.html">Neue Produkte</a></li>
+                                <li><a href="beliebteste-produkte.html">Beliebteste Produkte</a></li>
+                                <li><a href="schwangere-sexpuppe.html">Schwangere Sexpuppe</a></li>
+                                <li><a href="anime-sexpuppen.html">Anime Sexpuppen</a></li>
+                                <li><a href="mollige-sexpuppen.html">Mollige Sexpuppen</a></li>
+                                <li><a href="asiatische-liebespuppe.html">Asiatische Liebespuppen</a></li>
+                                <li><a href="schwarze-liebespuppe.html">Schwarze Liebespuppen</a></li>
+                                <li><a href="japanische-liebespuppe.html">Japanische Liebespuppen</a></li>
+                                <li><a href="lebensechte-sexpuppen.html">Lebensechte Sexpuppen</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <div class="heading">Kundenservice</div>
+                            <ul class="list">
+                                <li><a rel="nofollow" href="about-us.html">Über uns</a></li>
+                                <li><a rel="nofollow" href="contact-us.html">Kontaktiere uns</a></li>
+                                <li><a rel="nofollow" href="privacy-policy.html">Datenschutz</a></li>
+                                <li><a rel="nofollow" href="allgemeine.html">Allgemeine</a></li>
+                                <li><a rel="nofollow" href="secure-payment.html">Sichere Bezahlung</a></li>
+                                <li><a rel="nofollow" href="shipping.html">Lieferung und Versand</a></li>
+                                <li><a rel="nofollow" href="return-policy.html">Rücknahmegarantie</a></li>
+                                <li><a rel="nofollow" href="rechte-an-geistigem-eigentum.html">Geistiges Eigentum</a></li>
+                                <li><a href="site-map.html">Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 footer-special">
+                    <div class="item-block mb-3">
+                        <div class="heading">Unser Newsletter</div>
+                        <div class="content">
+                            <label class="d-flex" for="Email">
+                                <input class="form-control" type="email" name="Email" id="Email" placeholder="Ihre E-Mail Adresse">
+                                <a id="message_sub" class="btn btn-danger" rel="nofollow" role="button" href="javascript:;">Abonnieren</a>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="item-block mb-3">
+                        <div class="heading">Folge uns</div>
+                        <div class="content social">
+                            <a class="twitter" rel="nofollow" href="https://twitter.com/kany93778505">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                </svg>
+                            </a>
+                            <a class="facebook" rel="nofollow" href="https://www.facebook.com/Beatitu-123543659041187/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                </svg>
+                            </a>
+                            <a class="youtube" rel="nofollow" href="https://www.youtube.com/watch?v=dyzZ0rrw5SU">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                                </svg>
+                            </a>
+                            <a class="pinterest" rel="nofollow" href="https://www.pinterest.com/syodoll/syodoll/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
+                                    <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"/>
+                                </svg>
+                            </a>
+                            <a class="wordpress" href="http://blog.syodoll.com/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wordpress" viewBox="0 0 16 16">
+                                    <path d="M12.633 7.653c0-.848-.305-1.435-.566-1.892l-.08-.13c-.317-.51-.594-.958-.594-1.48 0-.63.478-1.218 1.152-1.218.02 0 .039.002.058.003l.031.003A6.838 6.838 0 0 0 8 1.137 6.855 6.855 0 0 0 2.266 4.23c.16.005.313.009.442.009.717 0 1.828-.087 1.828-.087.37-.022.414.521.044.565 0 0-.371.044-.785.065l2.5 7.434 1.5-4.506-1.07-2.929c-.369-.022-.719-.065-.719-.065-.37-.022-.326-.588.043-.566 0 0 1.134.087 1.808.087.718 0 1.83-.087 1.83-.087.37-.022.413.522.043.566 0 0-.372.043-.785.065l2.48 7.377.684-2.287.054-.173c.27-.86.469-1.495.469-2.046zM1.137 8a6.864 6.864 0 0 0 3.868 6.176L1.73 5.206A6.837 6.837 0 0 0 1.137 8z"/>
+                                    <path d="M6.061 14.583 8.121 8.6l2.109 5.78c.014.033.03.064.049.094a6.854 6.854 0 0 1-4.218.109zm7.96-9.876c.03.219.047.453.047.706 0 .696-.13 1.479-.522 2.458l-2.096 6.06a6.86 6.86 0 0 0 2.572-9.224z"/>
+                                    <path fill-rule="evenodd" d="M0 8c0-4.411 3.589-8 8-8 4.41 0 8 3.589 8 8s-3.59 8-8 8c-4.411 0-8-3.589-8-8zm.367 0c0 4.209 3.424 7.633 7.633 7.633 4.208 0 7.632-3.424 7.632-7.633C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item-block">
+                        <div class="heading">Unterstützung und Beratung unter:</div>
+                        <div class="content contact">
+                            <div class="mail">Email: <a href="mailto:syodolls@gmail.com">syodolls@gmail.com</a></div>
+                            <div class="phone">Telefon: +41767374864</div>
+                            <div class="workday">Mo-Fr: 09:00 - 18:00 Uhr</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="text">Syodoll © 2021 Alle Rechte vorbehalten. Das beste Sexpuppen Store direkt ab Werk.</div>
+        </div>
     </div>
 </footer>
+<div class="navigation-box">
+    <a class="item back-to-top" href="javascript:void(0);" style="display: block;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                  d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+        </svg>
+    </a>
+</div>
 
 <script src="../../_assets/frame/bootstrap-5/js/bootstrap.bundle.min.js"></script>
 <script src="../../_assets/js/jQuery-v3.4.1.min.js"></script>
+<script src="../../_assets/plug-in/lazyload/jquery.lazyload.min.js"></script>
+<script src="../../_assets/plug-in/readmore.js/readmore.min.js"></script>
+<script src="../../_assets/plug-in/owlcarousel/owl.carousel.min.js"></script>
 <script src="_assets/js/plugin.js"></script>
 
 </body>
