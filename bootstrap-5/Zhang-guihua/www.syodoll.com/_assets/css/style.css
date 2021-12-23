@@ -432,7 +432,6 @@ header .logo {
 header .logo img {
   width: 100%;
   height: auto;
-  max-height: 60px;
 }
 header .banner {
   display: flex;
@@ -451,7 +450,7 @@ header .banner > * > * + * {
 header .banner img {
   width: 100%;
   height: auto;
-  max-height: 36px;
+  max-height: 24px;
 }
 header .banner .text {
   font-size: .75rem;
@@ -919,13 +918,11 @@ footer .copyright .text {
     font-size: .875rem;
   }
 
-  header .logo img {
-    width: auto;
-    height: 100%;
+  header .banner > * + * {
+    margin-left: 1rem;
   }
   header .banner img {
-    width: auto;
-    height: 100%;
+    max-height: 36px;
   }
 }
 @media (min-width: 768px) {
@@ -935,6 +932,13 @@ footer .copyright .text {
   .header-bar .row .col img {
     width: 16px;
     height: 16px;
+  }
+
+  header .logo img {
+    max-height: 66px;
+  }
+  header .banner img {
+    max-height: 30px;
   }
 
   .product-block .content .p-title > * {

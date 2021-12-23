@@ -12,11 +12,6 @@
   }
 }
 
-.container {
-  width: 1460px;
-  max-width: 96%;
-}
-
 a {
   color: #333;
   text-decoration: none;
@@ -40,12 +35,12 @@ img {
   height: auto;
   transition: all .3s ease-in-out;
 
-  &.img-responsive.full {
+  &.full {
     width: 100%;
     height: auto;
   }
 
-  &.img-responsive.wide {
+  &.wide {
     width: auto;
     height: 100%;
   }
@@ -138,59 +133,35 @@ ul {
   }
 }
 
-//responsive-pc
-@media (max-width: 1399px) {
-  //xxl devices (xxl desktops, 1200px and 1400px)
-  .container {
+.iframe-main {
+  position: relative;
+  width: 100%;
+  height: 0;
+  margin-bottom: .5rem;
+  padding-bottom: 56.25%;
+
+  & .iframe-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    max-width: 100%;
+    height: 100%;
   }
 }
 
-@media (max-width: 1199px) {
-  //Extra large devices (large desktops, 992px and 1200px)
-  .container {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 991px) {
-  //Large devices (desktops, 768px and 992px)
-  .container {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 767px) {
-  //Medium devices (tablets, 576px and 768px)
-  .container {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 575px) {
-  //Small devices (landscape phones, max-width 576px)
-  .container {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-
-//responsive-mobile
-//Extra small devices (portrait phones, less than 576px)
-//No media query for `xs` since this is the default
 @media (min-width: 576px) {
-  //Small devices (landscape phones, 576px and up)
+  .container {
+    width: 100%;
+    max-width: 96%;
+  }
+
   img {
-    &.img-responsive.full-sm {
+    &.full-sm {
       width: 100%;
       height: auto;
     }
 
-    &.img-responsive.wide-sm {
+    &.wide-sm {
       width: auto;
       height: 100%;
     }
@@ -252,14 +223,18 @@ ul {
 }
 
 @media (min-width: 768px) {
-  //Medium devices (tablets, 768px and up)
+  .container {
+    width: 100%;
+    max-width: 96%;
+  }
+
   img {
-    &.img-responsive.full-md {
+    &.full-md {
       width: 100%;
       height: auto;
     }
 
-    &.img-responsive.wide-md {
+    &.wide-md {
       width: auto;
       height: 100%;
     }
@@ -321,14 +296,18 @@ ul {
 }
 
 @media (min-width: 992px) {
-  //Large devices (desktops, 992px and up)
+  .container {
+    width: 100%;
+    max-width: 96%;
+  }
+
   img {
-    &.img-responsive.full-lg {
+    &.full-lg {
       width: 100%;
       height: auto;
     }
 
-    &.img-responsive.wide-lg {
+    &.wide-lg {
       width: auto;
       height: 100%;
     }
@@ -390,14 +369,18 @@ ul {
 }
 
 @media (min-width: 1200px) {
-  //Extra large devices (large desktops, 1200px and up)
+  .container {
+    width: 1460px;
+    max-width: 96%;
+  }
+
   img {
-    &.img-responsive.full-xl {
+    &.full-xl {
       width: 100%;
       height: auto;
     }
 
-    &.img-responsive.wide-xl {
+    &.wide-xl {
       width: auto;
       height: 100%;
     }
@@ -459,14 +442,13 @@ ul {
 }
 
 @media (min-width: 1400px) {
-  //Extra large devices (large desktops, 1400px and up)
   img {
-    &.img-responsive.full-xxl {
+    &.full-xxl {
       width: 100%;
       height: auto;
     }
 
-    &.img-responsive.wide-xxl {
+    &.wide-xxl {
       width: auto;
       height: 100%;
     }
