@@ -86,6 +86,20 @@ header {
         line-height: 1.2;
       }
     }
+
+    &.col-12 {
+      justify-content: center;
+      margin-top: -.25rem;
+      margin-bottom: -1rem;
+
+      & span {
+        &.pic {
+          & img {
+            //max-height: 60px;
+          }
+        }
+      }
+    }
   }
 
   & .contact {
@@ -487,6 +501,8 @@ nav.navbar.nav-main {
   }
 
   & .main {
+    display: flex;
+    align-items: center;
     margin: 0;
     font-size: 1rem;
     font-weight: 600;
@@ -506,7 +522,7 @@ nav.navbar.nav-main {
     display: inline-block;
     color: #333;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 600;
 
     &:hover, &:focus {
       color: red;
@@ -767,9 +783,61 @@ nav.navbar.nav-main {
 }
 
 footer {
-  & .main {
-    background: #333;
+  background: #e0e0e0;
+  border-top: 1px solid #ef5350;
 
+  & .service {
+    background: #fff;
+    padding: .75rem;
+
+    & .contact-us {
+      margin-bottom: 1rem;
+      text-align: center;
+      line-height: 1.2;
+
+      > *:nth-of-type(1) {
+        color: #2e7d32;
+        font-size: 1rem;
+      }
+
+      > *:nth-of-type(2) {
+        margin-bottom: .5rem;
+        color: #333;
+        font-size: .75rem;
+      }
+
+      > *:nth-of-type(3),
+      > *:nth-of-type(4) {
+        color: #ef5350;
+        font-size: .875rem;
+
+        > a {
+          color: #ef5350;
+        }
+      }
+    }
+
+    & .item-block {
+      & .title {
+        background: #ef5350;
+        margin-bottom: .5rem;
+        padding: 0 .5rem;
+        color: #000;
+        font-size: .75rem;
+      }
+
+      & .content {
+        color: #333;
+        font-size: .75rem;
+      }
+
+      & + .item-block {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  & .main {
     & .footer-menu {
       order: 2;
     }
@@ -778,6 +846,8 @@ footer {
       order: 1;
 
       & .heading {
+        cursor: auto;
+
         &:after {
           display: none;
         }
@@ -785,11 +855,12 @@ footer {
     }
 
     & .heading {
-      border-bottom: 1px solid #666;
+      border-bottom: 1px solid #999;
       margin-bottom: .5rem;
       padding: .25rem 1.5rem .25rem 0;
-      color: #ddd;
-      font-weight: bold;
+      color: #111;
+      font-size: .875rem;
+      font-weight: 400;
       cursor: pointer;
 
       &:after {
@@ -816,44 +887,67 @@ footer {
         }
 
         > a {
-          color: #999;
-          font-size: .875rem;
+          color: #555;
+          font-size: .75rem;
         }
       }
     }
 
     & .content {
-      & .info {
-        color: #999;
-        font-size: .875rem;
-      }
-
-      & .mail {
-        color: #999;
+      & .terms {
+        color: #555;
         font-size: .875rem;
 
-        > a {
-          color: #ddd;
+        > li + li {
+          margin-top: .5rem;
+        }
+
+        > li {
+          display: flex;
+          width: 100%;
+
+          > .pic {
+            > img {
+              display: block;
+              width: auto;
+              height: 100%;
+            }
+          }
+
+          > .summary {
+            margin-left: .5rem;
+            font-size: .75rem;
+          }
         }
       }
 
-      & .pay-icon {
-        > img {
-          width: 100%;
-          height: auto;
+      & .twitter {
+        > a {
+          color: #ef5350;
+          font-size: .875rem;
         }
       }
     }
   }
 
   & .copyright {
-    background: #111;
     padding: 1rem 0;
+    text-align: center;
+
+    & .pay-icon {
+      margin-bottom: .5rem;
+
+      > img {
+        display: inline-block;
+        width: auto;
+        height: 100%;
+        max-height: 30px;
+      }
+    }
 
     & .text {
-      color: #666;
+      color: #333;
       font-size: .875rem;
-      font-weight: bold;
     }
   }
 }
@@ -868,8 +962,42 @@ footer {
   }
 
   footer {
+    & .service {
+      padding: 1rem;
+
+      & .contact-us {
+        line-height: 1.5;
+
+        > *:nth-of-type(1) {
+          font-size: 1.25rem;
+        }
+
+        > *:nth-of-type(2) {
+          font-size: .875rem;
+        }
+
+        > *:nth-of-type(3),
+        > *:nth-of-type(4) {
+          color: #ef5350;
+          font-size: 1rem;
+        }
+      }
+
+      & .item-block {
+        & .title {
+          font-size: .875rem;
+        }
+
+        & .content {
+          font-size: .875rem;
+        }
+      }
+    }
+
     & .main {
       & .heading {
+        font-size: 1rem;
+        font-weight: 500;
         cursor: auto;
 
         &:after {
@@ -879,17 +1007,35 @@ footer {
 
       & .list {
         display: block;
-      }
 
-      & .content {
-        & .pay-icon {
-          > img {
-            width: auto;
-            height: 100%;
-            max-height: 60px;
+        > li {
+          > a {
+            font-size: .875rem;
           }
         }
       }
+
+      & .content {
+        & .terms {
+          font-size: .875rem;
+
+          > li {
+            > .summary {
+              font-size: .875rem;
+            }
+          }
+        }
+
+        & .twitter {
+          > a {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    & .copyright {
+      padding: 1.5rem 0;
     }
   }
 }
@@ -1028,6 +1174,10 @@ footer {
           }
         }
       }
+
+      & .dropdown-toggle:after {
+        display: none;
+      }
     }
   }
 
@@ -1036,17 +1186,6 @@ footer {
   }
 
   footer {
-    & .main {
-      & .content {
-        & .pay-icon {
-          > img {
-            width: 100%;
-            height: auto;
-          }
-        }
-      }
-    }
-
     & .copyright {
       & .text {
         font-size: 1rem;
@@ -1131,6 +1270,25 @@ footer {
     }
   }
 
+  .heading {
+    & svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    & .main {
+      font-size: 1.25rem;
+    }
+
+    & .sub {
+      font-size: .875rem;
+    }
+
+    & .link {
+      font-size: 1.25rem;
+    }
+  }
+
   .product-block {
     & .p-pic {
 
@@ -1152,6 +1310,10 @@ footer {
   }
 
   footer {
+    & .service {
+      padding: 1rem;
+    }
+
     & .main {
       & .footer-menu {
         order: 1;
@@ -1159,6 +1321,41 @@ footer {
 
       & .footer-info {
         order: 2;
+      }
+
+      & .content {
+        & .terms {
+          color: #555;
+          font-size: .875rem;
+
+          > li + li {
+            margin-top: .5rem;
+          }
+
+          > li {
+            display: flex;
+            width: 100%;
+
+            > .pic {
+              > img {
+                width: auto;
+                height: 100%;
+              }
+            }
+
+            > .summary {
+              margin-left: .5rem;
+              font-size: .75rem;
+            }
+          }
+        }
+
+        & .twitter {
+          > a {
+            color: #ef5350;
+            font-size: .875rem;
+          }
+        }
       }
     }
   }

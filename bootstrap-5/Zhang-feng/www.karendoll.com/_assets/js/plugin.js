@@ -26,8 +26,26 @@ $(document).ready(function () {
 
         if ($(window).scrollTop() >= 160 && screen.width < 768) {
             $("header .keywords").addClass("hide");
+            $("header .logo").addClass("col-8").removeClass("col-6");
+            $("header .logo .tips").css("display",("none"));
+            $("header .contact").css("display",("none"));
+            $("header .search").addClass("col-4").removeClass("col-12");
+            $("header .search .search-block").css("display",("none"));
+            $("header").removeClass("py-2");
+            $("header .row").removeClass("gy-2");
+
+            $('.product-description .nav-tabs .nav-link').click(function() {
+                $('html,body').animate({ scrollTop: $("#nav-tabContent").offset().top - 47}, 200)
+            });
         } else {
             $("header .keywords").removeClass("hide");
+            $("header .logo").addClass("col-6").removeClass("col-8");
+            $("header .logo .tips").css("display",("block"));
+            $("header .contact").css("display",("flex"));
+            $("header .search").addClass("col-12").removeClass("col-4");
+            $("header .search .search-block").css("display",("flex"));
+            $("header").addClass("py-2");
+            $("header .row").addClass("gy-2");
         }
     }
     $(".back-to-top").click(function () {
