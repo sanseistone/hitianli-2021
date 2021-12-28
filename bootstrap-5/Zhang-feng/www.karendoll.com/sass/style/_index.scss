@@ -105,6 +105,42 @@
     & .content-block {
       border: 2px solid #ef5350;
       padding: .5rem;
+
+      & .countdown-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        background: #fdd835;
+        margin-bottom: .5rem;
+        padding: .25rem .5rem;
+
+        > * + * {
+          margin-left: 1rem;
+        }
+
+        & .title {
+          font-size: 1rem;
+          font-weight: 600;
+          font-style: italic;
+        }
+
+        & .countdown-box {
+          display: flex;
+          align-items: center;
+          font-size: 1rem;
+          font-weight: 600;
+
+          > * + * {
+            margin-left: .5rem;
+          }
+
+          & svg {
+            width: 1rem;
+            height: 1rem;
+          }
+        }
+      }
     }
   }
 
@@ -218,6 +254,14 @@
         }
       }
     }
+
+    &.section-product-countdown-block {
+      & .content-block {
+        & .countdown-content {
+          padding: .5rem;
+        }
+      }
+    }
   }
 }
 
@@ -257,6 +301,28 @@
               & .sub {
                 font-size: .875rem;
               }
+            }
+          }
+        }
+      }
+    }
+
+    &.section-product-countdown-block {
+      & .content-block {
+        & .countdown-content {
+          margin-bottom: 1rem;
+          padding: .75rem;
+
+          & .title {
+            font-size: 1.25rem;
+          }
+
+          & .countdown-box {
+            font-size: 1.25rem;
+
+            & svg {
+              width: 1.25rem;
+              height: 1.25rem;
             }
           }
         }

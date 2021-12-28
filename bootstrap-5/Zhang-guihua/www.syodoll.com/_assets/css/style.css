@@ -524,7 +524,7 @@ nav.navbar.nav-main .navbar-nav .nav-item .nav-link {
   color: #333;
 }
 nav.navbar.nav-main .navbar-nav .nav-item .nav-link.active, nav.navbar.nav-main .navbar-nav .nav-item .nav-link:hover, nav.navbar.nav-main .navbar-nav .nav-item .nav-link:focus {
-  background: linear-gradient(to right, #61a6ef, #e82391);
+  background: #234e69;
   padding: .5rem;
   color: #fff;
 }

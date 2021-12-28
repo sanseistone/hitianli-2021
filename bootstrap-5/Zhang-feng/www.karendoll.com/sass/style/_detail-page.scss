@@ -700,117 +700,6 @@
         }
       }
 
-      & .tab-content-title {
-        margin-bottom: 1rem;
-        font-size: 1.25rem;
-        font-weight: bold;
-      }
-
-      & .review-list {
-        & .table {
-          > thead {
-            background: #f5f5f5;
-
-            & .title {
-              display: flex;
-              align-items: center;
-              padding: .25rem 1rem;
-              font-weight: normal;
-
-              > * {
-                display: flex;
-                align-items: center;
-              }
-
-              > * + * {
-                margin-left: 1.5rem;
-              }
-
-              & svg {
-                margin-right: .5rem;
-              }
-
-              & .user {}
-
-              & .date {
-                color: #666;
-                font-size: .875rem;
-              }
-
-              & .ranking-box {
-                > img {
-                  width: 1rem;
-                  height: 1rem;
-
-                  & + img {
-                    margin-left: .25rem;
-                  }
-                }
-              }
-            }
-          }
-
-          > tbody {
-            & .content {
-              margin-bottom: 1rem;
-              font-size: .875rem;
-            }
-
-            & .thumbnail {
-              & a {
-                display: block;
-              }
-            }
-          }
-        }
-      }
-
-      & .write-review {
-        background: #f5f5f5;
-        padding: 1rem;
-
-        & .title {
-          margin-bottom: 1rem;
-          font-size: 1rem;
-          font-weight: bold;
-        }
-
-        & .form-box {
-          > * + * {
-            margin-top: 1rem;
-          }
-
-          & label {
-            margin-bottom: .5rem;
-
-            > span {
-              color: red;
-            }
-          }
-
-          & .rating-choice {
-            display: flex;
-            align-items: center;
-
-            & .title {
-              color: #999;
-              font-size: .875rem;
-              font-style: italic;
-            }
-
-            & .radio-box {
-              display: inline-flex;
-              align-items: center;
-              margin: 0 1rem;
-
-              > * + * {
-                margin-left: .5rem;
-              }
-            }
-          }
-        }
-      }
-
       & .product-accessories {
         & .left {
           & .title {
@@ -842,6 +731,131 @@
               white-space: nowrap;
             }
           }
+        }
+      }
+    }
+  }
+
+  &.section-reviews {
+    & .tab-content-title {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    & .review-list {
+      & .table {
+        > thead {
+          background: #f5f5f5;
+
+          & .title {
+            display: flex;
+            align-items: center;
+            padding: .25rem 1rem;
+            font-weight: normal;
+
+            > * {
+              display: flex;
+              align-items: center;
+            }
+
+            > * + * {
+              margin-left: 1.5rem;
+            }
+
+            & svg {
+              margin-right: .5rem;
+            }
+
+            & .user {}
+
+            & .date {
+              color: #666;
+              font-size: .875rem;
+            }
+
+            & .ranking-box {
+              > img {
+                width: 1rem;
+                height: 1rem;
+
+                & + img {
+                  margin-left: .25rem;
+                }
+              }
+            }
+          }
+        }
+
+        > tbody {
+          & .content {
+            margin-bottom: 1rem;
+            font-size: .875rem;
+          }
+
+          & .thumbnail {
+            & a {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    & .write-review {
+      background: #f5f5f5;
+      padding: 1rem;
+
+      & .title {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+      }
+
+      & .form-box {
+        > * + * {
+          margin-top: 1rem;
+        }
+
+        & label {
+          margin-bottom: .5rem;
+
+          > span {
+            color: red;
+          }
+        }
+
+        & .rating-choice {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+
+          > label {
+            display: flex;
+            align-items: center;
+            margin-right: 1rem;
+
+            > * + * {
+              margin-left: .25rem;
+            }
+
+            & .star-box {
+              display: inline-flex;
+              align-items: center;
+
+              > * + * {
+                margin-left: .15rem;
+              }
+            }
+          }
+        }
+
+        & .file-upload {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+
+
         }
       }
     }
