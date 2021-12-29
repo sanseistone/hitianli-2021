@@ -84,7 +84,7 @@ nav.navbar.nav-main {
   width: 100%;
   border: none;
   padding: 0;
-  background: linear-gradient(to right, #61a6ef, #e82391);
+  background: #111;
   z-index: 100;
 
   & .offcanvas {
@@ -115,11 +115,10 @@ nav.navbar.nav-main {
       text-align: left;
 
       & .nav-link {
-        color: #333;
+        color: #fff;
 
         &.active, &:hover, &:focus {
-          //background: #61a6ef;
-          background: linear-gradient(to right, #61a6ef, #e82391);
+          background: #333;
           padding: .5rem;
           color: #fff;
         }
@@ -910,13 +909,13 @@ footer {
           &.active, &:hover, &:focus {
             background: inherit;
             padding: 1.25rem 1.5rem;
-            color: #b71c1c;
+            color: #fff;
           }
         }
 
         &.active {
           & .nav-link {
-            color: #b71c1c;
+            color: #fff;
           }
         }
 

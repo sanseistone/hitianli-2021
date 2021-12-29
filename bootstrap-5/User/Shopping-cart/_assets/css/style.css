@@ -466,7 +466,7 @@ nav.navbar.nav-main {
   width: 100%;
   border: none;
   padding: 0;
-  background: linear-gradient(to right, #61a6ef, #e82391);
+  background: #111;
   z-index: 100;
 }
 nav.navbar.nav-main .offcanvas {
@@ -491,10 +491,10 @@ nav.navbar.nav-main .navbar-nav .nav-item {
   text-align: left;
 }
 nav.navbar.nav-main .navbar-nav .nav-item .nav-link {
-  color: #333;
+  color: #fff;
 }
 nav.navbar.nav-main .navbar-nav .nav-item .nav-link.active, nav.navbar.nav-main .navbar-nav .nav-item .nav-link:hover, nav.navbar.nav-main .navbar-nav .nav-item .nav-link:focus {
-  background: linear-gradient(to right, #61a6ef, #e82391);
+  background: #333;
   padding: .5rem;
   color: #fff;
 }
@@ -1044,10 +1044,10 @@ footer .copyright .text {
   nav.navbar.nav-main .navbar-nav .nav-item .nav-link.active, nav.navbar.nav-main .navbar-nav .nav-item .nav-link:hover, nav.navbar.nav-main .navbar-nav .nav-item .nav-link:focus {
     background: inherit;
     padding: 1.25rem 1.5rem;
-    color: #b71c1c;
+    color: #fff;
   }
   nav.navbar.nav-main .navbar-nav .nav-item.active .nav-link {
-    color: #b71c1c;
+    color: #fff;
   }
   nav.navbar.nav-main .navbar-nav .nav-item:last-child .dropdown-menu {
     left: inherit;
