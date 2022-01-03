@@ -104,7 +104,7 @@
       }
     }
 
-    & .right {
+    & .right, & .bottom {
       & .product-title {
         & .main-title {
           margin-bottom: 1rem;
@@ -794,8 +794,46 @@
           }
 
           & .thumbnail {
+            margin-bottom: 1rem;
+
             & a {
               display: block;
+            }
+          }
+
+          & .like {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            > a {
+              display: flex;
+              align-items: center;
+
+              > svg {
+                margin-right: .25rem;
+                fill: red;
+              }
+
+              & .after {
+                display: none;
+              }
+
+              &:focus, &:hover {
+                color: darkred;
+
+                & .before {
+                  display: none;
+                }
+
+                & .after {
+                  display: block;
+                }
+              }
+            }
+
+            > * + * {
+              margin-left: 1rem;
             }
           }
         }
@@ -855,8 +893,18 @@
           align-items: center;
           flex-wrap: wrap;
 
-
         }
+      }
+    }
+  }
+
+  &.section-product-customize-detail {
+    & .bottom {
+      margin-top: 2rem;
+
+      & .content-block {
+        background: #fff;
+        padding: .5rem;
       }
     }
   }
@@ -971,6 +1019,29 @@
         }
       }
     }
+
+    &.section-product-customize-detail {
+      & .bottom {
+        margin-top: 2.5rem;
+
+        & .content-block {
+          padding: 1rem;
+        }
+
+        & .product-option {
+          & .option-list {
+            & .form-check-label {
+              & .pic-box, & .text-box {
+                > img {
+                  width: 80px;
+                  height: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -1011,6 +1082,27 @@
         & .product-pic-list {
           & .content {
             column-count: 5;
+          }
+        }
+      }
+    }
+
+    &.section-product-customize-detail {
+      & .bottom {
+        & .product-option {
+          & .option-list {
+            & .form-check-label {
+              & .pic-box, & .text-box {
+                > img {
+                  width: 100px;
+                  height: auto;
+                }
+              }
+
+              & .show-box {
+                //width: 200px;
+              }
+            }
           }
         }
       }
