@@ -491,12 +491,12 @@ nav.navbar.nav-main .navbar-nav .nav-item {
   text-align: left;
 }
 nav.navbar.nav-main .navbar-nav .nav-item .nav-link {
-  color: #fff;
+  color: #333;
 }
 nav.navbar.nav-main .navbar-nav .nav-item .nav-link.active, nav.navbar.nav-main .navbar-nav .nav-item .nav-link:hover, nav.navbar.nav-main .navbar-nav .nav-item .nav-link:focus {
-  background: #333;
+  background: #f5f5f5;
   padding: .5rem;
-  color: #fff;
+  color: #333;
 }
 nav.navbar.nav-main .navbar-nav .nav-item .dropdown-menu {
   background: #f5f5f5;
@@ -749,6 +749,10 @@ nav.navbar.nav-main .navbar-nav .nav-item.dropdown-large .dropdown-large-menu .r
   display: inline-block;
   margin-right: .5rem;
 }
+.section-shopping.section-checkout .item-block {
+  padding: .5rem;
+  background: #f5f5f5;
+}
 .section-shopping.section-checkout .item-block + .item-block {
   margin-top: 1rem;
 }
@@ -756,9 +760,6 @@ nav.navbar.nav-main .navbar-nav .nav-item.dropdown-large .dropdown-large-menu .r
   margin-bottom: .5rem;
   font-size: 1rem;
   font-weight: bold;
-}
-.section-shopping.section-checkout .item-block .item-body {
-  background: #f5f5f5;
 }
 .section-shopping.section-checkout .item-block .item-body .title-box .title {
   font-weight: bold;
@@ -806,6 +807,53 @@ nav.navbar.nav-main .navbar-nav .nav-item.dropdown-large .dropdown-large-menu .r
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+.section-shopping.section-order-complete .order-info .order-status {
+  border: 2px dashed #81c784;
+  padding: 1rem;
+}
+.section-shopping.section-order-complete .order-info .order-status .title {
+  color: #66bb6a;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.section-shopping.section-order-complete .order-info .payment-status {
+  background: #f5f5f5;
+}
+.section-shopping.section-order-complete .order-info .payment-status .item {
+  padding: 1rem;
+}
+.section-shopping.section-order-complete .order-info .payment-status .item p {
+  margin-bottom: 0;
+}
+.section-shopping.section-order-complete .order-info .payment-status .item p.title {
+  color: #666;
+}
+.section-shopping.section-order-complete .order-info .payment-status .item p.result {
+  font-weight: bold;
+}
+.section-shopping.section-order-complete .order-info .order-summary {
+  color: #888;
+}
+.section-shopping.section-order-complete .cart-totals table .title-box .title {
+  font-weight: bold;
+}
+.section-shopping.section-order-complete .cart-totals table .title-box .number {
+  font-size: .875rem;
+}
+.section-shopping.section-order-complete .cart-totals table .list {
+  font-size: .75rem;
+}
+.section-shopping.section-order-complete .cart-totals table .total-sub {
+  color: red;
+}
+.section-shopping.section-order-complete .cart-totals table .total-title {
+  font-size: 1.25rem;
+}
+.section-shopping.section-order-complete .cart-totals table .total-result {
+  color: red;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 footer .main {

@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+.section-block {
+  & .pagination-nav {
+    display: flex;
+    justify-content: center;
+
+    & .pagination {
+      flex-wrap: wrap;
+    }
+
+    & .page-item {
+      > a {
+        color: #333;
+
+        &:focus, &:hover {
+          color: #b71c1c;
+        }
+      }
+
+      &.active {
+        > a {
+          background: #b71c1c;
+          border-color: #b71c1c;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}

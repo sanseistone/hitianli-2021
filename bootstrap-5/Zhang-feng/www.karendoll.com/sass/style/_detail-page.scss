@@ -744,6 +744,119 @@
     }
 
     & .review-list {
+      & .list-block {
+        background: #f5f5f5;
+        padding: .5rem .75rem;
+
+        & + .list-block {
+          margin-top: 1rem;
+        }
+
+        & .title {
+          color: #ef5350;
+          font-size: .875rem;
+          font-weight: 600;
+        }
+
+        & .author {
+          display: flex;
+          align-items: center;
+          //padding: .25rem 1rem;
+          font-weight: normal;
+
+          > * {
+            display: flex;
+            align-items: center;
+          }
+
+          > * + * {
+            margin-left: 1.5rem;
+          }
+
+          & svg {
+            margin-right: .5rem;
+          }
+
+          & .user {}
+
+          & .date {
+            color: #666;
+            font-size: .875rem;
+          }
+
+          & .ranking-box {
+            > img {
+              width: 1rem;
+              height: 1rem;
+
+              & + img {
+                margin-left: .25rem;
+              }
+            }
+          }
+        }
+
+        & .content {
+          & .summary {
+            margin-bottom: 1rem;
+            font-size: .875rem;
+          }
+
+          & .thumbnail {
+            margin-bottom: 1rem;
+
+            & a {
+              display: block;
+            }
+          }
+
+          & .like {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            > a {
+              display: flex;
+              align-items: center;
+
+              > svg {
+                margin-right: .25rem;
+                fill: red;
+              }
+
+              & .after {
+                display: none;
+              }
+
+              &:focus, &:hover {
+                color: darkred;
+
+                & .before {
+                  display: none;
+                }
+
+                & .after {
+                  display: block;
+                }
+              }
+            }
+
+            > button {
+              display: flex;
+              align-items: center;
+
+              > svg {
+                margin-right: .25rem;
+              }
+            }
+
+            > * + * {
+              margin-left: 1rem;
+            }
+          }
+        }
+      }
+
       & .table {
         > thead {
           background: #f5f5f5;
@@ -1082,6 +1195,18 @@
         & .product-pic-list {
           & .content {
             column-count: 5;
+          }
+        }
+      }
+    }
+
+    &.section-reviews {
+      & .review-list {
+        & .list-block {
+          padding: 1rem;
+
+          & .title {
+            font-size: 1rem;
           }
         }
       }
