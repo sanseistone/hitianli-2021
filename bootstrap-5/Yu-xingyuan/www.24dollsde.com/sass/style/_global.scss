@@ -544,105 +544,10 @@ nav.navbar.nav-main {
 }
 
 footer {
-  & .main {
-    background: #333;
+  background: #222;
 
-    & .footer-menu {
-      order: 2;
-
-      & .footer-info {
-        color: #ccc;
-        font-size: .875rem;
-        font-weight: normal;
-      }
-
-      & .list {
-        display: none;
-
-        > li {
-          & + li {
-            margin-top: .5rem;
-          }
-
-          > a {
-            color: #ccc;
-            font-size: .875rem;
-          }
-        }
-      }
-    }
-
-    & .footer-special {
-      order: 1;
-
-      & .heading {
-        &:after {
-          display: none;
-        }
-      }
-
-      & .content {
-        & label {
-          > .form-control {
-            border-radius: 0;
-          }
-
-          > .btn {
-            border-radius: 0;
-          }
-        }
-
-        &.social {
-          > * + * {
-            margin-left: .5rem;
-          }
-
-          & svg {
-            width: 20px;
-            height: 20px;
-          }
-
-          & .twitter {
-            > svg {
-              fill: #50aaee;
-            }
-          }
-
-          & .facebook {
-            > svg {
-              fill: #3a5898;
-            }
-          }
-
-          & .youtube {
-            > svg {
-              fill: #e62117;
-            }
-          }
-
-          & .pinterest {
-            > svg {
-              fill: #d42127;
-            }
-          }
-
-          & .wordpress {
-            > svg {
-              fill: #69b8c0;
-            }
-          }
-        }
-
-        &.contact {
-          color: #ccc;
-          font-size: .875rem;
-
-          & a {
-            color: #ddd;
-          }
-        }
-      }
-    }
+  & .footer-menu {
+    margin-bottom: 1.5rem;
 
     & .heading {
       border-bottom: 1px solid #666;
@@ -666,12 +571,79 @@ footer {
         font-weight: lighter;
       }
     }
+
+    & .row .col-12:last-child {
+      & .heading {
+        cursor: inherit;
+
+        &:after {
+          display: none;
+        }
+      }
+    }
+
+    & .footer-info {
+      color: #ccc;
+      font-size: .875rem;
+      font-weight: normal;
+    }
+
+    & .list {
+      display: none;
+
+      > li {
+        & + li {
+          margin-top: .5rem;
+        }
+
+        > a {
+          color: #ccc;
+          font-size: .875rem;
+        }
+      }
+    }
+
+    & .contact {
+      color: #ccc;
+
+      > * + * {
+        margin-top: 1rem;
+      }
+
+      & .phone, & .email {
+        > *:first-child {
+          font-size: .875rem;
+        }
+
+        > *:last-child {
+          font-size: .875rem;
+          font-weight: bold;
+        }
+
+        & a {
+          color: red;
+        }
+      }
+    }
+  }
+
+  & .footer-special {
+    & .pic-box {
+      background: #ccc;
+      padding: .5rem;
+
+      & img {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 
   & .copyright {
-    padding: .5rem 0;
+    padding: 1.5rem 0;
 
     & .text {
+      color: #ccc;
       text-align: center;
       font-size: .875rem;
     }
@@ -773,18 +745,38 @@ footer {
   }
 
   footer {
-    & .main {
-      & .footer-menu {
-        & .list {
-          display: block;
-        }
-      }
+    & .footer-menu {
+      margin-bottom: 2rem;
 
       & .heading {
         cursor: auto;
 
         &:after {
           display: none;
+        }
+      }
+
+      & .list {
+        display: block;
+      }
+
+      & .contact {
+        & .phone, & .email {
+          > *:last-child {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    & .footer-special {
+      & .pic-box {
+        display: inline-block;
+
+        & img {
+          width: auto;
+          height: 100%;
+          max-height: 80px;
         }
       }
     }
@@ -829,17 +821,19 @@ footer {
   }
 
   footer {
-    & .main {
-      & .footer-menu {
-        order: 1;
-      }
-
-      & .footer-special {
-        order: 2;
+    & .footer-menu {
+      & .contact {
+        & .phone, & .email {
+          > *:last-child {
+            font-size: 1.25rem;
+          }
+        }
       }
     }
 
     & .copyright {
+      padding: 2rem 0;
+
       & .text {
         font-size: 1rem;
       }
@@ -1059,6 +1053,19 @@ footer {
   }
 
   .product-block {
+    & .float-block {
+      &.float-tag {
+        > * {
+          width: 2.5rem;
+          height: 2.5rem;
+          background: rgba(red, .8);
+          border-radius: 100%;
+          line-height: 2.5rem;
+          font-size: .875rem;
+        }
+      }
+    }
+
     & .p-pic {
 
       > a {
@@ -1080,7 +1087,7 @@ footer {
 
   footer {
     & .copyright {
-      padding: 1rem 0;
+      padding: 2.5rem 0;
     }
   }
 }

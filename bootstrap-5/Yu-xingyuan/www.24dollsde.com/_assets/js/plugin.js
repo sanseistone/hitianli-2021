@@ -23,7 +23,7 @@ $(document).ready(function () {
     $(function () {
         $('.readmore-box').readmore({
             speed: 75,
-            collapsedHeight: 45,
+            collapsedHeight: 95,
             moreLink: '<div class="mt-3"><button class="d-inline-flex btn btn-sm btn-dark" type="button">More <img src="_assets/img/svg/chevron-down-white.svg" alt=""></button></div>',
             lessLink: '<div class="mt-3"><button class="d-inline-flex btn btn-sm btn-danger" type="button">Less <img src="_assets/img/svg/chevron-up-white.svg" alt=""></button></div>'
         });
