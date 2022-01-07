@@ -1,29 +1,219 @@
 @charset "utf-8";
 
-.section-block {
-  & .pagination-nav {
-    display: flex;
-    justify-content: center;
+main {
+  & .main-aside {
+    flex: 0 0 auto;
+    width: 100%;
 
-    & .pagination {
-      flex-wrap: wrap;
+    &.offcanvas {
+      overflow-y: scroll;
+      padding: 0 1rem 1rem;
+
+      &.offcanvas-start {
+        width: 85%;
+      }
+
+      & .offcanvas-header {
+        display: flex;
+
+        & .offcanvas-title {
+          font-size: 1.25rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  & .main-content {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  &.main-blog {
+    & .heading-main {
+      font-size: 1rem;
+      font-weight: 600;
     }
 
-    & .page-item {
-      > a {
-        color: #333;
+    & .main-content {}
+  }
+}
 
-        &:focus, &:hover {
-          color: #b71c1c;
+
+
+.section-aside-block {
+  & ul.list {
+    > li {
+      padding: .5rem 0;
+
+      & + li {
+        border-top: 1px solid #ddd;
+      }
+
+      > a {
+        display: block;
+        font-size: .875rem;
+      }
+
+      & .date {
+        display: block;
+        margin-top: .25rem;
+        color: #666;
+        font-size: .75rem;
+        font-style: italic;
+      }
+    }
+  }
+}
+
+.section-block {
+  &.section-blog-list {
+    & .blog-list-item {
+      & + .blog-list-item {
+        border-top: 1px solid #ddd;
+        margin-top: 1rem;
+        padding-top: 1rem;
+      }
+
+      & .title {
+        margin-bottom: .25rem;
+
+        > a {
+          font-size: .875rem;
+          font-weight: 600;
         }
       }
 
-      &.active {
-        > a {
-          background: #b71c1c;
-          border-color: #b71c1c;
-          color: #fff;
+      & .author {
+        margin-bottom: .5rem;
+        font-size: .75rem;
+
+        > * + * {
+          margin-left: .5rem;
         }
+      }
+
+      & .content {
+        & .summary {
+          margin-bottom: .25rem;
+          color: #666;
+          font-size: .875rem;
+        }
+      }
+    }
+  }
+
+  &.section-blog-content {
+    & .title-box {
+      border-bottom: 1px solid #666;
+      margin-bottom: 1rem;
+
+      & .title {
+        margin-bottom: .25rem;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+
+      & .author {
+        margin-bottom: .5rem;
+        font-size: .75rem;
+
+        > * + * {
+          margin-left: .5rem;
+        }
+      }
+    }
+
+    & .content {
+      color: #666;
+      font-size: .875rem;
+
+      & .title {
+        margin: .5rem 0;
+        color: #333;
+        font-size: .875rem;
+        font-weight: 600;
+      }
+
+      & ul {
+        padding-left: 1rem;
+        list-style: circle;
+      }
+    }
+  }
+}
+
+.pagination-nav {
+  display: flex;
+  justify-content: center;
+
+  & .pagination {
+    flex-wrap: wrap;
+  }
+
+  & .page-item {
+    > a {
+      color: #333;
+
+      &:focus, &:hover {
+        color: #4aa3dd;
+      }
+    }
+
+    &.active {
+      > a {
+        background: #4aa3dd;
+        border-color: #4aa3dd;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.article-page-nav {
+  & .page-nav-block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #4aa3dd;
+    padding: .25rem;
+
+    & .title {
+      display: block;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      font-size: .875rem;
+    }
+
+    & svg {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1rem;
+      height: 1rem;
+      fill: red;
+    }
+
+    &.left {
+      & .title {
+        padding-left: 1.5rem;
+      }
+
+      & svg {
+        left: .25rem;
+      }
+    }
+
+    &.right {
+      justify-content: flex-end;
+
+      & .title {
+        padding-right: 1.5rem;
+      }
+
+      & svg {
+        right: .25rem;
       }
     }
   }
@@ -33,8 +223,153 @@
 
 @media (min-width: 768px) {}
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+  main {
+    & .main-aside {
+      width: 25%;
 
-@media (min-width: 1200px) {}
+      &.offcanvas {
+        position: relative;
+        overflow-y: visible;
+        visibility: visible;
+        z-index: 10;
+        padding: 0 .75rem;
+
+        &.offcanvas-start {
+          width: 25%;
+          border-right: none;
+          transform: none;
+        }
+
+        & .offcanvas-header {
+          display: none;
+        }
+      }
+    }
+
+    & .main-content {
+      width: 75%;
+    }
+
+    &.main-blog {
+      & .heading-main {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    & .main-aside {
+      width: 20%;
+
+      &.offcanvas {
+        &.offcanvas-start {
+          width: 20%;
+        }
+
+        & .offcanvas-header {
+          display: none;
+        }
+      }
+    }
+
+    & .main-content {
+      width: 80%;
+    }
+
+    &.main-blog {
+      & .heading-main {
+        font-size: 1.5rem;
+      }
+
+      & .main-content {}
+    }
+  }
+
+  .section-aside-block {
+    & ul.list {
+      > li {
+        & .date {
+          font-size: .875rem;
+        }
+      }
+    }
+  }
+
+  .section-block {
+    &.section-blog-list {
+      & .blog-list-item {
+        & + .blog-list-item {
+        }
+
+        & .title {
+          margin-bottom: .5rem;
+
+          > a {
+            font-size: 1rem;
+          }
+        }
+
+        & .author {
+          font-size: .875rem;
+        }
+
+        & .content {
+          & .summary {
+            margin-bottom: .5rem;
+            color: #333;
+          }
+        }
+      }
+    }
+
+    &.section-blog-content {
+      & .title-box {
+        border-bottom: 1px solid #666;
+        margin-bottom: 1rem;
+
+        & .title {
+          margin-bottom: .5rem;
+          font-size: 1.25rem;
+        }
+
+        & .author {
+          font-size: .875rem;
+        }
+      }
+
+      & .content {
+        color: #333;
+
+        & .title {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .article-page-nav {
+    & .page-nav-block {
+      & svg {
+        width: 1.25rem;
+        height: 1.25rem;
+      }
+
+      &.left {
+        & .title {
+          padding-left: 1.5rem;
+        }
+      }
+
+      &.right {
+        & .title {
+          padding-right: 1.5rem;
+        }
+      }
+    }
+  }
+}
 
 @media (min-width: 1400px) {}

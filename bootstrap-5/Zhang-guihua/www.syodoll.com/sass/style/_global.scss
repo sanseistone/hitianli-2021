@@ -505,31 +505,35 @@ nav.navbar.nav-main {
 .navigation-box {
   position: fixed;
   right: 15px;
-  bottom: 100px;
-  z-index: 10;
+  bottom: 120px;
+  z-index: 1000;
 
   & .item {
-    display: flex;
-    align-items: center;
     position: absolute;
-    width: 40px;
-    height: 40px;
-    //background: red;
+    display: block;
+    width: 36px;
+    height: 36px;
     background: linear-gradient(to bottom, #4aa3dd, #234e69);
     border-radius: 100%;
     text-align: center;
-    line-height: 35px;
-    opacity: .8;
+    line-height: 30px;
 
     & svg {
-      width: 25px;
-      height: 25px;
+      width: 20px;
+      height: 20px;
       fill: #fff;
     }
   }
 
   & .show-aside {
-    display: none;
+    right: 0;
+    bottom: 46px;
+    background: red;
+
+    & .btn {
+      padding: 0;
+      line-height: 1.5;
+    }
   }
 
   & .back-to-top {
@@ -838,6 +842,12 @@ footer {
       & .text {
         font-size: 1rem;
       }
+    }
+  }
+
+  .navigation-box {
+    & .show-aside {
+      display: none;
     }
   }
 }
