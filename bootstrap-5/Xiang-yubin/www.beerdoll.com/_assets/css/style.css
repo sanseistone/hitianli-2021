@@ -1320,7 +1320,7 @@ footer .copyright .text {
   font-size: 1rem;
   line-height: 1.2;
 }
-.section-block.section-news-block .news-block .p-pic:hover .float-heading > *, .section-block.section-news-block .news-block .p-pic:focus .float-heading > * {
+.section-block.section-news-block .news-block:hover .float-heading > *, .section-block.section-news-block .news-block:focus .float-heading > * {
   color: red;
 }
 .section-block.section-info-block .content {
@@ -1581,6 +1581,29 @@ footer .copyright .text {
   }
   .section-block.section-faq-block .faq-list .accordion dd {
     font-size: 1rem;
+  }
+  .section-block.section-news-block .news-block .float-block.float-date {
+    top: .75rem;
+  }
+  .section-block.section-news-block .news-block .float-block.float-date.left {
+    left: .75rem;
+  }
+  .section-block.section-news-block .news-block .float-block.float-date .day {
+    font-size: 1rem;
+  }
+  .section-block.section-news-block .news-block .float-block.float-date .month {
+    font-size: .875rem;
+  }
+  .section-block.section-news-block .news-block .float-block.float-heading {
+    left: 1rem;
+    right: 1rem;
+  }
+  .section-block.section-news-block .news-block .float-block.float-heading > * {
+    height: calc(1.15rem * 1 * 1.2 * 2);
+    font-size: 1.15rem;
+  }
+  .section-block.section-news-block .news-block:hover .float-heading > *, .section-block.section-news-block .news-block:focus .float-heading > * {
+    color: red;
   }
 }
 .section-block.section-tags-block .content {

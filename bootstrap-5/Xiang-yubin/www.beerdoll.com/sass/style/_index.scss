@@ -380,12 +380,10 @@
         }
       }
 
-      & .p-pic {
-        &:hover, &:focus {
-          & .float-heading {
-            > * {
-              color: red;
-            }
+      &:hover, &:focus {
+        & .float-heading {
+          > * {
+            color: red;
           }
         }
       }
@@ -823,6 +821,46 @@
 
         & .accordion dd {
           font-size: 1rem;
+        }
+      }
+    }
+
+    &.section-news-block {
+      & .news-block {
+        & .float-block {
+          &.float-date {
+            top: .75rem;
+
+            &.left {
+              left: .75rem;
+            }
+
+            & .day {
+              font-size: 1rem;
+            }
+
+            & .month {
+              font-size: .875rem;
+            }
+          }
+
+          &.float-heading {
+            left: 1rem;
+            right: 1rem;
+
+            > * {
+              height: calc(1.15rem * 1 * 1.2 * 2);
+              font-size: 1.15rem;
+            }
+          }
+        }
+
+        &:hover, &:focus {
+          & .float-heading {
+            > * {
+              color: red;
+            }
+          }
         }
       }
     }
