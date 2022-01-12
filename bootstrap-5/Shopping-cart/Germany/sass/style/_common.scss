@@ -56,6 +56,10 @@ ul {
   padding-left: 0;
 }
 
+.btn, .form-control {
+  border-radius: 0;
+}
+
 .btn:focus {
   outline: 0;
   box-shadow: none;
