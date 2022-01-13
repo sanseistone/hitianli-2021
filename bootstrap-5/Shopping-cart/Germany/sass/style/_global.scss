@@ -494,8 +494,8 @@ main {
 
       & .cart-btn-control {
         display: flex;
-        align-items: center;
-        flex-wrap: wrap;
+        align-items: flex-start;
+        flex-direction: column;
         border-top: 2px solid #ddd;
         margin-top: 1rem;
         padding-top: 1rem;
@@ -504,7 +504,7 @@ main {
           text-transform: uppercase;
 
           & + .btn {
-            margin-left: 1rem;
+            margin-top: .5rem;
           }
 
           &.btn-back {
@@ -629,11 +629,12 @@ main {
     & .left {
       & .customer-details {
         border-top: 2px solid #ddd;
+        margin-bottom: 1.5rem;
         padding-top: 1rem;
 
         form {
           & label {
-            font-size: .75rem;
+            font-size: .875rem;
             font-weight: 600;
 
             > span {
@@ -684,14 +685,14 @@ main {
               display: flex;
               align-items: center;
               margin-bottom: .5rem;
-              font-size: .75rem;
+              font-size: .875rem;
 
               > * + * {
                 margin-left: .5rem;
               }
 
               & .form-check-input {
-                margin-right: .5rem;
+                margin-right: .25rem;
               }
 
               & span {
@@ -971,6 +972,49 @@ footer {
 
           &:not(.active) {
             display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .section-shopping {
+    &.section-shopping-cart {
+      & .left {
+        & .cart-btn-control {
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          border-top: 2px solid #ddd;
+          margin-top: 1rem;
+          padding-top: 1rem;
+
+          & .btn {
+            text-transform: uppercase;
+
+            & + .btn {
+              margin-top: 0;
+              margin-left: .5rem;
+            }
+
+            &.btn-back {
+              background: #fff;
+              border: 2px solid #cba746;
+              color: #cba746;
+
+              &:focus, &:hover {
+                background: #cba746;
+                //border: 2px solid #cba746;
+                color: #fff;
+              }
+            }
+
+            &.btn-continue {
+              background: #cba746;
+              border: 2px solid #cba746;
+              color: #fff;
+              opacity: .6;
+            }
           }
         }
       }
