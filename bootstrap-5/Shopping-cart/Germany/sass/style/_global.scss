@@ -1,10 +1,35 @@
 @charset "utf-8";
 
+body, html {
+  font-family: 'Lato', sans-serif;
+}
+
 .header-bar {
   & .content {
     text-align: center;
     color: #fff;
     font-size: .75rem;
+  }
+}
+
+header {
+  border-bottom: 1px solid #ddd;
+
+  & .container {
+    display: flex;
+    justify-content: center;
+
+    & .logo {
+      & a {
+        display: block;
+      }
+
+      & img {
+        width: auto;
+        height: 100%;
+        max-height: 50px;
+      }
+    }
   }
 }
 
@@ -119,6 +144,7 @@ nav.navbar {
 
         & .nav-link {
           color: #333;
+          text-transform: uppercase;
 
           &.active, &:hover, &:focus {
             background: #f5f5f5;
@@ -179,6 +205,10 @@ nav.navbar {
       }
     }
   }
+}
+
+main {
+  min-height: calc(100vh - 83px - 56px);
 }
 
 .heading {
@@ -251,6 +281,7 @@ nav.navbar {
         color: #333;
         font-size: .875rem;
         font-weight: 300;
+        text-transform: uppercase;
 
         &:before {
           color: #333;
@@ -311,6 +342,7 @@ nav.navbar {
           margin-bottom: .5rem;
           font-size: .875rem;
           font-weight: 600;
+          text-transform: uppercase;
 
           > *:not(:first-child) {
             display: none;
@@ -417,7 +449,7 @@ nav.navbar {
 
             & .qty-block {
               display: flex;
-              align-items: center;
+              align-items: stretch;
 
               & .form-control {
                 width: 40px;
@@ -425,7 +457,12 @@ nav.navbar {
               }
 
               & .btn {
+                display: flex;
+                align-items: center;
                 padding: .25rem;
+                background: #eee;
+                border-color: #ddd;
+                color: #333;
               }
             }
 
@@ -464,6 +501,8 @@ nav.navbar {
         padding-top: 1rem;
 
         & .btn {
+          text-transform: uppercase;
+
           & + .btn {
             margin-left: 1rem;
           }
@@ -496,14 +535,23 @@ nav.navbar {
 
         & .cart-total-header {
           border-bottom: 2px solid #ddd;
+          margin-bottom: 1rem;
+          padding: .25rem;
           font-size: .875rem;
           font-weight: 600;
+          text-transform: uppercase;
         }
 
         & .table {
           & .text-end {
             font-weight: 600;
           }
+        }
+      }
+
+      & .btn-box {
+        & .btn {
+          text-transform: uppercase;
         }
       }
 
@@ -515,13 +563,14 @@ nav.navbar {
           margin-bottom: 1rem;
           font-size: .875rem;
           font-weight: 600;
+          text-transform: uppercase;
 
           > * + * {
             margin-left: .5rem;
           }
 
           & svg {
-            fill: red;
+            fill: #999;
           }
         }
 
@@ -532,14 +581,49 @@ nav.navbar {
             border-radius: 0;
           }
         }
+
+        & .btn-box {
+          & .btn {
+            background: #eee;
+            border-color: #ddd;
+            color: #666;
+          }
+        }
       }
     }
   }
 
   &.section-checkout {
-    & .page-info {
+    & .page-header {
       margin-bottom: 2rem;
-      font-size: .875rem;
+
+      & .page-info {
+        margin-bottom: .5rem;
+        font-size: .875rem;
+
+        > span {
+          color: #666;
+          cursor: pointer;
+        }
+      }
+
+      & .info-content {
+        border: 2px dashed #cba746;
+        padding: 1rem;
+
+        & .item-block {
+          display: flex;
+          align-items: stretch;
+          flex-wrap: wrap;
+
+          & .btn {
+            background: #cba746;
+            border: none;
+            color: #fff;
+            text-transform: uppercase;
+          }
+        }
+      }
     }
 
     & .left {
@@ -567,6 +651,7 @@ nav.navbar {
           & .fields-header {
             margin-bottom: .75rem;
             font-weight: 600;
+            text-transform: uppercase;
           }
         }
       }
@@ -579,7 +664,9 @@ nav.navbar {
 
         & .checkout-header {
           margin-bottom: .75rem;
+          padding: .25rem .5rem;
           font-weight: 600;
+          text-transform: uppercase;
         }
 
         & .payment-list {
@@ -633,6 +720,10 @@ nav.navbar {
             background: #f5f5f5;
             font-size: .875rem;
 
+            > thead {
+              text-transform: uppercase;
+            }
+
             & tr {
               > *:last-child {
                 text-align: right;
@@ -659,6 +750,12 @@ nav.navbar {
                   font-size: .75rem;
                 }
               }
+            }
+          }
+
+          & .btn-box {
+            & .btn {
+              text-transform: uppercase;
             }
           }
         }
@@ -697,6 +794,10 @@ nav.navbar {
         & .table {
           background: #f5f5f5;
           font-size: .875rem;
+
+          > thead {
+            text-transform: uppercase;
+          }
 
           & tr {
             > *:last-child {
@@ -989,6 +1090,22 @@ footer {
   .section-block {
     &.section-promise-block {
       padding: 1.5rem;
+    }
+  }
+
+  .section-shopping {
+    &.section-checkout {
+      & .page-header {
+        & .info-content {
+          & .item-block {
+            flex-wrap: nowrap;
+
+            & .btn {
+              white-space: nowrap;
+            }
+          }
+        }
+      }
     }
   }
 

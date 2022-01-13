@@ -10,6 +10,9 @@
     <meta name="author" content="">
     <link rel="icon" href="_assets/img/favicon.png">
     <link rel="stylesheet" href=".././../_assets/frame/bootstrap-5/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="_assets/css/style.css">
 </head>
 <body>
@@ -337,9 +340,18 @@
     </div>
     <div class="section-shopping section-checkout mb-5">
         <div class="container">
-            <div class="page-info">Hast du einen Gutschein? Klicke hier, um deinen Gutschein-Code einzugeben.</div>
+            <div class="page-header">
+                <div class="page-info">Hast du einen Gutschein? <span class="coupon-code">Klicke hier, um deinen Gutschein-Code einzugeben.</span></div>
+                <div id="code-content" class="info-content" style="display: none;">
+                    <p class="title">Wenn Du einen Gutscheincode hast, wende ihn bitte unten an.</p>
+                    <div class="item-block">
+                        <input class="form-control" type="text" placeholder="Gutscheincode">
+                        <button class="btn">Gutschein anwenden</button>
+                    </div>
+                </div>
+            </div>
             <div class="row">
-                <div class="col-12 col-md-6 left">
+                <div class="col-12 col-md-7 left">
                     <div class="customer-details">
                         <div class="form-fields billing-fields">
                             <div class="fields-header">Rechnungsdetails</div>
@@ -402,7 +414,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 right">
+                <div class="col-12 col-md-5 right">
                     <div class="checkout-sidebar">
                         <div class="checkout-payment">
                             <div class="checkout-header">Zahlungsart auswählen</div>
@@ -664,6 +676,11 @@
 <script src="../../_assets/frame/bootstrap-5/js/bootstrap.bundle.min.js"></script>
 <script src="../../_assets/js/jQuery-v3.4.1.min.js"></script>
 <script src="_assets/js/plugin.js"></script>
+<script>
+    $(".coupon-code").click(function () {
+        $("#code-content").toggle();
+    });
+</script>
 <script>
     // $(".form-check-input").click(function () {
     //     if ($(this).attr('checked', true)) {
