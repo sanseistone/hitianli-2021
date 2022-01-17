@@ -1140,6 +1140,30 @@ footer .copyright .text {
   font-size: .875rem;
 }
 
+.modal .modal-body .inner-block {
+  padding: .5rem 1rem;
+  text-align: center;
+}
+.modal .modal-body .inner-block .title-box .logo img {
+  width: auto;
+  height: 100%;
+}
+.modal .modal-body .inner-block .title-box .title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.modal .modal-body .inner-block .content {
+  font-size: .875rem;
+}
+.modal .modal-body .inner-block .btn-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal .modal-body .inner-block .btn-box > * + * {
+  margin-left: 1rem;
+}
+
 @media (min-width: 768px) {
   header .contact {
     justify-content: flex-start;
@@ -1310,6 +1334,13 @@ footer .copyright .text {
 
   footer .copyright .text {
     font-size: 1rem;
+  }
+
+  .modal .modal-body .inner-block {
+    padding: 2rem 1rem;
+  }
+  .modal .modal-body .inner-block .title-box .title {
+    font-size: 1.25rem;
   }
 }
 @media (min-width: 1200px) {

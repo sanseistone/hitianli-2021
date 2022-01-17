@@ -4035,6 +4035,43 @@
         </svg>
     </a>
 </div>
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="inner-block">
+                    <div class="title-box">
+                        <p class="logo mb-2">
+                            <img src="https://www.karendoll.com/images/logo.png" alt=""/>
+                        </p>
+                        <p class="title font-r200 font-r150-sm bold">アダルトグッズ・大人おもちゃ専門店</p>
+                    </div>
+                    <hr>
+                    <div class="content mb-5">
+                        <p>
+                            18歳未満の方のアクセスは固くお断りいたします。
+                            <br>当サイトコンテンツには、一部成人向けの内容や画像が含まれます。
+                            <br>18歳未満の方、またこのような情報を好まない方は速やかにご退出ください。
+                            <br>あなたは18歳以上ですか？
+                        </p>
+                    </div>
+                    <div class="btn-box">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">はい</button>
+                        <button type="button" class="btn btn-danger">いいえ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    window.onload = function () {
+        var myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'), {
+            keyboard: false
+        })
+        myModal.show()
+    }
+</script>
 
 <script src="../../_assets/frame/bootstrap-5/js/bootstrap.bundle.min.js"></script>
 <script src="../../_assets/js/jQuery-v3.4.1.min.js"></script>

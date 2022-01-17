@@ -952,6 +952,43 @@ footer {
   }
 }
 
+.modal {
+  & .modal-body {
+    & .inner-block {
+      padding: .5rem 1rem;
+      text-align: center;
+
+      & .title-box {
+        & .logo {
+          & img {
+            width: auto;
+            height: 100%;
+          }
+        }
+
+        & .title {
+          font-size: 1rem;
+          font-weight: 600;
+        }
+      }
+
+      & .content {
+        font-size: .875rem;
+      }
+
+      & .btn-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        > * + * {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 576px) {}
 
 @media (min-width: 768px) {
@@ -1189,6 +1226,20 @@ footer {
     & .copyright {
       & .text {
         font-size: 1rem;
+      }
+    }
+  }
+
+  .modal {
+    & .modal-body {
+      & .inner-block {
+        padding: 2rem 1rem;
+
+        & .title-box {
+          & .title {
+            font-size: 1.25rem;
+          }
+        }
       }
     }
   }

@@ -262,13 +262,9 @@
     });
 </script>
 <script>
-    // $(".form-check-input").click(function () {
-    //     if ($(this).attr('checked', true)) {
-    //         $(this).parent().next(".content").css("display", "block");
-    //     } else {
-    //         $(this).parent().next(".content").css("display", "none");
-    //     }
-    // });
+    $(".form-check-label").click(function () {
+        $(this).next(".content").toggle();
+    });
 </script>
 
 </body>

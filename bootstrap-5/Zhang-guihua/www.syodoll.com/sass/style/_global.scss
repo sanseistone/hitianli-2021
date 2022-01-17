@@ -336,50 +336,60 @@ nav.navbar.nav-main {
   }
 
   & .float-block {
-    &.float-pic {
-      & img {
-        width: auto;
-        max-width: 32px;
-        height: 100%;
-      }
-
-      & .icon-ranking {
-        width: 40px;
-        height: 40px;
-      }
-    }
-
-    &.float-title {
-      display: flex;
-      align-items: center;
-      background: rgba(red, .6);
-      padding: 3px 5px;
-      text-align: center;
-      color: #fff;
-      font-style: italic;
-      line-height: 1;
-
-      > * {
-        color: #fff;
-        font-size: 11px;
-      }
-    }
-
     &.float-tag {
       text-align: center;
       line-height: 1;
 
       > * {
         display: block;
-        width: 1.85rem;
-        height: 1.85rem;
-        background: rgba(red, .6);
-        border-radius: 100%;
-        text-align: center;
-        line-height: 1.85rem;
-        color: #fff;
+        padding: .25rem;
         font-size: .75rem;
-        font-style: italic;
+      }
+
+      > * + * {
+        margin-top: .25rem;
+      }
+
+      & .red {
+        //background: red;
+        background: rgba(red, .8);
+        color: #fff;
+      }
+
+      & .orange {
+        //background: orange;
+        background: rgba(orange, .8);
+        color: #fff;
+      }
+
+      & .yellow {
+        //background: yellow;
+        background: rgba(yellow, .8);
+        color: #666;
+      }
+
+      & .green {
+        //background: green;
+        background: rgba(green, .8);
+        color: #fff;
+      }
+
+      & .blue {
+        //background: blue;
+        background: rgba(blue, .8);
+        color: #fff;
+      }
+
+      & .cyan {
+        //background: cyan;
+        background: rgba(cyan, .8);
+        color: #333;
+      }
+
+      & .purple {
+        //background: purple;
+        background: rgba(purple, .8);
+        color: #fff;
       }
     }
   }
@@ -1064,6 +1074,15 @@ footer {
   }
 
   .product-block {
+    & .float-block {
+      &.float-tag {
+        > * {
+          padding: .25rem .5rem;
+          font-size: .875rem;
+        }
+      }
+    }
+
     & .p-pic {
 
       > a {

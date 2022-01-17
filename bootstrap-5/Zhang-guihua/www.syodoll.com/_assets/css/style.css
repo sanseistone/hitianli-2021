@@ -655,44 +655,45 @@ nav.navbar.nav-main .navbar-nav .nav-item.dropdown-large .dropdown-large-menu .r
 .product-block .float-block.left {
   left: .25rem;
 }
-.product-block .float-block.float-pic img {
-  width: auto;
-  max-width: 32px;
-  height: 100%;
-}
-.product-block .float-block.float-pic .icon-ranking {
-  width: 40px;
-  height: 40px;
-}
-.product-block .float-block.float-title {
-  display: flex;
-  align-items: center;
-  background: rgba(255, 0, 0, 0.6);
-  padding: 3px 5px;
-  text-align: center;
-  color: #fff;
-  font-style: italic;
-  line-height: 1;
-}
-.product-block .float-block.float-title > * {
-  color: #fff;
-  font-size: 11px;
-}
 .product-block .float-block.float-tag {
   text-align: center;
   line-height: 1;
 }
 .product-block .float-block.float-tag > * {
   display: block;
-  width: 1.85rem;
-  height: 1.85rem;
-  background: rgba(255, 0, 0, 0.6);
-  border-radius: 100%;
-  text-align: center;
-  line-height: 1.85rem;
-  color: #fff;
+  padding: .25rem;
   font-size: .75rem;
-  font-style: italic;
+}
+.product-block .float-block.float-tag > * + * {
+  margin-top: .25rem;
+}
+.product-block .float-block.float-tag .red {
+  background: rgba(255, 0, 0, 0.8);
+  color: #fff;
+}
+.product-block .float-block.float-tag .orange {
+  background: rgba(255, 165, 0, 0.8);
+  color: #fff;
+}
+.product-block .float-block.float-tag .yellow {
+  background: rgba(255, 255, 0, 0.8);
+  color: #666;
+}
+.product-block .float-block.float-tag .green {
+  background: rgba(0, 128, 0, 0.8);
+  color: #fff;
+}
+.product-block .float-block.float-tag .blue {
+  background: rgba(0, 0, 255, 0.8);
+  color: #fff;
+}
+.product-block .float-block.float-tag .cyan {
+  background: rgba(0, 255, 255, 0.8);
+  color: #333;
+}
+.product-block .float-block.float-tag .purple {
+  background: rgba(128, 0, 128, 0.8);
+  color: #fff;
 }
 .product-block .p-pic {
   margin-bottom: .5rem;
@@ -1171,6 +1172,10 @@ footer .copyright .text {
     font-size: 1.25rem;
   }
 
+  .product-block .float-block.float-tag > * {
+    padding: .25rem .5rem;
+    font-size: .875rem;
+  }
   .product-block .p-pic > a {
     display: block;
     overflow: hidden;
