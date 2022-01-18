@@ -1,11 +1,185 @@
 @charset "utf-8";
 
+.section-block {
+  &.section-flash-deals {
+    & .left {
+      & .countdown-block {
+        background: #ec2b2b;
+        padding: .5rem;
+
+        > * + * {
+          margin-top: 1rem;
+        }
+
+        & .title-main {
+          text-align: center;
+          color: #fff;
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+
+        & .pic {
+          text-align: center;
+
+          > img {
+            width: auto;
+            height: 100%;
+          }
+        }
+
+        & .countdown {
+          & .title-sub {
+            margin-bottom: .5rem;
+            text-align: left;
+            color: #fff;
+            font-weight: 600;
+          }
+
+          & .countdown-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 600;
+
+            & span {
+              position: relative;
+              display: inline-block;
+              padding: 10px 5px;
+              z-index: 99;
+
+              & + span {
+                margin-left: .5rem;
+              }
+
+              &.days {
+                //display: none;
+              }
+
+              &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: calc(100% - 50% - 1px);
+                border-radius: 0 0 4px 4px;
+                background-color: #333;
+                z-index: -1;
+              }
+
+              &:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: calc(100% - 50% - 1px);
+                border-radius: 4px 4px 0 0;
+                background-color: #333;
+                z-index: -1;
+              }
+            }
+
+            & .seperator {
+              &:before, &:after {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 576px) {}
 
 @media (min-width: 768px) {}
 
 @media (min-width: 992px) {}
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+  .section-block {
+    &.section-flash-deals {
+      & .left {
+        & .countdown-block {
+          background: #ec2b2b;
+          padding: .5rem;
+
+          > * + * {
+            margin-top: 1rem;
+          }
+
+          & .title {
+            text-align: center;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 600;
+          }
+
+          & .pic {
+            text-align: center;
+
+            > img {
+              width: auto;
+              height: 100%;
+            }
+          }
+
+          & .countdown {
+            & .title {
+              text-align: left;
+            }
+
+            & .countdown-box {
+              justify-content: flex-start;
+
+              & span {
+                position: relative;
+                display: inline-block;
+                padding: 10px 5px;
+                z-index: 99;
+
+                &.days {
+                  //display: none;
+                }
+
+                &:before {
+                  content: "";
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: calc(100% - 50% - 1px);
+                  border-radius: 0 0 4px 4px;
+                  background-color: #333;
+                  z-index: -1;
+                }
+
+                &:after {
+                  content: "";
+                  position: absolute;
+                  left: 0;
+                  bottom: 0;
+                  width: 100%;
+                  height: calc(100% - 50% - 1px);
+                  border-radius: 4px 4px 0 0;
+                  background-color: #333;
+                  z-index: -1;
+                }
+              }
+
+              & .seperator {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 @media (min-width: 1400px) {}
