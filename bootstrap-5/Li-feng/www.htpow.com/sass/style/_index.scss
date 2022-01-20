@@ -154,43 +154,57 @@
 
   &.section-reviews-block {
     & .reviews-black {
-      & .content {
-        padding: .25rem;
-        text-align: left;
+      padding: .5rem;
 
-        & .p-title {
-          > * {
-            font-weight: 600;
-          }
+      & .p-author {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: .35rem;
+
+        > * + * {
+          margin-left: .5rem;
         }
 
-        & .p-author {
+        & .date {
+          color: #666;
+          font-size: .75rem;
+        }
+
+        & .ranking {
           display: flex;
-          align-items: baseline;
-          margin-bottom: .5rem;
+          align-items: center;
 
           > * + * {
-            margin-left: .5rem;
+            margin-left: .15rem;
           }
 
-          & .date {
-            color: #666;
-            font-size: .75rem;
+          > img {
+            width: .75rem;
+            height: .75rem;
           }
+        }
+      }
 
-          & .ranking {
-            display: flex;
-            align-items: center;
+      & .p-title {
+        > * {
+          width: 100%;
+          height: calc(.875rem * 1 * 1.5 * 1);
+          -webkit-line-clamp: 1;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          margin-bottom: .35rem;
+          color: #111;
+          font-size: .875rem;
+          line-height: 1.5;
+        }
+      }
 
-            > * + * {
-              margin-left: .15rem;
-            }
+      & .content {
+        text-align: left;
 
-            > img {
-              width: .75rem;
-              height: .75rem;
-            }
-          }
+        & .p-pic {
+          display: block;
         }
 
         & .p-summary {
@@ -203,6 +217,32 @@
           color: #666;
           font-size: .875rem;
           line-height: 1.2;
+        }
+
+        & .btn-box {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+
+          & .btn {
+            display: flex;
+            align-items: center;
+            background: #1ab414;
+            border: 1px solid #1ab414;
+            color: #fff;
+            font-size: .75rem;
+
+            &:focus, &:hover {
+              background: #ec2b2b;
+              border: 1px solid #ec2b2b;
+            }
+
+            & span {
+              margin-left: .5rem;
+              padding-left: .5rem;
+              border-left: 1px solid #fff;
+            }
+          }
         }
       }
     }

@@ -450,9 +450,12 @@ ul {
   justify-content: flex-end;
 }
 
+header .row {
+  align-items: center;
+}
 header .left {
   display: flex;
-  justify-content: center;
+  order: 1;
 }
 header .left .logo {
   display: inline-block;
@@ -461,37 +464,57 @@ header .left .logo img {
   width: 100%;
   height: auto;
 }
-header .right {
+header .middle {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
+  order: 3;
 }
-header .right > * + * {
+header .middle > * + * {
   margin-left: 1rem;
 }
-header .right .search-block .search-inner {
+header .middle .search-block {
+  width: 100%;
+}
+header .middle .search-block .search-inner {
   margin-bottom: .5rem;
   display: flex;
   align-items: center;
 }
-header .right .search-block .keyword {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+header .middle .search-block .keyword {
+  display: none;
 }
-header .right .search-block .keyword > * {
-  position: relative;
+header .right {
+  display: flex;
+  justify-content: flex-end;
+  order: 2;
+}
+header .right .cart-status {
+  max-width: 100px;
+  background: #f5f5f5;
+}
+header .right .cart-status .num {
+  background: #ddd;
+  padding: .2rem .5rem;
+  text-align: center;
+  font-size: .875rem;
+  font-weight: 600;
+}
+header .right .cart-status .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  background: #ec2b2b;
+  padding: .2rem .5rem;
+  color: #fff;
   font-size: .875rem;
 }
-header .right .search-block .keyword > * + * {
+header .right .cart-status .title > * + * {
   margin-left: .5rem;
-  padding-left: .5rem;
 }
-header .right .search-block .keyword > * + *:before {
-  content: "|";
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #666;
+header .right .cart-status .title span {
+  font-weight: 600;
 }
 
 main {
@@ -875,7 +898,51 @@ footer .copyright {
   bottom: 0;
 }
 
+@media (min-width: 576px) {
+  header .row {
+    align-items: center;
+  }
+  header .left {
+    order: 1;
+  }
+  header .middle {
+    order: 2;
+  }
+  header .middle .search-block .search-inner {
+    margin-bottom: 0;
+  }
+  header .middle .search-block .keyword {
+    display: none;
+  }
+  header .right {
+    order: 3;
+  }
+}
 @media (min-width: 992px) {
+  header .row {
+    align-items: flex-start;
+  }
+  header .middle .search-block .keyword {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  header .middle .search-block .keyword > * {
+    position: relative;
+    font-size: .875rem;
+  }
+  header .middle .search-block .keyword > * + * {
+    margin-left: .5rem;
+    padding-left: .5rem;
+  }
+  header .middle .search-block .keyword > * + *:before {
+    content: "|";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #666;
+  }
+
   footer .payment-method > img {
     width: auto;
     height: 100%;
@@ -893,8 +960,8 @@ footer .copyright {
     font-weight: 600;
   }
 
-  header .left {
-    justify-content: flex-start;
+  header .middle .show-navbar {
+    display: none;
   }
 
   nav.navbar.nav-main {
@@ -1210,35 +1277,49 @@ footer .copyright {
 .section-block.section-blog-block .blog-black .content .btn-box {
   justify-content: flex-start;
 }
-.section-block.section-reviews-block .reviews-black .content {
-  padding: .25rem;
-  text-align: left;
+.section-block.section-reviews-block .reviews-black {
+  padding: .5rem;
 }
-.section-block.section-reviews-block .reviews-black .content .p-title > * {
-  font-weight: 600;
-}
-.section-block.section-reviews-block .reviews-black .content .p-author {
+.section-block.section-reviews-block .reviews-black .p-author {
   display: flex;
   align-items: baseline;
-  margin-bottom: .5rem;
+  margin-bottom: .35rem;
 }
-.section-block.section-reviews-block .reviews-black .content .p-author > * + * {
+.section-block.section-reviews-block .reviews-black .p-author > * + * {
   margin-left: .5rem;
 }
-.section-block.section-reviews-block .reviews-black .content .p-author .date {
+.section-block.section-reviews-block .reviews-black .p-author .date {
   color: #666;
   font-size: .75rem;
 }
-.section-block.section-reviews-block .reviews-black .content .p-author .ranking {
+.section-block.section-reviews-block .reviews-black .p-author .ranking {
   display: flex;
   align-items: center;
 }
-.section-block.section-reviews-block .reviews-black .content .p-author .ranking > * + * {
+.section-block.section-reviews-block .reviews-black .p-author .ranking > * + * {
   margin-left: .15rem;
 }
-.section-block.section-reviews-block .reviews-black .content .p-author .ranking > img {
+.section-block.section-reviews-block .reviews-black .p-author .ranking > img {
   width: .75rem;
   height: .75rem;
+}
+.section-block.section-reviews-block .reviews-black .p-title > * {
+  width: 100%;
+  height: calc(.875rem * 1 * 1.5 * 1);
+  -webkit-line-clamp: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: .35rem;
+  color: #111;
+  font-size: .875rem;
+  line-height: 1.5;
+}
+.section-block.section-reviews-block .reviews-black .content {
+  text-align: left;
+}
+.section-block.section-reviews-block .reviews-black .content .p-pic {
+  display: block;
 }
 .section-block.section-reviews-block .reviews-black .content .p-summary {
   width: 100%;
@@ -1250,6 +1331,28 @@ footer .copyright {
   color: #666;
   font-size: .875rem;
   line-height: 1.2;
+}
+.section-block.section-reviews-block .reviews-black .content .btn-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.section-block.section-reviews-block .reviews-black .content .btn-box .btn {
+  display: flex;
+  align-items: center;
+  background: #1ab414;
+  border: 1px solid #1ab414;
+  color: #fff;
+  font-size: .75rem;
+}
+.section-block.section-reviews-block .reviews-black .content .btn-box .btn:focus, .section-block.section-reviews-block .reviews-black .content .btn-box .btn:hover {
+  background: #ec2b2b;
+  border: 1px solid #ec2b2b;
+}
+.section-block.section-reviews-block .reviews-black .content .btn-box .btn span {
+  margin-left: .5rem;
+  padding-left: .5rem;
+  border-left: 1px solid #fff;
 }
 .section-block.section-text-block .content-box {
   background: #f5f5f5;
