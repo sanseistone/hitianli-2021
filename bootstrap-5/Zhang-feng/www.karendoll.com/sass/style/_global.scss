@@ -769,6 +769,19 @@ nav.navbar.nav-main {
     }
   }
 
+  & .show-aside {
+    display: flex;
+    justify-content: center;
+    right: 0;
+    bottom: 150px;
+    background: red;
+
+    & .btn {
+      padding: 0;
+      text-align: center;
+    }
+  }
+
   & .email {
     bottom: 100px;
   }
@@ -1241,6 +1254,12 @@ footer {
           }
         }
       }
+    }
+  }
+
+  .navigation-box {
+    & .show-aside {
+      display: none;
     }
   }
 }

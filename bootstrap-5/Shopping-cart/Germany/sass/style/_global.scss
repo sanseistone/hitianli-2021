@@ -396,7 +396,7 @@ main {
             }
 
             & .info {
-              width: 60%;
+              width: 100%;
               margin-bottom: .5rem;
 
               & .title {
@@ -407,6 +407,12 @@ main {
                 padding-left: 0;
                 list-style: none;
                 font-size: .75rem;
+
+                > * {
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                }
               }
 
               &:before {
@@ -717,6 +723,50 @@ main {
         }
 
         & .checkout-order {
+          & .order-info-block {
+            background: #f5f5f5;
+            padding: .5rem;
+
+            & [class*="col"] {
+              > * {
+                padding: .25rem;
+              }
+            }
+
+            & .header-box {
+              border-bottom: 1px solid #333;
+            }
+
+            & .content-box {
+              font-size: .875rem;
+
+              & .product-info {
+                & .info {
+                  & .title {
+                    font-weight: 400;
+                  }
+
+                  & .summary {
+                    padding-left: 0;
+                    list-style: none;
+                    font-size: .75rem;
+
+                    > * {
+                      width: 100%;
+                      overflow: hidden;
+                      white-space: nowrap;
+                      text-overflow: ellipsis;
+                    }
+                  }
+                }
+              }
+
+              & .item + .item {
+                border-top: 1px solid #ddd;
+              }
+            }
+          }
+
           & .table {
             background: #f5f5f5;
             font-size: .875rem;
@@ -749,6 +799,13 @@ main {
                   padding-left: 0;
                   list-style: none;
                   font-size: .75rem;
+
+                  > * {
+                    width: 100%;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                  }
                 }
               }
             }

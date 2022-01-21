@@ -720,7 +720,7 @@ main {
   padding-right: 1rem;
 }
 .section-shopping.section-shopping-cart .left .cart-list-block .cart-list-item > *:nth-of-type(1) .info {
-  width: 60%;
+  width: 100%;
   margin-bottom: .5rem;
 }
 .section-shopping.section-shopping-cart .left .cart-list-block .cart-list-item > *:nth-of-type(1) .info .title {
@@ -730,6 +730,11 @@ main {
   padding-left: 0;
   list-style: none;
   font-size: .75rem;
+}
+.section-shopping.section-shopping-cart .left .cart-list-block .cart-list-item > *:nth-of-type(1) .info .summary > * {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .section-shopping.section-shopping-cart .left .cart-list-block .cart-list-item > *:nth-of-type(1) .info:before {
   color: darkred;
@@ -961,6 +966,36 @@ main {
   margin-bottom: .5rem;
   font-size: .875rem;
 }
+.section-shopping.section-checkout .right .checkout-sidebar .checkout-order .order-info-block {
+  background: #f5f5f5;
+  padding: .5rem;
+}
+.section-shopping.section-checkout .right .checkout-sidebar .checkout-order .order-info-block [class*="col"] > * {
+  padding: .25rem;
+}
+.section-shopping.section-checkout .right .checkout-sidebar .checkout-order .order-info-block .header-box {
+  border-bottom: 1px solid #333;
+}
+.section-shopping.section-checkout .right .checkout-sidebar .checkout-order .order-info-block .content-box {
+  font-size: .875rem;
+}
+.section-shopping.section-checkout .right .checkout-sidebar .checkout-order .order-info-block .content-box .product-info .info .title {
+  font-weight: 400;
+}
+.section-shopping.section-checkout .right .checkout-sidebar .checkout-order .order-info-block .content-box .product-info .info .summary {
+  padding-left: 0;
+  list-style: none;
+  font-size: .75rem;
+}
+.section-shopping.section-checkout .right .checkout-sidebar .checkout-order .order-info-block .content-box .product-info .info .summary > * {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.section-shopping.section-checkout .right .checkout-sidebar .checkout-order .order-info-block .content-box .item + .item {
+  border-top: 1px solid #ddd;
+}
 .section-shopping.section-checkout .right .checkout-sidebar .checkout-order .table {
   background: #f5f5f5;
   font-size: .875rem;
@@ -987,6 +1022,12 @@ main {
   padding-left: 0;
   list-style: none;
   font-size: .75rem;
+}
+.section-shopping.section-checkout .right .checkout-sidebar .checkout-order .table .product-info .info .summary > * {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .section-shopping.section-checkout .right .checkout-sidebar .checkout-order .btn-box .btn {
   text-transform: uppercase;
