@@ -150,11 +150,6 @@ ul {
 }
 
 @media (min-width: 576px) {
-  .container {
-    width: 100%;
-    max-width: 96%;
-  }
-
   img {
     &.full-sm {
       width: 100%;
@@ -223,11 +218,6 @@ ul {
 }
 
 @media (min-width: 768px) {
-  .container {
-    width: 100%;
-    max-width: 96%;
-  }
-
   img {
     &.full-md {
       width: 100%;
@@ -296,11 +286,6 @@ ul {
 }
 
 @media (min-width: 992px) {
-  .container {
-    width: 100%;
-    max-width: 96%;
-  }
-
   img {
     &.full-lg {
       width: 100%;
@@ -369,11 +354,6 @@ ul {
 }
 
 @media (min-width: 1200px) {
-  .container {
-    width: 1460px;
-    max-width: 96%;
-  }
-
   img {
     &.full-xl {
       width: 100%;
