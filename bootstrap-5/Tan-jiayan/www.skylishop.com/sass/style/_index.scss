@@ -1,11 +1,160 @@
 @charset "utf-8";
 
+main {
+  & .main-aside {
+    & .section-block {
+      border: 1px solid #ddd;
+      padding: .5rem;
+
+      & + .section-block {
+        margin-top: 1rem;
+      }
+
+      &.section-aside-list {
+        & .heading-block {
+
+        }
+
+        & .list {
+          > li + li {
+            border-top: 1px solid #ddd;
+          }
+
+          > li {
+            & a {
+              display: block;
+              padding: .25rem;
+              font-size: .875rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & .main-content {
+    & .page-title {
+      & .title {
+        font-size: 1rem;
+        font-weight: 600;
+      }
+    }
+
+    & .section-block {
+      &.section-text-block {
+        & .text-inner-box {
+          font-size: .75rem;
+
+          &.bg {
+            background: rgba(230, 230, 230, 1) url(../img/ensure.jpg) left bottom no-repeat;
+            padding: .5rem;
+            font-size: .75rem;
+          }
+
+          & .title {
+            font-size: .75rem;
+            font-weight: 600;
+          }
+        }
+
+        & .content {
+          font-size: .875rem;
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 576px) {}
 
 @media (min-width: 768px) {}
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+  main {
+    & .main-content {
+      & .page-title {
+        & .title {
+          font-size: 1.25rem;
+        }
+      }
 
-@media (min-width: 1200px) {}
+      & .section-block {
+        &.section-text-block {
+          & .text-inner-box {
+            font-size: .875rem;
+
+            &.bg {
+              padding: 1rem;
+              font-size: .875rem;
+            }
+
+            & .title {
+              font-size: .875rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    & .main-aside {
+      & .section-block {
+        border: 1px solid #ddd;
+        padding: .5rem;
+
+        & + .section-block {
+          margin-top: 1rem;
+        }
+
+        &.section-aside-list {
+          & .heading-block {
+
+          }
+
+          & .list {
+            > li + li {
+              border-top: 1px solid #ddd;
+            }
+
+            > li {
+              & a {
+                display: block;
+                padding: .25rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    & .main-content {
+      & .page-title {
+        & .title {
+          font-size: 1.5rem;
+        }
+      }
+
+      & .section-block {
+        &.section-text-block {
+          & .text-inner-box {
+            font-size: .875rem;
+
+            &.bg {
+              font-size: 1rem;
+            }
+
+            & .title {
+              font-size: 1rem;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 @media (min-width: 1400px) {}
