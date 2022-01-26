@@ -408,6 +408,9 @@ ul {
   color: #fff;
   font-size: .75rem;
 }
+.header-bar .content a {
+  color: #fff;
+}
 
 header .logo {
   display: flex;
