@@ -137,6 +137,11 @@ main {
         padding-left: 1rem;
         list-style: circle;
       }
+
+      & img {
+        width: 100%;
+        height: auto;
+      }
     }
   }
 }
@@ -343,6 +348,10 @@ main {
 
         & .title {
           font-size: 1rem;
+        }
+
+        & img {
+          max-width: 50%;
         }
       }
     }

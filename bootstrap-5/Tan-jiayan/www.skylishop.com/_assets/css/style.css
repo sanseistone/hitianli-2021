@@ -809,7 +809,7 @@ footer .copyright {
   position: fixed;
   right: 15px;
   bottom: 30%;
-  z-index: 1000;
+  z-index: 98;
 }
 .navigation-box .item {
   position: absolute;
