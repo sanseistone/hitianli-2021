@@ -24,8 +24,8 @@ $(document).ready(function () {
         $('.readmore-box').readmore({
             speed: 75,
             collapsedHeight: 0,
-            moreLink: '<div class="d-grid"><button class="btn btn-dark" type="button">More <img src="_assets/img/svg/chevron-down-white.svg" alt=""></button></div>',
-            lessLink: '<div class="d-grid"><button class="btn btn-danger" type="button">Less <img src="_assets/img/svg/chevron-up-white.svg" alt=""></button></div>'
+            moreLink: '<div class="d-grid more"><button class="btn btn-dark" type="button">More <img src="_assets/img/svg/chevron-down-white.svg" alt=""></button></div>',
+            lessLink: '<div class="d-grid less"><button class="btn btn-danger" type="button">Less <img src="_assets/img/svg/chevron-up-white.svg" alt=""></button></div>'
         });
     });
 

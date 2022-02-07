@@ -157,6 +157,12 @@ ul {
 
 .readmore-box {
   overflow: hidden;
+
+  & ~ .less {
+    position: sticky;
+    bottom: 0;
+    z-index: 99;
+  }
 }
 
 @media (min-width: 576px) {

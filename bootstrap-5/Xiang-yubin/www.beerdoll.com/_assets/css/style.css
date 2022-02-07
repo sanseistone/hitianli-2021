@@ -534,6 +534,77 @@ nav.navbar.nav-main .navbar-nav .nav-item.dropdown-large .dropdown-large-menu .r
   padding: 0;
 }
 
+main .main-aside.offcanvas.offcanvas-start {
+  width: 85%;
+}
+
+footer .main {
+  background: #333;
+}
+footer .main .footer-menu {
+  order: 2;
+}
+footer .main .footer-info {
+  order: 1;
+}
+footer .main .footer-info .heading:after {
+  display: none;
+}
+footer .main .heading {
+  border-bottom: 1px solid #666;
+  margin-bottom: .5rem;
+  padding: .25rem 1.5rem .25rem 0;
+  color: #ddd;
+  font-weight: bold;
+  cursor: pointer;
+}
+footer .main .heading:after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  bottom: inherit;
+  width: auto;
+  height: auto;
+  background: none;
+  font-weight: lighter;
+}
+footer .main .list {
+  display: none;
+}
+footer .main .list > li + li {
+  margin-top: .5rem;
+}
+footer .main .list > li > a {
+  color: #999;
+  font-size: .875rem;
+}
+footer .main .content .info {
+  color: #999;
+  font-size: .875rem;
+}
+footer .main .content .mail {
+  color: #999;
+  font-size: .875rem;
+}
+footer .main .content .mail > a {
+  color: #ddd;
+}
+footer .main .content .pay-icon > img {
+  width: 100%;
+  height: auto;
+}
+footer .copyright {
+  background: #111;
+  padding: 1rem 0;
+}
+footer .copyright .text {
+  color: #666;
+  font-size: .875rem;
+  font-weight: bold;
+}
+
 .breadcrumb {
   align-items: center;
   background: #f5f5f5;
@@ -584,6 +655,7 @@ nav.navbar.nav-main .navbar-nav .nav-item.dropdown-large .dropdown-large-menu .r
 }
 .heading .main {
   font-size: 1rem;
+  font-weight: 600;
 }
 .heading .main * + * {
   margin-left: .25rem;
@@ -802,7 +874,7 @@ nav.navbar.nav-main .navbar-nav .nav-item.dropdown-large .dropdown-large-menu .r
 .navigation-box {
   position: fixed;
   right: 15px;
-  bottom: 100px;
+  bottom: 35%;
   z-index: 10;
 }
 .navigation-box .item {
@@ -836,73 +908,6 @@ nav.navbar.nav-main .navbar-nav .nav-item.dropdown-large .dropdown-large-menu .r
   bottom: 0;
 }
 
-footer .main {
-  background: #333;
-}
-footer .main .footer-menu {
-  order: 2;
-}
-footer .main .footer-info {
-  order: 1;
-}
-footer .main .footer-info .heading:after {
-  display: none;
-}
-footer .main .heading {
-  border-bottom: 1px solid #666;
-  margin-bottom: .5rem;
-  padding: .25rem 1.5rem .25rem 0;
-  color: #ddd;
-  font-weight: bold;
-  cursor: pointer;
-}
-footer .main .heading:after {
-  content: "+";
-  position: absolute;
-  top: 50%;
-  right: 1rem;
-  transform: translateY(-50%);
-  bottom: inherit;
-  width: auto;
-  height: auto;
-  background: none;
-  font-weight: lighter;
-}
-footer .main .list {
-  display: none;
-}
-footer .main .list > li + li {
-  margin-top: .5rem;
-}
-footer .main .list > li > a {
-  color: #999;
-  font-size: .875rem;
-}
-footer .main .content .info {
-  color: #999;
-  font-size: .875rem;
-}
-footer .main .content .mail {
-  color: #999;
-  font-size: .875rem;
-}
-footer .main .content .mail > a {
-  color: #ddd;
-}
-footer .main .content .pay-icon > img {
-  width: 100%;
-  height: auto;
-}
-footer .copyright {
-  background: #111;
-  padding: 1rem 0;
-}
-footer .copyright .text {
-  color: #666;
-  font-size: .875rem;
-  font-weight: bold;
-}
-
 @media (min-width: 576px) {
   header .logo img {
     width: auto;
@@ -914,18 +919,12 @@ footer .copyright .text {
   }
 }
 @media (min-width: 768px) {
-  .product-block .content .p-title > * {
-    font-weight: bold;
+  nav.navbar.nav-main .offcanvas.offcanvas-start {
+    width: 50%;
   }
-  .product-block .content .p-summary {
-    height: calc(.875rem * 1 * 1.2 * 2);
-    font-size: .875rem;
-  }
-  .product-block .content .p-price {
-    align-items: baseline;
-  }
-  .product-block .content .p-price > span {
-    font-size: 1.25rem;
+
+  main .main-aside.offcanvas.offcanvas-start {
+    width: 50%;
   }
 
   footer .main .heading {
@@ -942,16 +941,28 @@ footer .copyright .text {
     height: 100%;
     max-height: 60px;
   }
+
+  .product-block .content .p-title > * {
+    font-weight: bold;
+  }
+  .product-block .content .p-summary {
+    height: calc(.875rem * 1 * 1.2 * 2);
+    font-size: .875rem;
+  }
+  .product-block .content .p-price {
+    align-items: baseline;
+  }
+  .product-block .content .p-price > span {
+    font-size: 1.25rem;
+  }
 }
 @media (min-width: 992px) {
-  .heading svg {
-    width: 1.25rem;
-    height: 1.25rem;
+  nav.navbar.nav-main .offcanvas.offcanvas-start {
+    width: 50%;
   }
-  .heading .main {
-    display: flex;
-    align-items: center;
-    font-size: 1.25rem;
+
+  main .main-aside.offcanvas.offcanvas-start {
+    width: 25%;
   }
 
   footer .main .footer-menu {
@@ -968,15 +979,24 @@ footer .copyright .text {
     font-size: 1rem;
   }
 
+  .heading svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  .heading .main {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+  }
+
+  .navigation-box {
+    bottom: 100px;
+  }
   .navigation-box .show-aside {
     display: none;
   }
 }
 @media (min-width: 1200px) {
-  .header-bar .content {
-    font-size: .875rem;
-  }
-
   header .logo img {
     max-height: 80px;
   }
@@ -1117,6 +1137,10 @@ footer .copyright .text {
   }
   nav.navbar.nav-main .navbar-nav .nav-item.dropdown-large .dropdown-large-menu ul > li > a:focus, nav.navbar.nav-main .navbar-nav .nav-item.dropdown-large .dropdown-large-menu ul > li > a:hover {
     color: #e53935;
+  }
+
+  .header-bar .content {
+    font-size: .875rem;
   }
 
   .product-block .p-pic > a {
@@ -1684,9 +1708,6 @@ main .main-aside.offcanvas {
   overflow-y: scroll;
   padding: 0 1rem 1rem;
 }
-main .main-aside.offcanvas.offcanvas-start {
-  width: 85%;
-}
 main .main-aside.offcanvas .offcanvas-header {
   display: flex;
 }
@@ -1831,7 +1852,6 @@ main .main-aside.offcanvas .offcanvas-header .offcanvas-title {
     padding: 0 .75rem;
   }
   main .main-aside.offcanvas.offcanvas-start {
-    width: 25%;
     border-right: none;
     transform: none;
   }
@@ -1840,9 +1860,6 @@ main .main-aside.offcanvas .offcanvas-header .offcanvas-title {
   }
 }
 @media (min-width: 1200px) {
-  main .main-aside.offcanvas.offcanvas-start {
-    width: 20%;
-  }
   main .main-aside.offcanvas .offcanvas-header {
     display: none;
   }

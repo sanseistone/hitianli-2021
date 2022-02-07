@@ -77,6 +77,16 @@ img {
   width: calc(100% / 12);
 }
 
+.readmore-box {
+  overflow: hidden;
+
+  & ~ .less {
+    position: sticky;
+    bottom: 0;
+    z-index: 99;
+  }
+}
+
 //responsive-pc
 @media (max-width: 1399px) {
   //xxl devices (xxl desktops, 1200px and 1400px)

@@ -29,13 +29,30 @@ main {
     width: 100%;
   }
 
-  &.main-blog {
+  &.main-block {
     & .heading-main {
       font-size: 1rem;
       font-weight: 600;
     }
-
-    & .main-content {}
+    
+    &.main-video {
+      & .video-block {
+        & .content {
+          & .p-summary {
+            width: 100%;
+            height: calc(.875rem * 1 * 1.5 * 5);
+            -webkit-line-clamp: 5;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            margin-bottom: .25rem;
+            color: #666;
+            font-size: .875rem;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -254,7 +271,7 @@ main {
       width: 75%;
     }
 
-    &.main-blog {
+    &.main-block {
       & .heading-main {
         font-size: 1.25rem;
       }
@@ -282,7 +299,7 @@ main {
       width: 80%;
     }
 
-    &.main-blog {
+    &.main-block {
       & .heading-main {
         font-size: 1.5rem;
       }
