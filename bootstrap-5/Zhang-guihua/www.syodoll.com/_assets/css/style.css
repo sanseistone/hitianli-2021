@@ -1343,7 +1343,7 @@ footer .copyright .text {
     font-size: 1rem;
     line-height: 1.2;
   }
-  .section-block.section-video-block .video-black .content .p-summary {
+  .section-block.section-video-block .video-block .content .p-summary {
     height: calc(.875rem * 1 * 1.2 * 5);
     -webkit-line-clamp: 5;
     font-size: .875rem;

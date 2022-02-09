@@ -259,7 +259,7 @@
   }
 
   &.section-video-block {
-    & .video-black {
+    & .video-block {
       & .content {
         & .p-summary {
           height: calc(.75rem * 1 * 1.2 * 5);
@@ -592,7 +592,7 @@
     }
 
     &.section-video-block {
-      & .video-black {
+      & .video-block {
         & .content {
           & .p-summary {
             height: calc(.875rem * 1 * 1.2 * 3);
