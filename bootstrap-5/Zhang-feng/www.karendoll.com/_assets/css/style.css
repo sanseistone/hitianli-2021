@@ -1706,6 +1706,11 @@ main .section-main-block .main-content {
   flex: 0 0 auto;
   width: 100%;
 }
+main .section-main-block .main-content .btn-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 main .section-main-block .main-aside .section-aside-block {
   background: #fff;
   border: 1px solid #ddd;
@@ -1716,6 +1721,9 @@ main .section-main-block .main-aside .section-aside-block .heading-box {
   color: #fff;
   font-size: .875rem;
   font-weight: 600;
+}
+main .section-main-block .main-aside .section-aside-block .heading-box a {
+  color: #fff;
 }
 main .section-main-block .main-aside .section-aside-block .list {
   margin-bottom: 0;
@@ -1744,6 +1752,46 @@ main .section-main-block .main-aside .section-aside-block .list > li a .total {
   margin-left: .25rem;
   color: #ef5350;
   font-weight: 600;
+}
+main .section-main-block .main-aside .section-aside-block .item-block {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: .5rem;
+}
+main .section-main-block .main-aside .section-aside-block .item-block .title-block .title {
+  font-size: .875rem;
+  font-weight: 600;
+}
+main .section-main-block .main-aside .section-aside-block .item-block .list {
+  margin-bottom: 0;
+}
+main .section-main-block .main-aside .section-aside-block .item-block .list > li + li {
+  border-top: 1px solid #ddd;
+}
+main .section-main-block .main-aside .section-aside-block .item-block .list > li {
+  display: flex;
+  padding: .5rem 0;
+  font-size: .75rem;
+}
+main .section-main-block .main-aside .section-aside-block .item-block .list > li .pic {
+  width: calc(100% - 80% - .5rem);
+  margin-right: .5rem;
+}
+main .section-main-block .main-aside .section-aside-block .item-block .list > li .content {
+  width: 80%;
+}
+main .section-main-block .main-aside .section-aside-block .item-block .list > li .content .title {
+  width: 100%;
+  height: calc(.875rem * 1 * 1.5 * 2);
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: .5rem;
+  font-size: .875rem;
+}
+main .section-main-block .main-aside .section-aside-block .item-block .list > li .content .more {
+  color: #ef5350;
 }
 
 .section-block.section-breadcrumb .breadcrumb {
@@ -1806,6 +1854,41 @@ main .section-main-block .main-aside .section-aside-block .list > li a .total {
 .section-block.section-picture-blog .picture-blog-list .picture-item .summary {
   color: #666;
   font-size: .75rem;
+}
+.section-block.section-picture-blog .picture-blog-list .picture-item .title {
+  font-weight: 600;
+}
+.section-block.section-picture-blog .picture-blog-list .picture-item.blog-item .title {
+  font-weight: 600;
+}
+.section-block.section-picture-blog .picture-blog-list .picture-item.blog-item .summary {
+  font-size: .875rem;
+}
+.section-block.section-picture-blog .picture-blog-list .picture-item.reviews-item .tags {
+  color: #666;
+  font-size: .875rem;
+}
+.section-block.section-picture-blog .picture-blog-list .picture-item.reviews-item .ranking {
+  display: flex;
+  align-items: center;
+}
+.section-block.section-picture-blog .picture-blog-list .picture-item.reviews-item .ranking > * + * {
+  margin-left: .25rem;
+}
+.section-block.section-picture-blog .picture-blog-list .picture-item.reviews-item .ranking > img {
+  width: .875rem;
+  height: .875rem;
+}
+.section-block.section-picture-blog .picture-blog-list .picture-item.reviews-item .author {
+  color: #666;
+}
+.section-block.section-picture-blog .picture-blog-list .picture-item.reviews-item .btn-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-block.section-picture-blog .picture-blog-list .picture-item.reviews-item .btn-box > * + * {
+  margin-left: 1rem;
 }
 .section-block.section-picture-blog .pagination-nav {
   justify-content: flex-start;
@@ -1902,6 +1985,14 @@ main .section-main-block .main-aside .section-aside-block .list > li a .total {
   font-size: 1rem;
   font-weight: 600;
 }
+.section-block.section-video-detail-block .btn-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-block.section-video-detail-block .btn-box > * + * {
+  margin-left: 1rem;
+}
 .section-block.section-photo-detail-block .photo-block .p-summary {
   font-size: .875rem;
 }
@@ -1917,6 +2008,7 @@ main .section-main-block .main-aside .section-aside-block .list > li a .total {
   margin-bottom: 1rem;
 }
 .section-block.section-product-column-three-list .item-block {
+  background: #fff;
   border: 1px solid #ddd;
   padding: .5rem;
 }
@@ -1954,6 +2046,117 @@ main .section-main-block .main-aside .section-aside-block .list > li a .total {
 }
 .section-block.section-product-column-three-list .item-block .list > li .content .more {
   color: #ef5350;
+}
+.section-block.section-blog-content .title-box {
+  border-bottom: 1px solid #e82391;
+  margin-bottom: 1rem;
+}
+.section-block.section-blog-content .title-box .title {
+  margin-bottom: .25rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.section-block.section-blog-content .title-box .author {
+  margin-bottom: .5rem;
+  font-size: .75rem;
+}
+.section-block.section-blog-content .title-box .author > * + * {
+  margin-left: .5rem;
+}
+.section-block.section-blog-content .content {
+  color: #666;
+  font-size: .875rem;
+}
+.section-block.section-blog-content .content .title {
+  margin: .5rem 0;
+  color: #333;
+  font-size: .875rem;
+  font-weight: 600;
+}
+.section-block.section-blog-content .content ul {
+  padding-left: 1rem;
+  list-style: circle;
+}
+.section-block.section-blog-content .content img {
+  width: 100%;
+  height: auto;
+}
+.section-block.section-reviews-detail .title-block {
+  margin-bottom: 1rem;
+}
+.section-block.section-reviews-detail .title-block .title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.section-block.section-reviews-detail .ranking-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.section-block.section-reviews-detail .ranking-block > * + * {
+  margin-left: 1rem;
+}
+.section-block.section-reviews-detail .ranking-block .ranking {
+  display: flex;
+  align-items: center;
+}
+.section-block.section-reviews-detail .ranking-block .ranking > * + * {
+  margin-left: .25rem;
+}
+.section-block.section-reviews-detail .ranking-block .ranking > img {
+  width: 1rem;
+  height: 1rem;
+}
+.section-block.section-reviews-detail .ranking-block .reviews {
+  display: flex;
+  align-items: center;
+}
+.section-block.section-reviews-detail .ranking-block .reviews > * + * {
+  margin-left: .25rem;
+}
+.section-block.section-reviews-detail .ranking-block .reviews svg {
+  fill: #ef5350;
+}
+.section-block.section-reviews-detail .ranking-block .reviews span {
+  color: #ef5350;
+}
+
+.article-page-nav .page-nav-block {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e82391;
+  padding: .25rem;
+}
+.article-page-nav .page-nav-block .title {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: .875rem;
+}
+.article-page-nav .page-nav-block svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 1rem;
+  fill: red;
+}
+.article-page-nav .page-nav-block.left .title {
+  padding-left: 1.5rem;
+}
+.article-page-nav .page-nav-block.left svg {
+  left: .25rem;
+}
+.article-page-nav .page-nav-block.right {
+  justify-content: flex-end;
+}
+.article-page-nav .page-nav-block.right .title {
+  padding-right: 1.5rem;
+}
+.article-page-nav .page-nav-block.right svg {
+  right: .25rem;
 }
 
 @media (min-width: 768px) {
@@ -2014,6 +2217,27 @@ main .section-main-block .main-aside .section-aside-block .list > li a .total {
   }
   main .section-main-block .main-aside .section-aside-block .list > li a .title {
     font-weight: 400;
+  }
+
+  .section-block.section-blog-content .title-box {
+    border-bottom: 1px solid #666;
+    margin-bottom: 1rem;
+  }
+  .section-block.section-blog-content .title-box .title {
+    margin-bottom: .5rem;
+    font-size: 1.25rem;
+  }
+  .section-block.section-blog-content .title-box .author {
+    font-size: .875rem;
+  }
+  .section-block.section-blog-content .content {
+    color: #333;
+  }
+  .section-block.section-blog-content .content .title {
+    font-size: 1rem;
+  }
+  .section-block.section-blog-content .content img {
+    max-width: 50%;
   }
 }
 .section-block.section-product-detail {
