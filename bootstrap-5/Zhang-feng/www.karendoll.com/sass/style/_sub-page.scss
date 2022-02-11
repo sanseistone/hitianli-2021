@@ -143,6 +143,10 @@ main {
             }
           }
         }
+
+        & .content {
+          font-size: .875rem;
+        }
       }
     }
   }
@@ -251,6 +255,36 @@ main {
 
           & .summary {
             font-size: .875rem;
+          }
+
+          & .author {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            font-size: .875rem;
+
+            > * + * {
+              //margin-left: 1rem;
+            }
+
+            > * {
+              display: flex;
+              align-items: center;
+              margin-right: 1rem;
+
+              & svg {
+                width: .875rem;
+                height: .875rem;
+                margin-right: .25rem;
+                fill: #666;
+              }
+            }
+
+            & .reviews, & .check, & .like {
+              &:hover {
+                color: red;
+              }
+            }
           }
         }
 
@@ -591,6 +625,97 @@ main {
 
         & span {
           color: #ef5350;
+        }
+      }
+    }
+  }
+
+  & .section-faq-block {
+    & .list {
+      > li + li {
+        border-top: 1px solid #ddd;
+      }
+
+      > li {
+        padding: .5rem 0;
+      }
+
+      & .title {
+        margin-bottom: .5rem;
+
+        & a {
+          color: #ef5350;
+          font-size: .875rem;
+        }
+      }
+
+      & .summary {
+        width: 100%;
+        height: calc(.875rem * 1 * 1.5 * 2);
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        margin-bottom: .5rem;
+        color: #666;
+        font-size: .875rem;
+      }
+
+      & .more {
+        & a {
+          color: red;
+          font-size: .75rem;
+        }
+      }
+    }
+
+    & .faq-item {
+      & .title-block {
+        border-bottom: 1px solid #ddd;
+
+        & .title {
+          padding: .5rem 0;
+          font-size: .875rem;
+          font-weight: 600;
+        }
+      }
+
+      & .content {
+        color: #666;
+        font-size: .875rem;
+      }
+    }
+  }
+
+  &.section-events-block {
+    & .events-block {
+      & .author {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: .875rem;
+
+        > * + * {
+          //margin-left: 1rem;
+        }
+
+        > * {
+          display: flex;
+          align-items: center;
+          margin-right: 1rem;
+
+          & svg {
+            width: .875rem;
+            height: .875rem;
+            margin-right: .25rem;
+            fill: #666;
+          }
+        }
+
+        & .reviews, & .check, & .like {
+          &:hover {
+            color: red;
+          }
         }
       }
     }

@@ -1793,6 +1793,9 @@ main .section-main-block .main-aside .section-aside-block .item-block .list > li
 main .section-main-block .main-aside .section-aside-block .item-block .list > li .content .more {
   color: #ef5350;
 }
+main .section-main-block .main-aside .section-aside-block .content {
+  font-size: .875rem;
+}
 
 .section-block.section-breadcrumb .breadcrumb {
   background: #fff;
@@ -1863,6 +1866,26 @@ main .section-main-block .main-aside .section-aside-block .item-block .list > li
 }
 .section-block.section-picture-blog .picture-blog-list .picture-item.blog-item .summary {
   font-size: .875rem;
+}
+.section-block.section-picture-blog .picture-blog-list .picture-item.blog-item .author {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: .875rem;
+}
+.section-block.section-picture-blog .picture-blog-list .picture-item.blog-item .author > * {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+.section-block.section-picture-blog .picture-blog-list .picture-item.blog-item .author > * svg {
+  width: .875rem;
+  height: .875rem;
+  margin-right: .25rem;
+  fill: #666;
+}
+.section-block.section-picture-blog .picture-blog-list .picture-item.blog-item .author .reviews:hover, .section-block.section-picture-blog .picture-blog-list .picture-item.blog-item .author .check:hover, .section-block.section-picture-blog .picture-blog-list .picture-item.blog-item .author .like:hover {
+  color: red;
 }
 .section-block.section-picture-blog .picture-blog-list .picture-item.reviews-item .tags {
   color: #666;
@@ -2119,6 +2142,66 @@ main .section-main-block .main-aside .section-aside-block .item-block .list > li
 }
 .section-block.section-reviews-detail .ranking-block .reviews span {
   color: #ef5350;
+}
+.section-block .section-faq-block .list > li + li {
+  border-top: 1px solid #ddd;
+}
+.section-block .section-faq-block .list > li {
+  padding: .5rem 0;
+}
+.section-block .section-faq-block .list .title {
+  margin-bottom: .5rem;
+}
+.section-block .section-faq-block .list .title a {
+  color: #ef5350;
+  font-size: .875rem;
+}
+.section-block .section-faq-block .list .summary {
+  width: 100%;
+  height: calc(.875rem * 1 * 1.5 * 2);
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: .5rem;
+  color: #666;
+  font-size: .875rem;
+}
+.section-block .section-faq-block .list .more a {
+  color: red;
+  font-size: .75rem;
+}
+.section-block .section-faq-block .faq-item .title-block {
+  border-bottom: 1px solid #ddd;
+}
+.section-block .section-faq-block .faq-item .title-block .title {
+  padding: .5rem 0;
+  font-size: .875rem;
+  font-weight: 600;
+}
+.section-block .section-faq-block .faq-item .content {
+  color: #666;
+  font-size: .875rem;
+}
+.section-block.section-events-block .events-block .author {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: .875rem;
+}
+.section-block.section-events-block .events-block .author > * {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+.section-block.section-events-block .events-block .author > * svg {
+  width: .875rem;
+  height: .875rem;
+  margin-right: .25rem;
+  fill: #666;
+}
+.section-block.section-events-block .events-block .author .reviews:hover, .section-block.section-events-block .events-block .author .check:hover, .section-block.section-events-block .events-block .author .like:hover {
+  color: red;
 }
 
 .article-page-nav .page-nav-block {
