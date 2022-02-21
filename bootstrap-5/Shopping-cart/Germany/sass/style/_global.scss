@@ -409,9 +409,9 @@ main {
                 font-size: .75rem;
 
                 > * {
-                  overflow: hidden;
-                  white-space: nowrap;
-                  text-overflow: ellipsis;
+                  //overflow: hidden;
+                  //white-space: nowrap;
+                  //text-overflow: ellipsis;
                 }
               }
 
@@ -801,10 +801,10 @@ main {
                   font-size: .75rem;
 
                   > * {
-                    width: 100%;
-                    overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
+                    //width: 100%;
+                    //overflow: hidden;
+                    //white-space: nowrap;
+                    //text-overflow: ellipsis;
                   }
                 }
               }

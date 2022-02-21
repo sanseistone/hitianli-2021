@@ -628,6 +628,33 @@ main {
         }
       }
     }
+
+    & .review-list {
+      & .list-block {
+        & .reply-block {
+          background: #eee;
+          border-top: 1px solid #ddd;
+          margin-top: .5rem;
+          margin-left: 1rem;
+          padding: .5rem;
+
+          & .title {
+            color: #333;
+            font-size: .75rem;
+          }
+
+          & .author {
+            font-size: .75rem;
+          }
+
+          & .content {
+            & .summary {
+              font-size: .75rem;
+            }
+          }
+        }
+      }
+    }
   }
 
   & .section-faq-block {

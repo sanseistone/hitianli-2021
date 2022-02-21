@@ -428,7 +428,7 @@
             }
 
             &:hover .show-box {
-              display: block;
+              //display: block;
             }
           }
         }
@@ -1075,6 +1075,16 @@
         & .product-summary {
           & .info {
             font-size: .875rem;
+          }
+        }
+
+        & .product-option {
+          & .option-list {
+            & .form-check-label {
+              &:hover .show-box {
+                display: block;
+              }
+            }
           }
         }
 

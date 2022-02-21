@@ -64,7 +64,7 @@ a {
   background-color: $color-f;
   border: 1px solid $color-e;
   border-radius: 3px;
-  padding: .5rem 1rem;
+  padding: .5rem;
   -webkit-transition: all .4s ease-in;
   transition: all .4s ease-in;
 
@@ -79,7 +79,7 @@ a {
     & .badges-tiles {
       position: absolute;
       top: .5rem;
-      left: 1rem;
+      left: .5rem;
 
       > span {
         display: inline-block;
@@ -96,8 +96,6 @@ a {
     }
 
     & .content {
-      margin-bottom: 1.5rem;
-
       & .rating-box {
         & .rating-rates {
           & [class*="fas"] {
