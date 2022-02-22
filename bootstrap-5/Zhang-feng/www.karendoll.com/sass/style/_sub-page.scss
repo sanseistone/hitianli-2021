@@ -747,6 +747,18 @@ main {
       }
     }
   }
+
+  &.section-contact-us {
+    & .content {
+      & form {
+        & img {
+          display: block;
+          width: auto;
+          height: 100%;
+        }
+      }
+    }
+  }
 }
 
 .article-page-nav {

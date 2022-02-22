@@ -2220,6 +2220,11 @@ main .section-main-block .main-aside .section-aside-block .content {
 .section-block.section-events-block .events-block .author .reviews:hover, .section-block.section-events-block .events-block .author .check:hover, .section-block.section-events-block .events-block .author .like:hover {
   color: red;
 }
+.section-block.section-contact-us .content form img {
+  display: block;
+  width: auto;
+  height: 100%;
+}
 
 .article-page-nav .page-nav-block {
   position: relative;
