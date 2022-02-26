@@ -409,6 +409,63 @@ nav.navbar.nav-main {
         color: #fff;
       }
     }
+
+    &.float-round {
+      > * {
+        width: 42px;
+        height: 42px;
+        border-radius: 100%;
+        text-align: center;
+        line-height: 42px;
+        font-size: .875rem;
+      }
+
+      > * + * {
+        margin-top: .25rem;
+      }
+
+      & .red {
+        //background: red;
+        background: rgba(red, .8);
+        color: #fff;
+      }
+
+      & .orange {
+        //background: orange;
+        background: rgba(orange, .8);
+        color: #fff;
+      }
+
+      & .yellow {
+        //background: yellow;
+        background: rgba(yellow, .8);
+        color: #666;
+      }
+
+      & .green {
+        //background: green;
+        background: rgba(green, .8);
+        color: #fff;
+      }
+
+      & .blue {
+        //background: blue;
+        background: rgba(blue, .8);
+        color: #fff;
+      }
+
+      & .cyan {
+        //background: cyan;
+        background: rgba(cyan, .8);
+        color: #333;
+      }
+
+      & .purple {
+        //background: purple;
+        background: rgba(purple, .8);
+        color: #fff;
+      }
+    }
   }
 
   & .p-pic {

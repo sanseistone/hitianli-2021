@@ -197,90 +197,101 @@ main {
     & .product-option {
       & .item-option {
         margin-bottom: 1rem;
-      }
 
-      & .title {
-        position: relative;
-        background: $red-8;
-        border-radius: 5px;
-        padding: 12px;
-        cursor: pointer;
-        color: $color-f;
-
-        &::before {
-          content: "";
-          position: absolute;
-          top: 42%;
-          right: 14px;
-          transform: translateX(-50%);
-          display: block;
-          width: 10px;
-          height: 10px;
-          border-right: 2px solid $color-f;
-          vertical-align: top;
-          margin: -2px 0 0 0;
-        }
-
-        &::after {
-          content: "";
-          position: absolute;
-          top: 50%;
-          right: 10px;
-          transform: translateX(-50%);
-          display: block;
-          width: 10px;
-          height: 10px;
-          border-top: 2px solid $color-f;
-          vertical-align: top;
-          margin: -2px 0 0 0;
-        }
-
-        &.open {
-          border-radius: 5px 5px 0 0;
+        & .title {
+          position: relative;
+          background: $red-8;
+          border-radius: 5px;
+          padding: 8px;
+          cursor: pointer;
+          color: $color-f;
 
           &::before {
-            display: none;
+            content: "";
+            position: absolute;
+            top: 42%;
+            right: 14px;
+            transform: translateX(-50%);
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-right: 2px solid $color-f;
+            vertical-align: top;
+            margin: -2px 0 0 0;
           }
-        }
-      }
 
-      & .content {
-        display: none;
-        border: 1px solid $color-d;
-        padding: 12px;
+          &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateX(-50%);
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-top: 2px solid $color-f;
+            vertical-align: top;
+            margin: -2px 0 0 0;
+          }
 
-        & .item {
-          & .form-check-label {
-            cursor: pointer;
+          &.open {
+            border-radius: 5px 5px 0 0;
 
-            & .form-check-input {
+            &::before {
               display: none;
             }
+          }
+        }
 
-            & .pic-box {
-              position: relative;
-              display: block;
-              padding: 2px;
-              border: 1px solid $color-d;
-              border-radius: 5px;
-              overflow: hidden;
+        & .content {
+          display: none;
+          border: 1px solid $color-d;
+          padding: 12px;
 
-              &::after {
-                position: absolute;
-                right: 0;
-                bottom: 0;
-                width: 15px;
-                height: 15px;
-                color: $color-f;
-                text-align: center;
-                font-size: 10px;
-                line-height: 15px;
-                background: $red-8;
+          & .item {
+            & .form-check-label {
+              cursor: pointer;
+
+              & .form-check-input {
+                display: none;
               }
-            }
 
-            &:focus, &:hover {
               & .pic-box {
+                position: relative;
+                display: block;
+                padding: 2px;
+                border: 1px solid $color-d;
+                border-radius: 5px;
+                overflow: hidden;
+
+                &::after {
+                  position: absolute;
+                  right: 0;
+                  bottom: 0;
+                  width: 15px;
+                  height: 15px;
+                  color: $color-f;
+                  text-align: center;
+                  font-size: 10px;
+                  line-height: 15px;
+                  background: $red-8;
+                }
+              }
+
+              &:focus, &:hover {
+                & .pic-box {
+                  padding: 2px;
+                  border: 1px solid $red-8;
+
+                  &::after {
+                    content: "\f00c";
+                    font-family: 'Font Awesome 5 Pro';
+                    font-weight: 300;
+                  }
+                }
+              }
+
+              & .form-check-input:checked ~ .pic-box {
                 padding: 2px;
                 border: 1px solid $red-8;
 
@@ -290,58 +301,51 @@ main {
                   font-weight: 300;
                 }
               }
-            }
 
-            & .form-check-input:checked ~ .pic-box {
-              padding: 2px;
-              border: 1px solid $red-8;
-
-              &::after {
-                content: "\f00c";
-                font-family: 'Font Awesome 5 Pro';
-                font-weight: 300;
+              & .form-check-input {
+                margin-left: -1rem;
               }
-            }
 
-            & .form-check-input {
-              margin-left: -1rem;
-            }
-
-            & .label-title {
-              display: none;
-              position: absolute;
-              bottom: calc(100% + 5px);
-              left: 50%;
-              transform: translateX(-50%);
-              width: 160px;
-              height: auto;
-              z-index: 99;
-              background: $color-f;
-              border: 1px solid $red-8;
-              padding: 5px;
-              text-align: center;
-              transition: all .3s ease-in-out;
-
-              &:after {
-                content: "";
+              & .label-title {
+                display: none;
                 position: absolute;
+                bottom: calc(100% + 5px);
                 left: 50%;
                 transform: translateX(-50%);
-                bottom: -6px;
-                width: 0;
-                height: 0;
-                border: 6px solid $red-8;
-                border-bottom: transparent;
-                border-left: 4px solid transparent;
-                border-right: 4px solid transparent;
-              }
-            }
+                width: 160px;
+                height: auto;
+                z-index: 99;
+                background: $color-f;
+                border: 1px solid $red-8;
+                padding: 5px;
+                text-align: center;
+                transition: all .3s ease-in-out;
 
-            &:hover .label-title {
-              display: block;
+                &:after {
+                  content: "";
+                  position: absolute;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  bottom: -6px;
+                  width: 0;
+                  height: 0;
+                  border: 6px solid $red-8;
+                  border-bottom: transparent;
+                  border-left: 4px solid transparent;
+                  border-right: 4px solid transparent;
+                }
+              }
+
+              &:hover .label-title {
+                display: block;
+              }
             }
           }
         }
+      }
+
+      & select.form-control {
+        background: #f5f5f5;
       }
     }
   }

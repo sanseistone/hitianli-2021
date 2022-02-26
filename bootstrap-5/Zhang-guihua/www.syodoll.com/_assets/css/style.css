@@ -717,6 +717,45 @@ nav.navbar.nav-main .navbar-nav .nav-item.dropdown-large .dropdown-large-menu .r
   background: rgba(128, 0, 128, 0.8);
   color: #fff;
 }
+.product-block .float-block.float-round > * {
+  width: 42px;
+  height: 42px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 42px;
+  font-size: .875rem;
+}
+.product-block .float-block.float-round > * + * {
+  margin-top: .25rem;
+}
+.product-block .float-block.float-round .red {
+  background: rgba(255, 0, 0, 0.8);
+  color: #fff;
+}
+.product-block .float-block.float-round .orange {
+  background: rgba(255, 165, 0, 0.8);
+  color: #fff;
+}
+.product-block .float-block.float-round .yellow {
+  background: rgba(255, 255, 0, 0.8);
+  color: #666;
+}
+.product-block .float-block.float-round .green {
+  background: rgba(0, 128, 0, 0.8);
+  color: #fff;
+}
+.product-block .float-block.float-round .blue {
+  background: rgba(0, 0, 255, 0.8);
+  color: #fff;
+}
+.product-block .float-block.float-round .cyan {
+  background: rgba(0, 255, 255, 0.8);
+  color: #333;
+}
+.product-block .float-block.float-round .purple {
+  background: rgba(128, 0, 128, 0.8);
+  color: #fff;
+}
 .product-block .p-pic {
   margin-bottom: .5rem;
 }
