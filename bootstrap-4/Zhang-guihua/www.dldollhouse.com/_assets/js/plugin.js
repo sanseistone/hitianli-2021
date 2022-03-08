@@ -22,10 +22,10 @@ $(document).ready(function () {
         });
     });
 
-    $(function ($) {
-        $(".product-option .title").click(function () {
-            $(this).next(".content:not(:animated)").slideToggle('fast');
-            $(this).toggleClass("open");
-        });
-    });
+    // $(function ($) {
+    //     $(".product-option .title").click(function () {
+    //         $(this).next(".content:not(:animated)").slideToggle('fast');
+    //         $(this).toggleClass("open");
+    //     });
+    // });
 });
