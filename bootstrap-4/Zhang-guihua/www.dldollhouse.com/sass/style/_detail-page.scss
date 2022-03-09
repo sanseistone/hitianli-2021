@@ -1,6 +1,12 @@
 //detail-page
 main {
   & .product-left {
+    & .row {
+      position: sticky;
+      top: 74px;
+      z-index: 99;
+    }
+
     & .slider-main {
       .slick-prev {
         left: 25px;
@@ -101,6 +107,10 @@ main {
         margin-top: 15px;
       }
 
+      & .slick-slide {
+        margin: 0;
+      }
+
       & .slick-list {
         overflow: hidden;
         margin-top: 30px;
@@ -195,151 +205,107 @@ main {
     }
 
     & .product-option {
-      & .item-option {
+      & .option-title {
+        border-bottom: 1px solid #ddd;
         margin-bottom: 1rem;
+        padding-bottom: .25rem;
 
         & .title {
-          position: relative;
-          background: $red-8;
-          border-radius: 5px;
-          padding: 8px;
-          cursor: pointer;
-          color: $color-f;
-
-          &::before {
-            content: "";
-            position: absolute;
-            top: 42%;
-            right: 14px;
-            transform: translateX(-50%);
-            display: block;
-            width: 10px;
-            height: 10px;
-            border-right: 2px solid $color-f;
-            vertical-align: top;
-            margin: -2px 0 0 0;
-          }
-
-          &::after {
-            content: "";
-            position: absolute;
-            top: 50%;
-            right: 10px;
-            transform: translateX(-50%);
-            display: block;
-            width: 10px;
-            height: 10px;
-            border-top: 2px solid $color-f;
-            vertical-align: top;
-            margin: -2px 0 0 0;
-          }
-
-          &.open {
-            border-radius: 5px 5px 0 0;
-
-            &::before {
-              display: none;
-            }
-          }
+          font-size: 1.25rem;
+          font-weight: 600;
         }
+      }
 
-        & .content {
-          display: none;
-          border: 1px solid $color-d;
-          padding: 12px;
+      & .item {
+        & .form-check-label {
+          cursor: pointer;
 
-          & .item {
-            & .form-check-label {
-              cursor: pointer;
+          & .form-check-input {
+            display: none;
+          }
 
-              & .form-check-input {
-                display: none;
-              }
+          & .pic-box {
+            position: relative;
+            display: block;
+            padding: 2px;
+            border: 1px solid $color-d;
+            border-radius: 5px;
+            overflow: hidden;
 
-              & .pic-box {
-                position: relative;
-                display: block;
-                padding: 2px;
-                border: 1px solid $color-d;
-                border-radius: 5px;
-                overflow: hidden;
+            &::after {
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              width: 15px;
+              height: 15px;
+              color: $color-f;
+              text-align: center;
+              font-size: 10px;
+              line-height: 15px;
+              background: $red-8;
+            }
+          }
 
-                &::after {
-                  position: absolute;
-                  right: 0;
-                  bottom: 0;
-                  width: 15px;
-                  height: 15px;
-                  color: $color-f;
-                  text-align: center;
-                  font-size: 10px;
-                  line-height: 15px;
-                  background: $red-8;
-                }
-              }
+          &:focus, &:hover {
+            & .pic-box {
+              padding: 2px;
+              border: 1px solid $red-8;
 
-              &:focus, &:hover {
-                & .pic-box {
-                  padding: 2px;
-                  border: 1px solid $red-8;
-
-                  &::after {
-                    content: "\f00c";
-                    font-family: 'Font Awesome 5 Pro';
-                    font-weight: 300;
-                  }
-                }
-              }
-
-              & .form-check-input:checked ~ .pic-box {
-                padding: 2px;
-                border: 1px solid $red-8;
-
-                &::after {
-                  content: "\f00c";
-                  font-family: 'Font Awesome 5 Pro';
-                  font-weight: 300;
-                }
-              }
-
-              & .form-check-input {
-                margin-left: -1rem;
-              }
-
-              & .label-title {
-                display: none;
-                position: absolute;
-                bottom: calc(100% + 5px);
-                left: 50%;
-                transform: translateX(-50%);
-                width: 160px;
-                height: auto;
-                z-index: 99;
-                background: $color-f;
-                border: 1px solid $red-8;
-                padding: 5px;
-                text-align: center;
-                transition: all .3s ease-in-out;
-
-                &:after {
-                  content: "";
-                  position: absolute;
-                  left: 50%;
-                  transform: translateX(-50%);
-                  bottom: -6px;
-                  width: 0;
-                  height: 0;
-                  border: 6px solid $red-8;
-                  border-bottom: transparent;
-                  border-left: 4px solid transparent;
-                  border-right: 4px solid transparent;
-                }
-              }
-
-              &:hover .label-title {
-                display: block;
+              &::after {
+                content: "\f00c";
+                font-family: 'Font Awesome 5 Pro';
+                font-weight: 300;
               }
             }
+          }
+
+          & .form-check-input:checked ~ .pic-box {
+            padding: 2px;
+            border: 1px solid $red-8;
+
+            &::after {
+              content: "\f00c";
+              font-family: 'Font Awesome 5 Pro';
+              font-weight: 300;
+            }
+          }
+
+          & .form-check-input {
+            margin-left: -1rem;
+          }
+
+          & .label-title {
+            display: none;
+            position: absolute;
+            bottom: calc(100% + 5px);
+            left: 50%;
+            transform: translateX(-50%);
+            width: 160px;
+            height: auto;
+            z-index: 99;
+            background: $color-f;
+            border: 1px solid $red-8;
+            padding: 5px;
+            text-align: center;
+            transition: all .3s ease-in-out;
+
+            &:after {
+              content: "";
+              position: absolute;
+              left: 50%;
+              transform: translateX(-50%);
+              bottom: -6px;
+              width: 0;
+              height: 0;
+              border: 6px solid $red-8;
+              border-bottom: transparent;
+              border-left: 4px solid transparent;
+              border-right: 4px solid transparent;
+            }
+          }
+
+          &:hover .label-title {
+            display: block;
           }
         }
       }

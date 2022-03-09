@@ -1096,6 +1096,11 @@ main .faq-list .accordion dd ul {
 @media (max-width: 575px) {
   /*Small devices (landscape phones, max-width 576px)*/
 }
+main .product-left .row {
+  position: sticky;
+  top: 74px;
+  z-index: 99;
+}
 main .product-left .slider-main .slick-prev {
   left: 25px;
   z-index: 1;
@@ -1176,6 +1181,9 @@ main .product-left .slider-thumbs .slick-next {
   z-index: 1;
   margin-top: 15px;
 }
+main .product-left .slider-thumbs .slick-slide {
+  margin: 0;
+}
 main .product-left .slider-thumbs .slick-list {
   overflow: hidden;
   margin-top: 30px;
@@ -1239,61 +1247,22 @@ main .product-right .product-delivery-detail .icon-wrapper .icon-box:focus, main
 main .product-right .product-delivery-detail .icon-wrapper .icon-box [class*="fa"] {
   font-size: 1rem;
 }
-main .product-right .product-option .item-option {
+main .product-right .product-option .option-title {
+  border-bottom: 1px solid #ddd;
   margin-bottom: 1rem;
+  padding-bottom: .25rem;
 }
-main .product-right .product-option .item-option .title {
-  position: relative;
-  background: #c62828;
-  border-radius: 5px;
-  padding: 8px;
-  cursor: pointer;
-  color: white;
+main .product-right .product-option .option-title .title {
+  font-size: 1.25rem;
+  font-weight: 600;
 }
-main .product-right .product-option .item-option .title::before {
-  content: "";
-  position: absolute;
-  top: 42%;
-  right: 14px;
-  transform: translateX(-50%);
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-right: 2px solid white;
-  vertical-align: top;
-  margin: -2px 0 0 0;
-}
-main .product-right .product-option .item-option .title::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateX(-50%);
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-top: 2px solid white;
-  vertical-align: top;
-  margin: -2px 0 0 0;
-}
-main .product-right .product-option .item-option .title.open {
-  border-radius: 5px 5px 0 0;
-}
-main .product-right .product-option .item-option .title.open::before {
-  display: none;
-}
-main .product-right .product-option .item-option .content {
-  display: none;
-  border: 1px solid #dddddd;
-  padding: 12px;
-}
-main .product-right .product-option .item-option .content .item .form-check-label {
+main .product-right .product-option .item .form-check-label {
   cursor: pointer;
 }
-main .product-right .product-option .item-option .content .item .form-check-label .form-check-input {
+main .product-right .product-option .item .form-check-label .form-check-input {
   display: none;
 }
-main .product-right .product-option .item-option .content .item .form-check-label .pic-box {
+main .product-right .product-option .item .form-check-label .pic-box {
   position: relative;
   display: block;
   padding: 2px;
@@ -1301,7 +1270,7 @@ main .product-right .product-option .item-option .content .item .form-check-labe
   border-radius: 5px;
   overflow: hidden;
 }
-main .product-right .product-option .item-option .content .item .form-check-label .pic-box::after {
+main .product-right .product-option .item .form-check-label .pic-box::after {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -1313,28 +1282,28 @@ main .product-right .product-option .item-option .content .item .form-check-labe
   line-height: 15px;
   background: #c62828;
 }
-main .product-right .product-option .item-option .content .item .form-check-label:focus .pic-box, main .product-right .product-option .item-option .content .item .form-check-label:hover .pic-box {
+main .product-right .product-option .item .form-check-label:focus .pic-box, main .product-right .product-option .item .form-check-label:hover .pic-box {
   padding: 2px;
   border: 1px solid #c62828;
 }
-main .product-right .product-option .item-option .content .item .form-check-label:focus .pic-box::after, main .product-right .product-option .item-option .content .item .form-check-label:hover .pic-box::after {
+main .product-right .product-option .item .form-check-label:focus .pic-box::after, main .product-right .product-option .item .form-check-label:hover .pic-box::after {
   content: "\f00c";
   font-family: 'Font Awesome 5 Pro';
   font-weight: 300;
 }
-main .product-right .product-option .item-option .content .item .form-check-label .form-check-input:checked ~ .pic-box {
+main .product-right .product-option .item .form-check-label .form-check-input:checked ~ .pic-box {
   padding: 2px;
   border: 1px solid #c62828;
 }
-main .product-right .product-option .item-option .content .item .form-check-label .form-check-input:checked ~ .pic-box::after {
+main .product-right .product-option .item .form-check-label .form-check-input:checked ~ .pic-box::after {
   content: "\f00c";
   font-family: 'Font Awesome 5 Pro';
   font-weight: 300;
 }
-main .product-right .product-option .item-option .content .item .form-check-label .form-check-input {
+main .product-right .product-option .item .form-check-label .form-check-input {
   margin-left: -1rem;
 }
-main .product-right .product-option .item-option .content .item .form-check-label .label-title {
+main .product-right .product-option .item .form-check-label .label-title {
   display: none;
   position: absolute;
   bottom: calc(100% + 5px);
@@ -1349,7 +1318,7 @@ main .product-right .product-option .item-option .content .item .form-check-labe
   text-align: center;
   transition: all .3s ease-in-out;
 }
-main .product-right .product-option .item-option .content .item .form-check-label .label-title:after {
+main .product-right .product-option .item .form-check-label .label-title:after {
   content: "";
   position: absolute;
   left: 50%;
@@ -1362,7 +1331,7 @@ main .product-right .product-option .item-option .content .item .form-check-labe
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
 }
-main .product-right .product-option .item-option .content .item .form-check-label:hover .label-title {
+main .product-right .product-option .item .form-check-label:hover .label-title {
   display: block;
 }
 main .product-right .product-option select.form-control {
