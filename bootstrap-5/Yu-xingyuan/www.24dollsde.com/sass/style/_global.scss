@@ -279,7 +279,6 @@ nav.navbar.nav-main {
   position: relative;
   display: block;
   overflow: hidden;
-  //border-bottom: 1px solid #999;
 
   &:after {
     content: "";
@@ -352,6 +351,22 @@ nav.navbar.nav-main {
 
     & * + * {
       margin-left: .25rem;
+    }
+  }
+}
+
+.heading-aside {
+  background: #bb2d3b;
+  padding: 6px 15px;
+
+  & .main {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 600;
+
+    > * + * {
+      margin-left: 5px;
     }
   }
 }
@@ -598,7 +613,15 @@ nav.navbar.nav-main {
   }
 
   & .show-aside {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    bottom: 46px;
+
+    & .btn {
+      padding: 0;
+    }
   }
 
   & .back-to-top {
@@ -916,6 +939,14 @@ footer {
       & .text {
         font-size: 1rem;
       }
+    }
+  }
+
+  .navigation-box {
+    bottom: 100px;
+
+    & .show-aside {
+      display: none;
     }
   }
 }

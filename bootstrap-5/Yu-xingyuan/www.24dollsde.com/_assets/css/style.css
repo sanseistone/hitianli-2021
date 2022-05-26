@@ -684,6 +684,20 @@ nav.navbar.nav-main .navbar-nav .nav-item.dropdown-large .dropdown-large-menu .r
   margin-left: .25rem;
 }
 
+.heading-aside {
+  background: #bb2d3b;
+  padding: 6px 15px;
+}
+.heading-aside .main {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: 600;
+}
+.heading-aside .main > * + * {
+  margin-left: 5px;
+}
+
 .product-block {
   display: block;
   position: relative;
@@ -872,7 +886,14 @@ nav.navbar.nav-main .navbar-nav .nav-item.dropdown-large .dropdown-large-menu .r
   fill: #fff;
 }
 .navigation-box .show-aside {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  bottom: 46px;
+}
+.navigation-box .show-aside .btn {
+  padding: 0;
 }
 .navigation-box .back-to-top {
   right: 0;
@@ -1080,6 +1101,13 @@ footer .copyright .text {
   }
   footer .copyright .text {
     font-size: 1rem;
+  }
+
+  .navigation-box {
+    bottom: 100px;
+  }
+  .navigation-box .show-aside {
+    display: none;
   }
 }
 @media (min-width: 1200px) {
@@ -1481,6 +1509,105 @@ footer .copyright .text {
     font-size: 1rem;
   }
 }
+main .main-aside.offcanvas {
+  overflow-y: scroll;
+  padding: 0 1rem 1rem;
+}
+main .main-aside.offcanvas.offcanvas-start {
+  width: 85%;
+}
+main .main-aside.offcanvas .offcanvas-header {
+  display: flex;
+}
+main .main-aside.offcanvas .offcanvas-header .offcanvas-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.section-block.section-picture-content .title-box {
+  border-bottom: 1px solid #e82391;
+  margin-bottom: 1rem;
+}
+.section-block.section-picture-content .title-box .title {
+  margin-bottom: .25rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.section-block.section-picture-content .title-box .author {
+  margin-bottom: .5rem;
+  font-size: .75rem;
+}
+.section-block.section-picture-content .title-box .author > * + * {
+  margin-left: .5rem;
+}
+.section-block.section-picture-content .content {
+  color: #666;
+  font-size: .875rem;
+}
+.section-block.section-picture-content .content .title {
+  margin: .5rem 0;
+  color: #333;
+  font-size: .875rem;
+  font-weight: 600;
+}
+.section-block.section-picture-content .content ul {
+  padding-left: 1rem;
+  list-style: circle;
+}
+.section-block.section-picture-content .content img {
+  width: 100%;
+  height: auto;
+}
+.section-block.section-picture-detail .right .title-block {
+  margin-bottom: 20px;
+}
+.section-block.section-picture-detail .right .title-block .title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.section-block.section-picture-detail .right .p-summary {
+  margin-bottom: 30px;
+}
+.section-block.section-picture-detail .right .p-summary .list {
+  color: #666;
+}
+.section-block.section-latest-list .list-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+}
+.section-block.section-latest-list .list-heading .title {
+  display: flex;
+  align-items: center;
+  font-size: .875rem;
+  font-weight: 600;
+}
+.section-block.section-latest-list .list-heading .title > * + * {
+  margin-left: 5px;
+}
+.section-block.section-latest-list .list-heading .more-link > a {
+  color: #666;
+  font-size: .875rem;
+}
+.section-block.section-latest-list .list > li + li {
+  border-top: 1px dashed #ddd;
+}
+.section-block.section-latest-list .list > li {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+}
+.section-block.section-latest-list .list > li .date {
+  color: #666;
+  font-size: .75rem;
+}
+.section-block.section-latest-list .list > li .title > a {
+  display: inline-block;
+  font-size: .875rem;
+}
 .section-block .pagination-nav {
   display: flex;
   justify-content: center;
@@ -1500,6 +1627,102 @@ footer .copyright .text {
   color: #fff;
 }
 
+.section-aside-block.section-aside-list .list > li + li {
+  border-top: 1px dashed #ddd;
+}
+.section-aside-block.section-aside-list .list > li > a {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 15px 8px 0;
+}
+.section-aside-block.section-aside-list .list > li > a:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url("../img/svg/chevron-right.svg") 0 0 no-repeat;
+  margin-right: 10px;
+}
+
+.article-page-nav .page-nav-block {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e82391;
+  padding: .25rem;
+}
+.article-page-nav .page-nav-block .title {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: .875rem;
+}
+.article-page-nav .page-nav-block svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 1rem;
+  fill: red;
+}
+.article-page-nav .page-nav-block.left .title {
+  padding-left: 1.5rem;
+}
+.article-page-nav .page-nav-block.left svg {
+  left: .25rem;
+}
+.article-page-nav .page-nav-block.right {
+  justify-content: flex-end;
+}
+.article-page-nav .page-nav-block.right .title {
+  padding-right: 1.5rem;
+}
+.article-page-nav .page-nav-block.right svg {
+  right: .25rem;
+}
+
+@media (min-width: 768px) {
+  main .main-aside.offcanvas.offcanvas-start {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  main .main-aside.offcanvas {
+    position: relative;
+    overflow-y: visible;
+    visibility: visible;
+    z-index: 10;
+    padding: 0 .75rem;
+  }
+  main .main-aside.offcanvas.offcanvas-start {
+    width: 25%;
+  }
+  main .main-aside.offcanvas.offcanvas-start {
+    border-right: none;
+    transform: none;
+  }
+  main .main-aside.offcanvas .offcanvas-header {
+    display: none;
+  }
+
+  .section-block.section-latest-list .list-heading .title {
+    font-size: 1.125rem;
+  }
+  .section-block.section-latest-list .list > li + li {
+    border-top: 1px dashed #ddd;
+  }
+  .section-block.section-latest-list .list > li .date {
+    font-size: .875rem;
+  }
+  .section-block.section-latest-list .list > li .title > a {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  main .main-aside.offcanvas .offcanvas-header {
+    display: none;
+  }
+}
 .section-block.section-product-detail {
   margin-bottom: 3rem;
 }
