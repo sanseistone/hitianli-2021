@@ -1608,6 +1608,40 @@ main .main-aside.offcanvas .offcanvas-header .offcanvas-title {
   display: inline-block;
   font-size: .875rem;
 }
+.section-block.section-collection-list .list-block .title-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.section-block.section-collection-list .list-block .title-block .title {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.section-block.section-collection-list .list-block .inner {
+  height: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+}
+.section-block.section-collection-list .list-block .inner .list > li + li {
+  border-top: 1px solid #ddd;
+}
+.section-block.section-collection-list .list-block .inner .list > li > a {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 0;
+  font-size: .875rem;
+}
+.section-block.section-collection-list .list-block .inner .list > li > a:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url("../img/svg/chevron-right.svg") 0 0 no-repeat;
+  margin-right: 5px;
+}
 .section-block .pagination-nav {
   display: flex;
   justify-content: center;

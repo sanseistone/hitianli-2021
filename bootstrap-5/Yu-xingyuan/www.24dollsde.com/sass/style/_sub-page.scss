@@ -143,6 +143,54 @@ main {
     }
   }
 
+  &.section-collection-list {
+    & .list-block {
+      & .title-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 5px;
+
+        & .title {
+          font-size: 1.125rem;
+          font-weight: 600;
+        }
+      }
+
+      & .inner {
+        height: 300px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+
+        & .list {
+          > li + li {
+            border-top: 1px solid #ddd;
+          }
+
+          > li {
+            > a {
+              display: inline-flex;
+              align-items: center;
+              padding: 10px 0;
+              font-size: .875rem;
+
+              &:before {
+                content: "";
+                width: 16px;
+                height: 16px;
+                background: url("../img/svg/chevron-right.svg") 0 0 no-repeat;
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   & .pagination-nav {
     display: flex;
     justify-content: center;
