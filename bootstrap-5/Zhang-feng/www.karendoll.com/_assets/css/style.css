@@ -1956,19 +1956,35 @@ main .section-main-block .main-aside .section-aside-block .content {
 .section-block.section-picture-blog .pagination-nav {
   justify-content: flex-start;
 }
-.section-block.section-product-block .filter-option {
+.section-block.section-product-block .filter-block {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: .5rem;
+}
+.section-block.section-product-block .filter-block .aside-option {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+.section-block.section-product-block .filter-block .aside-option > button {
+  border-radius: 0;
+}
+.section-block.section-product-block .filter-block .aside-option > button > * + * {
+  margin-left: 5px;
+}
+.section-block.section-product-block .filter-block .filter-option {
   display: inline-flex;
   align-items: center;
   flex-wrap: wrap;
   border: 1px solid red;
-  margin-bottom: .5rem;
+  margin-bottom: 5px;
 }
-.section-block.section-product-block .filter-option > * {
+.section-block.section-product-block .filter-block .filter-option > * {
   display: block;
-  padding: .25rem .5rem;
+  padding: .375rem .75rem;
   cursor: pointer;
 }
-.section-block.section-product-block .filter-option > *.active {
+.section-block.section-product-block .filter-block .filter-option > *.active {
   background: red;
   color: #fff;
 }
@@ -2304,6 +2320,52 @@ main .section-main-block .main-aside .section-aside-block .content {
   right: .25rem;
 }
 
+.offcanvas.offcanvas-filter.offcanvas-start {
+  width: 85%;
+}
+.offcanvas.offcanvas-filter .offcanvas-header .offcanvas-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.offcanvas.offcanvas-filter .offcanvas-body .checkbox-group .item + .item {
+  margin-top: 20px;
+}
+.offcanvas.offcanvas-filter .offcanvas-body .checkbox-group .item .heading-aside {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+.offcanvas.offcanvas-filter .offcanvas-body .checkbox-group .item .heading-aside .title {
+  margin-bottom: 5px;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.offcanvas.offcanvas-filter .offcanvas-body .checkbox-group .item .list {
+  list-style: none;
+}
+.offcanvas.offcanvas-filter .offcanvas-body .checkbox-group .item .list > li > a {
+  display: inline-block;
+  padding: 5px 0;
+}
+.offcanvas.offcanvas-filter .offcanvas-body .checkbox-group .item .list > li > a:focus, .offcanvas.offcanvas-filter .offcanvas-body .checkbox-group .item .list > li > a:hover {
+  color: var(--theme-main-color);
+}
+.offcanvas.offcanvas-filter .offcanvas-body .checkbox-group .item .list > li > label {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 0;
+  color: #111;
+  font-size: .875rem;
+}
+.offcanvas.offcanvas-filter .offcanvas-body .checkbox-group .item .list > li > label:focus, .offcanvas.offcanvas-filter .offcanvas-body .checkbox-group .item .list > li > label:hover {
+  color: var(--theme-main-color);
+}
+.offcanvas.offcanvas-filter .offcanvas-body .checkbox-group .item .list > li > label input {
+  margin-right: .75rem;
+}
+.offcanvas.offcanvas-filter .offcanvas-body .checkbox-group .item .list > li.active > a {
+  color: var(--theme-main-color);
+}
+
 @media (min-width: 768px) {
   .section-block.section-main-block .main-content .option-box {
     justify-content: space-between;
@@ -2320,6 +2382,10 @@ main .section-main-block .main-aside .section-aside-block .content {
   }
   .section-block.section-video-detail-block .title-block .title {
     font-size: 1.25rem;
+  }
+
+  .offcanvas.offcanvas-filter.offcanvas-start {
+    width: 50%;
   }
 }
 @media (min-width: 992px) {
@@ -2347,6 +2413,10 @@ main .section-main-block .main-aside .section-aside-block .content {
 
   .section-block.section-page-info-block .tags-link > a {
     font-size: .875rem;
+  }
+
+  .offcanvas.offcanvas-filter.offcanvas-start {
+    width: 40%;
   }
 }
 @media (min-width: 1200px) {
@@ -2393,6 +2463,10 @@ main .section-main-block .main-aside .section-aside-block .content {
   }
   .section-block.section-blog-content .content img {
     max-width: 50%;
+  }
+
+  .offcanvas.offcanvas-filter.offcanvas-start {
+    width: 33%;
   }
 }
 .section-block.section-product-detail {
